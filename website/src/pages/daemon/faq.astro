@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="FAQ - DaemonCore" description="Frequently asked questions about DaemonCore, the autonomous agent kernel.">
+  <article>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <h2>What is DaemonCore?</h2>
+      <p>
+<<<<<<< HEAD
+        DaemonCore is an autonomous agent kernel — a structured framework that governs
+        how AI agents initialise, behave, and collaborate. It provides the "operating
+        system" layer that transforms raw AI capabilities into disciplined, context-aware
+        assistants.
+=======
+        DaemonCore is a small kernel that runs underneath your AI assistants. It gives
+        them a shared rulebook, a sense of scope, and a more consistent way of working
+        across projects and environments.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Is DaemonCore an AI model?</h2>
+      <p>
+<<<<<<< HEAD
+        No. DaemonCore works <em>with</em> existing AI models (Claude, GPT, Gemini, etc.).
+        It provides the governance and context layer that makes these models more useful
+        in structured workflows. Think of it as the difference between a CPU and an
+        operating system.
+=======
+        No. DaemonCore does not replace or compete with the models you already use.
+        It sits alongside them as an operating layer, shaping how they behave rather
+        than what they are capable of in raw terms.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>How does DaemonCore differ from "just prompting"?</h2>
+      <p>
+        Prompting is stateless — each conversation starts fresh. DaemonCore provides:
+      </p>
+      <ul>
+        <li><strong>Persistent context</strong> that survives across sessions</li>
+        <li><strong>Deterministic boot sequences</strong> that ensure consistent behaviour</li>
+        <li><strong>Safety boundaries</strong> that adapt to the environment</li>
+        <li><strong>Multi-agent coordination</strong> for complex workflows</li>
+      </ul>
+      <p>
+        It's the difference between typing commands one at a time and having an
+        operating system that manages state, permissions, and processes.
+=======
+      <h2>How is this different from “just prompting”?</h2>
+      <p>
+        Traditional prompting treats every conversation as a clean slate. DaemonCore
+        assumes your work is ongoing. It:
+      </p>
+      <ul>
+        <li>encourages a repeatable start-up process for assistants;</li>
+        <li>keeps basic project and task context in view; and</li>
+        <li>puts boundaries around what assistants should and should not touch.</li>
+      </ul>
+      <p>
+        You still write prompts – but they run inside a more structured environment.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>Which AI providers does DaemonCore support?</h2>
+      <p>DaemonCore is designed to be vendor-agnostic. The current implementation includes support for:</p>
+      <ul>
+        <li>Anthropic Claude (all variants)</li>
+        <li>OpenAI GPT models (including o1/o3)</li>
+        <li>Google Gemini</li>
+        <li>DeepSeek</li>
+      </ul>
+      <p>
+        The vendor isolation system allows new providers to be added without affecting
+        existing configurations.
+=======
+      <h2>Which AI providers can I use with DaemonCore?</h2>
+      <p>
+        The design is vendor-agnostic. It is intended to support a mix of popular
+        providers over time, and to make it easier to switch or combine models without
+        redesigning everything.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>How does the safety system work?</h2>
+      <p>
+        DaemonCore implements "safety scaling" — the idea that agent permissions should
+        match the trust level of the environment. A tightly sandboxed environment gets
+        restricted permissions. A trusted development workstation gets more autonomy.
+        This is controlled through two dimensions:
+      </p>
+      <ul>
+        <li><strong>Sandbox Level</strong> (Hard/Medium/Soft) — What operations are physically possible</li>
+        <li><strong>Execution Mode</strong> (Sandbox/Controlled/Dangerous) — How much approval is required</li>
+      </ul>
+    </div>
+
+    <div class="faq-item">
+      <h2>What's the relationship to Stux OS?</h2>
+      <p>
+        DaemonCore is a core component of the Stux platform. Stux OS is the broader
+        operating system for agentic computing, and DaemonCore provides the kernel
+        that governs agent behaviour. Other Stux components (SDK, Hub) will build on
+        the foundation DaemonCore provides.
+=======
+      <h2>How does the safety side work?</h2>
+      <p>
+        At a high level, DaemonCore is opinionated about scope. It is built on the
+        idea that assistants should be constrained by default, with clearer rules
+        about where they are involved and when a human needs to stay in the loop.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>Can multiple agents work together?</h2>
+      <p>Yes. DaemonCore includes a multi-agent coordination system with:</p>
+      <ul>
+        <li>An exchange bus for passing messages between agents</li>
+        <li>Session locks to prevent conflicts</li>
+        <li>Handover protocols for transferring context</li>
+      </ul>
+      <p>
+        This enables workflows where different specialised agents handle different
+        aspects of a task.
+=======
+      <h2>What is the relationship to Stux OS?</h2>
+      <p>
+        Stux OS is the broader operating system for running AI agents in your own
+        environment. DaemonCore is the kernel at its heart – the part that focuses on
+        behaviour, boundaries, and coordination. Other Stux components will grow up
+        around that core.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>Is DaemonCore open source?</h2>
+      <p>
+        The kernel specification and public documentation are available for review.
+        The project uses a dual-licensing approach: open for evaluation and non-commercial
+        use, with commercial licensing available for production deployments. A provisional
+        patent application has been filed to protect the core innovations.
+=======
+      <h2>Can multiple assistants work together?</h2>
+      <p>
+        Yes. DaemonCore is designed with multi-assistant workflows in mind. It provides
+        a shared sense of context and simple coordination hooks so different assistants
+        can work on the same stream of work over time without losing the thread.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>Do I need to modify my AI provider setup?</h2>
+      <p>
+        No. DaemonCore operates as a context layer that gets loaded alongside your
+        normal AI interactions. It doesn't require changes to API integrations or
+        model configurations. It works by providing structured prompts and context
+        that shape agent behaviour.
+=======
+      <h2>Do I have to change how I call existing APIs?</h2>
+      <p>
+        No. DaemonCore is intended to sit alongside existing integrations and tooling.
+        It focuses on how assistants are initialised and how context is managed, not
+        on replacing your infrastructure.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+
+    <div class="faq-item">
+<<<<<<< HEAD
+      <h2>How do I get started?</h2>
+      <p>
+        Start by reading the <a href="/daemon/overview">Overview</a> to understand the core
+        concepts, then review the <a href="/daemon/architecture">Architecture</a> to see how
+        the pieces fit together. The kernel specification provides the full technical
+        detail for implementers.
+=======
+      <h2>How can I follow progress?</h2>
+      <p>
+        The best way to keep an eye on DaemonCore is via the public materials and
+        updates linked from the GitHub repository, along with occasional posts on
+        the blog.
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
+      </p>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  article {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .faq-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-item h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .faq-item p:last-child,
+  .faq-item ul:last-child,
+  .faq-item ol:last-child {
+    margin-bottom: 0;
+  }
+<<<<<<< HEAD
+</style>
+=======
+</style>
+>>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
