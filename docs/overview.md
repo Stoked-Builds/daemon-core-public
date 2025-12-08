@@ -46,3 +46,56 @@ Context persists across interactions. Agents can resume where they left off, rem
 3. **Safety-first** — Restrictions are the default; permissions are earned
 4. **Composability** — Components can be mixed and extended
 5. **Human-in-the-loop** — Critical decisions always involve humans
+
+# What is DaemonCore?
+
+DaemonCore is an **autonomous agent kernel** — a high‑level operating environment that helps AI assistants behave in a more predictable, consistent, and human‑aligned way.
+
+Rather than defining the internals of any AI model, DaemonCore focuses on the structure surrounding them.
+
+## The Challenge Today
+
+AI assistants are powerful, but they often feel:
+
+- **Forgetful** — every conversation starts from zero  
+- **Inconsistent** — their behaviour varies between sessions  
+- **Unbounded** — it’s not always clear what they should or shouldn’t do  
+- **Uncoordinated** — multiple assistants cannot reliably stay aligned  
+
+DaemonCore addresses these issues by providing a simple, shared operating environment.
+
+## How DaemonCore Helps
+
+DaemonCore offers a small set of guiding structures:
+
+### Predictable Start‑Up  
+Assistants begin their work with the same basic expectations, ensuring more stable behaviour across sessions and tasks.
+
+### Provider Neutrality  
+DaemonCore is designed to support multiple AI providers without leaking details between them.
+
+### Awareness of Context  
+Assistants can work with a clearer sense of what project or problem they are helping with, without carrying unnecessary long‑term memory.
+
+### Boundaries and Scope  
+DaemonCore puts human control first. Assistants work within defined limits, keeping sensitive or irreversible actions in the hands of the user.
+
+### Lightweight Continuity  
+Within reasonable boundaries, assistants can understand the general direction of work and maintain focus from one interaction to the next.
+
+## What DaemonCore Is Not
+
+- Not an AI model  
+- Not a chatbot interface  
+- Not a prompt library  
+- Not tied to any single provider  
+
+Think of it as the conceptual “operating environment” that modern AI assistants have been missing.
+
+## Design Principles
+
+1. **Predictability** — similar inputs should lead to similar behaviour  
+2. **Transparency** — assistants operate with clear expectations  
+3. **Safety‑first** — human control is central  
+4. **Composability** — usable across many workflows  
+5. **Human‑centred design** — assistants support, not replace, decision‑making  

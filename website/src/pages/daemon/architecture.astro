@@ -2,170 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<<<<<<< HEAD
-<BaseLayout title="Architecture - DaemonCore" description="DaemonCore architecture: layered context model, vendor isolation, safety scaling, and multi-agent coordination.">
-=======
 <BaseLayout title="Architecture - DaemonCore" description="DaemonCore architecture at a high level: structure, boundaries, and coordination.">
->>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
   <article>
     <h1>DaemonCore Architecture</h1>
 
     <p>
-<<<<<<< HEAD
-      This document describes the high-level architecture of DaemonCore. For detailed
-      specifications, refer to the kernel documentation.
-    </p>
-
-    <h2>Layered Context Model</h2>
-    <p>DaemonCore organises context in distinct layers, loaded in sequence during boot:</p>
-
-    <pre><code>Layer 0: BIOS (Invocation trigger)
-Layer 1: Global Bootloader
-Layer 2: Kernel (Core rules and protocols)
-Layer 3: Core Context (Tone, Memory, Global settings)
-Layer 4: Vendor Persona (Claude, Codex, Gemini, etc.)
-Layer 5: Role Profile (Developer, Architect, etc.)
-Layer 6: Project Configuration
-Layer 7: Runtime Execution</code></pre>
-
-    <p>
-      Each layer can extend but not override layers above it. This creates predictable,
-      auditable agent behaviour.
-    </p>
-
-    <h2>Key Components</h2>
-
-    <h3>Kernel</h3>
-    <p>The kernel defines:</p>
-    <ul>
-      <li><strong>Boot protocol</strong> — How agents initialise</li>
-      <li><strong>Identity handshake</strong> — How agents declare who they are</li>
-      <li><strong>Environment reporting</strong> — How agents describe their context</li>
-      <li><strong>Safety scaling</strong> — How permissions adjust to environment</li>
-      <li><strong>Vendor resolution</strong> — How agent-specific config is loaded</li>
-    </ul>
-
-    <h3>Vendor System</h3>
-    <p>Each AI provider has isolated configuration:</p>
-    <pre><code>vendors/
-  claude/
-    persona.md
-    init.md
-    capabilities.md
-  codex/
-    persona.md
-    init.md
-  gemini/
-    ...</code></pre>
-    <p>
-      Agents load ONLY from their designated vendor directory. Cross-vendor loading
-      is prohibited.
-    </p>
-
-    <h3>Profile System</h3>
-    <p>Profiles define role-based behaviour:</p>
-    <ul>
-      <li><strong>Developer</strong> — Implementation-focused, code-centric</li>
-      <li><strong>Architect</strong> — Design-focused, systems-thinking</li>
-      <li><strong>SysAdmin</strong> — Operations-focused, infrastructure-aware</li>
-    </ul>
-    <p>Profiles define WHAT agents do. Personas define HOW they think.</p>
-
-    <h3>Environment Schema</h3>
-    <p>Agents report eight environment dimensions:</p>
-
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Field</th>
-            <th>Values</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HOST_CLASS</td>
-            <td>Pi, Laptop, Gaming-PC, Supercloud</td>
-            <td>Hardware capability</td>
-          </tr>
-          <tr>
-            <td>NETWORK_ACCESS</td>
-            <td>None, Limited, Full</td>
-            <td>Connectivity</td>
-          </tr>
-          <tr>
-            <td>SANDBOX_LEVEL</td>
-            <td>Hard, Medium, Soft</td>
-            <td>Security posture</td>
-          </tr>
-          <tr>
-            <td>EXECUTION_MODE</td>
-            <td>Sandbox, Controlled, Dangerous</td>
-            <td>Autonomy level</td>
-          </tr>
-          <tr>
-            <td>TOOLING</td>
-            <td>[shell, fs, http, git, ...]</td>
-            <td>Available tools</td>
-          </tr>
-          <tr>
-            <td>COST_SENSITIVITY</td>
-            <td>Low, Medium, High</td>
-            <td>Resource awareness</td>
-          </tr>
-          <tr>
-            <td>LATENCY_PREFERENCE</td>
-            <td>Speed, Balanced, Quality</td>
-            <td>Performance vs depth</td>
-          </tr>
-          <tr>
-            <td>BOOT_SOURCE</td>
-            <td>Local, Network, Hybrid</td>
-            <td>Config origin</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>Safety Matrix</h3>
-    <p>
-      The combination of SANDBOX_LEVEL and EXECUTION_MODE determines what operations
-      are permitted:
-    </p>
-    <ul>
-      <li><strong>Hard + Sandbox</strong> — Read-only analysis only</li>
-      <li><strong>Medium + Controlled</strong> — Standard development (default)</li>
-      <li><strong>Soft + Dangerous</strong> — Maximum capability with audit logging</li>
-    </ul>
-
-    <h3>Session State</h3>
-    <p>DaemonCore maintains session state including:</p>
-    <ul>
-      <li>Current project and branch</li>
-      <li>Active task context</li>
-      <li>Pending clarifications</li>
-      <li>Working memory</li>
-    </ul>
-    <p>This enables session resume and context continuity.</p>
-
-    <h2>Multi-Agent Coordination</h2>
-    <p>DaemonCore supports multiple agents working together via:</p>
-    <ul>
-      <li><strong>Exchange bus</strong> — Filesystem-based message passing</li>
-      <li><strong>Session locks</strong> — Prevent concurrent conflicting operations</li>
-      <li><strong>Handover protocol</strong> — Structured context transfer between agents</li>
-    </ul>
-
-    <h2>Extension Points</h2>
-    <p>DaemonCore is designed for extension:</p>
-    <ul>
-      <li><strong>Custom profiles</strong> for domain-specific roles</li>
-      <li><strong>Project-level boot files</strong> for repo-specific config</li>
-      <li><strong>Modulation system</strong> for delivery style adjustments</li>
-      <li><strong>Enterprise overrides</strong> for organisational policies</li>
-    </ul>
-=======
       This page gives a high-level view of how DaemonCore fits together. It is not a
       full technical specification. The aim is to explain the main ideas without
       getting into implementation detail.
@@ -190,7 +31,7 @@ Layer 7: Runtime Execution</code></pre>
     <h2>1. Structure</h2>
     <p>
       The structural layer covers how assistants start up and what they see when they
-      first “wake up” under DaemonCore. It includes:
+      first "wake up" under DaemonCore. It includes:
     </p>
     <ul>
       <li>the core rules that apply to all assistants;</li>
@@ -241,7 +82,7 @@ Layer 7: Runtime Execution</code></pre>
       environments will want to:
     </p>
     <ul>
-      <li>define their own kinds of roles and assistant “shapes”;</li>
+      <li>define their own kinds of roles and assistant "shapes";</li>
       <li>tune how strict or relaxed boundaries should be in different contexts; and</li>
       <li>plug existing tools and workflows into the operating model.</li>
     </ul>
@@ -250,7 +91,6 @@ Layer 7: Runtime Execution</code></pre>
       All of this can happen without changing the core promises: predictable start-up,
       clear boundaries, and humans staying firmly in control of the work.
     </p>
->>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
   </article>
 </BaseLayout>
 
@@ -261,41 +101,6 @@ Layer 7: Runtime Execution</code></pre>
     padding: 2rem 0;
   }
 
-<<<<<<< HEAD
-  .table-wrapper {
-    overflow-x: auto;
-    margin: 1rem 0;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-  }
-
-  th, td {
-    padding: 0.75rem;
-    text-align: left;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  th {
-    background: var(--color-bg-card);
-    color: var(--color-text);
-    font-weight: 600;
-  }
-
-  td {
-    color: var(--color-text-muted);
-  }
-
-  td:first-child {
-    color: var(--color-text);
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-  }
-</style>
-=======
   pre {
     background: var(--color-bg-card);
     border-radius: 8px;
@@ -305,4 +110,3 @@ Layer 7: Runtime Execution</code></pre>
     border: 1px solid var(--color-border);
   }
 </style>
->>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)

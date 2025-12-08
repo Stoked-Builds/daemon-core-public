@@ -34,3 +34,34 @@ For licensing enquiries or collaboration discussions, please reach out through t
 ---
 
 *This summary is for informational purposes only and does not constitute legal advice. The actual scope of any patent protection will be determined by the claims as finally granted.*
+
+# Patent Summary
+
+A provisional patent application has been filed covering the foundational concepts behind the DaemonCore kernel.
+
+## What the Filing Covers
+
+The application outlines the high‑level architectural ideas that define how DaemonCore provides:
+
+1. A structured, repeatable way for assistants to start a session
+2. Clear separation between different AI providers
+3. A human‑centred approach to boundaries and safety
+4. Predictable loading of agent context
+5. Support for situations where multiple assistants participate in the same stream of work
+
+These ideas describe a conceptual operating layer rather than specific implementation details.
+
+## Core Innovations
+
+The filing highlights the patterns that enable:
+
+- More stable, repeatable AI assistant behaviour  
+- Seamless use of multiple AI providers within the same environment  
+- Clear guardrails that preserve human control  
+- Scalable collaboration across evolving workflows  
+
+## What This Means
+
+The provisional filing establishes a priority date while the broader design continues to mature. It allows the concepts to be shared and discussed publicly while protecting the underlying innovation.
+
+Commercial licensing terms will be introduced as the technology reaches a stable release.

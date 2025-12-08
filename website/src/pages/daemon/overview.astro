@@ -7,63 +7,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <h1>What is DaemonCore?</h1>
 
     <p>
-<<<<<<< HEAD
-      DaemonCore is an <strong>autonomous agent kernel</strong> — a structured framework
-      that governs how AI agents boot, behave, and collaborate within a human's working
-      environment.
-    </p>
-
-    <h2>The Problem</h2>
-    <p>Modern AI assistants are powerful but chaotic:</p>
-    <ul>
-      <li><strong>No persistent memory</strong> — Every session starts fresh</li>
-      <li><strong>No consistent identity</strong> — Behaviour varies unpredictably</li>
-      <li><strong>No safety boundaries</strong> — Agents can overreach without guardrails</li>
-      <li><strong>No coordination</strong> — Multiple agents can't work together coherently</li>
-    </ul>
-
-    <h2>The Solution</h2>
-    <p>
-      DaemonCore provides a <strong>kernel layer</strong> that sits between raw AI
-      capabilities and your projects. Think of it as an operating system for AI agents.
-    </p>
-
-    <h3>Core Concepts</h3>
-
-    <h4>Boot Sequence</h4>
-    <p>
-      Every agent follows a deterministic boot sequence that loads context in layers:
-      kernel rules, then global preferences, then vendor-specific behaviour, then
-      project configuration. This ensures consistent, predictable agent behaviour.
-    </p>
-
-    <h4>Vendor Isolation</h4>
-    <p>
-      Different AI providers (Anthropic's Claude, OpenAI's GPT, Google's Gemini) have
-      different capabilities and quirks. DaemonCore isolates vendor-specific configuration,
-      preventing cross-contamination while enabling seamless switching.
-    </p>
-
-    <h4>Environment Reporting</h4>
-    <p>
-      Agents report their execution context at boot: What hardware are they running on?
-      What network access do they have? What tools are available? This enables adaptive
-      behaviour — an agent on a constrained device behaves differently than one with
-      full resources.
-    </p>
-
-    <h4>Safety Scaling</h4>
-    <p>
-      Based on the execution environment, DaemonCore automatically adjusts what operations
-      require approval. High-trust environments get more autonomy. Unknown or constrained
-      environments get tighter guardrails.
-    </p>
-
-    <h4>Session State</h4>
-    <p>
-      Context persists across interactions. Agents can resume where they left off,
-      remember project structure, and maintain working memory within defined boundaries.
-=======
       DaemonCore is an <strong>autonomous agent kernel</strong>: a small, opinionated
       layer that sits between AI models and your actual work. It gives assistants a
       shared sense of who they are working for, what they are working on, and how
@@ -77,7 +20,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <h2>The Problem It Tackles</h2>
     <p>
-      Today’s AI assistants are impressive, but in day-to-day use they often feel like
+      Today's AI assistants are impressive, but in day-to-day use they often feel like
       amnesiac freelancers:
     </p>
     <ul>
@@ -107,7 +50,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <h4>Predictable Start-Up</h4>
     <p>
-      DaemonCore is opinionated about how assistants “come online”. It encourages a
+      DaemonCore is opinionated about how assistants "come online". It encourages a
       repeatable start-up flow so that you spend less time re-explaining context and
       more time actually moving work forward.
     </p>
@@ -118,7 +61,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       models over time while keeping the same broad rules and expectations in place.
     </p>
 
-    <h4>Awareness of Where It’s Running</h4>
+    <h4>Awareness of Where It's Running</h4>
     <p>
       Environments differ. A locked-down machine, a personal laptop, and a cloud
       workspace do not carry the same level of trust. DaemonCore is built to take
@@ -127,7 +70,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <h4>Boundaries First</h4>
     <p>
-      Instead of starting from “anything is allowed unless blocked”, DaemonCore leans
+      Instead of starting from "anything is allowed unless blocked", DaemonCore leans
       towards constrained by default. You decide how far assistants are allowed to go
       and when a human needs to stay in the loop.
     </p>
@@ -137,26 +80,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       Within sensible limits, DaemonCore lets assistants carry forward what has already
       been agreed on a project so you are not constantly starting from zero. The aim
       is to feel more like a teammate catching up, not a stranger dropping in.
->>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
     </p>
 
     <h2>What DaemonCore Is Not</h2>
     <ul>
-<<<<<<< HEAD
-      <li><strong>Not an AI model</strong> — It works with existing models (Claude, GPT, etc.)</li>
-      <li><strong>Not a chatbot framework</strong> — It's infrastructure, not UI</li>
-      <li><strong>Not a prompt library</strong> — It's a runtime governance layer</li>
-      <li><strong>Not vendor-specific</strong> — It's designed for multi-vendor environments</li>
-    </ul>
-
-    <h2>Design Philosophy</h2>
-    <ol>
-      <li><strong>Determinism</strong> — Same inputs produce same behaviour</li>
-      <li><strong>Transparency</strong> — Agents declare their state and capabilities</li>
-      <li><strong>Safety-first</strong> — Restrictions are the default; permissions are earned</li>
-      <li><strong>Composability</strong> — Components can be mixed and extended</li>
-      <li><strong>Human-in-the-loop</strong> — Critical decisions always involve humans</li>
-=======
       <li><strong>Not an AI model</strong> – it works alongside the models you already use.</li>
       <li><strong>Not a UI product</strong> – it focuses on behaviour, structure, and boundaries.</li>
       <li><strong>Not a bag of prompts</strong> – it defines an operating environment, not tricks.</li>
@@ -170,7 +97,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <li><strong>Safety first</strong> – boundaries are a feature, not an optional extra.</li>
       <li><strong>Composability</strong> – small pieces that can be wired into different setups.</li>
       <li><strong>Human control</strong> – important calls stay with humans, not hallucinations.</li>
->>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)
     </ol>
   </article>
 </BaseLayout>
@@ -187,8 +113,4 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     color: var(--color-text);
     margin: 1.25rem 0 0.5rem;
   }
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> f01fc51 (Initial release: Stux OS and DaemonCore website)

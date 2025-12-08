@@ -110,3 +110,51 @@ DaemonCore is designed for extension:
 - **Project-level boot files** for repo-specific config
 - **Modulation system** for delivery style adjustments
 - **Enterprise overrides** for organisational policies
+
+# DaemonCore Architecture
+
+This document provides a high‑level description of the conceptual architecture behind DaemonCore. It focuses on the ideas rather than the implementation.
+
+## A Layered Model
+
+DaemonCore encourages assistants to think within a simple structure:
+
+1. **Basic rules** — foundational expectations and behaviour  
+2. **High‑level preferences** — broad human guidance  
+3. **Provider neutrality** — model‑specific quirks stay contained  
+4. **Roles and focus** — what the assistant is helping with  
+5. **Project context** — the direction of work  
+6. **Execution** — producing useful output within scope  
+
+These layers establish clarity without revealing system internals.
+
+## Key Concepts
+
+### Shared Foundations  
+All assistants begin from the same predictable starting point.
+
+### Provider Separation  
+Different AI providers operate without crossing signals.
+
+### Roles  
+Assistants adopt roles such as “developer”, “architect”, or “research helper” to guide tone and priorities.
+
+### Human‑Centred Boundaries  
+Assistants operate within well‑defined limits to preserve human control.
+
+### Lightweight Continuity  
+Assistants maintain enough context to stay on‑track without storing sensitive long‑term information.
+
+## Multi‑Assistant Collaboration
+
+DaemonCore supports workflows where multiple assistants may contribute across time. The goal is coordination, not complex orchestration.
+
+## Extensibility
+
+DaemonCore can be extended with:
+
+- Custom roles  
+- Workspace‑level guidance  
+- Organisation‑specific preferences  
+
+All without altering the foundational principles.

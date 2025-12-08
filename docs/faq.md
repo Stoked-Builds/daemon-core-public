@@ -68,3 +68,41 @@ The core problem is that AI assistants are stateless and context-poor. Every con
 ## How do I get started?
 
 Start by reading the [Overview](./overview.md) to understand the core concepts, then review the [Architecture](./architecture.md) to see how the pieces fit together. The kernel specification provides the full technical detail for implementers.
+
+# Frequently Asked Questions
+
+## What is DaemonCore?
+
+DaemonCore is a high‑level operating environment that helps AI assistants behave more consistently and predictably across different types of work. It provides shared structure, not implementation details.
+
+## Is DaemonCore an AI model?
+
+No. DaemonCore works alongside existing AI models. It doesn’t alter their internals — it simply provides the structure around them.
+
+## Which AI providers does DaemonCore support?
+
+DaemonCore is designed to be vendor‑agnostic. It can work with different providers without preferring or leaking information across them.
+
+## Do I need to change my AI integrations?
+
+No. DaemonCore does not replace your integrations. It complements them by offering a structured environment for assistants to operate in.
+
+## What is the DaemonCore “start‑up process”?
+
+Instead of improvising from a blank prompt, assistants begin with a simple, predictable foundation: who they’re helping, what they’re focused on, and what the broad expectations are.
+
+## How does DaemonCore handle safety?
+
+DaemonCore emphasises scope and boundaries. Assistants are encouraged to stay within their designated role, keeping humans in control of important decisions.
+
+## Can multiple assistants work together?
+
+Yes. DaemonCore supports scenarios where different assistants operate on the same stream of work, providing enough structure to avoid conflict and maintain alignment.
+
+## Is DaemonCore open source?
+
+The concepts and documentation are publicly available. Licensing for commercial use will be clarified as the project matures.
+
+## What problem does this actually solve?
+
+It helps assistants behave less like isolated chat sessions and more like stable participants in ongoing work.
