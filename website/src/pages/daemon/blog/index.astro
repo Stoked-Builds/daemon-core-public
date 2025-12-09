@@ -2,92 +2,25 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Blog - DaemonCore" description="Updates, announcements, and background thinking from the DaemonCore and Stux OS projects.">
+<BaseLayout title="Blog - Daemon Core" description="Development updates and technical notes from the Daemon Core project.">
   <div class="blog-header">
     <h1>Blog</h1>
-    <p>
-      Occasional updates, background thinking, and release notes from the DaemonCore
-      and Stux OS projects.
-    </p>
+    <p>Development updates and technical notes.</p>
   </div>
 
-  <div class="posts">
+  <div class="article">
     <a href="/daemon/blog/hello-world" class="post-card">
-      <time datetime="2025-12">December 2025</time>
-      <h2>Hello World: Introducing DaemonCore</h2>
+      <time datetime="2025-12">2025.12</time>
+      <h2>Initialisation: Introducing Daemon Core</h2>
       <p>
-        A short introduction to the ideas behind DaemonCore, why it exists, and how
-        it fits into the broader Stux OS vision.
+        Project rationale, architectural direction, and initial specification
+        release.
       </p>
-      <span class="read-more">Read more &rarr;</span>
+      <span class="read-more">Continue reading</span>
     </a>
   </div>
 
-  <div class="more-coming">
-    <p>More posts will be added over time as the work progresses.</p>
+  <div class="status">
+    <p>Additional entries will be published as development progresses.</p>
   </div>
 </BaseLayout>
-
-<style>
-  .blog-header {
-    text-align: center;
-    padding: 2rem 0 3rem;
-    border-bottom: 1px solid var(--color-border);
-    margin-bottom: 2rem;
-  }
-
-  .blog-header p {
-    color: var(--color-text-muted);
-    margin: 0;
-  }
-
-  .posts {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  .post-card {
-    display: block;
-    background: var(--color-bg-card);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--color-border);
-    text-decoration: none;
-    transition: all 0.2s;
-    margin-bottom: 1.5rem;
-  }
-
-  .post-card:hover {
-    border-color: var(--color-accent);
-    transform: translateY(-2px);
-  }
-
-  .post-card time {
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-  }
-
-  .post-card h2 {
-    font-size: 1.35rem;
-    color: var(--color-text);
-    margin: 0.5rem 0 0.75rem;
-  }
-
-  .post-card p {
-    color: var(--color-text-muted);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-
-  .read-more {
-    color: var(--color-accent);
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-
-  .more-coming {
-    text-align: center;
-    padding: 3rem 0;
-    color: var(--color-text-muted);
-  }
-</style>

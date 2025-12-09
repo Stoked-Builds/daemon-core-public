@@ -2,112 +2,66 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Hello World: Introducing DaemonCore - Blog" description="Introducing DaemonCore: an autonomous agent kernel for structured human-AI collaboration.">
+<BaseLayout title="Initialisation: Introducing Daemon Core" description="Project rationale and architectural direction for the Daemon Core kernel.">
   <article class="blog-post">
     <header>
-      <time datetime="2025-12">December 2025</time>
-      <h1>Hello World: Introducing DaemonCore</h1>
+      <time datetime="2025-12">2025.12</time>
+      <h1>Initialisation: Introducing Daemon Core</h1>
     </header>
 
     <section>
       <p>
-        DaemonCore grew out of a simple frustration: powerful AI tools that could not
-        remember what we were doing from one session to the next. Every chat felt like
-        starting from scratch.
+        Daemon Core originated from an architectural problem: AI systems
+        that could not maintain context across sessions. Each interaction
+        began without memory. No continuity. No accumulated state.
       </p>
 
       <p>
-        Over time, that frustration turned into a clearer question: what would it look
-        like if AI assistants had a proper <em>operating environment</em>, not just a
-        text box?
+        The question that emerged: what would a proper operating environment
+        for AI agents look like? Not an interface. A substrate.
       </p>
 
-      <h2>From Experiments to a Kernel</h2>
+      <h2>From Prompt to Architecture</h2>
       <p>
-        Early experiments were nothing more than careful prompts and a few helper
-        files. They worked for a while – until they didn't. Small changes in wording
-        or model behaviour could throw everything off.
+        Initial attempts used careful prompting and configuration files.
+        These worked intermittently. Small variations in model behavior
+        or prompt phrasing produced inconsistent results.
       </p>
       <p>
-        The more the system was used in real projects, the more obvious it became that
-        a deeper layer was missing: a way to define how assistants start up, what they
-        should pay attention to, and where the lines are.
+        The pattern became clear: prompt engineering addresses symptoms.
+        The underlying problem is architectural. Agents need a defined
+        operating environment, not just better instructions.
       </p>
 
-      <h2>What DaemonCore Tries to Do</h2>
-      <p>DaemonCore focuses on a small set of goals:</p>
+      <h2>Design Objectives</h2>
+      <p>Daemon Core addresses four core requirements:</p>
       <ul>
-        <li>make assistant behaviour feel more predictable and repeatable;</li>
-        <li>separate "who the assistant is" from "what it is allowed to do";</li>
-        <li>help multiple assistants stay aligned on the same stream of work; and</li>
-        <li>keep humans firmly in control of scope and safety.</li>
+        <li>Predictable, repeatable agent behavior.</li>
+        <li>Separation between agent identity and operational permissions.</li>
+        <li>Coordination protocols for multi-agent systems.</li>
+        <li>Human authority over scope and safety.</li>
       </ul>
 
-      <h2>Part of a Bigger Picture</h2>
+      <h2>System Context</h2>
       <p>
-        DaemonCore is one of the core building blocks of Stux OS – an operating system
-        for running AI agents in your own environment. The intention is not to replace
-        existing tools, but to give them a more stable foundation to plug into.
+        Daemon Core forms the kernel layer of Stux OS, a broader operating
+        environment for multi-agent computation. The kernel handles
+        orchestration. Additional components will build on this foundation.
       </p>
 
-      <h2>What's Next</h2>
+      <h2>Development Direction</h2>
       <p>
-        The immediate focus is on refining the DaemonCore ideas through practical
-        use, sharing more examples, and exploring how different teams want to apply
-        them. As that stabilises, additional Stux OS components will grow around the
-        kernel.
+        Current focus: specification refinement through production deployment.
+        Public materials will expand as the architecture stabilises.
       </p>
       <p>
-        If you are interested in that journey, keep an eye on this space and on the
-        public repository. This is still early work, but the direction is clear:
-        AI assistants need an operating system, not just another window.
+        The direction is clear: AI agents require an operating system layer.
+        Daemon Core provides that foundation.
       </p>
     </section>
 
     <footer>
-      <a href="/daemon/blog">&larr; Back to Blog</a>
+      <a href="/daemon/blog">Return to index</a>
     </footer>
   </article>
 </BaseLayout>
-
-<style>
-  .blog-post {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-
-  .blog-post header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .blog-post header time {
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-  }
-
-  .blog-post header h1 {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
-
-  .blog-post section {
-    margin-bottom: 3rem;
-  }
-
-  .blog-post footer {
-    padding-top: 2rem;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .blog-post footer a {
-    color: var(--color-text-muted);
-    font-size: 0.95rem;
-  }
-
-  .blog-post footer a:hover {
-    color: var(--color-accent);
-  }
-</style>

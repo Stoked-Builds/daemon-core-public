@@ -2,111 +2,83 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Architecture - DaemonCore" description="DaemonCore architecture at a high level: structure, boundaries, and coordination.">
-  <article>
-    <h1>DaemonCore Architecture</h1>
+<BaseLayout title="Architecture - Daemon Core" description="Daemon Core architecture: layered context, boundaries, and multi-agent coordination.">
+  <article class="article article-wide">
+    <h1>Architecture</h1>
 
     <p>
-      This page gives a high-level view of how DaemonCore fits together. It is not a
-      full technical specification. The aim is to explain the main ideas without
-      getting into implementation detail.
+      This document describes the structural organisation of Daemon Core.
+      Not implementation detail. Architectural rationale.
     </p>
 
-    <h2>A Simple Mental Model</h2>
+    <h2>Conceptual Model</h2>
     <p>
-      You can think of DaemonCore as giving each assistant three things before it
-      starts work:
+      Each agent receives three structural inputs before operation:
     </p>
     <ul>
-      <li>a <strong>basic rulebook</strong> for how it should behave;</li>
-      <li>a <strong>sense of scope</strong> – what is in-bounds and out-of-bounds; and</li>
-      <li>a <strong>clear focus</strong> – which project and area it is currently helping with.</li>
+      <li>A <strong>rulebook</strong> defining behavioral constraints.</li>
+      <li>A <strong>scope boundary</strong> delimiting operational range.</li>
+      <li>A <strong>context focus</strong> specifying current workload.</li>
     </ul>
 
     <p>
-      Those three ideas show up in the architecture as three broad layers: structure,
-      boundaries, and coordination.
+      These map to three architectural layers: structure, boundaries, coordination.
     </p>
 
-    <h2>1. Structure</h2>
+    <h2>Layer 1: Structure</h2>
     <p>
-      The structural layer covers how assistants start up and what they see when they
-      first "wake up" under DaemonCore. It includes:
+      The structural layer governs agent initialisation:
     </p>
     <ul>
-      <li>the core rules that apply to all assistants;</li>
-      <li>any relevant high-level preferences; and</li>
-      <li>a simple notion of who they are there to help and in what capacity.</li>
+      <li>Core rules applied universally.</li>
+      <li>Global preferences and configurations.</li>
+      <li>Identity and capability declarations.</li>
     </ul>
     <p>
-      This is what makes assistants feel more consistent over time instead of changing
-      character between sessions.
+      This layer ensures behavioral consistency across sessions and restarts.
     </p>
 
-    <h2>2. Boundaries</h2>
+    <h2>Layer 2: Boundaries</h2>
     <p>
-      The boundaries layer is about safety and scope. Different environments carry
-      different levels of trust, and DaemonCore is designed to reflect that. In
-      practice, that means:
+      The boundary layer controls safety and scope:
     </p>
     <ul>
-      <li>being clear about which areas of work an assistant is involved in;</li>
-      <li>deciding what it is allowed to suggest, change, or trigger; and</li>
-      <li>keeping a human firmly in the loop for anything sensitive or irreversible.</li>
+      <li>Operational range constraints.</li>
+      <li>Permission matrices by environment trust.</li>
+      <li>Human approval requirements for critical operations.</li>
     </ul>
     <p>
-      The intent is to give you more confidence in where assistants can and cannot go,
-      rather than leaving it to chance.
+      Boundaries are structural, not advisory. Agents cannot exceed defined limits.
     </p>
 
-    <h2>3. Coordination</h2>
+    <h2>Layer 3: Coordination</h2>
     <p>
-      Many of the most interesting use cases involve more than one assistant over
-      time. The coordination layer focuses on:
+      The coordination layer manages multi-agent operation:
     </p>
     <ul>
-      <li>handing work off between assistants without losing the thread;</li>
-      <li>avoiding situations where two assistants unknowingly work at cross-purposes; and</li>
-      <li>leaving a lightweight trail of what happened and why.</li>
+      <li>Context handoff protocols between agents.</li>
+      <li>Conflict prevention through scope isolation.</li>
+      <li>Audit trails for operational history.</li>
     </ul>
 
     <p>
-      This is not about complex choreography. It is about giving assistants enough
-      structure to feel like they are part of the same team rather than separate,
-      isolated tools.
+      Coordination is structural. Agents operate as components of a unified system,
+      not isolated instances.
     </p>
 
-    <h2>Extending the Architecture</h2>
+    <h2>Extension Model</h2>
     <p>
-      DaemonCore is deliberately designed to be extended. Different teams and
-      environments will want to:
+      Daemon Core supports extension through defined interfaces:
     </p>
     <ul>
-      <li>define their own kinds of roles and assistant "shapes";</li>
-      <li>tune how strict or relaxed boundaries should be in different contexts; and</li>
-      <li>plug existing tools and workflows into the operating model.</li>
+      <li>Custom role profiles for domain-specific agents.</li>
+      <li>Environment-specific boundary configurations.</li>
+      <li>Integration hooks for external tooling.</li>
     </ul>
 
     <p>
-      All of this can happen without changing the core promises: predictable start-up,
-      clear boundaries, and humans staying firmly in control of the work.
+      Extensions operate within core constraints. They cannot override
+      fundamental safety or coordination mechanisms.
     </p>
   </article>
 </BaseLayout>
-
-<style>
-  article {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-
-  pre {
-    background: var(--color-bg-card);
-    border-radius: 8px;
-    padding: 1rem 1.25rem;
-    font-size: 0.9rem;
-    overflow-x: auto;
-    border: 1px solid var(--color-border);
-  }
-</style>

@@ -1,0 +1,71 @@
+/**
+ * Daemon Core Design System - Variables
+ * Based on brand guidelines: Prism Palette
+ */
+
+:root {
+  /* Foundation Colors */
+  --color-obsidian: #0D0E14;
+  --color-celestine: #92A8D1;
+  --color-amethyst: #6C5B7B;
+
+  /* Highlight Colors */
+  --color-gold: #F7B801;
+  --color-gold-bright: #FFD54F;
+  --color-quartz: #E8D7D7;
+
+  /* Derived Colors */
+  --color-card: #161720;
+  --color-mesh: #1A1A22;
+
+  /* Status Colors */
+  --color-healthy: #33FF00;
+  --color-critical: #FF5252;
+
+  /* Semantic Aliases */
+  --color-bg: var(--color-obsidian);
+  --color-bg-elevated: var(--color-card);
+  --color-text: var(--color-celestine);
+  --color-text-muted: var(--color-amethyst);
+  --color-border: var(--color-amethyst);
+  --color-accent: var(--color-gold);
+  --color-accent-hover: var(--color-gold-bright);
+
+  /* Typography - Architectural (Headings) */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-heading: 300;
+
+  /* Typography - Functional (Body) */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-body: 400;
+
+  /* Typography - Computational (Code) */
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  --font-weight-mono: 400;
+
+  /* Spacing - 8px Quantum */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+
+  /* Border */
+  --border-width: 1px;
+  --border-radius: 0px; /* Sharp corners - no curves */
+
+  /* Motion - Deterministic easing */
+  --ease-default: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  /* Layout */
+  --max-width: 1200px;
+  --max-width-content: 750px;
+  --max-width-wide: 900px;
+}

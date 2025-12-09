@@ -2,88 +2,84 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Stux OS">
+<BaseLayout title="Daemon Core" description="The deterministic foundation beneath multi-agent intelligence.">
   <section class="hero">
-    <h1>Stux OS</h1>
-    <p class="subtitle">Run your own AI operating system.</p>
-    <p class="pitch">
-      Stux OS is a new kind of operating layer for the age of AI agents. It gives you
-      one place to plug in different models and tools, wrap them in clear boundaries,
-      and put them to work on the projects that actually matter to you.
+    <h1>Daemon Core</h1>
+    <p class="hero-tagline">The deterministic foundation beneath multi-agent intelligence.</p>
+    <p class="hero-description">
+      Daemon Core orchestrates reasoning, distributes workloads, and refracts intent
+      through a crystalline mesh of agents. Intelligence emerges from impeccable order.
     </p>
-    <p class="pitch">
-      No more scattered prompts and half-remembered chats. Stux helps your assistants
-      feel like part of a stable environment, not just another tab.
+    <p class="hero-description">
+      Not an application. Not an assistant. The structural layer that enables
+      multi-agent systems to operate with precision and clarity.
     </p>
-    <div class="cta">
-      <a href="/daemon" class="btn primary">Meet the DaemonCore Kernel</a>
+    <div class="hero-cta">
+      <a href="/daemon" class="btn-primary">Initialize Kernel</a>
     </div>
   </section>
 
-  <section class="features">
-    <h2 class="section-title">Why Stux OS?</h2>
+  <section class="section">
+    <h2 class="section-title">Architecture</h2>
     <p class="section-intro">
-      AI has moved fast. The systems around it haven't. Most people now juggle multiple
-      models, tools, and browser tabs just to get simple work done. Stux OS is the
-      missing layer that turns all of that into something coherent.
+      Every component reflects structured, predictable architecture.
+      Intelligence arises from order. Stability emerges from constraint.
     </p>
-    <div class="feature-grid">
+    <div class="grid grid-3">
       <div class="feature">
-        <h3>One Home for Your Agents</h3>
+        <h3>Deterministic</h3>
         <p>
-          Bring different AI providers and tools together under a single way of working.
-          Swap models in and out without rebuilding your entire setup from scratch.
+          Every line, corner, and behavior reflects a structured, predictable
+          architecture. Same inputs produce same outputs.
         </p>
       </div>
       <div class="feature">
-        <h3>Predictable Behaviour</h3>
+        <h3>Orchestrated</h3>
         <p>
-          Stux focuses on repeatability. The goal is simple: the same inputs and
-          context should lead to the same kind of output, regardless of which
-          underlying model you're using.
+          Workloads distribute through a crystalline mesh. Agents coordinate
+          without collision. Intent refracts cleanly.
         </p>
       </div>
       <div class="feature">
-        <h3>Human-Controlled by Design</h3>
+        <h3>Foundational</h3>
         <p>
-          Stux is built around human oversight. You decide what agents are there to
-          do and how much freedom they get. They work inside your rules – not the
-          other way around.
+          Other systems build atop Daemon Core. It provides the substrate
+          for multi-agent computation.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="components">
-    <h2 class="section-title">The Stux Platform</h2>
+  <section class="section">
+    <h2 class="section-title">System Components</h2>
     <p class="section-intro">
-      Stux OS will grow over time. The first building block is DaemonCore – a kernel
-      that keeps agents organised, on-task, and inside clear boundaries.
+      The Daemon Core ecosystem comprises modular subsystems.
+      Each operates independently. Together, they form the foundation.
     </p>
-    <div class="component-grid">
-      <a href="/daemon" class="component-card">
-        <h3>DaemonCore</h3>
+    <div class="grid grid-3">
+      <a href="/daemon" class="card card-interactive">
+        <h3>Kernel</h3>
         <p>
-          The core kernel behind Stux OS. It gives agents a structured way to start up,
-          understand where they are, and stay aligned with your priorities.
+          The core orchestration layer. Boot sequences, safety scaling,
+          vendor isolation, and multi-agent coordination.
         </p>
-        <span class="badge active">In Active Development</span>
+        <span class="badge badge-active">Active</span>
       </a>
-      <div class="component-card coming-soon">
-        <h3>Stux SDK</h3>
+      <div class="card coming-soon">
+        <h3>SDK</h3>
         <p>
-          Developer tooling for wiring existing apps, automations, and workflows into
-          the Stux way of working – without throwing anything away.
+          Developer tooling for constructing Daemon Core-native agents
+          and integrations.
         </p>
-        <span class="badge">Coming Soon</span>
+        <span class="badge">Pending</span>
       </div>
-      <div class="component-card coming-soon">
-        <h3>Stux Hub</h3>
+      <div class="card coming-soon">
+        <h3>Hub</h3>
         <p>
-          A future control centre for managing agent setups, profiles, and installations
-          across machines, teams, and environments.
+          Central registry for agents, profiles, and shared configurations
+          across deployments.
         </p>
-        <span class="badge">Coming Soon</span>
+        <span class="badge">Pending</span>
       </div>
     </div>
   </section>
@@ -91,188 +87,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="status">
     <h2>Status</h2>
     <p>
-      Stux OS is an early-stage project. The current focus is on proving and hardening
-      the DaemonCore kernel in real-world use, then opening up a clear path for
-      developers and teams who want to run AI on their own terms.
+      Kernel specification stabilising. Core boot protocol and safety framework defined.
+      System under active development.
     </p>
   </section>
 </BaseLayout>
-
-<style>
-  .hero {
-    text-align: center;
-    padding: 6rem 0 4rem;
-  }
-
-  .hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--color-text);
-    margin-bottom: 1rem;
-    letter-spacing: -0.03em;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-    color: var(--color-text-muted);
-    margin-bottom: 2rem;
-  }
-
-  .pitch {
-    max-width: 650px;
-    margin: 0 auto 1.25rem;
-    font-size: 1.1rem;
-    line-height: 1.7;
-  }
-
-  .cta {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .btn {
-    padding: 0.875rem 2rem;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.2s;
-    text-decoration: none;
-  }
-
-  .btn.primary {
-    background: var(--color-accent);
-    color: white;
-  }
-
-  .btn.primary:hover {
-    background: var(--color-accent-hover);
-    transform: translateY(-1px);
-  }
-
-  .features {
-    padding: 4rem 0;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .section-title {
-    font-size: 1.75rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .section-intro {
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    text-align: center;
-    color: var(--color-text-muted);
-  }
-
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-
-  .feature {
-    background: var(--color-bg-card);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--color-border);
-  }
-
-  .feature h3 {
-    font-size: 1.25rem;
-    color: var(--color-text);
-    margin: 0 0 0.75rem;
-  }
-
-  .feature p {
-    color: var(--color-text-muted);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .components {
-    padding: 4rem 0;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .component-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .component-card {
-    background: var(--color-bg-card);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--color-border);
-    text-decoration: none;
-    transition: all 0.2s;
-    position: relative;
-  }
-
-  .component-card:hover:not(.coming-soon) {
-    border-color: var(--color-accent);
-    transform: translateY(-2px);
-  }
-
-  .component-card.coming-soon {
-    opacity: 0.7;
-  }
-
-  .component-card h3 {
-    font-size: 1.25rem;
-    color: var(--color-text);
-    margin: 0 0 0.5rem;
-  }
-
-  .component-card p {
-    color: var(--color-text-muted);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-
-  .badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: var(--color-bg-elevated);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .badge.active {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-  }
-
-  .status {
-    text-align: center;
-    padding: 4rem 0;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .status p {
-    max-width: 600px;
-    margin: 0 auto;
-    color: var(--color-text-muted);
-  }
-
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-
-    .subtitle {
-      font-size: 1.25rem;
-    }
-  }
-</style>

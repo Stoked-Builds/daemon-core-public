@@ -2,126 +2,97 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="FAQ - DaemonCore" description="Frequently asked questions about DaemonCore, the autonomous agent kernel.">
-  <article>
-    <h1>Frequently Asked Questions</h1>
+<BaseLayout title="FAQ - Daemon Core" description="Frequently asked questions about Daemon Core.">
+  <article class="article">
+    <h1>FAQ</h1>
 
     <div class="faq-item">
-      <h2>What is DaemonCore?</h2>
+      <h2>What is Daemon Core?</h2>
       <p>
-        DaemonCore is a small kernel that runs underneath your AI assistants. It gives
-        them a shared rulebook, a sense of scope, and a more consistent way of working
-        across projects and environments.
+        A kernel layer for AI agents. It provides structural constraints,
+        context management, and coordination protocols. Agents operate
+        within defined boundaries with predictable behavior.
       </p>
     </div>
 
     <div class="faq-item">
-      <h2>Is DaemonCore an AI model?</h2>
+      <h2>Is Daemon Core an AI model?</h2>
       <p>
-        No. DaemonCore does not replace or compete with the models you already use.
-        It sits alongside them as an operating layer, shaping how they behave rather
-        than what they are capable of in raw terms.
+        No. Daemon Core operates alongside existing models. It does not
+        replace them. It provides the orchestration substrate they run on.
       </p>
     </div>
 
     <div class="faq-item">
-      <h2>How is this different from "just prompting"?</h2>
+      <h2>How does this differ from prompt engineering?</h2>
       <p>
-        Traditional prompting treats every conversation as a clean slate. DaemonCore
-        assumes your work is ongoing. It:
+        Prompt engineering operates per-request. Daemon Core operates at
+        the environment level:
       </p>
       <ul>
-        <li>encourages a repeatable start-up process for assistants;</li>
-        <li>keeps basic project and task context in view; and</li>
-        <li>puts boundaries around what assistants should and should not touch.</li>
+        <li>Persistent context across sessions.</li>
+        <li>Structural constraints, not advisory guidelines.</li>
+        <li>Coordination protocols for multi-agent operation.</li>
       </ul>
       <p>
-        You still write prompts – but they run inside a more structured environment.
+        Prompts still exist. They execute within the Daemon Core environment.
       </p>
     </div>
 
     <div class="faq-item">
-      <h2>Which AI providers can I use with DaemonCore?</h2>
+      <h2>Which AI providers are supported?</h2>
       <p>
-        The design is vendor-agnostic. It is intended to support a mix of popular
-        providers over time, and to make it easier to switch or combine models without
-        redesigning everything.
+        Architecture is vendor-agnostic. Current implementation supports
+        multiple providers through isolated configuration. New providers
+        integrate without restructuring existing deployments.
       </p>
     </div>
 
     <div class="faq-item">
-      <h2>How does the safety side work?</h2>
+      <h2>How does safety work?</h2>
       <p>
-        At a high level, DaemonCore is opinionated about scope. It is built on the
-        idea that assistants should be constrained by default, with clearer rules
-        about where they are involved and when a human needs to stay in the loop.
+        Safety is architectural. Agents operate under constraints determined
+        by environment trust level. Higher-trust environments may receive
+        expanded permissions. Lower-trust environments are restricted by default.
       </p>
     </div>
 
     <div class="faq-item">
       <h2>What is the relationship to Stux OS?</h2>
       <p>
-        Stux OS is the broader operating system for running AI agents in your own
-        environment. DaemonCore is the kernel at its heart – the part that focuses on
-        behaviour, boundaries, and coordination. Other Stux components will grow up
-        around that core.
+        Daemon Core is the kernel component of Stux OS. Stux OS provides
+        the broader operating environment for multi-agent systems.
+        Daemon Core handles orchestration, boundaries, and coordination.
       </p>
     </div>
 
     <div class="faq-item">
-      <h2>Can multiple assistants work together?</h2>
+      <h2>Can multiple agents work together?</h2>
       <p>
-        Yes. DaemonCore is designed with multi-assistant workflows in mind. It provides
-        a shared sense of context and simple coordination hooks so different assistants
-        can work on the same stream of work over time without losing the thread.
+        Yes. Multi-agent coordination is core functionality:
+      </p>
+      <ul>
+        <li>Context handoff between agents.</li>
+        <li>Scope isolation to prevent conflicts.</li>
+        <li>Shared state through defined protocols.</li>
+      </ul>
+    </div>
+
+    <div class="faq-item">
+      <h2>Does this require API changes?</h2>
+      <p>
+        No. Daemon Core operates as an orchestration layer. Existing
+        API integrations remain unchanged. The kernel manages context
+        and coordination above the API level.
       </p>
     </div>
 
     <div class="faq-item">
-      <h2>Do I have to change how I call existing APIs?</h2>
+      <h2>How can I follow development?</h2>
       <p>
-        No. DaemonCore is intended to sit alongside existing integrations and tooling.
-        It focuses on how assistants are initialised and how context is managed, not
-        on replacing your infrastructure.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h2>How can I follow progress?</h2>
-      <p>
-        The best way to keep an eye on DaemonCore is via the public materials and
-        updates linked from the GitHub repository, along with occasional posts on
-        the blog.
+        Public materials and specification available via GitHub repository.
+        Development updates posted to the blog.
       </p>
     </div>
   </article>
 </BaseLayout>
-
-<style>
-  article {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-
-  .faq-item {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .faq-item:last-child {
-    border-bottom: none;
-  }
-
-  .faq-item h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .faq-item p:last-child,
-  .faq-item ul:last-child,
-  .faq-item ol:last-child {
-    margin-bottom: 0;
-  }
-</style>

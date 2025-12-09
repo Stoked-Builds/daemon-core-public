@@ -4,50 +4,53 @@
 <footer>
   <div class="footer-content">
     <div class="footer-links">
-      <a href="/">Stux Platform</a>
-      <span class="separator">·</span>
-      <a href="/daemon">DaemonCore</a>
-      <span class="separator">·</span>
+      <a href="/">Stux OS</a>
+      <span class="separator">/</span>
+      <a href="/daemon">Daemon Core</a>
+      <span class="separator">/</span>
       <a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <p class="copyright">&copy; 2025 Stux Platform</p>
+    <p class="copyright">Daemon Core 2025</p>
   </div>
 </footer>
 
 <style>
   footer {
     text-align: center;
-    padding: 2rem;
+    padding: var(--space-4);
     color: var(--color-text-muted);
-    border-top: 1px solid var(--color-border);
+    border-top: var(--border-width) solid var(--color-amethyst);
     margin-top: auto;
   }
 
   .footer-content {
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
   }
 
   .footer-links {
-    margin-bottom: 0.75rem;
+    margin-bottom: var(--space-1);
   }
 
   .footer-links a {
     color: var(--color-text-muted);
     font-size: 0.9rem;
+    font-family: var(--font-body);
   }
 
   .footer-links a:hover {
-    color: var(--color-text);
+    color: var(--color-accent);
   }
 
   .separator {
-    margin: 0 0.75rem;
-    color: var(--color-border);
+    margin: 0 var(--space-1);
+    color: var(--color-amethyst);
   }
 
   .copyright {
-    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
     margin: 0;
+    color: var(--color-amethyst);
   }
 </style>
