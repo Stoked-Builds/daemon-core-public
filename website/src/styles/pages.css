@@ -211,9 +211,16 @@
 .problem-grid,
 .enables-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-4);
   margin: var(--space-4) 0;
+}
+
+@media (max-width: 700px) {
+  .problem-grid,
+  .enables-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .problem,
