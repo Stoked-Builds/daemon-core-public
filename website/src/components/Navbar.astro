@@ -5,14 +5,14 @@ const isDaemonSection = currentPath.startsWith('/daemon');
 
 <nav>
   <div class="nav-container">
-    <a href="/" class="logo">Daemon Core</a>
+    <a href="/" class="logo">DaemonCore</a>
     <ul class="nav-links">
       <li><a href="/" class:list={[{ active: currentPath === '/' }]}>Home</a></li>
       <li><a href="/daemon" class:list={[{ active: isDaemonSection }]}>Kernel</a></li>
       {isDaemonSection && (
         <>
-          <li><a href="/daemon/overview" class:list={[{ active: currentPath === '/daemon/overview' }]}>Overview</a></li>
-          <li><a href="/daemon/architecture" class:list={[{ active: currentPath === '/daemon/architecture' }]}>Architecture</a></li>
+          <li><a href="/daemon/what-it-is" class:list={[{ active: currentPath.startsWith('/daemon/what-it-is') || currentPath.startsWith('/daemon/what-it-isnt') || currentPath.startsWith('/daemon/why-different') }]}>What Is It</a></li>
+          <li><a href="/daemon/comparisons" class:list={[{ active: currentPath === '/daemon/comparisons' }]}>Comparisons</a></li>
           <li><a href="/daemon/faq" class:list={[{ active: currentPath === '/daemon/faq' }]}>FAQ</a></li>
           <li><a href="/daemon/blog" class:list={[{ active: currentPath.startsWith('/daemon/blog') }]}>Blog</a></li>
         </>

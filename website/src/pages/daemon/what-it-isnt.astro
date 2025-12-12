@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="What DaemonCore Is Not - DaemonCore" description="DaemonCore is not an AI model, not an orchestrator, not a framework. Clear boundaries on what this governance layer does and doesn't do.">
+  <article class="article">
+    <h1>What DaemonCore Is Not</h1>
+
+    <p class="lead">
+      Understanding what DaemonCore <em>isn't</em> helps clarify what it is.
+      These are the most common misconceptions.
+    </p>
+
+    <div class="not-item">
+      <h2>Not an AI Model</h2>
+      <p>
+        DaemonCore does not generate text, reason about problems, or produce outputs.
+        It operates <em>alongside</em> existing models — Claude, GPT, Gemini, open-source LLMs.
+        These models do the reasoning. DaemonCore provides the governance layer they operate within.
+      </p>
+    </div>
+
+    <div class="not-item">
+      <h2>Not an Orchestrator</h2>
+      <p>
+        Orchestrators like LangChain, CrewAI, or AutoGen coordinate agent workflows.
+        They decide which agent does what and when. DaemonCore operates <em>beneath</em>
+        orchestrators. It defines what agents are <em>allowed</em> to do, not what they
+        <em>should</em> do.
+      </p>
+      <p>
+        Think of it this way: orchestrators manage traffic flow; DaemonCore defines the roads.
+      </p>
+    </div>
+
+    <div class="not-item">
+      <h2>Not an Agent Framework</h2>
+      <p>
+        Agent frameworks provide scaffolding for building AI agents — memory management,
+        tool integration, conversation handling. DaemonCore doesn't build agents. It governs
+        agents built with <em>any</em> framework.
+      </p>
+    </div>
+
+    <div class="not-item">
+      <h2>Not Prompt Engineering</h2>
+      <p>
+        Prompt engineering operates per-request. You craft instructions and hope the
+        model follows them. DaemonCore operates at the <em>environment</em> level:
+      </p>
+      <ul>
+        <li>Constraints are structural, not advisory</li>
+        <li>Boundaries persist across sessions</li>
+        <li>Rules cannot be talked around</li>
+      </ul>
+      <p>
+        Prompts still exist. They execute <em>within</em> the DaemonCore environment.
+      </p>
+    </div>
+
+    <div class="not-item">
+      <h2>Not a Chatbot or Interface</h2>
+      <p>
+        DaemonCore has no user interface. It doesn't chat. It doesn't respond to queries.
+        It's infrastructure — the governance layer that other systems build upon.
+      </p>
+    </div>
+
+    <div class="not-item">
+      <h2>Not Vendor-Specific</h2>
+      <p>
+        DaemonCore is designed for multi-vendor operation. It's not tied to OpenAI,
+        Anthropic, Google, or any specific provider. Different models operate under
+        unified governance with strict isolation between them.
+      </p>
+    </div>
+
+    <div class="not-item">
+      <h2>Not a Security Product</h2>
+      <p>
+        While DaemonCore enforces safety boundaries, it's not a security tool in the
+        traditional sense. It doesn't scan for vulnerabilities or block attacks.
+        It provides <em>architectural</em> safety — ensuring agents cannot exceed
+        defined capabilities.
+      </p>
+    </div>
+
+    <h2>The Distinction Matters</h2>
+    <p>
+      These boundaries aren't pedantic. They reflect a specific architectural position:
+      governance sits beneath orchestration, not alongside it. This position enables
+      enforcement that orchestrators cannot override.
+    </p>
+    <p>
+      When governance is a feature of the orchestrator, it can be bypassed by the
+      orchestrator. When governance is the <em>foundation</em>, it cannot.
+    </p>
+
+    <div class="next-links">
+      <a href="/daemon/what-it-is" class="link-card">
+        <h3>What It Is</h3>
+        <p>The governance layer for multi-agent systems.</p>
+      </a>
+      <a href="/daemon/why-different" class="link-card">
+        <h3>Why This Is Different</h3>
+        <p>The gap in today's stack and why governance matters.</p>
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+
+  .not-item {
+    margin-bottom: var(--space-5);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-amethyst);
+  }
+
+  .not-item:last-of-type {
+    border-bottom: none;
+  }
+
+  .not-item h2 {
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+  }
+
+  .next-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-amethyst);
+  }
+</style>
