@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <defs>
+    <linearGradient id="safe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="300" fill="#0a0a0a"/>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" fill="#e5e5e5" font-family="system-ui" font-size="18" font-weight="300">Safety Scaling Matrix</text>
+
+  <!-- Sandbox Mode -->
+  <g transform="translate(50,60)">
+    <rect x="0" y="0" width="180" height="180" rx="8" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" fill="#22c55e" font-family="system-ui" font-size="14" font-weight="600">SANDBOX</text>
+    <text x="90" y="55" text-anchor="middle" fill="#a3a3a3" font-family="system-ui" font-size="12">Autonomy: Low</text>
+    <line x1="20" y1="70" x2="160" y2="70" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" fill="#737373" font-family="system-ui" font-size="11">Reads only</text>
+    <text x="20" y="115" fill="#737373" font-family="system-ui" font-size="11">All writes require approval</text>
+    <text x="20" y="135" fill="#737373" font-family="system-ui" font-size="11">No shell execution</text>
+    <text x="20" y="155" fill="#737373" font-family="system-ui" font-size="11">Network: GET only</text>
+    <rect x="60" y="165" width="60" height="6" rx="3" fill="#22c55e" opacity="0.3"/>
+    <rect x="60" y="165" width="15" height="6" rx="3" fill="#22c55e"/>
+  </g>
+
+  <!-- Controlled Mode -->
+  <g transform="translate(260,60)">
+    <rect x="0" y="0" width="180" height="180" rx="8" fill="rgba(234,179,8,0.1)" stroke="#eab308" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" fill="#eab308" font-family="system-ui" font-size="14" font-weight="600">CONTROLLED</text>
+    <text x="90" y="55" text-anchor="middle" fill="#a3a3a3" font-family="system-ui" font-size="12">Autonomy: Medium</text>
+    <line x1="20" y1="70" x2="160" y2="70" stroke="#eab308" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" fill="#737373" font-family="system-ui" font-size="11">Safe reads auto-approved</text>
+    <text x="20" y="115" fill="#737373" font-family="system-ui" font-size="11">Destructive ops need approval</text>
+    <text x="20" y="135" fill="#737373" font-family="system-ui" font-size="11">Shell with timeout</text>
+    <text x="20" y="155" fill="#737373" font-family="system-ui" font-size="11">Network: Full (rate limited)</text>
+    <rect x="60" y="165" width="60" height="6" rx="3" fill="#eab308" opacity="0.3"/>
+    <rect x="60" y="165" width="35" height="6" rx="3" fill="#eab308"/>
+  </g>
+
+  <!-- Dangerous Mode -->
+  <g transform="translate(470,60)">
+    <rect x="0" y="0" width="180" height="180" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" fill="#ef4444" font-family="system-ui" font-size="14" font-weight="600">DANGEROUS</text>
+    <text x="90" y="55" text-anchor="middle" fill="#a3a3a3" font-family="system-ui" font-size="12">Autonomy: High</text>
+    <line x1="20" y1="70" x2="160" y2="70" stroke="#ef4444" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" fill="#737373" font-family="system-ui" font-size="11">All operations allowed</text>
+    <text x="20" y="115" fill="#737373" font-family="system-ui" font-size="11">Audit-only (no blocking)</text>
+    <text x="20" y="135" fill="#737373" font-family="system-ui" font-size="11">Full shell access</text>
+    <text x="20" y="155" fill="#737373" font-family="system-ui" font-size="11">Network: Unrestricted</text>
+    <rect x="60" y="165" width="60" height="6" rx="3" fill="#ef4444" opacity="0.3"/>
+    <rect x="60" y="165" width="55" height="6" rx="3" fill="#ef4444"/>
+  </g>
+
+  <!-- Arrow labels -->
+  <text x="350" y="270" text-anchor="middle" fill="#525252" font-family="system-ui" font-size="11">Increasing Autonomy</text>
+  <path d="M180 265 L520 265" stroke="#525252" stroke-width="1" marker-end="url(#arrow2)"/>
+
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#525252"/>
+    </marker>
+  </defs>
+</svg>
