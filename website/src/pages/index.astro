@@ -111,6 +111,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <section class="section section-early-access">
+    <h2 class="section-title">Early Access</h2>
+    <p class="section-intro">
+      DaemonCore is in private development. We're selectively opening access
+      to teams building production multi-agent systems.
+    </p>
+    <div class="ea-cta">
+      <a href="/early-access" class="btn-primary">Register Interest</a>
+    </div>
+  </section>
+
   <section class="status">
     <h2>Status</h2>
     <p>
@@ -203,5 +214,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-align: center;
       gap: var(--space-1);
     }
+  }
+
+  .section-early-access {
+    background: rgba(247, 184, 1, 0.05);
+    border: var(--border-width) solid var(--color-accent);
+    padding: var(--space-5) var(--space-4);
+    margin: var(--space-4) 0;
+    text-align: center;
+  }
+
+  .ea-cta {
+    margin-top: var(--space-3);
   }
 </style>

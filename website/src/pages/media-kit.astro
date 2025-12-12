@@ -1,0 +1,350 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Media Kit - DaemonCore" description="Press and creator resources for DaemonCore. Approved descriptions, diagrams, and usage guidelines.">
+  <article class="article article-wide">
+    <header class="mk-header">
+      <h1>Media Kit</h1>
+      <p class="mk-tagline">
+        Resources for press, creators, and anyone communicating about DaemonCore.
+      </p>
+    </header>
+
+    <section class="mk-section">
+      <h2>Approved Descriptions</h2>
+
+      <div class="mk-description">
+        <h3>One-liner</h3>
+        <blockquote class="mk-quote">
+          DaemonCore is the governance layer for multi-agent AI systems.
+        </blockquote>
+        <button class="mk-copy" data-text="DaemonCore is the governance layer for multi-agent AI systems.">Copy</button>
+      </div>
+
+      <div class="mk-description">
+        <h3>Two-liner</h3>
+        <blockquote class="mk-quote">
+          DaemonCore provides the OS-level foundation for AI agents. It enforces
+          safety boundaries and coordination rules that orchestrators cannot override.
+        </blockquote>
+        <button class="mk-copy" data-text="DaemonCore provides the OS-level foundation for AI agents. It enforces safety boundaries and coordination rules that orchestrators cannot override.">Copy</button>
+      </div>
+
+      <div class="mk-description">
+        <h3>Paragraph</h3>
+        <blockquote class="mk-quote">
+          DaemonCore is a governance layer that sits beneath orchestration frameworks.
+          It defines what agents are allowed to do, enforces safety boundaries, and
+          provides the structural foundation for multi-agent coordination. Unlike
+          orchestrators that coordinate workflows, DaemonCore enforces the rules
+          those workflows operate under.
+        </blockquote>
+        <button class="mk-copy" data-text="DaemonCore is a governance layer that sits beneath orchestration frameworks. It defines what agents are allowed to do, enforces safety boundaries, and provides the structural foundation for multi-agent coordination. Unlike orchestrators that coordinate workflows, DaemonCore enforces the rules those workflows operate under.">Copy</button>
+      </div>
+    </section>
+
+    <section class="mk-section">
+      <h2>Key Messages</h2>
+      <ul class="mk-messages">
+        <li><strong>Not an orchestrator</strong> — DaemonCore operates <em>beneath</em> orchestration, not alongside it</li>
+        <li><strong>Not an AI model</strong> — It works with existing models (Claude, GPT, Gemini, etc.)</li>
+        <li><strong>Safety by architecture</strong> — Boundaries are structural, not advisory</li>
+        <li><strong>Vendor isolation</strong> — Multiple providers under unified governance</li>
+        <li><strong>Deterministic foundation</strong> — Same inputs produce same behavior</li>
+      </ul>
+    </section>
+
+    <section class="mk-section">
+      <h2>Diagrams</h2>
+      <p class="mk-note">
+        These diagrams are approved for public use. Right-click to save or use
+        the download links.
+      </p>
+
+      <div class="mk-diagrams">
+        <div class="mk-diagram">
+          <h3>Stack Position</h3>
+          <p>Shows where DaemonCore sits in the AI stack.</p>
+          <img src="/images/diagrams/stack-position.svg" alt="DaemonCore Stack Position" />
+          <a href="/images/diagrams/stack-position.svg" download class="btn-secondary mk-download">Download SVG</a>
+        </div>
+
+        <div class="mk-diagram">
+          <h3>Today vs With DaemonCore</h3>
+          <p>Illustrates the gap in current AI systems.</p>
+          <img src="/images/diagrams/today-vs-daemoncore.svg" alt="Today vs With DaemonCore" />
+          <a href="/images/diagrams/today-vs-daemoncore.svg" download class="btn-secondary mk-download">Download SVG</a>
+        </div>
+
+        <div class="mk-diagram">
+          <h3>Architecture Overview</h3>
+          <p>Conceptual view of governance components.</p>
+          <img src="/images/diagrams/architecture-overview.svg" alt="DaemonCore Architecture" />
+          <a href="/images/diagrams/architecture-overview.svg" download class="btn-secondary mk-download">Download SVG</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mk-section">
+      <h2>Logo Usage</h2>
+      <div class="mk-logo-section">
+        <div class="mk-logo-display">
+          <img src="/favicon.svg" alt="DaemonCore Logo" class="mk-logo" />
+        </div>
+        <div class="mk-logo-info">
+          <h3>Guidelines</h3>
+          <ul>
+            <li>Use the logo as provided — do not modify colors or proportions</li>
+            <li>Maintain clear space around the logo (minimum 8px)</li>
+            <li>Do not add effects, shadows, or outlines</li>
+            <li>Do not place on busy backgrounds</li>
+          </ul>
+          <a href="/favicon.svg" download="daemoncore-logo.svg" class="btn-secondary mk-download">Download Logo SVG</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mk-section mk-donts">
+      <h2>What NOT to Say</h2>
+      <p class="mk-note">
+        Please avoid these phrases and claims when discussing DaemonCore.
+      </p>
+      <div class="mk-dont-grid">
+        <div class="mk-dont">
+          <h3>No timelines</h3>
+          <p>Don't state specific launch dates or availability timelines.</p>
+        </div>
+        <div class="mk-dont">
+          <h3>No pricing</h3>
+          <p>Don't mention pricing, licensing terms, or commercial details.</p>
+        </div>
+        <div class="mk-dont">
+          <h3>No hype</h3>
+          <p>Avoid "revolutionary", "game-changing", or similar superlatives.</p>
+        </div>
+        <div class="mk-dont">
+          <h3>No competitors</h3>
+          <p>Don't disparage specific companies or products.</p>
+        </div>
+        <div class="mk-dont">
+          <h3>No internals</h3>
+          <p>Don't speculate about implementation details or mechanisms.</p>
+        </div>
+        <div class="mk-dont">
+          <h3>No promises</h3>
+          <p>Don't commit to features, capabilities, or outcomes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mk-section">
+      <h2>Contact</h2>
+      <p>
+        For press inquiries or additional resources, please
+        <a href="https://github.com/stux-os/daemon-core-public/issues">open an issue on GitHub</a>
+        or reach out through the repository.
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .mk-header {
+    text-align: center;
+    padding-bottom: var(--space-4);
+    border-bottom: var(--border-width) solid var(--color-amethyst);
+    margin-bottom: var(--space-4);
+  }
+
+  .mk-header h1 {
+    margin-bottom: var(--space-2);
+  }
+
+  .mk-tagline {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+  }
+
+  .mk-section {
+    margin-bottom: var(--space-6);
+  }
+
+  .mk-section h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .mk-note {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+  }
+
+  .mk-description {
+    background: var(--color-bg-elevated);
+    border: var(--border-width) solid var(--color-amethyst);
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+
+  .mk-description h3 {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .mk-quote {
+    margin: 0 0 var(--space-2);
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+
+  .mk-copy {
+    background: transparent;
+    border: var(--border-width) solid var(--color-amethyst);
+    color: var(--color-text-muted);
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-default);
+  }
+
+  .mk-copy:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .mk-messages {
+    padding-left: var(--space-3);
+  }
+
+  .mk-messages li {
+    margin-bottom: var(--space-2);
+  }
+
+  .mk-diagrams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .mk-diagram {
+    background: var(--color-bg-elevated);
+    border: var(--border-width) solid var(--color-amethyst);
+    padding: var(--space-3);
+  }
+
+  .mk-diagram h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-1);
+  }
+
+  .mk-diagram p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+  }
+
+  .mk-diagram img {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--space-2);
+    border: var(--border-width) solid var(--color-border-subtle);
+  }
+
+  .mk-download {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .mk-logo-section {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: var(--space-4);
+    align-items: start;
+  }
+
+  .mk-logo-display {
+    background: var(--color-bg-elevated);
+    border: var(--border-width) solid var(--color-amethyst);
+    padding: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mk-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mk-logo-info h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-2);
+  }
+
+  .mk-logo-info ul {
+    margin-bottom: var(--space-3);
+    padding-left: var(--space-3);
+  }
+
+  .mk-logo-info li {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-1);
+  }
+
+  .mk-donts {
+    background: rgba(255, 82, 82, 0.05);
+    border: var(--border-width) solid var(--color-critical);
+    padding: var(--space-4);
+  }
+
+  .mk-dont-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .mk-dont h3 {
+    font-size: 0.95rem;
+    color: var(--color-critical);
+    margin-bottom: var(--space-1);
+  }
+
+  .mk-dont p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .mk-logo-section {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.mk-copy').forEach(button => {
+    button.addEventListener('click', async () => {
+      const text = button.getAttribute('data-text');
+      if (text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          const originalText = button.textContent;
+          button.textContent = 'Copied!';
+          setTimeout(() => {
+            button.textContent = originalText;
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+        }
+      }
+    });
+  });
+</script>
