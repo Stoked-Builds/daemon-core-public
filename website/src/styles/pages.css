@@ -621,6 +621,32 @@
   margin-bottom: var(--space-1);
 }
 
+.ea-coming-soon {
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.ea-coming-soon-title {
+  font-size: 1.3rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+.ea-coming-soon p {
+  color: var(--color-text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ea-coming-soon a {
+  color: var(--color-accent);
+}
+
+.ea-coming-soon a:hover {
+  text-decoration: underline;
+}
+
 .ea-faq-item {
   margin-bottom: var(--space-3);
   padding-bottom: var(--space-3);

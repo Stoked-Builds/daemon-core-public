@@ -53,72 +53,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <section class="ea-section ea-form-section">
       <h2>Register Interest</h2>
-      <p class="ea-form-intro">
-        Provide your details below. No commitment required — this registers
-        your interest for when early access becomes available.
-      </p>
-
-      <form id="early-access-form" class="ea-form">
-        <!-- Honeypot field for spam protection -->
-        <div class="ea-hp" aria-hidden="true">
-          <label for="website">Website</label>
-          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
-        </div>
-
-        <div class="ea-field">
-          <label for="name">Name <span class="required">*</span></label>
-          <input type="text" id="name" name="name" required placeholder="Your name" />
-        </div>
-
-        <div class="ea-field">
-          <label for="email">Email <span class="required">*</span></label>
-          <input type="email" id="email" name="email" required placeholder="you@company.com" />
-        </div>
-
-        <div class="ea-field">
-          <label for="company">Company / Organisation</label>
-          <input type="text" id="company" name="company" placeholder="Optional" />
-        </div>
-
-        <div class="ea-field">
-          <label for="use_case">Use Case</label>
-          <textarea id="use_case" name="use_case" rows="3" placeholder="Briefly describe your multi-agent use case (optional)"></textarea>
-        </div>
-
-        <div class="ea-field ea-checkbox">
-          <input type="checkbox" id="updates" name="updates" checked />
-          <label for="updates">Send me occasional updates about DaemonCore development</label>
-        </div>
-
-        <button type="submit" class="btn-primary ea-submit">
-          Register Interest
-        </button>
-
-        <p class="ea-privacy">
-          Your information will only be used to contact you about DaemonCore.
-          We don't share data with third parties.
-        </p>
-      </form>
-
-      <div id="form-success" class="ea-success" hidden>
-        <h3>Interest Registered</h3>
+      <div class="ea-coming-soon">
+        <p class="ea-coming-soon-title">Early Access Opening Soon</p>
         <p>
-          Thank you for your interest in DaemonCore. We've recorded your details
-          and will be in touch when early access becomes available.
-        </p>
-        <p>
-          In the meantime, you can follow development on
-          <a href="https://github.com/stux-os/daemon-core-public">GitHub</a>
-          or read the <a href="/daemon/blog">blog</a>.
-        </p>
-      </div>
-
-      <div id="form-error" class="ea-error" hidden>
-        <h3>Something went wrong</h3>
-        <p>
-          We couldn't process your registration. Please try again or
-          <a href="https://github.com/stux-os/daemon-core-public/issues">open an issue</a>
-          if the problem persists.
+          Registration will open shortly. In the meantime, you can follow
+          development on <a href="https://github.com/stux-os/daemon-core-public">GitHub</a>
+          or read the <a href="/daemon/blog">blog</a> for updates.
         </p>
       </div>
     </section>
@@ -153,74 +93,3 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
   </article>
 </BaseLayout>
-
-<script>
-  const form = document.getElementById('early-access-form') as HTMLFormElement;
-  const successMsg = document.getElementById('form-success');
-  const errorMsg = document.getElementById('form-error');
-
-  // Webhook endpoint - configure this for your backend
-  const WEBHOOK_URL = 'https://your-webhook-endpoint.example.com/early-access';
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // Check honeypot
-    const honeypot = form.querySelector<HTMLInputElement>('input[name="website"]');
-    if (honeypot?.value) {
-      // Likely a bot - silently succeed
-      showSuccess();
-      return;
-    }
-
-    // Gather form data
-    const formData = new FormData(form);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      company: formData.get('company') || '',
-      use_case: formData.get('use_case') || '',
-      updates: formData.get('updates') === 'on',
-      source: 'website-early-access',
-      timestamp: new Date().toISOString()
-    };
-
-    // Basic validation
-    if (!data.name || !data.email) {
-      return;
-    }
-
-    // Email format validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email as string)) {
-      return;
-    }
-
-    try {
-      // For demo/development: just show success
-      // In production, uncomment the fetch call and configure WEBHOOK_URL
-
-      // const response = await fetch(WEBHOOK_URL, {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(data)
-      // });
-      //
-      // if (!response.ok) throw new Error('Submission failed');
-
-      showSuccess();
-    } catch (error) {
-      showError();
-    }
-  });
-
-  function showSuccess() {
-    form.hidden = true;
-    successMsg!.hidden = false;
-    errorMsg!.hidden = true;
-  }
-
-  function showError() {
-    errorMsg!.hidden = false;
-  }
-</script>
