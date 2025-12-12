@@ -6,5 +6,6 @@ dist/
 .vscode/
 .daemoncore/
 AGENTS.md
+website/.astro/
 
 private/

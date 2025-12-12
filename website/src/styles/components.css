@@ -478,3 +478,121 @@ td:first-child {
   font-family: var(--font-mono);
   font-size: 0.85rem;
 }
+
+/* ============================================
+   CALLOUTS
+   ============================================ */
+
+.callout {
+  padding: var(--space-3);
+  border-left: var(--border-width-thick) solid var(--color-amethyst);
+  background: var(--color-bg-elevated);
+  margin: var(--space-3) 0;
+}
+
+.callout-important {
+  border-left-color: var(--color-accent);
+  background: rgba(247, 184, 1, 0.05);
+}
+
+.callout-warning {
+  border-left-color: var(--color-critical);
+  background: rgba(255, 82, 82, 0.05);
+}
+
+.callout strong {
+  color: var(--color-text);
+}
+
+/* ============================================
+   SECTION ICONS
+   ============================================ */
+
+.section-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-2);
+}
+
+.section-icon-sm {
+  width: 24px;
+  height: 24px;
+}
+
+/* ============================================
+   DIVIDERS
+   ============================================ */
+
+.divider {
+  width: 100%;
+  height: 20px;
+  margin: var(--space-4) 0;
+}
+
+.divider-subtle {
+  height: 1px;
+  background: var(--color-border-subtle);
+  margin: var(--space-3) 0;
+}
+
+/* ============================================
+   DIAGRAM CONTAINER
+   ============================================ */
+
+.diagram-container {
+  background: var(--color-bg);
+  border: var(--border-width) solid var(--color-border-subtle);
+  padding: var(--space-2);
+  margin: var(--space-3) 0;
+  overflow-x: auto;
+}
+
+.diagram-container img,
+.diagram-container svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-1);
+}
+
+/* ============================================
+   STACK DISPLAY
+   ============================================ */
+
+.stack-layer {
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width) solid var(--color-border);
+  margin-bottom: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stack-layer:first-child {
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.stack-layer-highlight {
+  border-color: var(--color-accent);
+  background: rgba(247, 184, 1, 0.05);
+}
+
+.stack-layer-highlight .stack-layer-name {
+  color: var(--color-accent);
+}
+
+.stack-layer-name {
+  font-weight: var(--font-weight-body-emphasis);
+  color: var(--color-text);
+}
+
+.stack-layer-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
