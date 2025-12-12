@@ -2,97 +2,238 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="FAQ - Daemon Core" description="Frequently asked questions about Daemon Core.">
+<BaseLayout title="FAQ - DaemonCore" description="Frequently asked questions about DaemonCore: what it is, how it works, and how to get involved.">
   <article class="article">
-    <h1>FAQ</h1>
+    <h1>Frequently Asked Questions</h1>
 
-    <div class="faq-item">
-      <h2>What is Daemon Core?</h2>
-      <p>
-        A kernel layer for AI agents. It provides structural constraints,
-        context management, and coordination protocols. Agents operate
-        within defined boundaries with predictable behavior.
-      </p>
-    </div>
+    <section class="faq-section">
+      <h2 class="faq-category">Understanding DaemonCore</h2>
 
-    <div class="faq-item">
-      <h2>Is Daemon Core an AI model?</h2>
-      <p>
-        No. Daemon Core operates alongside existing models. It does not
-        replace them. It provides the orchestration substrate they run on.
-      </p>
-    </div>
+      <div class="faq-item">
+        <h3>What is DaemonCore?</h3>
+        <p>
+          DaemonCore is a governance layer for multi-agent AI systems. It sits beneath
+          orchestration frameworks and defines what agents are allowed to do. Think of
+          it as the "operating system layer" for AI — enforcing boundaries, managing
+          permissions, and coordinating agent interactions.
+        </p>
+      </div>
 
-    <div class="faq-item">
-      <h2>How does this differ from prompt engineering?</h2>
-      <p>
-        Prompt engineering operates per-request. Daemon Core operates at
-        the environment level:
-      </p>
-      <ul>
-        <li>Persistent context across sessions.</li>
-        <li>Structural constraints, not advisory guidelines.</li>
-        <li>Coordination protocols for multi-agent operation.</li>
-      </ul>
-      <p>
-        Prompts still exist. They execute within the Daemon Core environment.
-      </p>
-    </div>
+      <div class="faq-item">
+        <h3>Is DaemonCore an AI model?</h3>
+        <p>
+          No. DaemonCore operates <em>alongside</em> existing models like Claude, GPT,
+          and Gemini. It doesn't generate text or reason about problems. It provides
+          the governance infrastructure that models operate within.
+        </p>
+      </div>
 
-    <div class="faq-item">
-      <h2>Which AI providers are supported?</h2>
-      <p>
-        Architecture is vendor-agnostic. Current implementation supports
-        multiple providers through isolated configuration. New providers
-        integrate without restructuring existing deployments.
-      </p>
-    </div>
+      <div class="faq-item">
+        <h3>Is it an orchestrator or agent framework?</h3>
+        <p>
+          No. Orchestrators like LangChain and CrewAI coordinate agent workflows.
+          DaemonCore operates <em>beneath</em> orchestrators, enforcing rules that
+          orchestrators cannot override. It's complementary, not competitive.
+        </p>
+      </div>
 
-    <div class="faq-item">
-      <h2>How does safety work?</h2>
-      <p>
-        Safety is architectural. Agents operate under constraints determined
-        by environment trust level. Higher-trust environments may receive
-        expanded permissions. Lower-trust environments are restricted by default.
-      </p>
-    </div>
+      <div class="faq-item">
+        <h3>How is this different from prompt engineering?</h3>
+        <p>
+          Prompt engineering operates per-request with advisory guidelines.
+          DaemonCore operates at the environment level with structural enforcement:
+        </p>
+        <ul>
+          <li>Boundaries persist across sessions</li>
+          <li>Constraints cannot be bypassed by clever prompting</li>
+          <li>Safety is architectural, not advisory</li>
+        </ul>
+        <p>
+          Prompts still exist — they execute <em>within</em> the governed environment.
+        </p>
+      </div>
+    </section>
 
-    <div class="faq-item">
-      <h2>What is the relationship to Stux OS?</h2>
-      <p>
-        Daemon Core is the kernel component of Stux OS. Stux OS provides
-        the broader operating environment for multi-agent systems.
-        Daemon Core handles orchestration, boundaries, and coordination.
-      </p>
-    </div>
+    <section class="faq-section">
+      <h2 class="faq-category">Technical Questions</h2>
 
-    <div class="faq-item">
-      <h2>Can multiple agents work together?</h2>
-      <p>
-        Yes. Multi-agent coordination is core functionality:
-      </p>
-      <ul>
-        <li>Context handoff between agents.</li>
-        <li>Scope isolation to prevent conflicts.</li>
-        <li>Shared state through defined protocols.</li>
-      </ul>
-    </div>
+      <div class="faq-item">
+        <h3>Which AI providers are supported?</h3>
+        <p>
+          DaemonCore is vendor-agnostic by design. The governance layer works with
+          any model provider — Claude, GPT, Gemini, open-source LLMs. Different
+          providers operate under unified governance with strict isolation between them.
+        </p>
+      </div>
 
-    <div class="faq-item">
-      <h2>Does this require API changes?</h2>
-      <p>
-        No. Daemon Core operates as an orchestration layer. Existing
-        API integrations remain unchanged. The kernel manages context
-        and coordination above the API level.
-      </p>
-    </div>
+      <div class="faq-item">
+        <h3>How does safety work?</h3>
+        <p>
+          Safety in DaemonCore is architectural, not advisory. Agents operate within
+          defined capability envelopes — boundaries they cannot exceed regardless of
+          prompting. The system enforces permissions based on environment trust level,
+          with lower-trust environments receiving stricter constraints by default.
+        </p>
+      </div>
 
-    <div class="faq-item">
-      <h2>How can I follow development?</h2>
+      <div class="faq-item">
+        <h3>Can multiple agents work together?</h3>
+        <p>
+          Yes. Multi-agent coordination is core functionality. DaemonCore manages:
+        </p>
+        <ul>
+          <li>Context handoff between agents</li>
+          <li>Scope isolation to prevent conflicts</li>
+          <li>Shared state through defined protocols</li>
+          <li>Permission inheritance across agent hierarchies</li>
+        </ul>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does this require API changes to use existing models?</h3>
+        <p>
+          No. DaemonCore operates as a governance layer above model APIs. Your existing
+          integrations with OpenAI, Anthropic, or other providers remain unchanged.
+          The governance layer wraps these interactions with enforcement.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2 class="faq-category">Availability & Access</h2>
+
+      <div class="faq-item">
+        <h3>Is DaemonCore open source?</h3>
+        <p>
+          The kernel specification is public and available for review. The full system
+          includes additional components in various stages of development. See the
+          <a href="https://github.com/stux-os/daemon-core-public">GitHub repository</a>
+          for current public materials.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I use it today?</h3>
+        <p>
+          The kernel specification is available for review and experimentation.
+          Production deployment capabilities are in active development. Follow
+          the blog for updates on availability.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the relationship to Stux OS?</h3>
+        <p>
+          DaemonCore is the kernel component of Stux OS. Stux OS provides the broader
+          operating environment for multi-agent systems. DaemonCore specifically handles
+          governance, boundaries, and coordination at the foundational layer.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can I follow development?</h3>
+        <p>
+          Public materials and specifications are available via the
+          <a href="https://github.com/stux-os/daemon-core-public">GitHub repository</a>.
+          Development updates are posted to the <a href="/daemon/blog">blog</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2 class="faq-category">Strategic Questions</h2>
+
+      <div class="faq-item">
+        <h3>Why does this matter now?</h3>
+        <p>
+          AI systems are being deployed at scale without governance infrastructure.
+          As multi-agent systems become more capable, the gap between what agents
+          <em>can</em> do and what they <em>should</em> do becomes critical.
+          DaemonCore provides the foundation for trustworthy agent deployment.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can't orchestrators handle safety themselves?</h3>
+        <p>
+          Governance at the orchestration layer can be bypassed by the orchestrator.
+          For enforcement to be reliable, it must sit <em>beneath</em> orchestration —
+          at a layer that orchestrators cannot override. This is why DaemonCore exists
+          as a separate governance layer, not as a feature of existing frameworks.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What about existing enterprise AI platforms?</h3>
+        <p>
+          Large technology companies have built sophisticated internal systems.
+          DaemonCore provides a public specification that enables similar governance
+          capabilities without requiring the massive engineering investment of building
+          everything from scratch.
+        </p>
+      </div>
+    </section>
+
+    <div class="faq-footer">
       <p>
-        Public materials and specification available via GitHub repository.
-        Development updates posted to the blog.
+        Have a question not covered here?
+        <a href="https://github.com/stux-os/daemon-core-public/issues">Open an issue on GitHub</a>.
       </p>
     </div>
   </article>
 </BaseLayout>
+
+<style>
+  .faq-section {
+    margin-bottom: var(--space-6);
+  }
+
+  .faq-category {
+    font-size: 1.3rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .faq-item {
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-amethyst);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2);
+    color: var(--color-text);
+  }
+
+  .faq-item p {
+    margin-bottom: var(--space-2);
+  }
+
+  .faq-item ul {
+    margin: var(--space-2) 0;
+    padding-left: var(--space-4);
+  }
+
+  .faq-item li {
+    margin-bottom: var(--space-1);
+  }
+
+  .faq-footer {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .faq-footer p {
+    margin: 0;
+  }
+</style>

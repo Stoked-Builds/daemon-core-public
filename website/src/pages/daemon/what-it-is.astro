@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="What DaemonCore Is - DaemonCore" description="DaemonCore is a governance layer for multi-agent systems. It defines boundaries, enforces safety, and provides deterministic foundations.">
+  <article class="article">
+    <h1>What DaemonCore Is</h1>
+
+    <p class="lead">
+      DaemonCore is a <strong>governance layer</strong> for multi-agent AI systems.
+      It sits beneath orchestration frameworks and defines what agents are allowed to do.
+    </p>
+
+    <h2>The Governance Layer</h2>
+    <p>
+      In traditional software, the operating system enforces boundaries. Applications
+      cannot exceed their permissions. Memory is isolated. Resources are managed.
+    </p>
+    <p>
+      AI systems lack this layer. Agents operate with advisory guidelines, not
+      structural constraints. Orchestrators coordinate tasks, but nothing enforces
+      the rules they operate under.
+    </p>
+    <p>
+      DaemonCore provides this missing governance layer. It defines:
+    </p>
+    <ul>
+      <li><strong>Capability envelopes</strong> — what agents are allowed to do</li>
+      <li><strong>Safety boundaries</strong> — constraints that cannot be bypassed</li>
+      <li><strong>Coordination protocols</strong> — how agents interact without collision</li>
+      <li><strong>Identity isolation</strong> — separation between different AI providers</li>
+    </ul>
+
+    <h2>Where It Sits</h2>
+    <p>
+      DaemonCore operates at a specific layer in the AI stack:
+    </p>
+
+    <div class="stack-inline">
+      <div class="stack-row">Applications <span class="stack-note">— interfaces, tools, automation</span></div>
+      <div class="stack-row">Orchestration <span class="stack-note">— frameworks that coordinate agents</span></div>
+      <div class="stack-row stack-highlight">Governance <span class="stack-note">— DaemonCore: safety, boundaries, rules</span></div>
+      <div class="stack-row">Models <span class="stack-note">— the underlying AI capabilities</span></div>
+    </div>
+
+    <p>
+      This position is critical. Governance must sit <em>beneath</em> orchestration
+      to enforce rules that orchestrators cannot override.
+    </p>
+
+    <h2>Core Functions</h2>
+
+    <h3>Safety Boundaries</h3>
+    <p>
+      Agents operate within defined capability envelopes. These boundaries are
+      architectural, not advisory. An agent cannot exceed its permissions regardless
+      of how it's prompted.
+    </p>
+
+    <h3>Deterministic Boot</h3>
+    <p>
+      Agents initialise through a defined boot sequence. Context loads in layers.
+      State is explicit at every step. Given identical inputs, agents behave identically.
+    </p>
+
+    <h3>Vendor Isolation</h3>
+    <p>
+      Different AI providers operate under unified governance without cross-contamination.
+      Claude, GPT, Gemini, and open-source models can work together while maintaining
+      strict separation of context and state.
+    </p>
+
+    <h3>Multi-Agent Coordination</h3>
+    <p>
+      When multiple agents work on related tasks, DaemonCore manages context handoff,
+      prevents conflicts, and maintains shared state through defined protocols.
+    </p>
+
+    <h2>What This Enables</h2>
+    <p>
+      With a governance layer in place, organisations can:
+    </p>
+    <ul>
+      <li><strong>Trust agent behavior</strong> — boundaries are enforced, not hoped for</li>
+      <li><strong>Scale safely</strong> — add agents without expanding risk surface</li>
+      <li><strong>Switch providers</strong> — change models without restructuring</li>
+      <li><strong>Audit operations</strong> — every action traces to defined permissions</li>
+    </ul>
+
+    <div class="next-links">
+      <a href="/daemon/what-it-isnt" class="link-card">
+        <h3>What It Isn't</h3>
+        <p>Common misconceptions and what DaemonCore does not do.</p>
+      </a>
+      <a href="/daemon/why-different" class="link-card">
+        <h3>Why This Is Different</h3>
+        <p>The gap in today's stack and why governance matters.</p>
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+
+  .stack-inline {
+    margin: var(--space-4) 0;
+    border: 1px solid var(--color-amethyst);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .stack-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-amethyst);
+    font-weight: 500;
+  }
+
+  .stack-row:last-child {
+    border-bottom: none;
+  }
+
+  .stack-highlight {
+    background: rgba(139, 92, 246, 0.15);
+    color: var(--color-accent);
+  }
+
+  .stack-note {
+    font-weight: 400;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+
+  .next-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-amethyst);
+  }
+</style>

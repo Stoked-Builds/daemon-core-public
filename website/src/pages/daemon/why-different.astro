@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Why This Is Different - DaemonCore" description="The gap in today's AI stack: orchestration without governance. Why existing tools can't solve this and what DaemonCore enables.">
+  <article class="article">
+    <h1>Why This Is Different</h1>
+
+    <p class="lead">
+      Today's AI stack has a missing layer. Orchestrators coordinate agents,
+      but nothing governs them. DaemonCore fills this gap.
+    </p>
+
+    <h2>The Current Stack</h2>
+    <p>
+      Most AI systems follow this pattern:
+    </p>
+
+    <div class="stack-current">
+      <div class="stack-row">
+        <span class="stack-label">Application</span>
+        <span class="stack-example">Chat UI, IDE extension, automation script</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-label">Orchestration</span>
+        <span class="stack-example">LangChain, CrewAI, AutoGen, custom code</span>
+      </div>
+      <div class="stack-row stack-gap">
+        <span class="stack-label">???</span>
+        <span class="stack-example">No governance layer</span>
+      </div>
+      <div class="stack-row">
+        <span class="stack-label">Model</span>
+        <span class="stack-example">Claude, GPT, Gemini, open-source LLMs</span>
+      </div>
+    </div>
+
+    <p>
+      The gap between orchestration and models is typically bridged with prompt
+      engineering — advisory instructions that agents should follow but aren't
+      required to.
+    </p>
+
+    <h2>What Breaks</h2>
+    <p>
+      Without a governance layer:
+    </p>
+
+    <div class="problem-grid">
+      <div class="problem">
+        <h3>Boundaries Are Suggestions</h3>
+        <p>
+          You tell an agent "don't access external APIs" via prompt. But there's nothing
+          <em>enforcing</em> this. A clever prompt injection or edge case can bypass it.
+        </p>
+      </div>
+      <div class="problem">
+        <h3>Multi-Agent Chaos</h3>
+        <p>
+          When multiple agents work together, who decides permissions? The orchestrator
+          can grant capabilities, but nothing prevents one agent from exceeding its scope.
+        </p>
+      </div>
+      <div class="problem">
+        <h3>Vendor Lock-In</h3>
+        <p>
+          Safety rules get baked into prompts specific to each model. Switching providers
+          means rewriting everything. Governance isn't portable.
+        </p>
+      </div>
+      <div class="problem">
+        <h3>Audit Impossibility</h3>
+        <p>
+          What did the agent actually do? Without structural boundaries, you can't verify
+          that an agent stayed within its lane. Compliance becomes guesswork.
+        </p>
+      </div>
+    </div>
+
+    <h2>Why Governance Must Be Beneath Orchestration</h2>
+    <p>
+      Some orchestrators include "safety features." Why isn't that enough?
+    </p>
+    <p>
+      Because governance at the orchestration layer can be bypassed by the orchestrator.
+      If the orchestrator decides to ignore a rule, there's nothing below it to enforce compliance.
+    </p>
+    <p>
+      Consider traditional operating systems: applications don't enforce their own
+      memory boundaries. The OS does. Applications can't decide to access memory
+      they shouldn't have — the enforcement happens at a lower level.
+    </p>
+    <p>
+      DaemonCore applies this principle to AI systems. Governance sits <em>beneath</em>
+      orchestration so that orchestrators operate within defined constraints they cannot override.
+    </p>
+
+    <h2>What This Enables</h2>
+
+    <div class="enables-grid">
+      <div class="enables-item">
+        <h3>Trustworthy Agents</h3>
+        <p>
+          When boundaries are architectural, you don't hope agents behave — you know they will.
+          Safety becomes a property of the system, not a prayer.
+        </p>
+      </div>
+      <div class="enables-item">
+        <h3>Safe Scaling</h3>
+        <p>
+          Add more agents without expanding your risk surface. Each agent inherits governance
+          from the layer below. More capability doesn't mean more vulnerability.
+        </p>
+      </div>
+      <div class="enables-item">
+        <h3>Portable Safety</h3>
+        <p>
+          Switch from Claude to GPT to Gemini without rewriting safety rules. Governance
+          is defined once and enforced regardless of which model runs beneath it.
+        </p>
+      </div>
+      <div class="enables-item">
+        <h3>Real Auditability</h3>
+        <p>
+          Every agent action traces to a defined capability. Compliance isn't "we told
+          the model not to" — it's "the system prevented it."
+        </p>
+      </div>
+    </div>
+
+    <h2>The Aha Moment</h2>
+    <p>
+      Here's the realisation that matters:
+    </p>
+    <blockquote>
+      AI systems are being deployed at scale without the governance layer that every
+      other computing environment takes for granted. We're building multi-agent
+      systems on hope and prompt engineering.
+    </blockquote>
+    <p>
+      DaemonCore is that missing layer. Not another orchestrator. Not another framework.
+      The foundation that makes orchestrators and frameworks trustworthy.
+    </p>
+
+    <div class="next-links">
+      <a href="/daemon/what-it-is" class="link-card">
+        <h3>What It Is</h3>
+        <p>The governance layer for multi-agent systems.</p>
+      </a>
+      <a href="/daemon/comparisons" class="link-card">
+        <h3>Comparisons</h3>
+        <p>How DaemonCore relates to existing tools.</p>
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+
+  .stack-current {
+    margin: var(--space-4) 0;
+    border: 1px solid var(--color-amethyst);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .stack-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-amethyst);
+  }
+
+  .stack-row:last-child {
+    border-bottom: none;
+  }
+
+  .stack-gap {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 3px solid #ef4444;
+  }
+
+  .stack-label {
+    font-weight: 500;
+  }
+
+  .stack-example {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+
+  .problem-grid,
+  .enables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-4);
+    margin: var(--space-4) 0;
+  }
+
+  .problem,
+  .enables-item {
+    padding: var(--space-3);
+    border: 1px solid var(--color-amethyst);
+    border-radius: 8px;
+  }
+
+  .problem {
+    border-left: 3px solid #ef4444;
+  }
+
+  .enables-item {
+    border-left: 3px solid var(--color-accent);
+  }
+
+  .problem h3,
+  .enables-item h3 {
+    margin-bottom: var(--space-2);
+    font-size: 1.1rem;
+  }
+
+  .problem p,
+  .enables-item p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  blockquote {
+    margin: var(--space-4) 0;
+    padding: var(--space-3) var(--space-4);
+    border-left: 3px solid var(--color-accent);
+    background: rgba(139, 92, 246, 0.1);
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  .next-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-amethyst);
+  }
+
+  @media (max-width: 600px) {
+    .stack-row {
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+  }
+</style>
