@@ -1,0 +1,427 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Early Access - DaemonCore" description="Register interest for early access to DaemonCore. Limited licences available for qualified teams building multi-agent systems.">
+  <article class="article article-wide">
+    <header class="ea-header">
+      <h1>Early Access</h1>
+      <p class="ea-tagline">
+        DaemonCore is in private development. We're selectively opening access
+        to teams building production multi-agent systems.
+      </p>
+    </header>
+
+    <section class="ea-section">
+      <h2>What to Expect</h2>
+      <div class="ea-expectations">
+        <div class="ea-expect-item">
+          <h3>Private Development</h3>
+          <p>
+            The kernel specification is public. The full system — runtime,
+            tooling, and production components — is under active private
+            development.
+          </p>
+        </div>
+        <div class="ea-expect-item">
+          <h3>Selective Access</h3>
+          <p>
+            Early access is granted to teams with real multi-agent use cases.
+            We prioritise production deployments over experimentation.
+          </p>
+        </div>
+        <div class="ea-expect-item">
+          <h3>Limited Licences</h3>
+          <p>
+            Initial licences will be limited. This ensures we can provide
+            proper support and incorporate feedback meaningfully.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ea-section">
+      <h2>After You Register</h2>
+      <ol class="ea-steps">
+        <li>You'll receive a confirmation that your interest has been recorded</li>
+        <li>When early access opens, qualified registrants will be contacted</li>
+        <li>Selected teams will receive access to private documentation and tooling</li>
+        <li>Feedback from early users will shape the production release</li>
+      </ol>
+    </section>
+
+    <section class="ea-section ea-form-section">
+      <h2>Register Interest</h2>
+      <p class="ea-form-intro">
+        Provide your details below. No commitment required — this registers
+        your interest for when early access becomes available.
+      </p>
+
+      <form id="early-access-form" class="ea-form">
+        <!-- Honeypot field for spam protection -->
+        <div class="ea-hp" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="ea-field">
+          <label for="name">Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+
+        <div class="ea-field">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com" />
+        </div>
+
+        <div class="ea-field">
+          <label for="company">Company / Organisation</label>
+          <input type="text" id="company" name="company" placeholder="Optional" />
+        </div>
+
+        <div class="ea-field">
+          <label for="use_case">Use Case</label>
+          <textarea id="use_case" name="use_case" rows="3" placeholder="Briefly describe your multi-agent use case (optional)"></textarea>
+        </div>
+
+        <div class="ea-field ea-checkbox">
+          <input type="checkbox" id="updates" name="updates" checked />
+          <label for="updates">Send me occasional updates about DaemonCore development</label>
+        </div>
+
+        <button type="submit" class="btn-primary ea-submit">
+          Register Interest
+        </button>
+
+        <p class="ea-privacy">
+          Your information will only be used to contact you about DaemonCore.
+          We don't share data with third parties.
+        </p>
+      </form>
+
+      <div id="form-success" class="ea-success" hidden>
+        <h3>Interest Registered</h3>
+        <p>
+          Thank you for your interest in DaemonCore. We've recorded your details
+          and will be in touch when early access becomes available.
+        </p>
+        <p>
+          In the meantime, you can follow development on
+          <a href="https://github.com/stux-os/daemon-core-public">GitHub</a>
+          or read the <a href="/daemon/blog">blog</a>.
+        </p>
+      </div>
+
+      <div id="form-error" class="ea-error" hidden>
+        <h3>Something went wrong</h3>
+        <p>
+          We couldn't process your registration. Please try again or
+          <a href="https://github.com/stux-os/daemon-core-public/issues">open an issue</a>
+          if the problem persists.
+        </p>
+      </div>
+    </section>
+
+    <section class="ea-section ea-faq">
+      <h2>Questions</h2>
+
+      <div class="ea-faq-item">
+        <h3>When will early access open?</h3>
+        <p>
+          We're targeting early 2025 for initial access. Timing depends on
+          development progress and the readiness of supporting documentation.
+        </p>
+      </div>
+
+      <div class="ea-faq-item">
+        <h3>Is there a cost?</h3>
+        <p>
+          Pricing has not been finalised. Early access participants may receive
+          preferential terms. We'll communicate details when access opens.
+        </p>
+      </div>
+
+      <div class="ea-faq-item">
+        <h3>What if I'm just exploring?</h3>
+        <p>
+          The <a href="https://github.com/stux-os/daemon-core-public">public specification</a>
+          is available for review. Early access is prioritised for teams with
+          production intent.
+        </p>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .ea-header {
+    text-align: center;
+    padding-bottom: var(--space-4);
+    border-bottom: var(--border-width) solid var(--color-amethyst);
+    margin-bottom: var(--space-4);
+  }
+
+  .ea-header h1 {
+    margin-bottom: var(--space-2);
+  }
+
+  .ea-tagline {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ea-section {
+    margin-bottom: var(--space-6);
+  }
+
+  .ea-section h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .ea-expectations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .ea-expect-item {
+    background: var(--color-bg-elevated);
+    border: var(--border-width) solid var(--color-amethyst);
+    padding: var(--space-3);
+  }
+
+  .ea-expect-item h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-1);
+    color: var(--color-text);
+  }
+
+  .ea-expect-item p {
+    color: var(--color-text-muted);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .ea-steps {
+    padding-left: var(--space-4);
+  }
+
+  .ea-steps li {
+    margin-bottom: var(--space-2);
+    color: var(--color-text-muted);
+  }
+
+  .ea-steps li::marker {
+    color: var(--color-accent);
+  }
+
+  .ea-form-section {
+    background: var(--color-bg-elevated);
+    border: var(--border-width) solid var(--color-amethyst);
+    padding: var(--space-4);
+  }
+
+  .ea-form-intro {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+  }
+
+  .ea-form {
+    max-width: 500px;
+  }
+
+  .ea-hp {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .ea-field {
+    margin-bottom: var(--space-3);
+  }
+
+  .ea-field label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-size: 0.9rem;
+    color: var(--color-text);
+  }
+
+  .ea-field .required {
+    color: var(--color-accent);
+  }
+
+  .ea-field input[type="text"],
+  .ea-field input[type="email"],
+  .ea-field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--color-bg);
+    border: var(--border-width) solid var(--color-amethyst);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: border-color var(--duration-fast) var(--ease-default);
+  }
+
+  .ea-field input:focus,
+  .ea-field textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+
+  .ea-field input::placeholder,
+  .ea-field textarea::placeholder {
+    color: var(--color-text-muted);
+    opacity: 0.6;
+  }
+
+  .ea-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+
+  .ea-checkbox input[type="checkbox"] {
+    margin-top: 3px;
+    accent-color: var(--color-accent);
+  }
+
+  .ea-checkbox label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  .ea-submit {
+    margin-top: var(--space-2);
+  }
+
+  .ea-privacy {
+    margin-top: var(--space-2);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    opacity: 0.8;
+  }
+
+  .ea-success,
+  .ea-error {
+    padding: var(--space-3);
+    margin-top: var(--space-3);
+  }
+
+  .ea-success {
+    background: rgba(51, 255, 0, 0.1);
+    border: var(--border-width) solid var(--color-healthy);
+  }
+
+  .ea-success h3 {
+    color: var(--color-healthy);
+    margin-bottom: var(--space-1);
+  }
+
+  .ea-error {
+    background: rgba(255, 82, 82, 0.1);
+    border: var(--border-width) solid var(--color-critical);
+  }
+
+  .ea-error h3 {
+    color: var(--color-critical);
+    margin-bottom: var(--space-1);
+  }
+
+  .ea-faq-item {
+    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-3);
+    border-bottom: var(--border-width) solid var(--color-border-subtle);
+  }
+
+  .ea-faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .ea-faq-item h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-1);
+  }
+
+  .ea-faq-item p {
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+</style>
+
+<script>
+  const form = document.getElementById('early-access-form') as HTMLFormElement;
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+
+  // Webhook endpoint - configure this for your backend
+  const WEBHOOK_URL = 'https://your-webhook-endpoint.example.com/early-access';
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Check honeypot
+    const honeypot = form.querySelector<HTMLInputElement>('input[name="website"]');
+    if (honeypot?.value) {
+      // Likely a bot - silently succeed
+      showSuccess();
+      return;
+    }
+
+    // Gather form data
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      company: formData.get('company') || '',
+      use_case: formData.get('use_case') || '',
+      updates: formData.get('updates') === 'on',
+      source: 'website-early-access',
+      timestamp: new Date().toISOString()
+    };
+
+    // Basic validation
+    if (!data.name || !data.email) {
+      return;
+    }
+
+    // Email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email as string)) {
+      return;
+    }
+
+    try {
+      // For demo/development: just show success
+      // In production, uncomment the fetch call and configure WEBHOOK_URL
+
+      // const response = await fetch(WEBHOOK_URL, {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(data)
+      // });
+      //
+      // if (!response.ok) throw new Error('Submission failed');
+
+      showSuccess();
+    } catch (error) {
+      showError();
+    }
+  });
+
+  function showSuccess() {
+    form.hidden = true;
+    successMsg!.hidden = false;
+    errorMsg!.hidden = true;
+  }
+
+  function showError() {
+    errorMsg!.hidden = false;
+  }
+</script>
