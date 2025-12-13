@@ -142,6 +142,89 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       The foundation that makes orchestrators and frameworks trustworthy.
     </p>
 
+    <h2>In Practice</h2>
+    <p class="scenario-intro">
+      Same models. Same tools. Same goals. Different environment.
+    </p>
+
+    <div class="scenario">
+      <h3>Multi-Agent Coordination</h3>
+      <div class="scenario-grid">
+        <div class="scenario-col scenario-without">
+          <h4>Without DaemonCore</h4>
+          <ul>
+            <li>Each agent operates with its own interpretation of boundaries, shaped by prompts that may be read differently by different models</li>
+            <li>When agents collaborate, coordination depends on application-level conventions that may not be consistently followed</li>
+            <li>Expanding the number of agents increases the surface area for unexpected interactions</li>
+            <li>Teams spend effort validating that agents stayed within their intended scope after the fact</li>
+            <li>Permission boundaries exist as guidance that agents are asked to respect</li>
+          </ul>
+        </div>
+        <div class="scenario-col scenario-with">
+          <h4>With DaemonCore</h4>
+          <ul>
+            <li>Agents operate within defined capability boundaries at a layer beneath the application</li>
+            <li>Coordination protocols remain consistent regardless of which models are involved</li>
+            <li>Adding agents does not proportionally increase governance complexity</li>
+            <li>Boundaries are properties of the environment, not instructions subject to interpretation</li>
+            <li>Audit records reflect what agents were permitted to do, not just what they were told</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="scenario">
+      <h3>Long-Running Workflows</h3>
+      <div class="scenario-grid">
+        <div class="scenario-col scenario-without">
+          <h4>Without DaemonCore</h4>
+          <ul>
+            <li>Session state is typically managed within prompts or application memory</li>
+            <li>When workflows span multiple sessions, context reconstruction depends on how well the application can re-establish prior state</li>
+            <li>Agents may behave differently after restarts, depending on how context is reintroduced</li>
+            <li>Continuity relies on careful prompt design and state serialisation</li>
+            <li>Investigating behavioural drift requires reviewing prompt sequences and application logs</li>
+          </ul>
+        </div>
+        <div class="scenario-col scenario-with">
+          <h4>With DaemonCore</h4>
+          <ul>
+            <li>Session state is maintained independently of individual model sessions</li>
+            <li>Workflows can resume with consistent context across restarts</li>
+            <li>Agent behaviour remains stable when operating under the same configuration</li>
+            <li>State is explicit and inspectable at defined points</li>
+            <li>Behavioural changes can be traced to configuration or context changes rather than prompt variation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="scenario">
+      <h3>Model Migration</h3>
+      <div class="scenario-grid">
+        <div class="scenario-col scenario-without">
+          <h4>Without DaemonCore</h4>
+          <ul>
+            <li>Safety rules and behavioural constraints are often embedded in prompts tailored to specific models</li>
+            <li>Switching providers typically requires adapting prompt strategies</li>
+            <li>Different models may interpret the same instructions with varying results</li>
+            <li>Migration testing focuses on whether the new model follows existing prompt patterns</li>
+            <li>Safety posture may shift when models are changed</li>
+          </ul>
+        </div>
+        <div class="scenario-col scenario-with">
+          <h4>With DaemonCore</h4>
+          <ul>
+            <li>Governance rules are defined independently of which model runs beneath them</li>
+            <li>Model changes occur within the same boundary definitions</li>
+            <li>Migration testing focuses on capability verification rather than prompt revalidation</li>
+            <li>Safety posture remains stable across provider changes</li>
+            <li>Teams can evaluate new models without restructuring their governance approach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="next-links">
       <a href="/daemon/what-it-is" class="link-card">
         <h3>What It Is</h3>
