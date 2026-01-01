@@ -7,7 +7,7 @@ const isMediaKit = currentPath.startsWith('/media-kit');
 
 <nav>
   <div class="nav-container">
-    <a href="/" class="logo">DaemonCore</a>
+    <a href="/" class="logo">{isDaemonSection ? 'DaemonCore' : 'Stux.run'}</a>
     <ul class="nav-links">
       <li><a href="/" class:list={[{ active: currentPath === '/' }]}>Home</a></li>
       <li><a href="/daemon" class:list={[{ active: isDaemonSection }]}>Kernel</a></li>

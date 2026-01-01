@@ -43,6 +43,8 @@ PAGES=(
     "/media-kit"
     "/daemon"
     "/daemon/overview"
+    "/daemon/walkthrough"
+    "/daemon/value"
     "/daemon/what-it-is"
     "/daemon/what-it-isnt"
     "/daemon/why-different"

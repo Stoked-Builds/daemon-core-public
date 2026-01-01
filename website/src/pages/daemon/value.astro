@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Business Value - DaemonCore" description="The organisational value of governance infrastructure for multi-agent AI. Risk containment, accountability, and trust at scale.">
+  <article class="article value-page">
+    <h1>Business Value</h1>
+
+    <p class="lead">
+      Multi-agent AI systems are entering production. The question for leadership
+      isn't whether to adopt them—it's how to deploy them responsibly.
+      DaemonCore provides the governance foundation.
+    </p>
+
+    <p class="value-audience">
+      This page is for engineering leadership, security leadership, and executives
+      accountable for AI deployment decisions.
+    </p>
+
+    <!-- Why Now -->
+    <section class="value-section value-why-now">
+      <h2>Why This Matters Now</h2>
+      <p>
+        AI is shifting from assistants that respond to prompts toward autonomous agents
+        that take actions. As systems move from single-model interactions to multi-agent
+        coordination, governance becomes a structural and organisational concern—not
+        just a tooling choice.
+      </p>
+    </section>
+
+    <!-- What DaemonCore Is -->
+    <section class="value-section">
+      <h2>What This Is</h2>
+      <div class="positioning-block">
+        <div class="positioning-not">
+          <h3>DaemonCore is not:</h3>
+          <ul>
+            <li>A chatbot or AI assistant</li>
+            <li>An orchestration framework</li>
+            <li>A prompt engineering toolkit</li>
+            <li>A model fine-tuning system</li>
+          </ul>
+        </div>
+        <div class="positioning-is">
+          <h3>DaemonCore is:</h3>
+          <p>
+            Governance infrastructure. The layer beneath orchestration that defines
+            what agents are permitted to do—and enforces those boundaries structurally,
+            not through instructions agents might misinterpret.
+          </p>
+        </div>
+      </div>
+      <p>
+        This distinction matters because governance cannot be an afterthought bolted onto
+        coordination logic. It must be foundational—present before agents act, not applied
+        after they've already done something unexpected.
+      </p>
+    </section>
+
+    <!-- Expectation Management -->
+    <div class="expectation-callout">
+      <h3>What DaemonCore Does Not Claim</h3>
+      <p>
+        DaemonCore does not make AI models safe, correct, or trustworthy on their own.
+        Models still reason, interpret, and produce outputs based on their training and context.
+      </p>
+      <p>
+        What DaemonCore governs is <strong>what those outputs are allowed to become</strong>—which
+        actions are permitted, which are rejected, and what gets logged. Governance provides
+        containment, validation, and attribution. It does not prevent all failures; it bounds
+        their scope and makes them auditable.
+      </p>
+    </div>
+
+    <!-- Why Governance Beneath Orchestration -->
+    <section class="value-section">
+      <h2>Why Governance Must Be Foundational</h2>
+      <p>
+        Multi-agent AI introduces a new category of operational risk. Unlike traditional
+        software, AI agents interpret instructions, make judgment calls, and take actions
+        based on context they construct themselves. This is powerful—and it's precisely
+        why governance cannot live at the application layer.
+      </p>
+      <p>
+        Orchestration frameworks coordinate agents: deciding what to do, when, and in what
+        order. Some include safety features. But governance at the orchestration layer has
+        a structural problem: it can be bypassed by the orchestrator itself. If the coordination
+        logic decides to skip a check, nothing beneath it prevents the action.
+      </p>
+      <p>
+        DaemonCore sits below orchestration. Orchestrators cannot override governance because
+        they operate above it. This is the same principle as operating system memory protection:
+        applications cannot decide to access memory they shouldn't have because enforcement
+        happens at a lower level.
+      </p>
+      <p>
+        The practical result: when something goes wrong, the failure mode changes from
+        <em>surprise</em> to <em>explicit rejection with audit trail</em>. Leaders can
+        investigate what was attempted, why it was blocked, and who requested it.
+      </p>
+    </section>
+
+    <!-- Value Pillars -->
+    <section class="value-section">
+      <h2>Value Pillars</h2>
+
+      <div class="pillar">
+        <h3>Bounded Risk</h3>
+        <p class="pillar-problem">
+          <strong>The problem:</strong> AI agents can take unexpected actions. Prompt-based
+          boundaries are advisory—agents may misinterpret them, and edge cases become
+          judgment calls the model makes alone. As systems scale, the surface area for
+          unexpected behaviour grows.
+        </p>
+        <p class="pillar-gap">
+          <strong>Why existing approaches plateau:</strong> Prompt engineering improves
+          average-case behaviour but cannot guarantee worst-case containment. Orchestration
+          frameworks coordinate well but don't enforce boundaries they themselves might bypass.
+        </p>
+        <p class="pillar-value">
+          <strong>What DaemonCore provides:</strong> Protocol validation rejects malformed
+          outputs before they become actions. Scope boundaries block access to resources
+          outside permitted paths. The risk surface becomes bounded by structure, not by
+          how carefully you've written instructions.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <h3>Attributable Actions</h3>
+        <p class="pillar-problem">
+          <strong>The problem:</strong> When something goes wrong in a multi-agent system,
+          determining what happened—and who or what was responsible—is difficult. Actions
+          blur across agents, context shifts between sessions, and audit trails are incomplete.
+        </p>
+        <p class="pillar-gap">
+          <strong>Why existing approaches plateau:</strong> Application-level logging captures
+          what the application chose to record. It cannot reliably capture what agents attempted
+          but were not shown, or actions that occurred through unexpected paths.
+        </p>
+        <p class="pillar-value">
+          <strong>What DaemonCore provides:</strong> Every action passes through the governance
+          layer. Violations are logged with full context: what was attempted, what was permitted,
+          which agent, which session. Accountability becomes a system property, not an
+          application feature.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <h3>Consistent Behaviour</h3>
+        <p class="pillar-problem">
+          <strong>The problem:</strong> AI systems behave differently across runs, models,
+          and prompt variations. The same request may produce different actions depending
+          on context the model constructs. This makes testing, validation, and trust difficult.
+        </p>
+        <p class="pillar-gap">
+          <strong>Why existing approaches plateau:</strong> Prompt engineering can improve
+          consistency but cannot enforce it. Model updates, context drift, and edge cases
+          introduce variation that instructions cannot fully control.
+        </p>
+        <p class="pillar-value">
+          <strong>What DaemonCore provides:</strong> Deterministic boot sequences ensure agents
+          start in consistent states. Template-constrained operations enforce that complex
+          tasks follow predefined structures. The model's reasoning varies; the boundaries
+          around what that reasoning can do remain stable.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <h3>Portable Governance</h3>
+        <p class="pillar-problem">
+          <strong>The problem:</strong> Safety rules get embedded in prompts specific to
+          each model provider. Switching from one model to another means rewriting safety
+          logic. Governance becomes vendor-locked.
+        </p>
+        <p class="pillar-gap">
+          <strong>Why existing approaches plateau:</strong> Each model interprets instructions
+          differently. Prompts tuned for one provider may not transfer cleanly to another.
+          Multi-model deployments multiply the maintenance burden.
+        </p>
+        <p class="pillar-value">
+          <strong>What DaemonCore provides:</strong> Governance rules are defined at the
+          infrastructure layer, independent of which model executes beneath. Switch providers,
+          update models, or run multiple models simultaneously—boundaries remain consistent
+          because they're enforced below the model layer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Guarantee to Outcome Mapping -->
+    <section class="value-section">
+      <h2>From Guarantees to Outcomes</h2>
+      <p>
+        DaemonCore V1 provides specific technical guarantees. Each translates to
+        organisational outcomes that matter to leadership.
+      </p>
+
+      <div class="guarantee-table">
+        <div class="guarantee-row guarantee-header">
+          <div class="guarantee-col">Technical Guarantee</div>
+          <div class="guarantee-col">Organisational Outcome</div>
+        </div>
+        <div class="guarantee-row">
+          <div class="guarantee-col">
+            <strong>Protocol Validation</strong>
+            <span>Outputs must match expected structure before action</span>
+          </div>
+          <div class="guarantee-col">
+            <strong>Incident Containment</strong>
+            <span>Malformed or unexpected outputs are rejected, not executed</span>
+          </div>
+        </div>
+        <div class="guarantee-row">
+          <div class="guarantee-col">
+            <strong>Schema Enforcement</strong>
+            <span>Messages validated against typed schemas</span>
+          </div>
+          <div class="guarantee-col">
+            <strong>Integration Stability</strong>
+            <span>Agent-to-agent communication follows defined contracts</span>
+          </div>
+        </div>
+        <div class="guarantee-row">
+          <div class="guarantee-col">
+            <strong>Scope Boundaries</strong>
+            <span>Resource access checked against permissions</span>
+          </div>
+          <div class="guarantee-col">
+            <strong>Data Protection</strong>
+            <span>Agents cannot access resources outside their permitted scope</span>
+          </div>
+        </div>
+        <div class="guarantee-row">
+          <div class="guarantee-col">
+            <strong>Template Constraints</strong>
+            <span>Operations follow predefined structures</span>
+          </div>
+          <div class="guarantee-col">
+            <strong>Process Compliance</strong>
+            <span>Complex tasks execute within defined procedures</span>
+          </div>
+        </div>
+        <div class="guarantee-row">
+          <div class="guarantee-col">
+            <strong>Deterministic Boot</strong>
+            <span>Agents initialise with consistent context</span>
+          </div>
+          <div class="guarantee-col">
+            <strong>Reproducibility</strong>
+            <span>Same configuration produces same initial state</span>
+          </div>
+        </div>
+        <div class="guarantee-row">
+          <div class="guarantee-col">
+            <strong>Audit Logging</strong>
+            <span>Actions and violations recorded with context</span>
+          </div>
+          <div class="guarantee-col">
+            <strong>Accountability</strong>
+            <span>What happened, when, and by which agent is traceable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What This Means for Leadership -->
+    <section class="value-section">
+      <h2>What This Means for Leadership</h2>
+
+      <div class="leadership-grid">
+        <div class="leadership-card">
+          <h3>For CEOs</h3>
+          <p>
+            Multi-agent AI can deliver significant operational leverage. The risk is
+            deploying systems that take actions leadership cannot explain or defend.
+            DaemonCore provides the structural foundation for deploying AI capabilities
+            with bounded, auditable behaviour.
+          </p>
+        </div>
+        <div class="leadership-card">
+          <h3>For CTOs</h3>
+          <p>
+            Engineering teams need to build with AI, not around it. DaemonCore separates
+            governance from application logic, allowing teams to adopt new models and
+            frameworks without rebuilding safety infrastructure. Governance becomes
+            portable across the stack.
+          </p>
+        </div>
+        <div class="leadership-card">
+          <h3>For CISOs</h3>
+          <p>
+            Security and compliance require verifiable boundaries, not advisory guidelines.
+            DaemonCore provides structural enforcement with audit trails. When questions
+            arise about what an AI system did, answers exist in logged, attributable records.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="value-section value-cta">
+      <h2>Next Steps</h2>
+      <div class="cta-grid">
+        <a href="/daemon/walkthrough" class="cta-card">
+          <h3>See It in Action</h3>
+          <p>Step through a real example of governance enforcement.</p>
+        </a>
+        <a href="/daemon" class="cta-card">
+          <h3>Explore the Kernel</h3>
+          <p>Understand the architecture and mechanisms.</p>
+        </a>
+        <a href="/early-access" class="cta-card cta-card-accent">
+          <h3>Early Access</h3>
+          <p>Join teams building production multi-agent systems.</p>
+        </a>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
