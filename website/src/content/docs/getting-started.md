@@ -10,7 +10,7 @@ DaemonCore is the deterministic foundation beneath multi-agent intelligence. Thi
 
 ## What is DaemonCore?
 
-DaemonCore orchestrates reasoning, distributes workloads, and refracts intent through a crystalline mesh of agents. It provides:
+DaemonCore is the governance layer beneath orchestration. It defines what agents are allowed to do, validates their outputs against protocols, and enforces boundaries structurally. It provides:
 
 - **Deterministic execution** - Same inputs produce same outputs
 - **Multi-agent coordination** - Agents work together without collision
@@ -21,7 +21,7 @@ DaemonCore orchestrates reasoning, distributes workloads, and refracts intent th
 
 ### The Kernel
 
-The kernel is the core orchestration layer. It handles:
+The kernel is the core governance layer. It handles:
 
 - Boot sequences and identity handshakes
 - Environment reporting and profile application

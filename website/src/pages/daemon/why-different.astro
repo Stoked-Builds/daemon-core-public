@@ -142,6 +142,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       The foundation that makes orchestrators and frameworks trustworthy.
     </p>
 
+    <h2>How DaemonCore Enforces This</h2>
+    <div class="mechanisms-list">
+      <div class="mechanism">
+        <h3>Action Protocol</h3>
+        <p>Agent outputs must match a defined protocol shape. Validation happens before execution—not after.</p>
+      </div>
+      <div class="mechanism">
+        <h3>MAX Messaging Bus</h3>
+        <p>Inter-agent messages are typed and schema-validated. Malformed messages are rejected at the routing layer.</p>
+      </div>
+      <div class="mechanism">
+        <h3>Template Operations</h3>
+        <p>Complex tasks follow predefined templates that specify scope, required checks, and output format.</p>
+      </div>
+    </div>
+
+    <div class="versioned-callout versioned-callout-compact" style="margin-top: var(--space-5);">
+      <h3>V1 vs V1.5</h3>
+      <div class="version-grid">
+        <div class="version-block version-v1">
+          <h4>V1 (Current)</h4>
+          <p>Protocol validation, schema enforcement, template constraints, audit logging. Defence through structure.</p>
+        </div>
+        <div class="version-block version-v15">
+          <h4>V1.5 (Planned)</h4>
+          <p>Cryptographic signing, hardware attestation, real-time verification. Defence through cryptographic proof.</p>
+        </div>
+      </div>
+    </div>
+
     <h2>In Practice</h2>
     <p class="scenario-intro">
       Same models. Same tools. Same goals. Different environment.

@@ -72,6 +72,124 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </section>
 
     <section class="faq-section">
+      <h2 class="faq-category">Hard Questions</h2>
+
+      <div class="faq-item">
+        <h3>Isn't this just prompts with extra steps?</h3>
+        <p>
+          A fair question. Here's the difference:
+        </p>
+        <p>
+          Prompts are <strong>instructions to the model</strong>. DaemonCore defines
+          <strong>what happens to model outputs</strong> before they become actions.
+        </p>
+        <ul>
+          <li>Prompts: "Don't access files outside this directory"</li>
+          <li>DaemonCore: Output must be protocol-shaped. Scope field validated. Access blocked if outside permitted paths.</li>
+        </ul>
+        <p>
+          The model still receives prompts. But its outputs pass through protocol validation
+          before any action occurs. A prompt can be ignored or misinterpreted. A schema
+          mismatch is rejected.
+        </p>
+        <p>
+          <strong>V1:</strong> Protocol validation, schema enforcement, scope checking.
+          The model's reasoning is still its own—we govern what that reasoning can <em>do</em>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can prompt injection override DaemonCore?</h3>
+        <p>
+          <strong>Honest answer:</strong> In V1, prompt injection can influence the model's reasoning.
+          It cannot bypass the governance layer.
+        </p>
+        <p>
+          Here's what that means:
+        </p>
+        <ul>
+          <li>
+            <strong>Injection can:</strong> Manipulate the model into producing malicious output,
+            changing its reasoning, or attempting actions outside scope.
+          </li>
+          <li>
+            <strong>Injection cannot:</strong> Make that output bypass protocol validation,
+            send messages that don't match schema, or access resources outside permitted scope.
+          </li>
+        </ul>
+        <p>
+          If a manipulated model tries to access <code>src/payments/</code> when only
+          <code>src/auth/</code> is permitted, the access is blocked. The violation is logged.
+          The model was influenced; the action was prevented.
+        </p>
+        <p>
+          <strong>V1:</strong> Detection and constraint. We log anomalous outputs and block
+          out-of-scope actions.
+        </p>
+        <p>
+          <strong>V1.5 (planned):</strong> Cryptographic action signing, hardware attestation.
+          Stronger guarantees that actions trace to legitimate requests.
+        </p>
+        <p>
+          We don't claim to prevent prompt injection. We limit what a compromised model can achieve.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Don't orchestration tools already do this?</h3>
+        <p>
+          Orchestrators coordinate. They decide <em>what</em> agents do, <em>when</em>,
+          and in what order. Some include safety features.
+        </p>
+        <p>
+          The problem: governance at the orchestration layer can be bypassed by the orchestrator.
+          If the orchestrator decides to skip a check, nothing prevents it.
+        </p>
+        <p>
+          DaemonCore sits <em>beneath</em> orchestration. The orchestrator cannot override
+          governance because it operates above the governance layer. This is the same principle
+          as OS-level memory protection: applications cannot decide to bypass it because
+          enforcement happens at a lower level.
+        </p>
+        <p>
+          <strong>Orchestrators + DaemonCore:</strong> The orchestrator coordinates workflows.
+          DaemonCore ensures those workflows operate within defined boundaries regardless of
+          what the orchestrator requests.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What's actually enforced in V1 vs V1.5?</h3>
+        <div class="faq-version-table">
+          <div class="faq-version-col">
+            <h4>V1 (Current)</h4>
+            <ul>
+              <li><strong>Protocol validation:</strong> Outputs must match expected structure</li>
+              <li><strong>Schema enforcement:</strong> Messages validated against typed schemas</li>
+              <li><strong>Scope boundaries:</strong> File/resource access checked against permissions</li>
+              <li><strong>Template constraints:</strong> Operations follow predefined templates</li>
+              <li><strong>Deterministic boot:</strong> Agents initialise with consistent context</li>
+              <li><strong>Audit logging:</strong> Actions and violations recorded</li>
+            </ul>
+          </div>
+          <div class="faq-version-col">
+            <h4>V1.5 (Planned)</h4>
+            <ul>
+              <li><strong>Cryptographic signing:</strong> Actions carry verifiable signatures</li>
+              <li><strong>Hardware attestation:</strong> Trusted execution environment support</li>
+              <li><strong>Capability delegation:</strong> Cross-agent permission transfer with audit</li>
+              <li><strong>Real-time verification:</strong> Continuous constraint checking during execution</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          V1 provides structural enforcement through validation and rejection. V1.5 adds
+          cryptographic guarantees. We ship what's working; we don't promise what's not built.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq-section">
       <h2 class="faq-category">Technical Questions</h2>
 
       <div class="faq-item">
@@ -139,11 +257,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </div>
 
       <div class="faq-item">
-        <h3>What is the relationship to Stux OS?</h3>
+        <h3>What is Stux, and how does it relate to DaemonCore?</h3>
         <p>
-          DaemonCore is the kernel component of Stux OS. Stux OS provides the broader
-          operating environment for multi-agent systems. DaemonCore specifically handles
-          governance, boundaries, and coordination at the foundational layer.
+          <strong>Stux</strong> is the company building DaemonCore. Think of it like the
+          relationship between a company and its core product.
+        </p>
+        <p>
+          <strong>Stux OS</strong> is the broader operating environment we're building for
+          multi-agent systems. DaemonCore is the kernel—the governance layer at the foundation.
+          Other components (tooling, interfaces, deployment systems) build on top of the kernel.
+        </p>
+        <p>
+          When you see "DaemonCore," you're looking at the core governance specification.
+          When you see "Stux," you're looking at the organisation and broader ecosystem.
         </p>
       </div>
 

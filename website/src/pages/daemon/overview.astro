@@ -2,19 +2,29 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Overview - Daemon Core" description="What is Daemon Core? The autonomous agent kernel for structured multi-agent orchestration.">
+<BaseLayout title="Overview (Legacy) - DaemonCore" description="Original overview document. See updated pages for current framing.">
   <article class="article">
     <h1>Overview</h1>
 
+    <div class="legacy-banner">
+      <strong>Legacy Document</strong>
+      <p>
+        This is an earlier overview. For current framing, see:
+        <a href="/daemon/what-it-is">What It Is</a>,
+        <a href="/daemon/walkthrough">Walkthrough</a>, or
+        <a href="/daemon/why-different">Why Different</a>.
+      </p>
+    </div>
+
     <p>
-      Daemon Core is an <strong>autonomous agent kernel</strong>: a structural layer
-      between AI models and operational workloads. It provides agents with consistent
-      context, defined boundaries, and coordination protocols.
+      DaemonCore is a <strong>governance layer</strong>: the structural foundation
+      beneath orchestration that defines what agents are allowed to do. It provides
+      protocol validation, boundary enforcement, and deterministic behaviour.
     </p>
 
     <p>
-      The purpose is not interface. The purpose is substrate. A deterministic
-      foundation for multi-agent computation.
+      The purpose is not coordination—that's what orchestrators do. The purpose is
+      governance: ensuring agents operate within defined constraints they cannot override.
     </p>
 
     <h2>Problem Statement</h2>

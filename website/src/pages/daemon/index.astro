@@ -2,63 +2,123 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Kernel - Daemon Core" description="The autonomous agent kernel. Orchestration, isolation, and coordination for multi-agent systems.">
+<BaseLayout title="Kernel - DaemonCore" description="The governance layer beneath orchestration. Protocol enforcement, boundary control, and deterministic behaviour for multi-agent systems.">
   <section class="hero">
     <h1>Kernel</h1>
-    <p class="hero-tagline">The orchestration layer for multi-agent intelligence.</p>
+    <p class="hero-tagline">The governance layer beneath orchestration.</p>
     <p class="hero-description">
-      The Daemon Core kernel transforms raw AI capabilities into disciplined,
-      coordinated agents. It provides the structural foundation: boot sequences,
-      context management, safety boundaries.
+      The DaemonCore kernel doesn't coordinate agents—it defines what they're allowed to do.
+      Protocol validation, boundary enforcement, and deterministic boot sequences.
+      The structural foundation that orchestrators build upon.
     </p>
     <p class="hero-description">
-      Not a chatbot. Not an interface. The deterministic substrate beneath
-      agent computation.
+      Not a chatbot. Not a framework. Not an orchestrator.
+      The governance substrate beneath agent computation.
     </p>
     <div class="hero-cta">
-      <a href="/daemon/overview" class="btn-primary">Read Overview</a>
+      <a href="/daemon/walkthrough" class="btn-primary">See Walkthrough</a>
       <a href="https://github.com/stux-os/daemon-core-public" class="btn-secondary" target="_blank" rel="noopener">
         View Source
       </a>
     </div>
   </section>
 
+  <!-- Orchestration vs Governance -->
+  <section class="section section-distinction">
+    <h2 class="section-title">Orchestration vs Governance</h2>
+    <div class="distinction-grid">
+      <div class="distinction-item">
+        <h3>Orchestration</h3>
+        <p>Coordinates agents. Decides what to do, when, and in what order. LangChain, CrewAI, AutoGen.</p>
+      </div>
+      <div class="distinction-item distinction-item-governance">
+        <h3>Governance</h3>
+        <p>Defines boundaries. Validates outputs. Enforces constraints. Sits <em>beneath</em> orchestration.</p>
+      </div>
+    </div>
+    <p class="distinction-note">
+      DaemonCore is governance. Your orchestrator coordinates. We ensure it stays within bounds.
+    </p>
+  </section>
+
+  <!-- Core Mechanisms -->
+  <section class="section">
+    <h2 class="section-title">Core Mechanisms</h2>
+    <div class="mechanisms-grid">
+      <div class="mechanism-card">
+        <h3>Action Protocol</h3>
+        <p>Agent outputs must be protocol-shaped. Validated before execution. Malformed outputs rejected.</p>
+      </div>
+      <div class="mechanism-card">
+        <h3>MAX Messaging Bus</h3>
+        <p>Typed, schema-validated message routing. Messages that don't match schema don't route.</p>
+      </div>
+      <div class="mechanism-card">
+        <h3>Template Operations</h3>
+        <p>Complex tasks follow predefined templates. Scope, checks, and output format enforced.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
   <section class="section">
     <div class="grid grid-2">
       <div class="feature">
-        <h2>Structured Orchestration</h2>
+        <h2>Structural Boundaries</h2>
         <p>
-          Agents operate within defined parameters. They know their scope,
-          their boundaries, and their coordination protocols.
+          Agents operate within defined parameters. Boundaries are architectural,
+          not advisory. Scope violations blocked at the governance layer.
         </p>
       </div>
       <div class="feature">
         <h2>Production Architecture</h2>
         <p>
           Designed for continuous operation. Session persistence, context
-          management, and predictable behavior across restarts.
+          management, and predictable behaviour across restarts.
         </p>
       </div>
       <div class="feature">
         <h2>Vendor Isolation</h2>
         <p>
-          Multiple AI providers operate under unified rules. Switch models
+          Multiple AI providers operate under unified governance. Switch models
           without restructuring. No cross-contamination.
         </p>
       </div>
       <div class="feature">
-        <h2>Safety Constraints</h2>
+        <h2>Deterministic Boot</h2>
         <p>
-          Boundaries are architectural, not optional. Permissions scale with
-          environment trust. Humans remain in control.
+          Agents boot into consistent context. Same configuration produces
+          same initial state. Predictability enables trust.
         </p>
       </div>
     </div>
   </section>
 
+  <!-- V1 vs V1.5 -->
+  <section class="section">
+    <div class="versioned-callout versioned-callout-compact">
+      <h2>V1 vs V1.5</h2>
+      <div class="version-grid">
+        <div class="version-block version-v1">
+          <h3>V1 (Current)</h3>
+          <p>Protocol validation, schema enforcement, template constraints, audit logging.</p>
+        </div>
+        <div class="version-block version-v15">
+          <h3>V1.5 (Planned)</h3>
+          <p>Cryptographic signing, hardware attestation, real-time constraint verification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Understanding DaemonCore -->
   <section class="section">
     <h2 class="section-title">Understanding DaemonCore</h2>
     <div class="grid grid-2">
+      <a href="/daemon/walkthrough" class="link-card link-card-featured">
+        <h3>Walkthrough</h3>
+        <p>Step through a real example of governance in action.</p>
+      </a>
       <a href="/daemon/what-it-is" class="link-card">
         <h3>What It Is</h3>
         <p>The governance layer for multi-agent systems.</p>
@@ -78,6 +138,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Documentation -->
   <section class="section">
     <h2 class="section-title">Documentation</h2>
     <div class="grid grid-2">
@@ -100,14 +161,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Status -->
   <section class="status">
     <h2>Status</h2>
     <p>
-      Kernel under active development. Specification stabilising through
-      real-world deployment. Public materials reflect current direction.
+      Kernel V1 specification stable. Protocol validation and MAX bus operational.
+      Public materials reflect current implementation.
     </p>
     <p>
-      GitHub repository available for review and collaboration.
+      <a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener">GitHub repository</a> available for review.
     </p>
   </section>
 </BaseLayout>

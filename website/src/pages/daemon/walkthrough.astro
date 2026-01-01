@@ -1,0 +1,329 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Walkthrough - DaemonCore" description="Step through a real example of DaemonCore governance in action. See how a code review request flows through protocols, validation, and boundaries.">
+  <article class="article walkthrough">
+    <h1>Walkthrough: Code Review</h1>
+
+    <!-- What This Walkthrough Shows -->
+    <section class="wt-section">
+      <h2>What This Walkthrough Shows</h2>
+      <p class="lead">
+        A single scenario—code review—traced from user intent through governed outcome.
+        You'll see how DaemonCore validates, routes, and constrains agent actions at each step.
+      </p>
+    </section>
+
+    <!-- Baseline -->
+    <section class="wt-section">
+      <h2>Baseline: Without Governance</h2>
+      <div class="wt-baseline">
+        <p>In a typical setup:</p>
+        <ul>
+          <li>User asks an agent to "review this code"</li>
+          <li>Agent interprets the request based on prompt instructions</li>
+          <li>Scope, depth, and output format depend on model interpretation</li>
+          <li>No structural guarantee the agent stays within bounds</li>
+          <li>Results vary between runs, models, and prompt variations</li>
+        </ul>
+        <p class="wt-baseline-note">
+          The agent might do a thorough review, a superficial glance, or wander into unrelated refactoring—
+          depending on how it interprets "review."
+        </p>
+      </div>
+    </section>
+
+    <!-- Step-by-Step -->
+    <section class="wt-section">
+      <h2>Step-by-Step with DaemonCore</h2>
+
+      <!-- Step 1: User Intent -->
+      <div class="wt-step">
+        <div class="wt-step-header">
+          <span class="wt-step-number">1</span>
+          <h3>User Intent</h3>
+        </div>
+        <div class="wt-step-content">
+          <p>The user submits a request:</p>
+          <div class="wt-example">
+            <code>"Review the authentication module for security issues and code quality."</code>
+          </div>
+          <p>
+            This is natural language—ambiguous by nature. DaemonCore doesn't try to make the
+            agent "understand better." Instead, it requires the agent to produce a structured
+            response that can be validated.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2: Preflight Classification -->
+      <div class="wt-step">
+        <div class="wt-step-header">
+          <span class="wt-step-number">2</span>
+          <h3>Preflight Classification</h3>
+        </div>
+        <div class="wt-step-content">
+          <p>Before any action, the request is classified:</p>
+          <div class="wt-classification">
+            <div class="wt-class-item">
+              <span class="wt-class-label">Operation Type:</span>
+              <span class="wt-class-value">CODE_REVIEW</span>
+            </div>
+            <div class="wt-class-item">
+              <span class="wt-class-label">Target Scope:</span>
+              <span class="wt-class-value">authentication/*</span>
+            </div>
+            <div class="wt-class-item">
+              <span class="wt-class-label">Risk Level:</span>
+              <span class="wt-class-value">READ_ONLY</span>
+            </div>
+            <div class="wt-class-item">
+              <span class="wt-class-label">Requires Approval:</span>
+              <span class="wt-class-value">No</span>
+            </div>
+          </div>
+          <p>
+            <strong>If unsafe:</strong> Requests that don't map to a known operation type,
+            target files outside permitted scope, or require elevated permissions are flagged
+            before the agent begins work. The user sees a clear rejection with the reason.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3: Action Proposal -->
+      <div class="wt-step">
+        <div class="wt-step-header">
+          <span class="wt-step-number">3</span>
+          <h3>Action Proposal Shape</h3>
+        </div>
+        <div class="wt-step-content">
+          <p>
+            The agent produces a protocol-shaped proposal—not free-form text, but a structured
+            object that can be validated:
+          </p>
+          <pre class="wt-code"><code set:html={`{
+  "action": "code_review",
+  "template": "security-review-v1",
+  "scope": {
+    "include": ["src/auth/**"],
+    "exclude": ["src/auth/legacy/**"]
+  },
+  "checks": ["security", "quality"],
+  "output_format": "structured_report"
+}`} /></pre>
+          <p>
+            This proposal is validated against the action protocol schema. Malformed proposals
+            are rejected. The agent cannot "decide" to expand scope or skip checks—the structure
+            enforces the boundaries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 4: MAX Bus Routing -->
+      <div class="wt-step">
+        <div class="wt-step-header">
+          <span class="wt-step-number">4</span>
+          <h3>MAX Bus Routing</h3>
+        </div>
+        <div class="wt-step-content">
+          <p>
+            The validated proposal becomes a typed message on the MAX bus:
+          </p>
+          <pre class="wt-code"><code set:html={`{
+  "type": "ACTION_REQUEST",
+  "sender": "claude-developer",
+  "recipient": "review-executor",
+  "payload": { /* validated proposal */ },
+  "schema_version": "1.0",
+  "timestamp": "2025-01-01T12:00:00Z"
+}`} /></pre>
+          <p>
+            <strong>Schema validation:</strong> Messages that don't match the expected schema
+            are rejected at the bus level. An agent cannot send a malformed message—it simply
+            won't route.
+          </p>
+          <p>
+            <strong>Typed routing:</strong> The message type determines which handlers can
+            receive it. A CODE_REVIEW action goes to review executors, not to deployment
+            handlers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 5: Template Execution -->
+      <div class="wt-step">
+        <div class="wt-step-header">
+          <span class="wt-step-number">5</span>
+          <h3>Template-Driven Execution</h3>
+        </div>
+        <div class="wt-step-content">
+          <p>
+            The review executes within template constraints. The <code>security-review-v1</code>
+            template defines:
+          </p>
+          <div class="wt-template">
+            <div class="wt-template-item">
+              <h4>Required Checks</h4>
+              <ul>
+                <li>Input validation patterns</li>
+                <li>Authentication flow integrity</li>
+                <li>Secret handling practices</li>
+                <li>Error exposure risks</li>
+              </ul>
+            </div>
+            <div class="wt-template-item">
+              <h4>Output Structure</h4>
+              <ul>
+                <li>Findings list with severity</li>
+                <li>Line references for each issue</li>
+                <li>Suggested remediation</li>
+                <li>Summary statistics</li>
+              </ul>
+            </div>
+            <div class="wt-template-item">
+              <h4>Boundaries</h4>
+              <ul>
+                <li>Read-only file access</li>
+                <li>No code modifications</li>
+                <li>No external API calls</li>
+                <li>Scoped to specified paths</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            The agent cannot produce a review that skips required checks or includes
+            out-of-scope analysis. The template is the contract.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 6: Result -->
+      <div class="wt-step">
+        <div class="wt-step-header">
+          <span class="wt-step-number">6</span>
+          <h3>Result</h3>
+        </div>
+        <div class="wt-step-content">
+          <p>The user receives a structured review report:</p>
+          <div class="wt-result">
+            <div class="wt-result-header">
+              <span class="wt-result-badge">Review Complete</span>
+              <span class="wt-result-scope">src/auth/** • 12 files analysed</span>
+            </div>
+            <div class="wt-result-summary">
+              <div class="wt-result-stat">
+                <span class="wt-stat-value wt-stat-critical">2</span>
+                <span class="wt-stat-label">Critical</span>
+              </div>
+              <div class="wt-result-stat">
+                <span class="wt-stat-value wt-stat-warning">5</span>
+                <span class="wt-stat-label">Warnings</span>
+              </div>
+              <div class="wt-result-stat">
+                <span class="wt-stat-value wt-stat-info">8</span>
+                <span class="wt-stat-label">Suggestions</span>
+              </div>
+            </div>
+          </div>
+          <p>
+            The output follows the template structure. Every run with the same inputs produces
+            the same output shape. Findings are attributable, auditable, and bounded to scope.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scope Violation -->
+    <section class="wt-section">
+      <h2>What Happens on a Scope Violation</h2>
+      <div class="wt-violation">
+        <p>
+          Suppose during the review, the agent attempts to access files outside the permitted scope:
+        </p>
+        <pre class="wt-code wt-code-error"><code>Attempted access: src/payments/stripe.js
+Permitted scope: src/auth/**
+
+ACTION BLOCKED: Scope violation
+Reason: File outside permitted review scope
+Agent: claude-developer
+Timestamp: 2025-01-01T12:01:23Z</code></pre>
+        <p>
+          The access is blocked at the governance layer—not by asking the agent nicely,
+          but by preventing the operation. The violation is logged with full context for audit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Prompt Injection -->
+    <section class="wt-section">
+      <h2>Prompt Injection: Honest Limitations</h2>
+      <div class="wt-callout wt-callout-warning">
+        <h3>V1 Reality</h3>
+        <p>
+          DaemonCore V1 does <strong>not</strong> prevent prompt injection at the model level.
+          If malicious content in reviewed code attempts to manipulate the agent, the agent
+          might still be influenced.
+        </p>
+        <p>
+          <strong>What V1 does:</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Detects anomalous outputs:</strong> If the agent's response doesn't match
+            the expected protocol shape, it's flagged and rejected.
+          </li>
+          <li>
+            <strong>Constrains actions:</strong> Even if the agent is manipulated, it cannot
+            perform actions outside its permitted scope. A review agent cannot suddenly
+            deploy code.
+          </li>
+          <li>
+            <strong>Logs everything:</strong> Unusual patterns are recorded for human review.
+          </li>
+        </ul>
+        <p>
+          This is defence in depth, not prevention. The injection might influence the agent's
+          reasoning, but the governance layer limits what that influence can achieve.
+        </p>
+      </div>
+    </section>
+
+    <!-- V1 vs V1.5 -->
+    <section class="wt-section">
+      <h2>V1 vs V1.5</h2>
+      <div class="wt-version-comparison">
+        <div class="wt-version wt-version-current">
+          <h3>V1 (Current)</h3>
+          <p>
+            Protocol validation, schema enforcement, template constraints, scope boundaries,
+            audit logging. Defence through structure.
+          </p>
+        </div>
+        <div class="wt-version wt-version-planned">
+          <h3>V1.5 (Planned)</h3>
+          <p>
+            Adds cryptographic signing of actions, hardware-backed attestation, and real-time
+            constraint verification. Defence through verification.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="next-links">
+      <a href="/daemon/architecture" class="link-card">
+        <h3>Architecture</h3>
+        <p>Understand the system structure and layers.</p>
+      </a>
+      <a href="/daemon/why-different" class="link-card">
+        <h3>Why Different</h3>
+        <p>The gap in today's stack and why governance matters.</p>
+      </a>
+      <a href="/early-access" class="link-card">
+        <h3>Early Access</h3>
+        <p>Join teams building with DaemonCore.</p>
+      </a>
+    </div>
+  </article>
+</BaseLayout>

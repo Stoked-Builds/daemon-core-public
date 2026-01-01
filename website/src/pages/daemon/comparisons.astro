@@ -187,6 +187,39 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       foundation that makes the layers above it governable.
     </p>
 
+    <h2>How Governance Works</h2>
+    <p>
+      Regardless of which orchestrator or framework you use, DaemonCore enforces boundaries through:
+    </p>
+    <div class="mechanisms-list">
+      <div class="mechanism">
+        <h3>Action Protocol</h3>
+        <p>All agent outputs pass through protocol validation. Only well-formed, permitted actions proceed.</p>
+      </div>
+      <div class="mechanism">
+        <h3>MAX Messaging Bus</h3>
+        <p>Agent-to-agent communication is typed and schema-validated. No unstructured message passing.</p>
+      </div>
+      <div class="mechanism">
+        <h3>Preflight Classification</h3>
+        <p>Requests are classified before execution. Scope, risk level, and permissions checked upfront.</p>
+      </div>
+    </div>
+
+    <div class="versioned-callout versioned-callout-compact" style="margin-top: var(--space-5);">
+      <h3>What's Available Now vs Coming</h3>
+      <div class="version-grid">
+        <div class="version-block version-v1">
+          <h4>V1 (Current)</h4>
+          <p>Protocol validation, schema enforcement, template constraints, deterministic boot, audit logging.</p>
+        </div>
+        <div class="version-block version-v15">
+          <h4>V1.5 (Planned)</h4>
+          <p>Cryptographic action signing, hardware attestation, cross-agent capability delegation.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="next-links">
       <a href="/daemon/what-it-is" class="link-card">
         <h3>What It Is</h3>

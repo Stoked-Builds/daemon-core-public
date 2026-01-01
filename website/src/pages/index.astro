@@ -2,130 +2,182 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="DaemonCore" description="The governance layer beneath multi-agent intelligence. Not an orchestrator. Not a framework. The OS-level foundation.">
+<BaseLayout title="DaemonCore" description="The governance layer beneath orchestration. Protocols, not prompts. Structured outputs, enforced boundaries, deterministic behaviour.">
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>DaemonCore</h1>
-    <p class="hero-tagline">The governance layer beneath multi-agent intelligence.</p>
+    <h1>Governance Beneath Orchestration</h1>
+    <p class="hero-tagline">Protocols, not prompts.</p>
     <p class="hero-description">
-      DaemonCore operates below orchestration. It defines what agents are allowed to do,
-      enforces safety boundaries, and provides the structural foundation that orchestrators
-      and frameworks build upon.
+      DaemonCore sits below your orchestration layer. It doesn't coordinate agents—it defines
+      what they're allowed to do, enforces boundaries structurally, and ensures outputs
+      follow protocol before any action occurs.
     </p>
-    <div class="callout callout-important">
-      <strong>Not an agent framework.</strong> Not an orchestrator. Not a workflow tool.
-      DaemonCore is the OS-level governance layer that sits beneath all of these.
-    </div>
     <div class="hero-cta">
       <a href="/daemon" class="btn-primary">Explore the Kernel</a>
-      <a href="/daemon/what-it-is" class="btn-secondary">What Is This?</a>
+      <a href="/daemon/walkthrough" class="btn-secondary">See the Walkthrough</a>
     </div>
   </section>
 
+  <!-- Evolution Strip -->
+  <section class="section section-evolution">
+    <h2 class="section-title">The Evolution of AI Control</h2>
+    <div class="evolution-strip">
+      <div class="evolution-step">
+        <span class="evolution-label">Raw Prompts</span>
+        <span class="evolution-desc">Hope for the best</span>
+      </div>
+      <div class="evolution-arrow">→</div>
+      <div class="evolution-step">
+        <span class="evolution-label">Better Prompts</span>
+        <span class="evolution-desc">More detailed instructions</span>
+      </div>
+      <div class="evolution-arrow">→</div>
+      <div class="evolution-step">
+        <span class="evolution-label">Prompt Engineering</span>
+        <span class="evolution-desc">Systematic instruction design</span>
+      </div>
+      <div class="evolution-arrow">→</div>
+      <div class="evolution-step">
+        <span class="evolution-label">Orchestration</span>
+        <span class="evolution-desc">Frameworks coordinate agents</span>
+      </div>
+      <div class="evolution-arrow">→</div>
+      <div class="evolution-step evolution-step-current">
+        <span class="evolution-label">Governance</span>
+        <span class="evolution-desc">Protocol-enforced boundaries</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breakpoint: Where Risk Appears -->
   <section class="section">
-    <h2 class="section-title">Why Governance Beneath Orchestration?</h2>
+    <h2 class="section-title">Where Risk Appears</h2>
     <p class="section-intro">
-      Today's AI stack has a missing layer. <a href="/daemon/why-different">See why this matters.</a>
+      Orchestration coordinates. But coordination without governance creates gaps.
     </p>
     <div class="grid grid-3">
-      <div class="feature">
-        <h3>Safety by Architecture</h3>
+      <div class="risk-card">
+        <h3>Drift</h3>
         <p>
-          Constraints are structural, not advisory. Agents cannot exceed their
-          capability envelope. Boundaries are enforced at the system level.
+          Agents interpret instructions differently over time. Without structural
+          constraints, behaviour shifts unpredictably.
         </p>
       </div>
-      <div class="feature">
-        <h3>Vendor Isolation</h3>
+      <div class="risk-card">
+        <h3>Ambiguity</h3>
         <p>
-          Different AI providers operate under unified governance. Switch models
-          without restructuring. No cross-contamination of context or state.
+          Natural language instructions leave room for interpretation. Edge cases
+          become judgment calls the model makes alone.
         </p>
       </div>
-      <div class="feature">
-        <h3>Deterministic Foundation</h3>
+      <div class="risk-card">
+        <h3>Responsibility</h3>
         <p>
-          Same inputs produce same behavior. Agents boot into consistent context.
-          Predictability enables trust at scale.
+          When something goes wrong, who's accountable? Prompt-based systems make
+          audit and attribution difficult.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section section-stack">
-    <h2 class="section-title">The Stack</h2>
-    <p class="section-intro">
-      DaemonCore sits at the foundation. Everything else builds on top.
+  <!-- The Shift -->
+  <section class="section section-shift">
+    <h2 class="section-title">From Instructions to Protocols</h2>
+    <p class="shift-content">
+      DaemonCore doesn't give agents better instructions—it changes what counts as valid output.
+      Agents produce protocol-shaped responses. Those responses are classified and validated
+      before any action occurs. The shift isn't "tell the model to be careful." It's
+      "only protocol-compliant outputs are eligible for execution."
     </p>
-    <div class="stack-diagram">
-      <div class="stack-layer stack-applications">
-        <span class="stack-label">Applications</span>
-        <span class="stack-desc">Chat interfaces, automation tools, IDEs</span>
-      </div>
-      <div class="stack-layer stack-orchestration">
-        <span class="stack-label">Orchestration</span>
-        <span class="stack-desc">LangChain, CrewAI, AutoGen, custom frameworks</span>
-      </div>
-      <div class="stack-layer stack-governance">
-        <span class="stack-label">Governance</span>
-        <span class="stack-desc">DaemonCore — safety, boundaries, coordination</span>
-      </div>
-      <div class="stack-layer stack-models">
-        <span class="stack-label">Models</span>
-        <span class="stack-desc">Claude, GPT, Gemini, open-source LLMs</span>
-      </div>
-    </div>
   </section>
 
+  <!-- Mechanisms -->
   <section class="section">
-    <h2 class="section-title">Components</h2>
+    <h2 class="section-title">How It Works</h2>
     <p class="section-intro">
-      DaemonCore comprises modular subsystems. Each operates independently.
-      Together, they form the governance foundation.
+      Concrete mechanisms, not abstract principles.
     </p>
-    <div class="grid grid-3">
-      <a href="/daemon" class="card card-interactive">
-        <h3>Kernel</h3>
-        <p>
-          The core governance specification. Boot protocols, safety scaling,
-          capability envelopes, and coordination rules.
-        </p>
-        <span class="badge badge-active">Active</span>
+    <div class="mechanisms-list">
+      <div class="mechanism">
+        <h3>Action Protocol</h3>
+        <p>Only protocol-shaped outputs are eligible for action.</p>
+        <div class="mechanism-example">
+          <code>Agent output → Protocol validation → Classification → Action (or rejection)</code>
+        </div>
+      </div>
+      <div class="mechanism">
+        <h3>MAX Messaging Bus</h3>
+        <p>Typed, schema-validated message routing between agents and systems.</p>
+        <div class="mechanism-example">
+          <code>Messages carry type, sender, recipient, payload schema. Malformed messages rejected.</code>
+        </div>
+      </div>
+      <div class="mechanism">
+        <h3>Template-Driven Operations</h3>
+        <p>Complex operations follow predefined templates with explicit boundaries.</p>
+        <div class="mechanism-example">
+          <code>Code review template defines: scope, checklist, output format, approval gates.</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Versioned Guarantees -->
+  <section class="section">
+    <div class="versioned-callout">
+      <h2>What We Promise (and When)</h2>
+      <div class="version-grid">
+        <div class="version-block version-v1">
+          <h3>V1 (Current)</h3>
+          <ul>
+            <li>Protocol-shaped output validation</li>
+            <li>Message schema enforcement</li>
+            <li>Template-constrained operations</li>
+            <li>Deterministic boot sequences</li>
+            <li>Audit trail for agent actions</li>
+          </ul>
+        </div>
+        <div class="version-block version-v15">
+          <h3>V1.5 (Planned)</h3>
+          <ul>
+            <li>Cryptographic action signing</li>
+            <li>Hardware-backed attestation</li>
+            <li>Cross-agent capability delegation</li>
+            <li>Real-time constraint verification</li>
+          </ul>
+        </div>
+      </div>
+      <p class="version-note">
+        We ship what's working. V1.5 features are in development—we'll announce them when they're ready.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Block -->
+  <section class="section section-cta">
+    <h2 class="section-title">Get Started</h2>
+    <div class="cta-grid">
+      <a href="/daemon" class="cta-card">
+        <h3>Explore the Kernel</h3>
+        <p>Understand the architecture, components, and design principles.</p>
       </a>
-      <div class="card coming-soon">
-        <h3>SDK</h3>
-        <p>
-          Developer tooling for building DaemonCore-native agents
-          and integrations.
-        </p>
-        <span class="badge">Pending</span>
-      </div>
-      <div class="card coming-soon">
-        <h3>Hub</h3>
-        <p>
-          Central registry for agents, profiles, and shared governance
-          configurations.
-        </p>
-        <span class="badge">Pending</span>
-      </div>
+      <a href="/daemon/walkthrough" class="cta-card">
+        <h3>See the Walkthrough</h3>
+        <p>Step through a real example of governance in action.</p>
+      </a>
+      <a href="/early-access" class="cta-card cta-card-accent">
+        <h3>Early Access</h3>
+        <p>Join teams building production multi-agent systems.</p>
+      </a>
     </div>
   </section>
 
-  <section class="section section-early-access">
-    <h2 class="section-title">Early Access</h2>
-    <p class="section-intro">
-      DaemonCore is in private development. We're selectively opening access
-      to teams building production multi-agent systems.
-    </p>
-    <div class="ea-cta">
-      <a href="/early-access" class="btn-primary">Register Interest</a>
-    </div>
-  </section>
-
+  <!-- Status -->
   <section class="status">
     <h2>Status</h2>
     <p>
-      Kernel specification stabilising. Core boot protocol and safety framework defined.
-      Public specification available for review.
+      Kernel V1 specification stable. Protocol validation and MAX bus operational.
+      Public documentation available for review.
     </p>
     <p>
       <a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener">View on GitHub</a>
