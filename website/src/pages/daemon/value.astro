@@ -12,6 +12,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       DaemonCore provides the governance foundation.
     </p>
 
+    <p class="executive-mental-model">
+      DaemonCore is the layer that makes AI behaviour enforceable instead of advisory.
+    </p>
+
     <p class="value-audience">
       This page is for engineering leadership, security leadership, and executives
       accountable for AI deployment decisions.
@@ -123,6 +127,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           outside permitted paths. The risk surface becomes bounded by structure, not by
           how carefully you've written instructions.
         </p>
+        <p class="pillar-example">
+          <em>Example:</em> Agent attempts to access <code>/payments/stripe.js</code> but is scoped to <code>/auth/**</code>.
+          Action blocked. Violation logged with timestamp, agent ID, and attempted path.
+        </p>
       </div>
 
       <div class="pillar">
@@ -142,6 +150,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           layer. Violations are logged with full context: what was attempted, what was permitted,
           which agent, which session. Accountability becomes a system property, not an
           application feature.
+        </p>
+        <p class="pillar-example">
+          <em>Example:</em> Audit log entry: <code>agent=claude-dev, action=file_write, target=/config/secrets.yaml, status=DENIED, reason=scope_violation</code>
         </p>
       </div>
 
@@ -163,6 +174,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           tasks follow predefined structures. The model's reasoning varies; the boundaries
           around what that reasoning can do remain stable.
         </p>
+        <p class="pillar-example">
+          <em>Example:</em> Code review template requires security checklist, output format, and scope declaration. Agent cannot skip steps or expand scope.
+        </p>
       </div>
 
       <div class="pillar">
@@ -182,6 +196,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           infrastructure layer, independent of which model executes beneath. Switch providers,
           update models, or run multiple models simultaneously—boundaries remain consistent
           because they're enforced below the model layer.
+        </p>
+        <p class="pillar-example">
+          <em>Example:</em> Same governance config runs Claude, GPT-4, and Gemini agents. Boundary rules enforced identically regardless of model.
         </p>
       </div>
     </section>
@@ -292,6 +309,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             DaemonCore provides structural enforcement with audit trails. When questions
             arise about what an AI system did, answers exist in logged, attributable records.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="value-section">
+      <h2>Who This Is For</h2>
+      <div class="audience-fit">
+        <div class="audience-for">
+          <h3>Good fit:</h3>
+          <ul>
+            <li>Production multi-agent systems with real-world consequences</li>
+            <li>Regulated environments requiring audit trails and accountability</li>
+            <li>Long-running workflows where agents operate across sessions</li>
+            <li>Teams deploying multiple AI models under unified governance</li>
+            <li>Organisations where "the AI did something unexpected" is unacceptable</li>
+          </ul>
+        </div>
+        <div class="audience-not-for">
+          <h3>Not the right fit:</h3>
+          <ul>
+            <li>Single-prompt chatbots or assistants</li>
+            <li>Hobby experiments or demos</li>
+            <li>Prompt-only governance approaches</li>
+            <li>Systems where occasional unexpected behaviour is tolerable</li>
+          </ul>
         </div>
       </div>
     </section>

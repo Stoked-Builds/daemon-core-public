@@ -14,6 +14,7 @@ const isMediaKit = currentPath.startsWith('/media-kit');
       {isDaemonSection && (
         <>
           <li><a href="/daemon/what-it-is" class:list={[{ active: currentPath.startsWith('/daemon/what-it-is') || currentPath.startsWith('/daemon/what-it-isnt') || currentPath.startsWith('/daemon/why-different') }]}>What Is It</a></li>
+          <li><a href="/daemon/value" class:list={[{ active: currentPath === '/daemon/value' }]}>Value</a></li>
           <li><a href="/daemon/comparisons" class:list={[{ active: currentPath === '/daemon/comparisons' }]}>Comparisons</a></li>
           <li><a href="/daemon/faq" class:list={[{ active: currentPath === '/daemon/faq' }]}>FAQ</a></li>
           <li><a href="/daemon/blog" class:list={[{ active: currentPath.startsWith('/daemon/blog') }]}>Blog</a></li>
