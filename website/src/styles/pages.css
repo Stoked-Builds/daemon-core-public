@@ -15,6 +15,18 @@
 }
 
 /* Next links navigation - used across multiple pages */
+.next-links-intro {
+  margin-top: var(--space-6);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.next-links-intro + .next-links {
+  margin-top: var(--space-3);
+}
+
 .next-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

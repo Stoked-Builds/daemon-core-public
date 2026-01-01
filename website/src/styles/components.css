@@ -215,6 +215,13 @@
   margin-top: var(--space-4);
 }
 
+.audience-signpost {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: var(--space-6) 0 var(--space-4);
