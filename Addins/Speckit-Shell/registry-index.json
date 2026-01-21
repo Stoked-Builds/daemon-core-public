@@ -1,0 +1,15 @@
+{
+  "addins": [
+    {
+      "id": "speckit-shell",
+      "name": "Speckit Shell",
+      "version": "0.1.0",
+      "digest": "sha256:speckit-shell",
+      "paths": {
+        "artifact": "speckit-shell.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      }
+    }
+  ]
+}

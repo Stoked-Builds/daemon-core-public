@@ -1,0 +1,13 @@
+{
+  "id": "speckit-shell",
+  "status": "pass",
+  "timestamp": "2026-01-20T00:00:00Z",
+  "issuer": "speckit",
+  "details": "Sample attestation for the Speckit shell add-in",
+  "signatures": [
+    {
+      "key": "speckit-v1",
+      "value": "signature-value"
+    }
+  ]
+}

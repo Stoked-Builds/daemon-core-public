@@ -1,0 +1,21 @@
+{
+  "id": "speckit-shell",
+  "name": "Speckit Shell",
+  "version": "0.1.0",
+  "description": "Minimal Speckit authoring add-in package for the DaemonCore registry.",
+  "paths": {
+    "artifact": "speckit-shell.zip",
+    "manifest": "manifest.json",
+    "attestation": "attestation.json"
+  },
+  "capabilities": [
+    "shell",
+    "fs"
+  ],
+  "configuration": {
+    "track": true
+  },
+  "slots": {
+    "install": "/usr/local/bin/speckit-shell"
+  }
+}
