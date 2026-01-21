@@ -4,7 +4,7 @@
       "id": "speckit-shell",
       "name": "Speckit Shell",
       "version": "0.1.0",
-      "digest": "sha256:speckit-shell",
+    "digest": "sha256:6659dde44928571f30bdf761677784823e50f77c62b06bb20f5f8cf869173f47",
       "paths": {
         "artifact": "speckit-shell.zip",
         "manifest": "manifest.json",
