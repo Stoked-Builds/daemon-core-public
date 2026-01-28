@@ -1,0 +1,96 @@
+{
+  "name": "DaemonCore Add-ins",
+  "description": "Official add-in catalog for DaemonCore",
+  "version": "1.0.0",
+  "updated_at": "2026-01-28T19:45:00Z",
+  "addins": [
+    {
+      "id": "speckit",
+      "name": "Speckit Backlog Provider",
+      "version": "0.1.0",
+      "description": "Speckit backlog provider add-in that ships a starter specs workspace for the operator dashboard.",
+      "digest": "9965ff0a760b3951bcb441a0e91252f7f35fd8cff387997ec54884f0f004f361",
+      "path": "Speckit",
+      "paths": {
+        "artifact": "speckit.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      },
+      "tags": ["backlog", "speckit", "provider"]
+    },
+    {
+      "id": "speckit-shell",
+      "name": "Speckit Shell",
+      "version": "0.1.0",
+      "description": "Minimal Speckit authoring add-in package for the DaemonCore registry.",
+      "digest": "placeholder-digest-speckit-shell",
+      "path": "Speckit-Shell",
+      "paths": {
+        "artifact": "speckit-shell.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      },
+      "tags": ["speckit", "shell", "authoring"]
+    },
+    {
+      "id": "theme-pack-v1",
+      "name": "DaemonCore Theme Pack",
+      "version": "0.1.0",
+      "description": "Demo theme pack add-in with dark mode and high contrast themes for operator UI branding.",
+      "digest": "placeholder-digest-theme-pack-v1",
+      "path": "ThemePack",
+      "paths": {
+        "artifact": "theme-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      },
+      "tags": ["themes", "ui", "demo", "branding"],
+      "contributions": ["themes"]
+    },
+    {
+      "id": "knowledge-pack-v1",
+      "name": "DaemonCore Knowledge Pack",
+      "version": "0.1.0",
+      "description": "Demo knowledge pack with runbooks and guides for the help system.",
+      "digest": "placeholder-digest-knowledge-pack-v1",
+      "path": "KnowledgePack",
+      "paths": {
+        "artifact": "knowledge-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      },
+      "tags": ["knowledge", "docs", "runbooks", "demo"],
+      "contributions": ["knowledge"]
+    },
+    {
+      "id": "command-pack-v1",
+      "name": "DaemonCore Command Pack",
+      "version": "0.1.0",
+      "description": "Demo slash command pack with shortcuts for common operations.",
+      "digest": "placeholder-digest-command-pack-v1",
+      "path": "CommandPack",
+      "paths": {
+        "artifact": "command-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      },
+      "tags": ["commands", "cli", "demo", "shortcuts"],
+      "contributions": ["commands"]
+    },
+    {
+      "id": "role-pack-v1",
+      "name": "DaemonCore Role Pack",
+      "version": "0.1.0",
+      "description": "Demo role pack with additional agent roles and profiles.",
+      "digest": "placeholder-digest-role-pack-v1",
+      "path": "RolePack",
+      "paths": {
+        "artifact": "role-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      },
+      "tags": ["roles", "profiles", "agents", "demo"],
+      "contributions": ["roles"]
+    }
+  ]
+}
