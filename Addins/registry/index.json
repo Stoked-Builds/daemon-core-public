@@ -2,7 +2,7 @@
   "name": "DaemonCore Add-ins",
   "description": "Official add-in catalog for DaemonCore",
   "version": "1.0.0",
-  "updated_at": "2026-01-28T19:45:00Z",
+  "updated_at": "2026-01-28T22:00:00Z",
   "addins": [
     {
       "id": "speckit",
@@ -10,11 +10,10 @@
       "version": "0.1.0",
       "description": "Speckit backlog provider add-in that ships a starter specs workspace for the operator dashboard.",
       "digest": "9965ff0a760b3951bcb441a0e91252f7f35fd8cff387997ec54884f0f004f361",
-      "path": "Speckit",
       "paths": {
-        "artifact": "speckit.zip",
-        "manifest": "manifest.json",
-        "attestation": "attestation.json"
+        "artifact": "Speckit/speckit.zip",
+        "manifest": "Speckit/manifest.json",
+        "attestation": "Speckit/attestation.json"
       },
       "tags": ["backlog", "speckit", "provider"]
     },
@@ -24,11 +23,10 @@
       "version": "0.1.0",
       "description": "Minimal Speckit authoring add-in package for the DaemonCore registry.",
       "digest": "placeholder-digest-speckit-shell",
-      "path": "Speckit-Shell",
       "paths": {
-        "artifact": "speckit-shell.zip",
-        "manifest": "manifest.json",
-        "attestation": "attestation.json"
+        "artifact": "Speckit-Shell/speckit-shell.zip",
+        "manifest": "Speckit-Shell/manifest.json",
+        "attestation": "Speckit-Shell/attestation.json"
       },
       "tags": ["speckit", "shell", "authoring"]
     },
@@ -38,11 +36,10 @@
       "version": "0.1.0",
       "description": "Demo theme pack add-in with dark mode and high contrast themes for operator UI branding.",
       "digest": "placeholder-digest-theme-pack-v1",
-      "path": "ThemePack",
       "paths": {
-        "artifact": "theme-pack.zip",
-        "manifest": "manifest.json",
-        "attestation": "attestation.json"
+        "artifact": "ThemePack/theme-pack.zip",
+        "manifest": "ThemePack/manifest.json",
+        "attestation": "ThemePack/attestation.json"
       },
       "tags": ["themes", "ui", "demo", "branding"],
       "contributions": ["themes"]
@@ -53,11 +50,10 @@
       "version": "0.1.0",
       "description": "Demo knowledge pack with runbooks and guides for the help system.",
       "digest": "placeholder-digest-knowledge-pack-v1",
-      "path": "KnowledgePack",
       "paths": {
-        "artifact": "knowledge-pack.zip",
-        "manifest": "manifest.json",
-        "attestation": "attestation.json"
+        "artifact": "KnowledgePack/knowledge-pack.zip",
+        "manifest": "KnowledgePack/manifest.json",
+        "attestation": "KnowledgePack/attestation.json"
       },
       "tags": ["knowledge", "docs", "runbooks", "demo"],
       "contributions": ["knowledge"]
@@ -68,11 +64,10 @@
       "version": "0.1.0",
       "description": "Demo slash command pack with shortcuts for common operations.",
       "digest": "placeholder-digest-command-pack-v1",
-      "path": "CommandPack",
       "paths": {
-        "artifact": "command-pack.zip",
-        "manifest": "manifest.json",
-        "attestation": "attestation.json"
+        "artifact": "CommandPack/command-pack.zip",
+        "manifest": "CommandPack/manifest.json",
+        "attestation": "CommandPack/attestation.json"
       },
       "tags": ["commands", "cli", "demo", "shortcuts"],
       "contributions": ["commands"]
@@ -83,11 +78,10 @@
       "version": "0.1.0",
       "description": "Demo role pack with additional agent roles and profiles.",
       "digest": "placeholder-digest-role-pack-v1",
-      "path": "RolePack",
       "paths": {
-        "artifact": "role-pack.zip",
-        "manifest": "manifest.json",
-        "attestation": "attestation.json"
+        "artifact": "RolePack/role-pack.zip",
+        "manifest": "RolePack/manifest.json",
+        "attestation": "RolePack/attestation.json"
       },
       "tags": ["roles", "profiles", "agents", "demo"],
       "contributions": ["roles"]
