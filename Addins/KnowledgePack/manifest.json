@@ -8,7 +8,7 @@
     "manifest": "manifest.json",
     "attestation": "attestation.json"
   },
-  "capabilities": [],
+  "capabilities": ["fs"],
   "configuration": {
     "track": true
   },

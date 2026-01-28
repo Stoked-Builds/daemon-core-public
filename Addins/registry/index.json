@@ -35,7 +35,7 @@
       "name": "DaemonCore Theme Pack",
       "version": "0.1.0",
       "description": "Demo theme pack add-in with dark mode and high contrast themes for operator UI branding.",
-      "digest": "de9f53a5d9593d63ea765d2de83f0dd9da095d92225fe8a5bc2b78c104483d52",
+      "digest": "6cd43597aaab025efe785a5393b64fc736f952ee048f5e8bad63a23490378976",
       "paths": {
         "artifact": "ThemePack/theme-pack.zip",
         "manifest": "ThemePack/manifest.json",
@@ -49,7 +49,7 @@
       "name": "DaemonCore Knowledge Pack",
       "version": "0.1.0",
       "description": "Demo knowledge pack with runbooks and guides for the help system.",
-      "digest": "e29d81a5fb96ce08bc416e0645cdeeb743692ef9a8455c42f1924ae1ad42612c",
+      "digest": "a6d8c5b38930545ad122d1cdd4a8cba4f182ce64e58bbb096a501b872981a069",
       "paths": {
         "artifact": "KnowledgePack/knowledge-pack.zip",
         "manifest": "KnowledgePack/manifest.json",
@@ -63,7 +63,7 @@
       "name": "DaemonCore Command Pack",
       "version": "0.1.0",
       "description": "Demo slash command pack with shortcuts for common operations.",
-      "digest": "337e1027e5c989f665492bdb470efa8c9e9686080c1ce681be67af9fb1496412",
+      "digest": "0ab7da84ceedeacc69058c0fde014592017ef1782f70d3a6e244f08bd69d100c",
       "paths": {
         "artifact": "CommandPack/command-pack.zip",
         "manifest": "CommandPack/manifest.json",
@@ -77,7 +77,7 @@
       "name": "DaemonCore Role Pack",
       "version": "0.1.0",
       "description": "Demo role pack with additional agent roles and profiles.",
-      "digest": "ea53358968ebb6d5cae14ab1529ba624bb8126d307e644bf9068f22470b8a6b0",
+      "digest": "48d4bba084e7a2b8f3f1f375e1d1bcc72a590e0cb1104a6f4f2ef0c42ed4fd7a",
       "paths": {
         "artifact": "RolePack/role-pack.zip",
         "manifest": "RolePack/manifest.json",
