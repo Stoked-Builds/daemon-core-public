@@ -86,3 +86,17 @@ temp/
 # Deployment
 .vercel/
 .netlify/
+
+# DaemonCore runtime
+.daemoncore/exchange/queues/**
+.daemoncore/exchange/transcripts/**
+.daemoncore/exchange/artifacts/**
+.daemoncore/exchange/dead-letter/**
+.daemoncore/exchange/system/**
+.daemoncore/cache/**
+.daemoncore/logs/**
+.daemoncore/remote/**
+.daemoncore/kernel/**
+.daemoncore/outbox/**
+.daemoncore/code-review/**
+.daemoncore/**/.DS_Store
