@@ -1,0 +1,13 @@
+{
+  "id": "speckit",
+  "status": "pass",
+  "timestamp": "2026-01-28T00:00:00Z",
+  "issuer": "speckit",
+  "details": "Sample attestation for the Speckit backlog provider add-in",
+  "signatures": [
+    {
+      "key": "speckit-v1",
+      "value": "signature-value"
+    }
+  ]
+}

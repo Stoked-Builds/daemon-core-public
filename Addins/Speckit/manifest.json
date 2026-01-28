@@ -1,0 +1,17 @@
+{
+  "id": "speckit",
+  "name": "Speckit Backlog Provider",
+  "version": "0.1.0",
+  "description": "Speckit backlog provider add-in that ships a starter specs workspace for the operator dashboard.",
+  "paths": {
+    "artifact": "speckit.zip",
+    "manifest": "manifest.json",
+    "attestation": "attestation.json"
+  },
+  "capabilities": [
+    "fs"
+  ],
+  "configuration": {
+    "track": true
+  }
+}
