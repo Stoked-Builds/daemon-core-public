@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Daemon Core architecture: layered context, boundaries, and multi-agent coordination."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Architecture - Daemon Core</title><link rel="stylesheet" href="/assets/architecture.CSbhIXcL.css"></head> <body> <nav data-astro-cid-5blmo7yk> <div class="nav-container" data-astro-cid-5blmo7yk> <a href="/" class="logo" data-astro-cid-5blmo7yk>DaemonCore</a> <ul class="nav-links" data-astro-cid-5blmo7yk> <li data-astro-cid-5blmo7yk><a href="/" data-astro-cid-5blmo7yk>Home</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon" class="active" data-astro-cid-5blmo7yk>Kernel</a></li>  <li data-astro-cid-5blmo7yk><a href="/daemon/what-it-is" data-astro-cid-5blmo7yk>What Is It</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/value" data-astro-cid-5blmo7yk>Value</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/comparisons" data-astro-cid-5blmo7yk>Comparisons</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/faq" data-astro-cid-5blmo7yk>FAQ</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/blog" data-astro-cid-5blmo7yk>Blog</a></li>  <li data-astro-cid-5blmo7yk><a href="/early-access" class="nav-cta" data-astro-cid-5blmo7yk>Early Access</a></li> <li data-astro-cid-5blmo7yk><a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener" data-astro-cid-5blmo7yk>GitHub</a></li> </ul> </div> </nav>  <main>  <article class="article article-wide"> <h1>Architecture</h1> <p>
+This document describes the structural organisation of Daemon Core.
+      Not implementation detail. Architectural rationale.
+</p> <p>
+This layer cannot be retrofitted by tools above it. Governance must be foundational.
+</p> <h2>Conceptual Model</h2> <p>
+Each agent receives three structural inputs before operation:
+</p> <ul> <li>A <strong>rulebook</strong> defining behavioral constraints.</li> <li>A <strong>scope boundary</strong> delimiting operational range.</li> <li>A <strong>context focus</strong> specifying current workload.</li> </ul> <p>
+These map to three architectural layers: structure, boundaries, coordination.
+</p> <h2>Layer 1: Structure</h2> <p>
+The structural layer governs agent initialisation:
+</p> <ul> <li>Core rules applied universally.</li> <li>Global preferences and configurations.</li> <li>Identity and capability declarations.</li> </ul> <p>
+This layer ensures behavioral consistency across sessions and restarts.
+</p> <h2>Layer 2: Boundaries</h2> <p>
+The boundary layer controls safety and scope:
+</p> <ul> <li>Operational range constraints.</li> <li>Permission matrices by environment trust.</li> <li>Human approval requirements for critical operations.</li> </ul> <p>
+Boundaries are structural, not advisory. Agents cannot exceed defined limits.
+</p> <h2>Layer 3: Coordination</h2> <p>
+The coordination layer manages multi-agent operation:
+</p> <ul> <li>Context handoff protocols between agents.</li> <li>Conflict prevention through scope isolation.</li> <li>Audit trails for operational history.</li> </ul> <p>
+Coordination is structural. Agents operate as components of a unified system,
+      not isolated instances.
+</p> <h2>Extension Model</h2> <p>
+Daemon Core supports extension through defined interfaces:
+</p> <ul> <li>Custom role profiles for domain-specific agents.</li> <li>Environment-specific boundary configurations.</li> <li>Integration hooks for external tooling.</li> </ul> <p>
+Extensions operate within core constraints. They cannot override
+      fundamental safety or coordination mechanisms.
+</p> </article>  </main> <footer data-astro-cid-sz7xmlte> <div class="footer-content" data-astro-cid-sz7xmlte> <div class="footer-links" data-astro-cid-sz7xmlte> <a href="/" data-astro-cid-sz7xmlte>Stux OS</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/daemon" data-astro-cid-sz7xmlte>Daemon Core</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/daemon/value" data-astro-cid-sz7xmlte>Business Value</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/early-access" data-astro-cid-sz7xmlte>Early Access</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/media-kit" data-astro-cid-sz7xmlte>Media Kit</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener" data-astro-cid-sz7xmlte>GitHub</a> </div> <p class="copyright" data-astro-cid-sz7xmlte>Daemon Core 2025</p> </div> </footer>  </body></html>

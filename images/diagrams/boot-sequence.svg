@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <!--
+    DaemonCore Boot Sequence - Conceptual
+    IP-Safe: Shows phases without implementation details
+  -->
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="#0D0E14"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="300">Agent Boot Sequence</text>
+  <text x="400" y="55" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="11">Structured initialization ensures predictable agent behavior</text>
+
+  <!-- Phase boxes -->
+  <g transform="translate(50, 85)">
+    <!-- Phase 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="160" height="100" fill="#161720" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="80" y="25" text-anchor="middle" fill="#F7B801" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">PHASE 1</text>
+      <text x="80" y="50" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="13">Environment</text>
+      <text x="80" y="70" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Detect host context</text>
+      <text x="80" y="85" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Load configuration</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="170" y1="50" x2="195" y2="50" stroke="#6C5B7B" stroke-width="1"/>
+
+    <!-- Phase 2 -->
+    <g transform="translate(205, 0)">
+      <rect x="0" y="0" width="160" height="100" fill="#161720" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="80" y="25" text-anchor="middle" fill="#F7B801" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">PHASE 2</text>
+      <text x="80" y="50" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="13">Identity</text>
+      <text x="80" y="70" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Establish agent identity</text>
+      <text x="80" y="85" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Apply role profile</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="375" y1="50" x2="400" y2="50" stroke="#6C5B7B" stroke-width="1"/>
+
+    <!-- Phase 3 -->
+    <g transform="translate(410, 0)">
+      <rect x="0" y="0" width="160" height="100" fill="#161720" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="80" y="25" text-anchor="middle" fill="#F7B801" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">PHASE 3</text>
+      <text x="80" y="50" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="13">Boundaries</text>
+      <text x="80" y="70" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Set capability limits</text>
+      <text x="80" y="85" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Enforce safety rules</text>
+    </g>
+
+    <!-- Connector -->
+    <line x1="580" y1="50" x2="605" y2="50" stroke="#6C5B7B" stroke-width="1"/>
+
+    <!-- Phase 4 -->
+    <g transform="translate(615, 0)">
+      <rect x="0" y="0" width="135" height="100" fill="rgba(247, 184, 1, 0.08)" stroke="#F7B801" stroke-width="2"/>
+      <text x="67" y="25" text-anchor="middle" fill="#F7B801" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">READY</text>
+      <text x="67" y="50" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="13">Operational</text>
+      <text x="67" y="70" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Agent active</text>
+      <text x="67" y="85" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">within bounds</text>
+    </g>
+  </g>
+
+  <!-- Key points -->
+  <g transform="translate(50, 220)">
+    <text x="0" y="0" fill="#6C5B7B" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">KEY PRINCIPLES</text>
+
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="220" height="55" fill="none" stroke="#2A2B35" stroke-width="1"/>
+      <text x="15" y="22" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="11">Deterministic</text>
+      <text x="15" y="40" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Same config = same behavior</text>
+    </g>
+
+    <g transform="translate(240, 20)">
+      <rect x="0" y="0" width="220" height="55" fill="none" stroke="#2A2B35" stroke-width="1"/>
+      <text x="15" y="22" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="11">Boundaries First</text>
+      <text x="15" y="40" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Limits set before operation</text>
+    </g>
+
+    <g transform="translate(480, 20)">
+      <rect x="0" y="0" width="220" height="55" fill="none" stroke="#2A2B35" stroke-width="1"/>
+      <text x="15" y="22" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="11">Persistent</text>
+      <text x="15" y="40" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">State survives restarts</text>
+    </g>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="400" y="330" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="11">Agents cannot skip boot phases or self-modify boundaries</text>
+</svg>

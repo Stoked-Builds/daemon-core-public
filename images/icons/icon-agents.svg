@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6C5B7B" stroke-width="1.5">
+  <!-- Agents: Multiple nodes -->
+  <circle cx="12" cy="6" r="3"/>
+  <circle cx="6" cy="18" r="3"/>
+  <circle cx="18" cy="18" r="3"/>
+  <line x1="12" y1="9" x2="12" y2="12" stroke="#F7B801"/>
+  <line x1="12" y1="12" x2="6" y2="15" stroke="#F7B801"/>
+  <line x1="12" y1="12" x2="18" y2="15" stroke="#F7B801"/>
+</svg>

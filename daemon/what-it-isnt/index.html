@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="DaemonCore is not an AI model, not an orchestrator, not a framework. Clear boundaries on what this governance layer does and doesn't do."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>What DaemonCore Is Not - DaemonCore</title><link rel="stylesheet" href="/assets/architecture.CSbhIXcL.css"></head> <body> <nav data-astro-cid-5blmo7yk> <div class="nav-container" data-astro-cid-5blmo7yk> <a href="/" class="logo" data-astro-cid-5blmo7yk>DaemonCore</a> <ul class="nav-links" data-astro-cid-5blmo7yk> <li data-astro-cid-5blmo7yk><a href="/" data-astro-cid-5blmo7yk>Home</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon" class="active" data-astro-cid-5blmo7yk>Kernel</a></li>  <li data-astro-cid-5blmo7yk><a href="/daemon/what-it-is" class="active" data-astro-cid-5blmo7yk>What Is It</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/value" data-astro-cid-5blmo7yk>Value</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/comparisons" data-astro-cid-5blmo7yk>Comparisons</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/faq" data-astro-cid-5blmo7yk>FAQ</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/blog" data-astro-cid-5blmo7yk>Blog</a></li>  <li data-astro-cid-5blmo7yk><a href="/early-access" class="nav-cta" data-astro-cid-5blmo7yk>Early Access</a></li> <li data-astro-cid-5blmo7yk><a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener" data-astro-cid-5blmo7yk>GitHub</a></li> </ul> </div> </nav>  <main>  <article class="article"> <h1>What DaemonCore Is Not</h1> <p class="lead">
+Understanding what DaemonCore <em>isn't</em> helps clarify what it is.
+      These are the most common misconceptions.
+</p> <div class="not-item"> <h2>Not an AI Model</h2> <p>
+DaemonCore does not generate text, reason about problems, or produce outputs.
+        It operates <em>alongside</em> existing models — Claude, GPT, Gemini, open-source LLMs.
+        These models do the reasoning. DaemonCore provides the governance layer they operate within.
+</p> </div> <div class="not-item"> <h2>Not an Orchestrator</h2> <p>
+Orchestrators like LangChain, CrewAI, or AutoGen coordinate agent workflows.
+        They decide which agent does what and when. DaemonCore operates <em>beneath</em>
+orchestrators. It defines what agents are <em>allowed</em> to do, not what they
+<em>should</em> do.
+</p> <p>
+Think of it this way: orchestrators manage traffic flow; DaemonCore defines the roads.
+</p> </div> <div class="not-item"> <h2>Not an Agent Framework</h2> <p>
+Agent frameworks provide scaffolding for building AI agents — memory management,
+        tool integration, conversation handling. DaemonCore doesn't build agents. It governs
+        agents built with <em>any</em> framework.
+</p> </div> <div class="not-item"> <h2>Not Prompt Engineering</h2> <p>
+Prompt engineering operates per-request. You craft instructions and hope the
+        model follows them. DaemonCore operates at the <em>environment</em> level:
+</p> <ul> <li>Constraints are structural, not advisory</li> <li>Boundaries persist across sessions</li> <li>Rules cannot be talked around</li> </ul> <p>
+Prompts still exist. They execute <em>within</em> the DaemonCore environment.
+</p> </div> <div class="not-item"> <h2>Not a Chatbot or Interface</h2> <p>
+DaemonCore has no user interface. It doesn't chat. It doesn't respond to queries.
+        It's infrastructure — the governance layer that other systems build upon.
+</p> </div> <div class="not-item"> <h2>Not Vendor-Specific</h2> <p>
+DaemonCore is designed for multi-vendor operation. It's not tied to OpenAI,
+        Anthropic, Google, or any specific provider. Different models operate under
+        unified governance with strict isolation between them.
+</p> </div> <div class="not-item"> <h2>Not a Security Product</h2> <p>
+While DaemonCore enforces safety boundaries, it's not a security tool in the
+        traditional sense. It doesn't scan for vulnerabilities or block attacks.
+        It provides <em>architectural</em> safety — ensuring agents cannot exceed
+        defined capabilities.
+</p> </div> <h2>The Distinction Matters</h2> <p>
+These boundaries aren't pedantic. They reflect a specific architectural position:
+      governance sits beneath orchestration, not alongside it. This position enables
+      enforcement that orchestrators cannot override.
+</p> <p>
+When governance is a feature of the orchestrator, it can be bypassed by the
+      orchestrator. When governance is the <em>foundation</em>, it cannot.
+</p> <div class="next-links"> <a href="/daemon/what-it-is" class="link-card"> <h3>What It Is</h3> <p>The governance layer for multi-agent systems.</p> </a> <a href="/daemon/why-different" class="link-card"> <h3>Why This Is Different</h3> <p>The gap in today's stack and why governance matters.</p> </a> </div> </article>  </main> <footer data-astro-cid-sz7xmlte> <div class="footer-content" data-astro-cid-sz7xmlte> <div class="footer-links" data-astro-cid-sz7xmlte> <a href="/" data-astro-cid-sz7xmlte>Stux OS</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/daemon" data-astro-cid-sz7xmlte>Daemon Core</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/daemon/value" data-astro-cid-sz7xmlte>Business Value</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/early-access" data-astro-cid-sz7xmlte>Early Access</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/media-kit" data-astro-cid-sz7xmlte>Media Kit</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener" data-astro-cid-sz7xmlte>GitHub</a> </div> <p class="copyright" data-astro-cid-sz7xmlte>Daemon Core 2025</p> </div> </footer>  </body></html>

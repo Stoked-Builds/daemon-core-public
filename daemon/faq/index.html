@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Frequently asked questions about DaemonCore: what it is, how it works, and how to get involved."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>FAQ - DaemonCore</title><link rel="stylesheet" href="/assets/architecture.CSbhIXcL.css"></head> <body> <nav data-astro-cid-5blmo7yk> <div class="nav-container" data-astro-cid-5blmo7yk> <a href="/" class="logo" data-astro-cid-5blmo7yk>DaemonCore</a> <ul class="nav-links" data-astro-cid-5blmo7yk> <li data-astro-cid-5blmo7yk><a href="/" data-astro-cid-5blmo7yk>Home</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon" class="active" data-astro-cid-5blmo7yk>Kernel</a></li>  <li data-astro-cid-5blmo7yk><a href="/daemon/what-it-is" data-astro-cid-5blmo7yk>What Is It</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/value" data-astro-cid-5blmo7yk>Value</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/comparisons" data-astro-cid-5blmo7yk>Comparisons</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/faq" data-astro-cid-5blmo7yk>FAQ</a></li> <li data-astro-cid-5blmo7yk><a href="/daemon/blog" data-astro-cid-5blmo7yk>Blog</a></li>  <li data-astro-cid-5blmo7yk><a href="/early-access" class="nav-cta" data-astro-cid-5blmo7yk>Early Access</a></li> <li data-astro-cid-5blmo7yk><a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener" data-astro-cid-5blmo7yk>GitHub</a></li> </ul> </div> </nav>  <main>  <article class="article"> <h1>Frequently Asked Questions</h1> <section class="faq-section"> <h2 class="faq-category">Understanding DaemonCore</h2> <div class="faq-item"> <h3>What is DaemonCore?</h3> <p>
+DaemonCore is a governance layer for multi-agent AI systems. It sits beneath
+          orchestration frameworks and defines what agents are allowed to do. Think of
+          it as the "operating system layer" for AI — enforcing boundaries, managing
+          permissions, and coordinating agent interactions.
+</p> </div> <div class="faq-item"> <h3>Is DaemonCore an AI model?</h3> <p>
+No. DaemonCore is not an AI model, and it does not generate text, reason about problems,
+          or produce outputs.
+</p> <p>
+DaemonCore provides the <strong>governance layer that exists within an agentic session</strong>.
+          It defines the rules, constraints, and continuity under which models like Claude, GPT,
+          or Gemini operate during that session — without being the thing that thinks or speaks.
+</p> <p>
+In other words, DaemonCore doesn’t replace AI models, and it doesn’t sit alongside them
+          as a tool or wrapper. It shapes the <em>environment</em> they are operating in.
+</p> <p><strong>
+Orchestration tools tell models what to do.<br>
+DaemonCore defines the rules of the world they’re doing it in.
+</strong></p> <p class="muted">Patent pending.</p> </div> <div class="faq-item"> <h3>Is it an orchestrator or agent framework?</h3> <p>
+No. Orchestrators like LangChain and CrewAI coordinate agent workflows.
+          DaemonCore operates <em>beneath</em> orchestrators, enforcing rules that
+          orchestrators cannot override. It's complementary, not competitive.
+</p> </div> <div class="faq-item"> <h3>How is this different from prompt engineering?</h3> <p>
+Prompt engineering operates per-request with advisory guidelines.
+          DaemonCore operates at the environment level with structural enforcement:
+</p> <ul> <li>Boundaries persist across sessions</li> <li>Constraints cannot be bypassed by clever prompting</li> <li>Safety is architectural, not advisory</li> </ul> <p>
+Prompts still exist — they execute <em>within</em> the governed environment.
+</p> </div> </section> <section class="faq-section"> <h2 class="faq-category">Hard Questions</h2> <div class="faq-item"> <h3>Isn't this just prompts with extra steps?</h3> <p>
+A fair question. Here's the difference:
+</p> <p>
+Prompts are <strong>instructions to the model</strong>. DaemonCore defines
+<strong>what happens to model outputs</strong> before they become actions.
+</p> <ul> <li>Prompts: "Don't access files outside this directory"</li> <li>DaemonCore: Output must be protocol-shaped. Scope field validated. Access blocked if outside permitted paths.</li> </ul> <p>
+The model still receives prompts. But its outputs pass through protocol validation
+          before any action occurs. A prompt can be ignored or misinterpreted. A schema
+          mismatch is rejected.
+</p> <p> <strong>V1:</strong> Protocol validation, schema enforcement, scope checking.
+          The model's reasoning is still its own—we govern what that reasoning can <em>do</em>.
+</p> </div> <div class="faq-item"> <h3>Can prompt injection override DaemonCore?</h3> <p> <strong>Honest answer:</strong> In V1, prompt injection can influence the model's reasoning.
+          It cannot bypass the governance layer.
+</p> <p>
+Here's what that means:
+</p> <ul> <li> <strong>Injection can:</strong> Manipulate the model into producing malicious output,
+            changing its reasoning, or attempting actions outside scope.
+</li> <li> <strong>Injection cannot:</strong> Make that output bypass protocol validation,
+            send messages that don't match schema, or access resources outside permitted scope.
+</li> </ul> <p>
+If a manipulated model tries to access <code>src/payments/</code> when only
+<code>src/auth/</code> is permitted, the access is blocked. The violation is logged.
+          The model was influenced; the action was prevented.
+</p> <p> <strong>V1:</strong> Detection and constraint. We log anomalous outputs and block
+          out-of-scope actions.
+</p> <p> <strong>V1.5 (planned):</strong> Cryptographic action signing, hardware attestation.
+          Stronger guarantees that actions trace to legitimate requests.
+</p> <p>
+We don't claim to prevent prompt injection. We limit what a compromised model can achieve.
+</p> </div> <div class="faq-item"> <h3>Don't orchestration tools already do this?</h3> <p>
+Orchestrators coordinate. They decide <em>what</em> agents do, <em>when</em>,
+          and in what order. Some include safety features.
+</p> <p>
+The problem: governance at the orchestration layer can be bypassed by the orchestrator.
+          If the orchestrator decides to skip a check, nothing prevents it.
+</p> <p>
+DaemonCore sits <em>beneath</em> orchestration. The orchestrator cannot override
+          governance because it operates above the governance layer. This is the same principle
+          as OS-level memory protection: applications cannot decide to bypass it because
+          enforcement happens at a lower level.
+</p> <p> <strong>Orchestrators + DaemonCore:</strong> The orchestrator coordinates workflows.
+          DaemonCore ensures those workflows operate within defined boundaries regardless of
+          what the orchestrator requests.
+</p> </div> <div class="faq-item"> <h3>What's actually enforced in V1 vs V1.5?</h3> <div class="faq-version-table"> <div class="faq-version-col"> <h4>V1 (Current)</h4> <ul> <li><strong>Protocol validation:</strong> Outputs must match expected structure</li> <li><strong>Schema enforcement:</strong> Messages validated against typed schemas</li> <li><strong>Scope boundaries:</strong> File/resource access checked against permissions</li> <li><strong>Template constraints:</strong> Operations follow predefined templates</li> <li><strong>Deterministic boot:</strong> Agents initialise with consistent context</li> <li><strong>Audit logging:</strong> Actions and violations recorded</li> </ul> </div> <div class="faq-version-col"> <h4>V1.5 (Planned)</h4> <ul> <li><strong>Cryptographic signing:</strong> Actions carry verifiable signatures</li> <li><strong>Hardware attestation:</strong> Trusted execution environment support</li> <li><strong>Capability delegation:</strong> Cross-agent permission transfer with audit</li> <li><strong>Real-time verification:</strong> Continuous constraint checking during execution</li> </ul> </div> </div> <p>
+V1 provides structural enforcement through validation and rejection. V1.5 adds
+          cryptographic guarantees. We ship what's working; we don't promise what's not built.
+</p> </div> </section> <section class="faq-section"> <h2 class="faq-category">Technical Questions</h2> <div class="faq-item"> <h3>Which AI providers are supported?</h3> <p>
+DaemonCore is vendor-agnostic by design. The governance layer works with
+          any model provider — Claude, GPT, Gemini, open-source LLMs. Different
+          providers operate under unified governance with strict isolation between them.
+</p> </div> <div class="faq-item"> <h3>How does safety work?</h3> <p>
+Safety in DaemonCore is architectural, not advisory. Agents operate within
+          defined capability envelopes — boundaries they cannot exceed regardless of
+          prompting. The system enforces permissions based on environment trust level,
+          with lower-trust environments receiving stricter constraints by default.
+</p> </div> <div class="faq-item"> <h3>Can multiple agents work together?</h3> <p>
+Yes. Multi-agent coordination is core functionality. DaemonCore manages:
+</p> <ul> <li>Context handoff between agents</li> <li>Scope isolation to prevent conflicts</li> <li>Shared state through defined protocols</li> <li>Permission inheritance across agent hierarchies</li> </ul> </div> <div class="faq-item"> <h3>Does this require API changes to use existing models?</h3> <p>
+No. DaemonCore operates as a governance layer above model APIs. Your existing
+          integrations with OpenAI, Anthropic, or other providers remain unchanged.
+          The governance layer wraps these interactions with enforcement.
+</p> </div> </section> <section class="faq-section"> <h2 class="faq-category">Availability & Access</h2> <div class="faq-item"> <h3>Is DaemonCore open source?</h3> <p>
+The kernel specification is public and available for review. The full system
+          includes additional components in various stages of development. See the
+<a href="https://github.com/stux-os/daemon-core-public">GitHub repository</a>
+for current public materials.
+</p> </div> <div class="faq-item"> <h3>Can I use it today?</h3> <p>
+The kernel specification is available for review and experimentation.
+          Production deployment capabilities are in active development. Follow
+          the blog for updates on availability.
+</p> </div> <div class="faq-item"> <h3>What is Stux, and how does it relate to DaemonCore?</h3> <p> <strong>Stux</strong> is the company building DaemonCore. Think of it like the
+          relationship between a company and its core product.
+</p> <p> <strong>Stux OS</strong> is the broader operating environment we're building for
+          multi-agent systems. DaemonCore is the kernel—the governance layer at the foundation.
+          Other components (tooling, interfaces, deployment systems) build on top of the kernel.
+</p> <p>
+When you see "DaemonCore," you're looking at the core governance specification.
+          When you see "Stux," you're looking at the organisation and broader ecosystem.
+</p> </div> <div class="faq-item"> <h3>How can I follow development?</h3> <p>
+Public materials and specifications are available via the
+<a href="https://github.com/stux-os/daemon-core-public">GitHub repository</a>.
+          Development updates are posted to the <a href="/daemon/blog">blog</a>.
+</p> </div> </section> <section class="faq-section"> <h2 class="faq-category">Strategic Questions</h2> <div class="faq-item"> <h3>Why does this matter now?</h3> <p>
+AI systems are being deployed at scale without governance infrastructure.
+          As multi-agent systems become more capable, the gap between what agents
+<em>can</em> do and what they <em>should</em> do becomes critical.
+          DaemonCore provides the foundation for trustworthy agent deployment.
+</p> </div> <div class="faq-item"> <h3>Can't orchestrators handle safety themselves?</h3> <p>
+Governance at the orchestration layer can be bypassed by the orchestrator.
+          For enforcement to be reliable, it must sit <em>beneath</em> orchestration —
+          at a layer that orchestrators cannot override. This is why DaemonCore exists
+          as a separate governance layer, not as a feature of existing frameworks.
+</p> </div> <div class="faq-item"> <h3>What about existing enterprise AI platforms?</h3> <p>
+Large technology companies have built sophisticated internal systems.
+          DaemonCore provides a public specification that enables similar governance
+          capabilities without requiring the massive engineering investment of building
+          everything from scratch.
+</p> </div> </section> <div class="faq-footer"> <p>
+Have a question not covered here?
+<a href="https://github.com/stux-os/daemon-core-public/issues">Open an issue on GitHub</a>.
+</p> </div> </article>  </main> <footer data-astro-cid-sz7xmlte> <div class="footer-content" data-astro-cid-sz7xmlte> <div class="footer-links" data-astro-cid-sz7xmlte> <a href="/" data-astro-cid-sz7xmlte>Stux OS</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/daemon" data-astro-cid-sz7xmlte>Daemon Core</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/daemon/value" data-astro-cid-sz7xmlte>Business Value</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/early-access" data-astro-cid-sz7xmlte>Early Access</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="/media-kit" data-astro-cid-sz7xmlte>Media Kit</a> <span class="separator" data-astro-cid-sz7xmlte>/</span> <a href="https://github.com/stux-os/daemon-core-public" target="_blank" rel="noopener" data-astro-cid-sz7xmlte>GitHub</a> </div> <p class="copyright" data-astro-cid-sz7xmlte>Daemon Core 2025</p> </div> </footer>  </body></html>
