@@ -22,7 +22,7 @@
       "name": "Speckit Shell",
       "version": "0.1.0",
       "description": "Minimal Speckit authoring add-in package for the DaemonCore registry.",
-      "digest": "placeholder-digest-speckit-shell",
+      "digest": "6659dde44928571f30bdf761677784823e50f77c62b06bb20f5f8cf869173f47",
       "paths": {
         "artifact": "Speckit-Shell/speckit-shell.zip",
         "manifest": "Speckit-Shell/manifest.json",
@@ -35,7 +35,7 @@
       "name": "DaemonCore Theme Pack",
       "version": "0.1.0",
       "description": "Demo theme pack add-in with dark mode and high contrast themes for operator UI branding.",
-      "digest": "placeholder-digest-theme-pack-v1",
+      "digest": "de9f53a5d9593d63ea765d2de83f0dd9da095d92225fe8a5bc2b78c104483d52",
       "paths": {
         "artifact": "ThemePack/theme-pack.zip",
         "manifest": "ThemePack/manifest.json",
@@ -49,7 +49,7 @@
       "name": "DaemonCore Knowledge Pack",
       "version": "0.1.0",
       "description": "Demo knowledge pack with runbooks and guides for the help system.",
-      "digest": "placeholder-digest-knowledge-pack-v1",
+      "digest": "e29d81a5fb96ce08bc416e0645cdeeb743692ef9a8455c42f1924ae1ad42612c",
       "paths": {
         "artifact": "KnowledgePack/knowledge-pack.zip",
         "manifest": "KnowledgePack/manifest.json",
@@ -63,7 +63,7 @@
       "name": "DaemonCore Command Pack",
       "version": "0.1.0",
       "description": "Demo slash command pack with shortcuts for common operations.",
-      "digest": "placeholder-digest-command-pack-v1",
+      "digest": "337e1027e5c989f665492bdb470efa8c9e9686080c1ce681be67af9fb1496412",
       "paths": {
         "artifact": "CommandPack/command-pack.zip",
         "manifest": "CommandPack/manifest.json",
@@ -77,7 +77,7 @@
       "name": "DaemonCore Role Pack",
       "version": "0.1.0",
       "description": "Demo role pack with additional agent roles and profiles.",
-      "digest": "placeholder-digest-role-pack-v1",
+      "digest": "ea53358968ebb6d5cae14ab1529ba624bb8126d307e644bf9068f22470b8a6b0",
       "paths": {
         "artifact": "RolePack/role-pack.zip",
         "manifest": "RolePack/manifest.json",
