@@ -1,0 +1,15 @@
+{
+  "addins": [
+    {
+      "id": "theme-pack-v1",
+      "name": "DaemonCore Theme Pack",
+      "version": "0.1.0",
+      "digest": "placeholder-digest-theme-pack-v1",
+      "paths": {
+        "artifact": "theme-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "knowledge-pack-v1",
+  "name": "DaemonCore Knowledge Pack",
+  "version": "0.1.0",
+  "description": "Demo knowledge pack with runbooks and guides for the help system.",
+  "paths": {
+    "artifact": "knowledge-pack.zip",
+    "manifest": "manifest.json",
+    "attestation": "attestation.json"
+  },
+  "capabilities": [],
+  "configuration": {
+    "track": true
+  },
+  "contributions": {
+    "knowledge": [
+      {
+        "id": "daemoncore-runbooks",
+        "title": "DaemonCore Runbooks",
+        "description": "Operational runbooks for DaemonCore administration",
+        "category": "runbooks",
+        "docs": [
+          {
+            "path": "docs/boot-troubleshooting.md",
+            "title": "Boot Troubleshooting",
+            "tags": ["boot", "troubleshooting", "kernel"]
+          },
+          {
+            "path": "docs/addin-management.md",
+            "title": "Add-in Management",
+            "tags": ["addins", "install", "uninstall"]
+          },
+          {
+            "path": "docs/agent-configuration.md",
+            "title": "Agent Configuration",
+            "tags": ["agents", "config", "profiles"]
+          }
+        ]
+      },
+      {
+        "id": "daemoncore-guides",
+        "title": "Getting Started Guides",
+        "description": "Quick start guides for new operators",
+        "category": "guides",
+        "docs": [
+          {
+            "path": "docs/quick-start.md",
+            "title": "Quick Start Guide",
+            "tags": ["getting-started", "beginner"]
+          },
+          {
+            "path": "docs/first-addin.md",
+            "title": "Your First Add-in",
+            "tags": ["addins", "tutorial", "beginner"]
+          }
+        ]
+      }
+    ]
+  }
+}

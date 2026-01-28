@@ -1,0 +1,104 @@
+/**
+ * DaemonCore Theme Override Layer
+ *
+ * This file provides the override mechanism for add-in contributed themes.
+ * Theme contributions are loaded from installed add-ins and applied via
+ * CSS custom properties.
+ *
+ * Usage:
+ * 1. Add-in themes are stored in .daemoncore/addins/themes/
+ * 2. Active theme is recorded in .daemoncore/addins/active-theme.json
+ * 3. At build/runtime, theme tokens are injected here
+ *
+ * Theme Structure (from contribution schema):
+ * - colors: primary, secondary, background, surface, text
+ * - fonts: heading, body, mono
+ * - spacing: (optional overrides)
+ * - borders: (optional overrides)
+ */
+
+/* ============================================
+   THEME DETECTION
+   Data attribute on html element indicates active theme
+   <html data-theme="dark-mode" data-theme-source="addin:my-theme-pack">
+   ============================================ */
+
+/* Default: No theme override active */
+:root {
+  --theme-active: none;
+  --theme-source: default;
+}
+
+/* ============================================
+   THEME OVERRIDE SLOTS
+   These custom properties can be overridden by add-in themes.
+   The base variables.css provides defaults; themes override here.
+   ============================================ */
+
+/* When a theme is active, it sets --theme-active and overrides colors */
+[data-theme] {
+  /* Theme identification */
+  --theme-active: attr(data-theme);
+
+  /* Color overrides slot - themes inject values here */
+  /* --color-bg: <from-theme>; */
+  /* --color-text: <from-theme>; */
+  /* --color-accent: <from-theme>; */
+  /* etc. */
+}
+
+/* ============================================
+   THEME INDICATOR
+   Visual indicator showing active theme (for debugging/demos)
+   ============================================ */
+[data-theme]::after {
+  content: attr(data-theme);
+  position: fixed;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  background: var(--color-bg-elevated);
+  color: var(--color-text-muted);
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  border: var(--border-width) solid var(--color-border-subtle);
+  z-index: var(--z-overlay);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-default);
+}
+
+/* Show indicator when debugging themes */
+[data-theme-debug]::after {
+  opacity: 1;
+}
+
+/* ============================================
+   EXAMPLE THEME: Dark Mode (Demo)
+   This shows how an add-in theme would override variables
+   ============================================ */
+[data-theme="demo-dark"] {
+  --color-bg: #0a0a0f;
+  --color-bg-elevated: #14141f;
+  --color-text: #b0c4de;
+  --color-text-muted: #7b68ee;
+  --color-accent: #9370db;
+  --color-accent-hover: #ba55d3;
+  --color-border: #483d8b;
+  --color-border-subtle: #2f2f4f;
+}
+
+/* ============================================
+   EXAMPLE THEME: High Contrast (Demo)
+   Accessibility-focused theme
+   ============================================ */
+[data-theme="demo-high-contrast"] {
+  --color-bg: #000000;
+  --color-bg-elevated: #1a1a1a;
+  --color-text: #ffffff;
+  --color-text-muted: #cccccc;
+  --color-accent: #ffff00;
+  --color-accent-hover: #ffff66;
+  --color-border: #ffffff;
+  --color-border-subtle: #666666;
+}

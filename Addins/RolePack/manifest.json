@@ -1,0 +1,64 @@
+{
+  "id": "role-pack-v1",
+  "name": "DaemonCore Role Pack",
+  "version": "0.1.0",
+  "description": "Demo role pack with additional agent roles and profiles.",
+  "paths": {
+    "artifact": "role-pack.zip",
+    "manifest": "manifest.json",
+    "attestation": "attestation.json"
+  },
+  "capabilities": [],
+  "configuration": {
+    "track": true
+  },
+  "contributions": {
+    "roles": [
+      {
+        "id": "code-reviewer",
+        "name": "Code Reviewer",
+        "description": "Focused on code quality, security analysis, and best practice enforcement",
+        "type": "role",
+        "path": "roles/code-reviewer.md",
+        "vendors": ["claude", "codex"],
+        "capabilities": ["fs", "git"]
+      },
+      {
+        "id": "technical-writer",
+        "name": "Technical Writer",
+        "description": "Focused on documentation, clarity, and user-facing content",
+        "type": "role",
+        "path": "roles/technical-writer.md",
+        "vendors": [],
+        "capabilities": ["fs"]
+      },
+      {
+        "id": "security-analyst",
+        "name": "Security Analyst",
+        "description": "Focused on vulnerability assessment and security hardening",
+        "type": "role",
+        "path": "roles/security-analyst.md",
+        "vendors": ["claude"],
+        "capabilities": ["fs", "http"]
+      },
+      {
+        "id": "minimal-profile",
+        "name": "Minimal Profile",
+        "description": "Reduced context for constrained environments",
+        "type": "profile",
+        "path": "roles/minimal-profile.md",
+        "vendors": [],
+        "capabilities": ["fs"]
+      },
+      {
+        "id": "verbose-profile",
+        "name": "Verbose Profile",
+        "description": "Extended explanations and detailed reasoning",
+        "type": "profile",
+        "path": "roles/verbose-profile.md",
+        "vendors": [],
+        "capabilities": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "command-pack-v1",
+  "name": "DaemonCore Command Pack",
+  "version": "0.1.0",
+  "description": "Demo slash command pack with shortcuts for common operations.",
+  "paths": {
+    "artifact": "command-pack.zip",
+    "manifest": "manifest.json",
+    "attestation": "attestation.json"
+  },
+  "capabilities": [],
+  "configuration": {
+    "track": true
+  },
+  "contributions": {
+    "commands": [
+      {
+        "name": "status",
+        "description": "Show system status and health",
+        "handler": "builtin:status",
+        "args": {
+          "verbose": false
+        },
+        "aliases": ["st", "stat"]
+      },
+      {
+        "name": "help",
+        "description": "Show help for available commands",
+        "handler": "builtin:help",
+        "args": {},
+        "aliases": ["h", "?"]
+      },
+      {
+        "name": "addins",
+        "description": "List installed add-ins",
+        "handler": "builtin:list",
+        "args": {
+          "type": "addins"
+        },
+        "aliases": ["plugins", "extensions"]
+      },
+      {
+        "name": "themes",
+        "description": "List available themes",
+        "handler": "builtin:list",
+        "args": {
+          "type": "themes"
+        },
+        "aliases": []
+      },
+      {
+        "name": "roles",
+        "description": "List available agent roles",
+        "handler": "builtin:list",
+        "args": {
+          "type": "roles"
+        },
+        "aliases": ["profiles"]
+      },
+      {
+        "name": "search",
+        "description": "Search knowledge packs",
+        "handler": "builtin:search",
+        "args": {
+          "scope": "knowledge"
+        },
+        "aliases": ["find", "lookup"]
+      },
+      {
+        "name": "boot",
+        "description": "Show boot status and environment",
+        "handler": "builtin:status",
+        "args": {
+          "type": "boot"
+        },
+        "aliases": ["bootinfo"]
+      },
+      {
+        "name": "reload",
+        "description": "Reload contribution index",
+        "handler": "builtin:reload",
+        "args": {
+          "target": "contributions"
+        },
+        "aliases": ["refresh"]
+      }
+    ]
+  }
+}

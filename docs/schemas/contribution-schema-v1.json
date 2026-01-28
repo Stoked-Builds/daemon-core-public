@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemoncore.dev/schemas/contribution-schema-v1.json",
+  "title": "DaemonCore Add-in Contribution Schema v1",
+  "description": "Schema for declarative contributions from add-ins to the DaemonCore platform",
+  "type": "object",
+  "properties": {
+    "themes": {
+      "type": "array",
+      "description": "Theme token contributions for operator UI branding",
+      "items": {
+        "$ref": "#/$defs/themeContribution"
+      }
+    },
+    "knowledge": {
+      "type": "array",
+      "description": "Knowledge pack contributions (docs/runbooks)",
+      "items": {
+        "$ref": "#/$defs/knowledgeContribution"
+      }
+    },
+    "commands": {
+      "type": "array",
+      "description": "Slash command contributions",
+      "items": {
+        "$ref": "#/$defs/commandContribution"
+      }
+    },
+    "roles": {
+      "type": "array",
+      "description": "Agent role/profile contributions",
+      "items": {
+        "$ref": "#/$defs/roleContribution"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "themeContribution": {
+      "type": "object",
+      "description": "A theme contribution for operator UI",
+      "required": ["id", "name", "tokens"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Unique theme identifier (lowercase, alphanumeric with hyphens)"
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable theme name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional theme description"
+        },
+        "tokens": {
+          "type": "object",
+          "description": "CSS custom property tokens",
+          "properties": {
+            "colors": {
+              "type": "object",
+              "description": "Color tokens (e.g., primary, secondary, background)",
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$|^#[0-9A-Fa-f]{8}$|^rgb\\(|^rgba\\(|^hsl\\(|^hsla\\("
+              }
+            },
+            "fonts": {
+              "type": "object",
+              "description": "Font family tokens",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "spacing": {
+              "type": "object",
+              "description": "Spacing tokens",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "borders": {
+              "type": "object",
+              "description": "Border tokens",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "assets": {
+          "type": "object",
+          "description": "Static asset paths relative to add-in root",
+          "properties": {
+            "logo": {
+              "type": "string",
+              "description": "Path to logo image"
+            },
+            "favicon": {
+              "type": "string",
+              "description": "Path to favicon"
+            }
+          },
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "knowledgeContribution": {
+      "type": "object",
+      "description": "A knowledge pack contribution",
+      "required": ["id", "title", "docs"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Unique knowledge pack identifier"
+        },
+        "title": {
+          "type": "string",
+          "description": "Human-readable pack title"
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional pack description"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["runbooks", "guides", "reference", "tutorials"],
+          "description": "Documentation category"
+        },
+        "docs": {
+          "type": "array",
+          "description": "List of documentation files",
+          "items": {
+            "type": "object",
+            "required": ["path", "title"],
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Path to markdown file relative to add-in root"
+              },
+              "title": {
+                "type": "string",
+                "description": "Document title for index"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Searchable tags"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "commandContribution": {
+      "type": "object",
+      "description": "A slash command contribution",
+      "required": ["name", "handler"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Command name (used as /name)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Help text for the command"
+        },
+        "handler": {
+          "type": "string",
+          "description": "Built-in handler to route to (e.g., 'builtin:status', 'builtin:help')"
+        },
+        "args": {
+          "type": "object",
+          "description": "Default arguments to pass to handler",
+          "additionalProperties": true
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "description": "Alternative command names"
+        }
+      },
+      "additionalProperties": false
+    },
+    "roleContribution": {
+      "type": "object",
+      "description": "An agent role/profile contribution",
+      "required": ["id", "name", "type"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Unique role identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable role name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Role description"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["role", "profile"],
+          "description": "Whether this is a role or profile"
+        },
+        "path": {
+          "type": "string",
+          "description": "Path to role/profile markdown file relative to add-in root"
+        },
+        "vendors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["claude", "codex", "flux", "gemini", "deepseek"]
+          },
+          "description": "Compatible vendors (empty = all)"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Required capabilities for this role"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

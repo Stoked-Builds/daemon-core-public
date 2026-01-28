@@ -1,0 +1,15 @@
+{
+  "addins": [
+    {
+      "id": "command-pack-v1",
+      "name": "DaemonCore Command Pack",
+      "version": "0.1.0",
+      "digest": "placeholder-digest-command-pack-v1",
+      "paths": {
+        "artifact": "command-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      }
+    }
+  ]
+}

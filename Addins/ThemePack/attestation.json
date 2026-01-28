@@ -1,0 +1,13 @@
+{
+  "id": "theme-pack-v1",
+  "status": "pass",
+  "timestamp": "2026-01-28T00:00:00Z",
+  "issuer": "daemoncore",
+  "details": "Demo theme pack add-in for operator UI branding",
+  "signatures": [
+    {
+      "key": "daemoncore-demo-v1",
+      "value": "demo-signature"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "theme-pack-v1",
+  "name": "DaemonCore Theme Pack",
+  "version": "0.1.0",
+  "description": "Demo theme pack add-in with dark mode and high contrast themes for operator UI branding.",
+  "paths": {
+    "artifact": "theme-pack.zip",
+    "manifest": "manifest.json",
+    "attestation": "attestation.json"
+  },
+  "capabilities": [],
+  "configuration": {
+    "track": true
+  },
+  "contributions": {
+    "themes": [
+      {
+        "id": "dark-mode",
+        "name": "Dark Mode",
+        "description": "Deep purple dark theme with high contrast accents",
+        "tokens": {
+          "colors": {
+            "primary": "#7c3aed",
+            "secondary": "#a78bfa",
+            "background": "#0a0a0f",
+            "surface": "#14141f",
+            "text": "#b0c4de",
+            "textMuted": "#7b68ee",
+            "accent": "#9370db",
+            "accentHover": "#ba55d3",
+            "border": "#483d8b",
+            "borderSubtle": "#2f2f4f"
+          },
+          "fonts": {
+            "heading": "Inter, sans-serif",
+            "body": "Inter, sans-serif",
+            "mono": "JetBrains Mono, monospace"
+          }
+        }
+      },
+      {
+        "id": "high-contrast",
+        "name": "High Contrast",
+        "description": "Accessibility-focused theme with maximum contrast",
+        "tokens": {
+          "colors": {
+            "primary": "#ffffff",
+            "secondary": "#ffff00",
+            "background": "#000000",
+            "surface": "#1a1a1a",
+            "text": "#ffffff",
+            "textMuted": "#cccccc",
+            "accent": "#ffff00",
+            "accentHover": "#ffff66",
+            "border": "#ffffff",
+            "borderSubtle": "#666666"
+          },
+          "fonts": {
+            "heading": "Inter, sans-serif",
+            "body": "Inter, sans-serif",
+            "mono": "JetBrains Mono, monospace"
+          }
+        }
+      },
+      {
+        "id": "ocean-blue",
+        "name": "Ocean Blue",
+        "description": "Calm blue tones inspired by deep water",
+        "tokens": {
+          "colors": {
+            "primary": "#0077b6",
+            "secondary": "#00b4d8",
+            "background": "#03045e",
+            "surface": "#023e8a",
+            "text": "#caf0f8",
+            "textMuted": "#90e0ef",
+            "accent": "#48cae4",
+            "accentHover": "#90e0ef",
+            "border": "#0077b6",
+            "borderSubtle": "#023e8a"
+          },
+          "fonts": {
+            "heading": "Inter, sans-serif",
+            "body": "Inter, sans-serif",
+            "mono": "JetBrains Mono, monospace"
+          }
+        }
+      }
+    ]
+  }
+}

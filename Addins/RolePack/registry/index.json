@@ -1,0 +1,15 @@
+{
+  "addins": [
+    {
+      "id": "role-pack-v1",
+      "name": "DaemonCore Role Pack",
+      "version": "0.1.0",
+      "digest": "placeholder-digest-role-pack-v1",
+      "paths": {
+        "artifact": "role-pack.zip",
+        "manifest": "manifest.json",
+        "attestation": "attestation.json"
+      }
+    }
+  ]
+}

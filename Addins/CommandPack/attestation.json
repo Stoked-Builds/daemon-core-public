@@ -1,0 +1,13 @@
+{
+  "id": "command-pack-v1",
+  "status": "pass",
+  "timestamp": "2026-01-28T00:00:00Z",
+  "issuer": "daemoncore",
+  "details": "Demo command pack add-in for slash commands",
+  "signatures": [
+    {
+      "key": "daemoncore-demo-v1",
+      "value": "demo-signature"
+    }
+  ]
+}

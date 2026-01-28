@@ -1,0 +1,13 @@
+{
+  "id": "knowledge-pack-v1",
+  "status": "pass",
+  "timestamp": "2026-01-28T00:00:00Z",
+  "issuer": "daemoncore",
+  "details": "Demo knowledge pack add-in for help system",
+  "signatures": [
+    {
+      "key": "daemoncore-demo-v1",
+      "value": "demo-signature"
+    }
+  ]
+}
