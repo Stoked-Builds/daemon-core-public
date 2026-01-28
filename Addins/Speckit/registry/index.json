@@ -4,7 +4,7 @@
       "id": "speckit",
       "name": "Speckit Backlog Provider",
       "version": "0.1.0",
-      "digest": "sha256:9965ff0a760b3951bcb441a0e91252f7f35fd8cff387997ec54884f0f004f361",
+      "digest": "9965ff0a760b3951bcb441a0e91252f7f35fd8cff387997ec54884f0f004f361",
       "paths": {
         "artifact": "speckit.zip",
         "manifest": "manifest.json",
