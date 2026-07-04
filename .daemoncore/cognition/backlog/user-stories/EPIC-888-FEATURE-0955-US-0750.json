@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-888-FEATURE-0955-US-0750",
+  "title": "List installed roles/profiles",
+  "description": "Expose roles/profiles from add-in contributions and present them in UI.",
+  "status": "ready",
+  "created_at": "2026-01-28T19:25:01Z",
+  "updated_at": "2026-01-28T19:25:01Z",
+  "promoted_from": "IDEA-EPIC-888-FEATURE-0955-US-0750",
+  "feature_id": "EPIC-888-FEATURE-0955",
+  "task_ids": [
+    "EPIC-888-FEATURE-0955-US-0750-T-0834",
+    "EPIC-888-FEATURE-0955-US-0750-T-0934",
+    "EPIC-888-FEATURE-0955-US-0750-T-0968"
+  ]
+}

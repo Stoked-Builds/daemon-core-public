@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-581-FEATURE-0790-US-0444-T-0471",
+  "title": "Add negative-path UX — Trust Badges (Advisory)",
+  "description": "Improve error reporting: invalid payloads should not crash UI; show non-blocking warnings and log details.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581-FEATURE-0790-US-0444-T-0471",
+  "user_story_id": "EPIC-581-FEATURE-0790-US-0444",
+  "prompt_ref": "prompts/tasks/EPIC-581-FEATURE-0790-US-0444-T-0471.prompt"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-275-FEATURE-0307-US-0219-T-0929",
+  "title": "Add negative-path UX — Prompt Skill Pack (Triage/Review/Write)",
+  "description": "Improve error reporting: invalid payloads should not crash UI; show non-blocking warnings and log details.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0307-US-0219-T-0929",
+  "user_story_id": "EPIC-275-FEATURE-0307-US-0219",
+  "prompt_ref": "prompts/tasks/EPIC-275-FEATURE-0307-US-0219-T-0929.prompt"
+}

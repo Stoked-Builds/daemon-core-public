@@ -1,0 +1,344 @@
+[
+  {
+    "id": "IDEA-EPIC-120",
+    "type": "epic",
+    "title": "Speckit work items in Operator Backlog via Addin",
+    "description": "Create a real Speckit add-in in daemon-core-public that surfaces Speckit work items (at minimum: tasks) inside the Operator Dashboard Backlog page using the new Addins capability added to the main DaemonCore project.",
+    "rationale": "We proved the add-in packaging/registry flow with Speckit-Shell. Now we need a functional add-in that implements the DaemonCore add-in contract for backlog contributions so Speckit work is visible in the canonical operator experience.",
+    "status": "idea",
+    "priority": "P1",
+    "tags": ["addins", "speckit", "backlog", "operator-dashboard"],
+    "feature_ids": [],
+    "success_criteria": [
+      "Speckit work items appear in Backlog page without modifying core DaemonCore runtime logic",
+      "Addin is installable from daemon-core-public Addins registry (manifest + attestation + artifact)",
+      "Backlog shows stable IDs, titles, and statuses for Speckit items with refresh support"
+    ],
+    "notes": "Reference Addins.zip example: Addins/Speckit-Shell/{manifest.json,attestation.json,registry/index.json,speckit-shell.zip}. New addin should follow the same packaging shape but implement the backlog provider contract required by DaemonCore Addins.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-121",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-120",
+    "title": "Speckit Addin: Backlog provider",
+    "description": "Implement a `speckit` add-in package in daemon-core-public that registers in the local addins registry and provides backlog items to the Operator Dashboard via the Addins interface in main DaemonCore.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P1",
+    "domain": "cognition",
+    "area": "planning",
+    "tags": ["addins", "speckit", "backlog-provider"],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Addin folder exists: Addins/Speckit/* with manifest.json, attestation.json, registry entry, and artifact zip",
+      "DaemonCore can discover and load the addin from the registry without manual steps beyond install",
+      "Backlog page displays Speckit work items sourced from the addin"
+    ],
+    "prompt_path": null,
+    "notes": "Do not guess the addin contract. Locate the contract in main DaemonCore (Addins capability) and implement exactly what it expects.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-122",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-121",
+    "title": "Create Speckit addin package and registry entry",
+    "story": "As an operator, I want a Speckit add-in that can be installed from the daemon-core-public registry so that Speckit capabilities can be enabled consistently across environments.",
+    "description": "Add a new add-in alongside Speckit-Shell following the same packaging conventions (manifest + attestation + artifact zip) and register it in the local registry index.",
+    "status": "idea",
+    "priority": "P1",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "infra",
+    "area": "docker",
+    "tags": ["addins", "registry", "packaging"],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Addins/Speckit/manifest.json exists and validates against the runtime loader expectations",
+      "Addins/Speckit/attestation.json exists (can be dev-mode if supported, otherwise match shell example format)",
+      "Addins/Speckit/registry/index.json updated to include speckit addin entry",
+      "Artifact zip exists and digest in registry entry matches its sha256"
+    ],
+    "implementation_hints": [
+      "Use Addins/Speckit-Shell as the canonical example of the folder layout and fields",
+      "Compute sha256 digest for the artifact and update registry index entry"
+    ],
+    "affected_files": [
+      "Addins/Speckit/manifest.json",
+      "Addins/Speckit/attestation.json",
+      "Addins/Speckit/speckit.zip",
+      "Addins/Speckit/registry/index.json"
+    ],
+    "notes": "Packaging first. Functional backlog provider comes in next story.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-123",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-121",
+    "title": "Implement Speckit backlog provider contract",
+    "story": "As an operator, I want the backlog page to show Speckit work items via the Speckit addin so that Speckit tasks are visible and trackable alongside other backlog items.",
+    "description": "Implement whatever provider interface/slot/command the new Addins capability expects for contributing backlog items. The addin should output a stable, typed list of backlog work items with ID, title, status, priority/size if available, and source metadata.",
+    "status": "idea",
+    "priority": "P1",
+    "size": "L",
+    "impact_area": "operator-experience",
+    "domain": "cognition",
+    "area": "planning",
+    "tags": ["speckit", "backlog", "addin-contract"],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "When the addin is installed/enabled, the backlog page includes a Speckit section or items tagged as source=speckit",
+      "Items have stable IDs and do not duplicate across refreshes",
+      "Failure modes are safe: addin failure does not break the backlog page; errors are logged/visible in a non-blocking way"
+    ],
+    "implementation_hints": [
+      "Do not invent the contract. Find the Addins backlog hook in main DaemonCore and implement that exact interface in the artifact",
+      "Prefer deterministic output (sorted, stable formatting) to reduce UI churn"
+    ],
+    "affected_files": [
+      "Addins/Speckit/speckit.zip"
+    ],
+    "notes": "If the contract requires JSON over stdout, implement JSON. If it requires a module export, implement that. Match the runtime exactly.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-124",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-121",
+    "title": "Verify backlog UI renders Speckit items correctly",
+    "story": "As an operator, I want Speckit items to look and behave like other backlog items so that I can filter, search, and inspect them without confusion.",
+    "description": "Confirm the operator dashboard backlog UI renders fields provided by the addin (title, status, priority/size, source). Add minimal UI tweaks only if required to support the addin-provided source.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": ["ui", "backlog", "speckit"],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Speckit items are visible without breaking existing backlog rendering",
+      "Source is clearly indicated (badge/label) to distinguish from native items",
+      "Empty state behaves correctly when no Speckit items are available"
+    ],
+    "implementation_hints": [
+      "Only change UI if the existing Addins integration requires it; otherwise keep changes confined to the addin package"
+    ],
+    "affected_files": [],
+    "notes": "Aim: addin-only change set; UI changes are last resort.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-TASK-125",
+    "type": "task",
+    "user_story_id": "IDEA-US-122",
+    "title": "Study Speckit-Shell addin packaging and replicate structure for Speckit addin",
+    "description": "Use Addins.zip reference to mirror the existing addin folder shape (manifest, attestation, registry entry, artifact zip) for a new `speckit` addin.",
+    "status": "todo",
+    "priority": "P1",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "infra",
+    "area": "docker",
+    "tags": ["addins", "packaging"],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [
+      "Addins/Speckit/manifest.json",
+      "Addins/Speckit/attestation.json",
+      "Addins/Speckit/registry/index.json",
+      "Addins/Speckit/speckit.zip"
+    ],
+    "target_directories": [
+      "Addins/Speckit/",
+      "Addins/Speckit/registry/"
+    ],
+    "repo": "daemon-core-public",
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Folder Addins/Speckit exists with the same top-level files as Speckit-Shell (manifest.json, attestation.json, registry/index.json, artifact zip)",
+      "manifest fields align with what the addin loader expects (id/name/version/paths/capabilities/slots/configuration)",
+      "registry index includes a correct digest entry for the artifact"
+    ],
+    "notes": "Reference: Addins/Speckit-Shell/manifest.json + registry/index.json. New id should be `speckit` (or `speckit-backlog` if contract requires uniqueness).",
+    "phase": 1,
+    "prompt": "# Task: Replicate addin packaging for Speckit addin (daemon-core-public)\n\n## Goal\nCreate a new addin package under `Addins/Speckit/` that mirrors the working shape of `Addins/Speckit-Shell/`.\n\n## Context\nWe have a known-good test addin (`speckit-shell`) in `Addins.zip` and in repo. It contains:\n- `manifest.json`\n- `attestation.json`\n- `registry/index.json`\n- `artifact zip` (e.g. `speckit-shell.zip`)\n\n## Requirements\n1. Create `Addins/Speckit/manifest.json` following the same schema as Speckit-Shell.\n2. Create `Addins/Speckit/attestation.json` using the same structure as Speckit-Shell (dev attestation is fine if supported).\n3. Create `Addins/Speckit/speckit.zip` artifact (placeholder for now; will be populated in later tasks).\n4. Update `Addins/Speckit/registry/index.json` (or the shared registry index if that is the canonical location) to include the new addin entry.\n5. Compute sha256 digest of the artifact and ensure the registry entry matches.\n\n## Acceptance Criteria\n- [ ] Addins/Speckit exists with all required files\n- [ ] Registry entry points to the correct artifact + paths\n- [ ] Digest matches the artifact contents\n\n## Notes\nDo not implement backlog logic in this task; just packaging + registry correctness."
+  },
+  {
+    "id": "IDEA-TASK-126",
+    "type": "task",
+    "user_story_id": "IDEA-US-123",
+    "title": "Locate DaemonCore Addins backlog provider contract and document required interface",
+    "description": "In the main DaemonCore project (where Addins capability was added), find the exact interface/slot/command the runtime uses to pull backlog items from addins, and document it in-repo (short markdown) for the Speckit addin implementation.",
+    "status": "todo",
+    "priority": "P1",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": ["addins", "contract", "backlog"],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Contract details captured: how addin is invoked, required inputs, required outputs, error behavior",
+      "Example payload(s) for output shape included (JSON schema-like description is fine)",
+      "Notes include how the backlog UI distinguishes sources (if applicable)"
+    ],
+    "notes": "This task intentionally prevents guessing. Implementation tasks should depend on this.",
+    "phase": 1,
+    "prompt": "# Task: Find & document the Addins backlog provider contract\n\n## Goal\nPrevent guesswork: find the *exact* addin contract the new Addins system uses to supply backlog items.\n\n## Steps\n1. In the main DaemonCore repo (not public), locate the Addins loader + extension points.\n2. Identify the backlog integration:\n   - What capability name / slot name is used?\n   - How does the runtime invoke an addin (exec a script? import a module? call HTTP?)\n   - What inputs are provided (env vars, args, JSON stdin, config)?\n   - What output format is required (JSON on stdout, files, events)?\n   - Required fields for a backlog item (id/title/status/etc)\n   - How errors are handled (non-zero exit? stderr parsing? fallback?)\n3. Write a short markdown note in daemon-core-public under something like:\n   - `docs/addins/speckit-backlog-contract.md` (or the repo’s canonical docs location)\n\n## Acceptance Criteria\n- [ ] Contract is explicitly described (no hand-waving)\n- [ ] Includes at least one concrete output example\n- [ ] Notes include how to test locally (minimal repro)\n\n## Output\nA markdown doc + summary in PR description."
+  },
+  {
+    "id": "IDEA-TASK-127",
+    "type": "task",
+    "user_story_id": "IDEA-US-123",
+    "title": "Implement Speckit addin artifact to output backlog items in the required contract shape",
+    "description": "Populate Addins/Speckit/speckit.zip with the actual implementation that produces Speckit backlog items using the contract discovered in TASK-126.",
+    "status": "todo",
+    "priority": "P1",
+    "size": "L",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "cognition",
+    "area": "planning",
+    "tags": ["speckit", "addin", "backlog-provider"],
+    "depends_on": ["IDEA-TASK-126"],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [
+      "Addins/Speckit/speckit.zip",
+      "Addins/Speckit/manifest.json"
+    ],
+    "target_directories": [
+      "Addins/Speckit/"
+    ],
+    "repo": "daemon-core-public",
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": true,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Addin can be invoked by the runtime and returns valid backlog items",
+      "Output is deterministic (stable ordering, stable IDs)",
+      "If Speckit source is unavailable, addin returns an empty list with a clear non-fatal warning"
+    ],
+    "notes": "Data source for Speckit items must be based on real available inputs in your environment (repo files, CLI, or SpeckitSync API). Don’t hardcode fake items except as a temporary dev-mode behind a flag.",
+    "phase": 1,
+    "prompt": "# Task: Implement Speckit backlog provider addin (speckit.zip)\n\n## Goal\nImplement the `speckit` addin artifact so DaemonCore can pull Speckit work items into the backlog page.\n\n## Hard Rule\n**Do not guess the contract.** Implement the exact contract documented in TASK-126.\n\n## Requirements\n1. Update `Addins/Speckit/speckit.zip` contents to include the executable/module/entrypoint required by the contract.\n2. Implement backlog item production:\n   - Provide stable `id`, `title`, `status` (and `priority`/`size` if available)\n   - Include source metadata so UI can label items as Speckit\n   - Output must be valid per contract (e.g. JSON to stdout)\n3. Error handling:\n   - If Speckit data source missing/unreachable, return empty list and log non-fatal diagnostics\n   - No crashes that break the operator dashboard\n\n## Data Source\nUse the most canonical available Speckit source in this environment (choose ONE):\n- If the system expects reading from filesystem, scan Speckit specs/tasks from the repo.\n- If the system expects calling SpeckitSync, call that API.\n- If the system expects running a CLI, invoke it.\n\nDocument which you chose and why.\n\n## Acceptance Criteria\n- [ ] Addin installs and loads\n- [ ] Backlog items appear tagged as Speckit\n- [ ] Refresh does not create duplicates\n- [ ] Missing-source scenario is graceful\n"
+  },
+  {
+    "id": "IDEA-TASK-128",
+    "type": "task",
+    "user_story_id": "IDEA-US-122",
+    "title": "Update Speckit addin registry digest after implementing artifact",
+    "description": "After speckit.zip is populated, recompute sha256 digest and update registry entry so installs are consistent.",
+    "status": "todo",
+    "priority": "P2",
+    "size": "XS",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "infra",
+    "area": "docker",
+    "tags": ["registry", "digest", "addins"],
+    "depends_on": ["IDEA-TASK-127"],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [
+      "Addins/Speckit/registry/index.json"
+    ],
+    "target_directories": [
+      "Addins/Speckit/registry/"
+    ],
+    "repo": "daemon-core-public",
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "registry/index.json digest matches the current speckit.zip sha256",
+      "paths remain correct and installable"
+    ],
+    "notes": "Same pattern as Speckit-Shell registry entry.",
+    "phase": 1,
+    "prompt": "# Task: Recompute digest + update registry for Speckit addin\n\n## Goal\nEnsure the addin registry digest matches the updated `speckit.zip` artifact.\n\n## Steps\n1. Compute sha256 for `Addins/Speckit/speckit.zip`.\n2. Update the `digest` field in the Speckit addin registry entry.\n3. Confirm paths (artifact/manifest/attestation) are still correct.\n\n## Acceptance Criteria\n- [ ] Digest matches\n- [ ] Addin can be installed without checksum errors\n"
+  },
+  {
+    "id": "IDEA-TASK-129",
+    "type": "task",
+    "user_story_id": "IDEA-US-124",
+    "title": "End-to-end verification: Speckit items visible on Backlog page",
+    "description": "Run the operator dashboard with addins enabled, install the Speckit addin, and confirm Speckit work items appear correctly in Backlog.",
+    "status": "todo",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": ["e2e", "backlog", "speckit", "addin"],
+    "depends_on": ["IDEA-TASK-128"],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": "dev",
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": true,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Backlog page shows Speckit items with expected fields",
+      "UI remains functional if Speckit addin returns empty list",
+      "No console/runtime errors that indicate addin contract mismatch"
+    ],
+    "notes": "Capture screenshots or logs as evidence in PR description.",
+    "phase": 1,
+    "prompt": "# Task: Verify Speckit addin renders on Backlog page\n\n## Goal\nProve the whole flow works: registry -> install -> load -> backlog contribution -> UI render.\n\n## Steps\n1. Run daemon-core-public operator dashboard in dev.\n2. Install/enable the `speckit` addin via the supported mechanism.\n3. Open Backlog page and confirm Speckit items appear.\n4. Test refresh/reload: items should not duplicate.\n5. Test missing data source scenario: addin should fail gracefully.\n\n## Evidence\nInclude either:\n- screenshots of Backlog showing Speckit items, or\n- logs demonstrating successful addin invocation + returned item list.\n\n## Acceptance Criteria\n- [ ] Speckit items visible\n- [ ] No duplicates on refresh\n- [ ] Graceful empty state\n"
+  }
+]

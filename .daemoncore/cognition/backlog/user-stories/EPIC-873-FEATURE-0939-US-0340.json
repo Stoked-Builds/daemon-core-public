@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-873-FEATURE-0939-US-0340",
+  "title": "Operator-visible experience for Decision Ledger Pack (ADR-lite)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0939-US-0340",
+  "feature_id": "EPIC-873-FEATURE-0939",
+  "task_ids": [
+    "EPIC-873-FEATURE-0939-US-0340-T-0124",
+    "EPIC-873-FEATURE-0939-US-0340-T-0190",
+    "EPIC-873-FEATURE-0939-US-0340-T-0352",
+    "EPIC-873-FEATURE-0939-US-0340-T-0489",
+    "EPIC-873-FEATURE-0939-US-0340-T-0764"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-301-US-01-T01",
+  "user_story_id": "FEATURE-301-US-01",
+  "title": "Define brand tokens (palette/type/spacing)",
+  "description": "Propose brand tokens and usage.",
+  "priority": "P1",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "branding",
+  "tags": [
+    "gemini",
+    "branding"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

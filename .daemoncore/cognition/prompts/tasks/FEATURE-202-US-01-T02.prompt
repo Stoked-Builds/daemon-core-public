@@ -1,0 +1,14 @@
+You are Claude performing an IP-safety + clarity review.
+
+TASK ID: FEATURE-202-US-01-T02
+Input: The markdown written in FEATURE-202-US-01-T01.
+
+Checklist:
+- No implementation hints
+- No named internal modules or processes
+- Clear, calm systems language
+- Boundary against orchestration/agent frameworks
+- No overpromising
+
+Output:
+- Provide revised markdown only.

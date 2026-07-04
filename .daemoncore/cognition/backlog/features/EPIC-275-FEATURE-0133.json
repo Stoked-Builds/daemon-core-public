@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-275-FEATURE-0133",
+  "title": "Command Palette / Help Overlay",
+  "description": "Searchable command help grouped by add-in source.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0133",
+  "epic_id": "EPIC-275",
+  "user_story_ids": [
+    "EPIC-275-FEATURE-0133-US-0432",
+    "EPIC-275-FEATURE-0133-US-0710"
+  ]
+}

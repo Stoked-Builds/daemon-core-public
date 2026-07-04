@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-888-FEATURE-0495-US-0502",
+  "title": "Register declarative slash commands",
+  "description": "Load command definitions from add-ins; validate schema; route to built-in handlers.",
+  "status": "ready",
+  "created_at": "2026-01-28T19:25:00Z",
+  "updated_at": "2026-01-28T19:25:00Z",
+  "promoted_from": "IDEA-EPIC-888-FEATURE-0495-US-0502",
+  "feature_id": "EPIC-888-FEATURE-0495",
+  "task_ids": [
+    "EPIC-888-FEATURE-0495-US-0502-T-0168",
+    "EPIC-888-FEATURE-0495-US-0502-T-0403",
+    "EPIC-888-FEATURE-0495-US-0502-T-0644"
+  ]
+}

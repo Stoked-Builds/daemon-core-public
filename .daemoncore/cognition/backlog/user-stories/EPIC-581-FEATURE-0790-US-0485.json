@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-581-FEATURE-0790-US-0485",
+  "title": "Schema & validation for Trust Badges (Advisory)",
+  "description": "Define a minimal v1 schema for Trust Badges (Advisory) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581-FEATURE-0790-US-0485",
+  "feature_id": "EPIC-581-FEATURE-0790",
+  "task_ids": [
+    "EPIC-581-FEATURE-0790-US-0485-T-0169",
+    "EPIC-581-FEATURE-0790-US-0485-T-0404",
+    "EPIC-581-FEATURE-0790-US-0485-T-0463",
+    "EPIC-581-FEATURE-0790-US-0485-T-0694",
+    "EPIC-581-FEATURE-0790-US-0485-T-0815"
+  ]
+}

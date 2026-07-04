@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-103-US-01-T02",
+  "user_story_id": "FEATURE-103-US-01",
+  "title": "Wire navigation routes + active states",
+  "status": "completed",
+  "description": "Ensure nav points to the correct routes and includes active state styling hooks.",
+  "priority": "P2",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "layout",
+  "tags": [
+    "claude",
+    "layout"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

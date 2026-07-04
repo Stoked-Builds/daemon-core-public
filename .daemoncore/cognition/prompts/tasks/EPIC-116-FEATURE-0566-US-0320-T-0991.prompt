@@ -1,0 +1,24 @@
+# Task: Find & document the Addins backlog provider contract
+
+## Goal
+Prevent guesswork: find the *exact* addin contract the new Addins system uses to supply backlog items.
+
+## Steps
+1. In the main DaemonCore repo (not public), locate the Addins loader + extension points.
+2. Identify the backlog integration:
+   - What capability name / slot name is used?
+   - How does the runtime invoke an addin (exec a script? import a module? call HTTP?)
+   - What inputs are provided (env vars, args, JSON stdin, config)?
+   - What output format is required (JSON on stdout, files, events)?
+   - Required fields for a backlog item (id/title/status/etc)
+   - How errors are handled (non-zero exit? stderr parsing? fallback?)
+3. Write a short markdown note in daemon-core-public under something like:
+   - `docs/addins/speckit-backlog-contract.md` (or the repo’s canonical docs location)
+
+## Acceptance Criteria
+- [ ] Contract is explicitly described (no hand-waving)
+- [ ] Includes at least one concrete output example
+- [ ] Notes include how to test locally (minimal repro)
+
+## Output
+A markdown doc + summary in PR description.

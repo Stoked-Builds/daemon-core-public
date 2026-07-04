@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-264-FEATURE-0340-US-0558-T-0389",
+  "title": "Define contribution schema v1 (IDEA-US-923)",
+  "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+  "status": "todo",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0340-US-0558-T-0389",
+  "user_story_id": "EPIC-264-FEATURE-0340-US-0558",
+  "prompt_ref": "prompts/tasks/EPIC-264-FEATURE-0340-US-0558-T-0389.prompt"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EPIC-002",
+  "title": "Core positioning & content",
+  "phase": 1,
+  "tags": [
+    "content",
+    "positioning",
+    "marketing",
+    "governance-layer"
+  ],
+  "description": "Author and structure high-impact public content that clearly positions DaemonCore as an OS-level governance layer, without leaking patent-sensitive details.",
+  "feature_ids": [
+    "FEATURE-201",
+    "FEATURE-202",
+    "FEATURE-203",
+    "FEATURE-204",
+    "FEATURE-205"
+  ]
+}

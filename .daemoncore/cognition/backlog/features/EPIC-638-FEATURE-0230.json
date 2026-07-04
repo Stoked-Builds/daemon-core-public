@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-638-FEATURE-0230",
+  "title": "Onboarding Questline",
+  "description": "A guided questline that walks users through wow moments.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:39Z",
+  "updated_at": "2026-01-28T21:39:39Z",
+  "promoted_from": "IDEA-EPIC-638-FEATURE-0230",
+  "epic_id": "EPIC-638",
+  "user_story_ids": [
+    "EPIC-638-FEATURE-0230-US-0358",
+    "EPIC-638-FEATURE-0230-US-0928"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-403-US-01",
+  "feature_id": "FEATURE-403",
+  "title": "Create media kit / creator pack",
+  "story": "As a creator/investor, I want a small media kit so I can talk about DaemonCore accurately without asking for internals.",
+  "description": "Prepare a downloadable page/section containing: approved one-liners, short description, diagram(s), logo usage, and do/don\u2019t statements.",
+  "priority": "P2",
+  "size": "M",
+  "impact_area": "website/launch",
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "media-kit",
+    "ip-safety"
+  ],
+  "task_ids": [
+    "FEATURE-403-US-01-T01",
+    "FEATURE-403-US-01-T02"
+  ]
+}

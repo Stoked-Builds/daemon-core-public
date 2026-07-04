@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-873-FEATURE-0939",
+  "title": "Decision Ledger Pack (ADR-lite)",
+  "description": "Index + browse ADR-style markdown with tags and search.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0939",
+  "epic_id": "EPIC-873",
+  "user_story_ids": [
+    "EPIC-873-FEATURE-0939-US-0255",
+    "EPIC-873-FEATURE-0939-US-0340"
+  ]
+}

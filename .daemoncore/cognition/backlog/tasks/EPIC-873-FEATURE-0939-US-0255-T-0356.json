@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-873-FEATURE-0939-US-0255-T-0356",
+  "title": "Define v1 schema + examples — Decision Ledger Pack (ADR-lite)",
+  "description": "Create a JSON schema for the contribution type and ship 2-3 example payloads in a demo add-in.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0939-US-0255-T-0356",
+  "user_story_id": "EPIC-873-FEATURE-0939-US-0255",
+  "prompt_ref": "prompts/tasks/EPIC-873-FEATURE-0939-US-0255-T-0356.prompt"
+}

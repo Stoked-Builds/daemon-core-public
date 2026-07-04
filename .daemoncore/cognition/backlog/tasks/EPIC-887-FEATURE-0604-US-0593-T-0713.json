@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-887-FEATURE-0604-US-0593-T-0713",
+  "title": "Add negative-path UX — Theme Pack Addin (Neon Noir + Clean Enterprise)",
+  "description": "Improve error reporting: invalid payloads should not crash UI; show non-blocking warnings and log details.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0604-US-0593-T-0713",
+  "user_story_id": "EPIC-887-FEATURE-0604-US-0593",
+  "prompt_ref": "prompts/tasks/EPIC-887-FEATURE-0604-US-0593-T-0713.prompt"
+}

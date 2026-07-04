@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0716-T-0356",
+  "title": "End-to-end verification: Speckit items visible on Backlog page",
+  "description": "Run the operator dashboard with addins enabled, install the Speckit addin, and confirm Speckit work items appear correctly in Backlog.",
+  "status": "todo",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0716-T-0356",
+  "user_story_id": "EPIC-778-FEATURE-0131-US-0716",
+  "prompt_ref": "prompts/tasks/EPIC-778-FEATURE-0131-US-0716-T-0356.prompt"
+}

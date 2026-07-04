@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-503-US-01-T02",
+  "user_story_id": "FEATURE-503-US-01",
+  "title": "Map technical guarantees to business outcomes (cause → effect)",
+  "description": "Create a concise mapping from DaemonCore V1 guarantees (protocol validation, schema enforcement, scope boundaries, template constraints, deterministic boot, audit logging) to business outcomes (reduced blast radius, fewer incidents, faster approvals, compliance evidence, clearer accountability).",
+  "priority": "P0",
+  "size": "S",
+  "tags": [
+    "claude",
+    "copy",
+    "website",
+    "value"
+  ],
+  "acceptance_criteria": [
+    "Guarantees → outcomes mapping is explicit and readable.",
+    "Outcomes are framed in business terms (risk, trust, auditability, speed).",
+    "No speculative metrics; no absolute claims (e.g. 'prevents all incidents').",
+    "V1 vs V1.5 is respected where relevant."
+  ]
+}

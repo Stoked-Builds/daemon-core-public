@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-503-US-01-T05",
+  "user_story_id": "FEATURE-503-US-01",
+  "title": "Create the Value page and add navigation links",
+  "description": "Implement the new Value page (e.g. `/value` or `/why-it-matters`) in Astro with the final approved copy. Add nav links from Home and FAQ, and include CTAs to Kernel, Walkthrough, and Early Access.",
+  "priority": "P0",
+  "size": "M",
+  "tags": [
+    "claude",
+    "website",
+    "astro",
+    "copy",
+    "ux"
+  ],
+  "acceptance_criteria": [
+    "A new value page exists at the agreed route and renders correctly.",
+    "Home and FAQ link to the value page.",
+    "Page includes CTAs to Kernel, Walkthrough, and Early Access.",
+    "Tone matches the site: calm, precise, technically honest.",
+    "No V1.5 claims presented as current."
+  ]
+}

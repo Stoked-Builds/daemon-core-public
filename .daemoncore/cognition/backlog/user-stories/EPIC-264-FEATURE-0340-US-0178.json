@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-264-FEATURE-0340-US-0178",
+  "title": "Validate registry entries before install",
+  "description": "Check digest/path presence; return actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0340-US-0178",
+  "feature_id": "EPIC-264-FEATURE-0340",
+  "task_ids": [
+    "EPIC-264-FEATURE-0340-US-0178-T-0179",
+    "EPIC-264-FEATURE-0340-US-0178-T-0246",
+    "EPIC-264-FEATURE-0340-US-0178-T-0910"
+  ]
+}

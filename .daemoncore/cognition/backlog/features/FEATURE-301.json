@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-301",
+  "epic_id": "EPIC-003",
+  "title": "Brand tokens & component styling",
+  "description": "Define visual tokens (colour, type, spacing) and apply them to site components for a calm, infra-grade feel.",
+  "phase": 1,
+  "domain": "website",
+  "area": "branding",
+  "tags": [
+    "branding",
+    "tokens",
+    "styling",
+    "gemini"
+  ],
+  "user_story_ids": [
+    "FEATURE-301-US-01"
+  ]
+}

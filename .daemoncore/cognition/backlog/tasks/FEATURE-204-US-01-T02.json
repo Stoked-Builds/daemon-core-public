@@ -1,0 +1,25 @@
+{
+  "id": "FEATURE-204-US-01-T02",
+  "user_story_id": "FEATURE-204-US-01",
+  "title": "Review FAQ for safety + clarity",
+  "description": "Review and tighten FAQ; remove anything too specific.",
+  "priority": "P1",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "writer",
+    "review"
+  ],
+  "depends_on": [
+    "FEATURE-204-US-01-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

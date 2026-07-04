@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-502-US-01",
+  "feature_id": "FEATURE-502",
+  "title": "Rewrite homepage (page 1) to make governance vs orchestration obvious",
+  "story": "As a technical decision-maker landing on the site, I want to immediately understand what DaemonCore is (and isn't), why orchestration isn't enough, and what concrete mechanisms DaemonCore introduces, so I can decide whether to read deeper.",
+  "description": "Rework the homepage hero, add an evolution/plateau section, define governance vs orchestration, list concrete mechanisms with brief implementation examples, and include an honest V1 vs V1.5 callout.",
+  "priority": "P0",
+  "acceptance_criteria": [
+    "Homepage headline/subhead clearly state: orchestration ≠ governance.",
+    "Includes an evolution strip (raw prompts → better prompts → prompt engineering → orchestration → DaemonCore).",
+    "Includes a short 'where risk appears' breakpoint section (drift, ambiguity, responsibility).",
+    "Includes 3 mechanism bullets with examples: Action protocol, MAX bus, template-driven ops (IP-safe wording).",
+    "Includes a concise V1 vs V1.5 callout using versioned language (no implying V1.5 exists today).",
+    "All copy avoids absolutes and performance promises; UK spelling."
+  ],
+  "task_ids": [
+    "FEATURE-502-US-01-T01",
+    "FEATURE-502-US-01-T02",
+    "FEATURE-502-US-01-T03"
+  ]
+}

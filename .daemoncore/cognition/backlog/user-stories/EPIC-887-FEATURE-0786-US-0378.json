@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0786-US-0378",
+  "title": "Operator-visible experience for Accessibility Pack (Presets + Checklist)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0786-US-0378",
+  "feature_id": "EPIC-887-FEATURE-0786",
+  "task_ids": [
+    "EPIC-887-FEATURE-0786-US-0378-T-0143",
+    "EPIC-887-FEATURE-0786-US-0378-T-0570",
+    "EPIC-887-FEATURE-0786-US-0378-T-0796",
+    "EPIC-887-FEATURE-0786-US-0378-T-0852",
+    "EPIC-887-FEATURE-0786-US-0378-T-0987"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "FEATURE-401-US-02-T02",
+  "user_story_id": "FEATURE-401-US-02",
+  "title": "Add basic spam resistance + validation",
+  "description": "Honeypot/hidden field, required fields, and friendly success state.",
+  "priority": "P1",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "builder",
+    "launch"
+  ],
+  "depends_on": [
+    "FEATURE-401-US-02-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

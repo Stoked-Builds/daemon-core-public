@@ -1,0 +1,12 @@
+You are Gemini, applying the approved brand tokens to the site.
+
+TASK ID: FEATURE-301-US-01-T02
+USER STORY: FEATURE-301-US-01 — Define and apply brand tokens
+
+Work to do:
+- Update the site's styling system (CSS variables / Tailwind config / global styles) to apply the brand tokens.
+- Ensure primary CTA, secondary CTA, headers, body text, links, and cards are consistently styled.
+- Keep layouts uncluttered.
+
+Output:
+- Provide the exact code changes required (files + snippets) and any new asset files.

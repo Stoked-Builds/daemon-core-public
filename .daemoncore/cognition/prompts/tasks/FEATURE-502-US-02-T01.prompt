@@ -1,0 +1,35 @@
+You are Claude, acting as a **senior technical writer** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-02-T01
+
+## Objective
+Draft the content for a single end-to-end walkthrough page: **user intent → governed outcome**.
+
+## Page route
+- /daemon/walkthrough
+
+## Scenario (strict)
+Use ONE scenario only: **code review**.
+
+## Required sections (label them)
+1) What this walkthrough shows (2–3 lines)
+2) Baseline: what typically happens without governance (short)
+3) Step-by-step with DaemonCore:
+   - User intent (text)
+   - Preflight classification (what gets classified, what happens if unsafe)
+   - Action proposal shape (show a short JSON-ish example; keep it minimal and generic)
+   - MAX bus routing (typed message, schema validation)
+   - Template-driven execution (review template constraints)
+   - Result (what user gets)
+4) What happens on a scope violation (one example)
+5) Prompt injection note (honest V1 limitations; show how it is detected/flagged vs prevented)
+6) V1 vs V1.5 note (very short)
+
+## Hard constraints
+- UK spelling.
+- No absolutes.
+- Keep implementation examples public-safe (no private file paths, no secret module names).
+- Avoid describing hidden internals; keep examples generic and illustrative.
+
+## Output
+Return Markdown only, with headings and the exact copy to place on the page.

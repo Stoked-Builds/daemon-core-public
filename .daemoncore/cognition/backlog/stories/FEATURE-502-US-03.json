@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-502-US-03",
+  "feature_id": "FEATURE-502",
+  "title": "Align /daemon landing + key pages with the new narrative (remove contradictions)",
+  "story": "As a reader exploring the Kernel section, I want the Kernel pages to consistently describe DaemonCore as governance beneath orchestration (not 'the orchestration layer') so the site feels coherent and trustworthy.",
+  "description": "Update /daemon/index, /daemon/why-different, /daemon/comparisons, and /daemon/overview (or replace legacy language) to align with the new narrative and versioned guarantees, removing contradictory copy.",
+  "priority": "P0",
+  "acceptance_criteria": [
+    "No page describes DaemonCore as an orchestrator or orchestration layer.",
+    "Comparisons page includes a simple 'Orchestrator vs DaemonCore' distinction with mechanisms examples.",
+    "Why-different page frames the missing layer as legitimacy/governance rather than coordination.",
+    "All pages include explicit V1 vs V1.5 language where relevant."
+  ],
+  "task_ids": [
+    "FEATURE-502-US-03-T01",
+    "FEATURE-502-US-03-T02"
+  ]
+}

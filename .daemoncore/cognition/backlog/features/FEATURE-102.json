@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-102",
+  "epic_id": "EPIC-001",
+  "title": "GitHub Pages deployment pipeline",
+  "status": "completed",
+  "description": "Configure a deterministic build + deploy pipeline for GitHub Pages, including base paths and cache-safe builds.",
+  "phase": 1,
+  "domain": "website",
+  "area": "delivery",
+  "tags": [
+    "website",
+    "delivery",
+    "github-pages",
+    "pipeline",
+    "ci"
+  ],
+  "user_story_ids": [
+    "FEATURE-102-US-01"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-202",
+  "epic_id": "EPIC-002",
+  "title": "Core explainer pages",
+  "description": "Write and structure the core explainer pages: What it is, What it isn't, Why it's different.",
+  "phase": 1,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "content",
+    "explainer",
+    "positioning"
+  ],
+  "user_story_ids": [
+    "FEATURE-202-US-01",
+    "FEATURE-202-US-02",
+    "FEATURE-202-US-03"
+  ]
+}

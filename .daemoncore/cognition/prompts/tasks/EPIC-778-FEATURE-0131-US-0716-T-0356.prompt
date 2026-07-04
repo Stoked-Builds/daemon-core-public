@@ -1,0 +1,21 @@
+# Task: Verify Speckit addin renders on Backlog page
+
+## Goal
+Prove the whole flow works: registry -> install -> load -> backlog contribution -> UI render.
+
+## Steps
+1. Run daemon-core-public operator dashboard in dev.
+2. Install/enable the `speckit` addin via the supported mechanism.
+3. Open Backlog page and confirm Speckit items appear.
+4. Test refresh/reload: items should not duplicate.
+5. Test missing data source scenario: addin should fail gracefully.
+
+## Evidence
+Include either:
+- screenshots of Backlog showing Speckit items, or
+- logs demonstrating successful addin invocation + returned item list.
+
+## Acceptance Criteria
+- [ ] Speckit items visible
+- [ ] No duplicates on refresh
+- [ ] Graceful empty state

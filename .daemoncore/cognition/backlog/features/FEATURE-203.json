@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-203",
+  "epic_id": "EPIC-002",
+  "title": "Comparisons page",
+  "description": "Create a careful comparisons page positioning DaemonCore beneath orchestration layers (Speckit, AgentOS, IDEs, big-tech internal systems).",
+  "phase": 1,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "content",
+    "comparisons",
+    "positioning",
+    "no-competitive-trash-talk"
+  ],
+  "user_story_ids": [
+    "FEATURE-203-US-01",
+    "FEATURE-203-US-02"
+  ]
+}

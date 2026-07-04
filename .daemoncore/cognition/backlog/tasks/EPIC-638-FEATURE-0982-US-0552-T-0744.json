@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-638-FEATURE-0982-US-0552-T-0744",
+  "title": "Define v1 schema + examples — Demo Addins Gallery",
+  "description": "Create a JSON schema for the contribution type and ship 2-3 example payloads in a demo add-in.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:40Z",
+  "updated_at": "2026-01-28T21:39:40Z",
+  "promoted_from": "IDEA-EPIC-638-FEATURE-0982-US-0552-T-0744",
+  "user_story_id": "EPIC-638-FEATURE-0982-US-0552",
+  "prompt_ref": "prompts/tasks/EPIC-638-FEATURE-0982-US-0552-T-0744.prompt"
+}

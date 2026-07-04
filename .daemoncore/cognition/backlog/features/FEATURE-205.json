@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-205",
+  "epic_id": "EPIC-002",
+  "title": "Tone, IP-safety & editorial guardrails",
+  "description": "Define and enforce public-content guardrails: what can be said, what must never be said, and a review checklist for IP leakage.",
+  "phase": 1,
+  "domain": "website",
+  "area": "governance",
+  "tags": [
+    "content",
+    "ip-safety",
+    "guardrails",
+    "checklist"
+  ],
+  "user_story_ids": [
+    "FEATURE-205-US-01"
+  ]
+}

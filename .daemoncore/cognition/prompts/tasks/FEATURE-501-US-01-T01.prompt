@@ -1,0 +1,88 @@
+You are Claude, acting as a **senior technical content writer** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-501-US-01-T01
+
+## Objective
+Write **2–3 example scenarios** that clearly demonstrate the difference between operating agents **without** DaemonCore and **with** DaemonCore.
+
+These scenarios must make the **category difference** obvious without describing how DaemonCore works internally.
+
+This is not a demo. This is not a how-to. This is about **environmental consequences**.
+
+---
+
+## Hard constraints (non-negotiable)
+
+You MUST:
+- Avoid describing internal mechanisms, architecture, modules, boot flows, queues, memory models, or execution details.
+- Avoid any language that implies interception, execution, enforcement, or control logic.
+- Avoid absolutes (e.g. “100% controlled”, “guaranteed”, “perfectly safe”).
+- Avoid performance claims, benchmarks, timelines, or cost claims.
+- Avoid naming internal or confidential third-party projects (do NOT use codenames).
+- Keep everything vendor-agnostic (no Anthropic/OpenAI specifics).
+- Use UK spelling.
+- Maintain a calm, infrastructure-grade tone. No hype.
+
+You MUST NOT:
+- Explain *how* DaemonCore achieves anything.
+- Provide step-by-step flows.
+- Use pseudo-code, diagrams, or technical sequences.
+- Add new concepts not already present on the site.
+
+---
+
+## Framing guidance (important)
+
+Frame each scenario as:
+
+> Same models.  
+> Same tools.  
+> Same goals.  
+> **Different environment.**
+
+The contrast must be about:
+- what is *possible* vs *impossible*
+- what is *reactive* vs *structural*
+- what is *emergent* vs *bounded*
+
+---
+
+## Scenario structure (strict)
+
+For EACH scenario, use the following structure exactly:
+
+### Scenario title
+(Short, descriptive, non-technical)
+
+#### Without DaemonCore
+- 3–6 concise bullet points
+- Focus on outcomes, risks, and emergent behaviour
+- Describe what teams typically experience today
+
+#### With DaemonCore
+- 3–6 concise bullet points
+- Focus on constraints, predictability, and continuity
+- Describe what changes *about the environment*, not the agents
+
+Do NOT mirror bullet text line-by-line between columns.
+
+---
+
+## Scenario topics (choose 2–3 total)
+
+Choose from the following. Do NOT invent new categories.
+
+- Coordinating multiple agents in an enterprise system  
+- Long-running or autonomous workflows over time  
+- Switching or upgrading underlying models/vendors  
+
+---
+
+## Output requirements
+
+- Output **Markdown only**
+- No commentary, no preamble, no explanations
+- Each scenario should be immediately scannable
+- Total output should comfortably fit on a single web page section
+
+If you are unsure whether a sentence reveals too much, remove it.

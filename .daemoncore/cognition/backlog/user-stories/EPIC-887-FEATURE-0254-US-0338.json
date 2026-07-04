@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0254-US-0338",
+  "title": "Schema & validation for Operator Tone Pack (Calm SRE / Audit / Chaos)",
+  "description": "Define a minimal v1 schema for Operator Tone Pack (Calm SRE / Audit / Chaos) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0254-US-0338",
+  "feature_id": "EPIC-887-FEATURE-0254",
+  "task_ids": [
+    "EPIC-887-FEATURE-0254-US-0338-T-0234",
+    "EPIC-887-FEATURE-0254-US-0338-T-0606",
+    "EPIC-887-FEATURE-0254-US-0338-T-0682",
+    "EPIC-887-FEATURE-0254-US-0338-T-0828",
+    "EPIC-887-FEATURE-0254-US-0338-T-0857"
+  ]
+}

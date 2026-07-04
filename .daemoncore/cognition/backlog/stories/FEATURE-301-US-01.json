@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-301-US-01",
+  "feature_id": "FEATURE-301",
+  "title": "Define and apply brand tokens",
+  "story": "As a visitor, I want the site to feel like infrastructure-grade software so it earns trust immediately.",
+  "description": "Define palette/typography/spacing and apply to components. Provide a small style guide note for consistency.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/branding",
+  "domain": "website",
+  "area": "branding",
+  "tags": [
+    "gemini",
+    "branding",
+    "styling"
+  ],
+  "task_ids": [
+    "FEATURE-301-US-01-T01",
+    "FEATURE-301-US-01-T02"
+  ]
+}

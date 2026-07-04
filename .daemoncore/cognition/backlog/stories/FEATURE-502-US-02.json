@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-502-US-02",
+  "feature_id": "FEATURE-502",
+  "title": "Add a single end-to-end walkthrough page and link it from page 1",
+  "story": "As a sceptical engineer, I want one concrete walkthrough from user intent to governed outcome so I can see how DaemonCore changes the user experience beyond orchestration tools.",
+  "description": "Create a /daemon/walkthrough page that shows a single scenario (code review) with explicit stages: intent → preflight classification → action proposal shape → MAX bus routing → template constrained result → violation example → prompt injection note. Link it from homepage and /daemon landing.",
+  "priority": "P0",
+  "acceptance_criteria": [
+    "Walkthrough is one scenario only (code review) and fits on a single page.",
+    "Each stage is clearly labelled and uses concise, skimmable sections.",
+    "Includes one violation example and one prompt injection example with honest V1 limitations.",
+    "Does not reveal internal confidential details; uses public-safe terms already used on site (MAX bus, templates, action protocol).",
+    "Links added from homepage and /daemon index."
+  ],
+  "task_ids": [
+    "FEATURE-502-US-02-T01",
+    "FEATURE-502-US-02-T02"
+  ]
+}

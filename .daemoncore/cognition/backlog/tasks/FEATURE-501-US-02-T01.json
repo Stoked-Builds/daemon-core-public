@@ -1,0 +1,16 @@
+{
+  "id": "FEATURE-501-US-02-T01",
+  "user_story_id": "FEATURE-501-US-02",
+  "title": "Place scenario section on the site (prefer Why This Is Different)",
+  "description": "Insert the approved scenario section into the chosen page (prefer Why This Is Different) using existing components/content model.",
+  "priority": "P1",
+  "size": "S",
+  "tags": [
+    "claude",
+    "builder",
+    "content"
+  ],
+  "depends_on": [
+    "FEATURE-501-US-01-T02"
+  ]
+}

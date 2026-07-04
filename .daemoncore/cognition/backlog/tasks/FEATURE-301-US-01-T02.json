@@ -1,0 +1,24 @@
+{
+  "id": "FEATURE-301-US-01-T02",
+  "user_story_id": "FEATURE-301-US-01",
+  "title": "Apply tokens to site styles",
+  "description": "Update CSS/Tailwind/theme settings to apply tokens consistently.",
+  "priority": "P1",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "branding",
+  "tags": [
+    "gemini",
+    "styling"
+  ],
+  "depends_on": [
+    "FEATURE-301-US-01-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-887-FEATURE-0694",
+  "title": "Language Pack (EN-GB + Pirate)",
+  "description": "Localisation bundles with strict fallback and attribution.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0694",
+  "epic_id": "EPIC-887",
+  "user_story_ids": [
+    "EPIC-887-FEATURE-0694-US-0493",
+    "EPIC-887-FEATURE-0694-US-0678"
+  ]
+}

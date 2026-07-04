@@ -1,0 +1,31 @@
+# Task: Implement Speckit backlog provider addin (speckit.zip)
+
+## Goal
+Implement the `speckit` addin artifact so DaemonCore can pull Speckit work items into the backlog page.
+
+## Hard Rule
+**Do not guess the contract.** Implement the exact contract documented in TASK-126.
+
+## Requirements
+1. Update `Addins/Speckit/speckit.zip` contents to include the executable/module/entrypoint required by the contract.
+2. Implement backlog item production:
+   - Provide stable `id`, `title`, `status` (and `priority`/`size` if available)
+   - Include source metadata so UI can label items as Speckit
+   - Output must be valid per contract (e.g. JSON to stdout)
+3. Error handling:
+   - If Speckit data source missing/unreachable, return empty list and log non-fatal diagnostics
+   - No crashes that break the operator dashboard
+
+## Data Source
+Use the most canonical available Speckit source in this environment (choose ONE):
+- If the system expects reading from filesystem, scan Speckit specs/tasks from the repo.
+- If the system expects calling SpeckitSync, call that API.
+- If the system expects running a CLI, invoke it.
+
+Document which you chose and why.
+
+## Acceptance Criteria
+- [ ] Addin installs and loads
+- [ ] Backlog items appear tagged as Speckit
+- [ ] Refresh does not create duplicates
+- [ ] Missing-source scenario is graceful

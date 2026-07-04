@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-501-US-01-T02",
+  "user_story_id": "FEATURE-501-US-01",
+  "title": "Tighten scenarios for repetition + claims risk",
+  "description": "Edit the drafted scenarios to remove repetition, absolutes, and any claims that imply hidden internals or named third-party projects.",
+  "priority": "P1",
+  "size": "S",
+  "tags": [
+    "claude",
+    "content",
+    "review",
+    "ip-safety"
+  ],
+  "depends_on": [
+    "FEATURE-501-US-01-T01"
+  ]
+}

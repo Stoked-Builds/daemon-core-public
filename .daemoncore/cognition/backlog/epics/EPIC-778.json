@@ -1,0 +1,12 @@
+{
+  "id": "EPIC-778",
+  "title": "Speckit work items in Operator Backlog via Addin",
+  "description": "Create a real Speckit add-in in daemon-core-public that surfaces Speckit work items (at minimum: tasks) inside the Operator Dashboard Backlog page using the new Addins capability added to the main DaemonCore project.",
+  "status": "planned",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778",
+  "feature_ids": [
+    "EPIC-778-FEATURE-0131"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0254-US-0700",
+  "title": "Operator-visible experience for Operator Tone Pack (Calm SRE / Audit / Chaos)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0254-US-0700",
+  "feature_id": "EPIC-887-FEATURE-0254",
+  "task_ids": [
+    "EPIC-887-FEATURE-0254-US-0700-T-0115",
+    "EPIC-887-FEATURE-0254-US-0700-T-0146",
+    "EPIC-887-FEATURE-0254-US-0700-T-0513",
+    "EPIC-887-FEATURE-0254-US-0700-T-0572",
+    "EPIC-887-FEATURE-0254-US-0700-T-0910"
+  ]
+}

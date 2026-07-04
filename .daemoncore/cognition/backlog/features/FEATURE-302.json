@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-302",
+  "epic_id": "EPIC-003",
+  "title": "Stack diagrams (conceptual)",
+  "description": "Produce conceptual stack diagrams that show where DaemonCore sits (no arrows, no internals, no mechanisms).",
+  "phase": 1,
+  "domain": "website",
+  "area": "diagrams",
+  "tags": [
+    "diagrams",
+    "stack",
+    "conceptual",
+    "no-ip-leaks",
+    "gemini"
+  ],
+  "user_story_ids": [
+    "FEATURE-302-US-01",
+    "FEATURE-302-US-02"
+  ]
+}

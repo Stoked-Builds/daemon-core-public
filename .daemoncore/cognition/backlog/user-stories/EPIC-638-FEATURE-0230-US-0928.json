@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-638-FEATURE-0230-US-0928",
+  "title": "Operator-visible experience for Onboarding Questline",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:39Z",
+  "updated_at": "2026-01-28T21:39:39Z",
+  "promoted_from": "IDEA-EPIC-638-FEATURE-0230-US-0928",
+  "feature_id": "EPIC-638-FEATURE-0230",
+  "task_ids": [
+    "EPIC-638-FEATURE-0230-US-0928-T-0256",
+    "EPIC-638-FEATURE-0230-US-0928-T-0572",
+    "EPIC-638-FEATURE-0230-US-0928-T-0772",
+    "EPIC-638-FEATURE-0230-US-0928-T-0890",
+    "EPIC-638-FEATURE-0230-US-0928-T-0965"
+  ]
+}

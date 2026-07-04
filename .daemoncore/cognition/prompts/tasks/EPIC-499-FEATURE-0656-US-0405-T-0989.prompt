@@ -1,0 +1,13 @@
+# Task: Recompute digest + update registry for Speckit addin
+
+## Goal
+Ensure the addin registry digest matches the updated `speckit.zip` artifact.
+
+## Steps
+1. Compute sha256 for `Addins/Speckit/speckit.zip`.
+2. Update the `digest` field in the Speckit addin registry entry.
+3. Confirm paths (artifact/manifest/attestation) are still correct.
+
+## Acceptance Criteria
+- [ ] Digest matches
+- [ ] Addin can be installed without checksum errors

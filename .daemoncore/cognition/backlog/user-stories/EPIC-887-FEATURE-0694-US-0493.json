@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0694-US-0493",
+  "title": "Operator-visible experience for Language Pack (EN-GB + Pirate)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0694-US-0493",
+  "feature_id": "EPIC-887-FEATURE-0694",
+  "task_ids": [
+    "EPIC-887-FEATURE-0694-US-0493-T-0452",
+    "EPIC-887-FEATURE-0694-US-0493-T-0669",
+    "EPIC-887-FEATURE-0694-US-0493-T-0745",
+    "EPIC-887-FEATURE-0694-US-0493-T-0780",
+    "EPIC-887-FEATURE-0694-US-0493-T-0895"
+  ]
+}

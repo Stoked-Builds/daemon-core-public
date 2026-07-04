@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-502-US-03-T01",
+  "user_story_id": "FEATURE-502-US-03",
+  "title": "Rewrite Kernel landing + key pages copy for consistency",
+  "description": "Update copy in /daemon/index.astro, /daemon/why-different.astro, /daemon/comparisons.astro, and /daemon/overview.astro to align with governance-beneath-orchestration narrative and versioned guarantees.",
+  "priority": "P0",
+  "size": "L",
+  "tags": [
+    "claude",
+    "copy",
+    "website"
+  ],
+  "acceptance_criteria": [
+    "No page describes DaemonCore as an orchestrator or orchestration layer.",
+    "Comparisons page includes a simple 'Orchestrator vs DaemonCore' distinction with mechanisms examples.",
+    "Why-different page frames the missing layer as legitimacy/governance rather than coordination.",
+    "All pages include explicit V1 vs V1.5 language where relevant."
+  ]
+}

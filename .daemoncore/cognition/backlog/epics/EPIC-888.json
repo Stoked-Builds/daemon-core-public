@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-888",
+  "title": "Demo Addins Bank: Operator-visible packs",
+  "description": "Create a bank of low-gravity demo add-ins that prove install → visible effect → uninstall without requiring backlog/provider semantics.",
+  "status": "in_progress",
+  "created_at": "2026-01-28T19:25:00Z",
+  "updated_at": "2026-01-28T19:25:23.895947+00:00",
+  "promoted_from": "IDEA-EPIC-888",
+  "feature_ids": [
+    "EPIC-888-FEATURE-0248",
+    "EPIC-888-FEATURE-0450",
+    "EPIC-888-FEATURE-0495",
+    "EPIC-888-FEATURE-0955"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-873-FEATURE-0939-US-0340-T-0489",
+  "title": "Add negative-path UX — Decision Ledger Pack (ADR-lite)",
+  "description": "Improve error reporting: invalid payloads should not crash UI; show non-blocking warnings and log details.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0939-US-0340-T-0489",
+  "user_story_id": "EPIC-873-FEATURE-0939-US-0340",
+  "prompt_ref": "prompts/tasks/EPIC-873-FEATURE-0939-US-0340-T-0489.prompt"
+}

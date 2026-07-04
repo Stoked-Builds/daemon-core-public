@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-873-FEATURE-0279-US-0687-T-0143",
+  "title": "Add tests + demo verify doc — Lore Pack (Opt-in Easter Eggs)",
+  "description": "Add tests for happy/invalid/missing cases and write a short verify checklist in the demo add-in README.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0279-US-0687-T-0143",
+  "user_story_id": "EPIC-873-FEATURE-0279-US-0687",
+  "prompt_ref": "prompts/tasks/EPIC-873-FEATURE-0279-US-0687-T-0143.prompt"
+}

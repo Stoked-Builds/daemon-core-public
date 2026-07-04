@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-581",
+  "title": "Golden Demo Addins: Trust & Governance Showcase",
+  "description": "Provenance badges, audit trail viewer, and policy visibility (advisory).",
+  "status": "planned",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581",
+  "feature_ids": [
+    "EPIC-581-FEATURE-0284",
+    "EPIC-581-FEATURE-0438",
+    "EPIC-581-FEATURE-0790",
+    "EPIC-581-FEATURE-0958"
+  ]
+}

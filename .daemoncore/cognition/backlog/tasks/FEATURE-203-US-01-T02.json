@@ -1,0 +1,26 @@
+{
+  "id": "FEATURE-203-US-01-T02",
+  "user_story_id": "FEATURE-203-US-01",
+  "title": "Review comparisons page for claims risk",
+  "description": "Ensure no unverifiable claims or named secret projects.",
+  "priority": "P1",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "writer",
+    "review",
+    "risk-control"
+  ],
+  "depends_on": [
+    "FEATURE-203-US-01-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

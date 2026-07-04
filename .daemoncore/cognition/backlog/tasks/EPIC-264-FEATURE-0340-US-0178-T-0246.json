@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-264-FEATURE-0340-US-0178-T-0246",
+  "title": "Add UI plumbing for visibility (IDEA-US-922)",
+  "description": "Add minimal UI to show the capability is installed and active.",
+  "status": "todo",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0340-US-0178-T-0246",
+  "user_story_id": "EPIC-264-FEATURE-0340-US-0178",
+  "prompt_ref": "prompts/tasks/EPIC-264-FEATURE-0340-US-0178-T-0246.prompt"
+}

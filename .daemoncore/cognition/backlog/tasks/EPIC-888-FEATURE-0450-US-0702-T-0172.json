@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-888-FEATURE-0450-US-0702-T-0172",
+  "title": "Add tests for contribution validation (IDEA-US-916)",
+  "description": "Add unit tests for schema validation and failure modes.",
+  "status": "todo",
+  "created_at": "2026-01-28T19:25:00Z",
+  "updated_at": "2026-01-28T19:25:00Z",
+  "promoted_from": "IDEA-EPIC-888-FEATURE-0450-US-0702-T-0172",
+  "user_story_id": "EPIC-888-FEATURE-0450-US-0702",
+  "prompt_ref": "prompts/tasks/EPIC-888-FEATURE-0450-US-0702-T-0172.prompt"
+}

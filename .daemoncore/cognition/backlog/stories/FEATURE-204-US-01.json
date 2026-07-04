@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-204-US-01",
+  "feature_id": "FEATURE-204",
+  "title": "Write FAQ (safe, confident, non-leaky)",
+  "story": "As a reader, I want an FAQ that answers the obvious questions without revealing internals or overpromising.",
+  "description": "Write FAQs for: what is it, does it replace X, open source, availability, model support, safety, and why now. Avoid roadmap promises.",
+  "priority": "P2",
+  "size": "M",
+  "impact_area": "website/content",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "copy",
+    "ip-safety"
+  ],
+  "task_ids": [
+    "FEATURE-204-US-01-T01",
+    "FEATURE-204-US-01-T02"
+  ]
+}

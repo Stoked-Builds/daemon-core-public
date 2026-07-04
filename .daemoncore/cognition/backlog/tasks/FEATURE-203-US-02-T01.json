@@ -1,0 +1,25 @@
+{
+  "id": "FEATURE-203-US-02-T01",
+  "user_story_id": "FEATURE-203-US-02",
+  "title": "Wire comparisons page into site",
+  "description": "Add comparisons route/template and render markdown.",
+  "priority": "P2",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "builder",
+    "page-build"
+  ],
+  "depends_on": [
+    "FEATURE-104-US-01-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-504-US-01",
+  "title": "Expose Business Value page across the site",
+  "description": "As a technical buyer, exec, or investor, I want to easily find the Business Value page and understand how DaemonCore\u2019s mechanisms translate into outcomes, so I can justify adoption and de-risk deployment.",
+  "parent": "FEATURE-504",
+  "priority": "high",
+  "status": "backlog",
+  "acceptance_criteria": [
+    "Business Value page is reachable via primary nav and footer.",
+    "Home page \u2018Get Started\u2019 includes a Business Value CTA card linking to the page.",
+    "Kernel and Why Different pages include at least one CTA link to Business Value.",
+    "Copy avoids overclaiming: V1 does not claim model-level prompt injection prevention; V1.5 claims are explicitly marked planned.",
+    "Build passes (document commands)."
+  ],
+  "created_at": "2026-01-01T13:30:04Z",
+  "updated_at": "2026-01-01T13:30:04Z",
+  "tags": [
+    "website",
+    "content",
+    "positioning"
+  ]
+}

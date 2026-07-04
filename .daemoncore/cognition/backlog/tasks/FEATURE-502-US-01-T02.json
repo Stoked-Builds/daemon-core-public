@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-502-US-01-T02",
+  "user_story_id": "FEATURE-502-US-01",
+  "title": "Implement homepage updates in Astro",
+  "description": "Update website/src/pages/index.astro (+ small component if needed) to include the new sections and links.",
+  "priority": "P0",
+  "size": "L",
+  "tags": [
+    "claude",
+    "astro",
+    "website",
+    "implementation"
+  ],
+  "acceptance_criteria": [
+    "index.astro updated with the agreed copy and section order.",
+    "Adds link to /daemon/walkthrough from hero or early section.",
+    "No broken links; build passes."
+  ]
+}

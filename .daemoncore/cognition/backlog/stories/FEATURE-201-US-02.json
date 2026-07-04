@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-201-US-02",
+  "feature_id": "FEATURE-201",
+  "title": "Implement homepage page layout with placeholders",
+  "story": "As the maintainer, I want the homepage wired into the site so that copy and visuals can be iterated safely.",
+  "description": "Create the homepage route/component/template and insert approved copy from FEATURE-201-US-01 (or placeholders until approved).",
+  "priority": "P1",
+  "size": "S",
+  "impact_area": "website/content/home",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "page-build"
+  ],
+  "task_ids": [
+    "FEATURE-201-US-02-T01"
+  ]
+}

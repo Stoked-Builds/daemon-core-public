@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-402",
+  "epic_id": "EPIC-004",
+  "title": "Launch messaging & microcopy",
+  "description": "Write launch-ready messaging for CTAs, status banners, and short snippets that content creators can quote.",
+  "phase": 1,
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "launch",
+    "microcopy",
+    "buzz",
+    "content"
+  ],
+  "user_story_ids": [
+    "FEATURE-402-US-01"
+  ]
+}

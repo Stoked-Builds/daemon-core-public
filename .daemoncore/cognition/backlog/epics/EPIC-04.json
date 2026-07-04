@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-004",
+  "title": "Early access & buzz mechanics",
+  "phase": 1,
+  "tags": [
+    "early-access",
+    "buzz",
+    "launch",
+    "narrative"
+  ],
+  "description": "Prepare controlled early-access messaging, signup mechanics, and media assets to seed interest without overselling.",
+  "feature_ids": [
+    "FEATURE-401",
+    "FEATURE-402",
+    "FEATURE-403"
+  ]
+}

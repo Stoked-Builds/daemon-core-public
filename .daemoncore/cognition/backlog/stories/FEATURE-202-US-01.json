@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-202-US-01",
+  "feature_id": "FEATURE-202",
+  "title": "Write 'What DaemonCore Is'",
+  "story": "As a reader, I want a clear definition of DaemonCore\u2019s layer so I can distinguish it from orchestration tools without needing internals.",
+  "description": "Write an IP-safe explainer page using systems language and the stack framing; avoid mechanisms and implementation hints.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/content",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "copy",
+    "ip-safety"
+  ],
+  "task_ids": [
+    "FEATURE-202-US-01-T01",
+    "FEATURE-202-US-01-T02"
+  ]
+}

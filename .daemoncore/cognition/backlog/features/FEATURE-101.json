@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-101",
+  "epic_id": "EPIC-001",
+  "title": "Static site framework & repo structure",
+  "status": "completed",
+  "description": "Select and initialise a GitHub Pages-compatible static site framework and establish the base repo structure for the marketing site.",
+  "phase": 1,
+  "domain": "website",
+  "area": "foundation",
+  "tags": [
+    "website",
+    "foundation",
+    "static-site",
+    "repo-structure",
+    "github-pages"
+  ],
+  "user_story_ids": [
+    "FEATURE-101-US-01"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-887-FEATURE-0786-US-0378-T-0987",
+  "title": "Wire to UI with attribution — Accessibility Pack (Presets + Checklist)",
+  "description": "Display the contribution in UI, show source add-in, and ensure clean fallback when disabled/uninstalled.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0786-US-0378-T-0987",
+  "user_story_id": "EPIC-887-FEATURE-0786-US-0378",
+  "prompt_ref": "prompts/tasks/EPIC-887-FEATURE-0786-US-0378-T-0987.prompt"
+}

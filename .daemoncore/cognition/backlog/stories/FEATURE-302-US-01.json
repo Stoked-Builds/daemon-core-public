@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-302-US-01",
+  "feature_id": "FEATURE-302",
+  "title": "Create 'Where DaemonCore sits' stack diagram",
+  "story": "As a reader, I want a simple stack diagram so I instantly understand DaemonCore\u2019s layer relative to LLMs and orchestration tools.",
+  "description": "Produce a clean conceptual stack diagram (SVG) showing: Hardware, Host OS, DaemonCore, LLMs, Agents, Orchestration (Speckit/AgentOS), UI (VS Code). No arrows. No internal terms.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/diagrams",
+  "domain": "website",
+  "area": "diagrams",
+  "tags": [
+    "gemini",
+    "diagrams",
+    "ip-safe"
+  ],
+  "task_ids": [
+    "FEATURE-302-US-01-T01",
+    "FEATURE-302-US-01-T02"
+  ]
+}

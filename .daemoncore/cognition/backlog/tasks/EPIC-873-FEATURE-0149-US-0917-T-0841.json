@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-873-FEATURE-0149-US-0917-T-0841",
+  "title": "Implement loader + validation — Failure Playbooks Pack",
+  "description": "Implement discovery/loading of contributions from installed add-ins and validate against schema with actionable errors.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0149-US-0917-T-0841",
+  "user_story_id": "EPIC-873-FEATURE-0149-US-0917",
+  "prompt_ref": "prompts/tasks/EPIC-873-FEATURE-0149-US-0917-T-0841.prompt"
+}

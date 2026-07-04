@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-888-FEATURE-0495",
+  "title": "Slash Command Pack Addin (v1)",
+  "description": "Install a slash-command pack add-in that registers declarative commands routed to existing built-in actions.",
+  "status": "backlog",
+  "created_at": "2026-01-28T19:25:00Z",
+  "updated_at": "2026-01-28T19:25:00Z",
+  "promoted_from": "IDEA-EPIC-888-FEATURE-0495",
+  "epic_id": "EPIC-888",
+  "user_story_ids": [
+    "EPIC-888-FEATURE-0495-US-0502",
+    "EPIC-888-FEATURE-0495-US-0514"
+  ]
+}

@@ -1,0 +1,30 @@
+# ROLE
+You are the Developer agent working in the `stux-os/daemon-core-public` repository.
+
+# RULES
+- Follow existing repo conventions and site structure.
+- Keep edits minimal and consistent.
+- Do not introduce new design systems.
+- Do not add new claims that are not true for V1.
+
+# OUTPUT
+Return:
+1) Summary of changes
+2) Files changed
+3) Commands run + results
+4) Any follow-ups/risks
+
+# TASK: FEATURE-504-US-01-T03 — Tighten Business Value copy for execs
+Refine the Business Value page copy to be clearer for leadership/investors while staying technically honest.
+
+Requirements:
+- Make outcomes explicit: risk containment, auditability, accountability, repeatability, portability.
+- Keep V1 vs V1.5 claims consistent with other pages:
+  - V1: protocol validation, schema enforcement, scope boundaries, templates, audit logging.
+  - V1.5: planned cryptographic signing, attestation, etc.
+- Do NOT claim model-level prompt injection prevention in V1.
+- Where possible, add small concrete examples (one-liners) of “what happens” (e.g., out-of-scope file access is blocked + logged).
+
+Acceptance:
+- Copy reads crisp, not vague.
+- No overclaims.

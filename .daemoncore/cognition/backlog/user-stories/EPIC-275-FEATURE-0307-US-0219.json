@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-275-FEATURE-0307-US-0219",
+  "title": "Schema & validation for Prompt Skill Pack (Triage/Review/Write)",
+  "description": "Define a minimal v1 schema for Prompt Skill Pack (Triage/Review/Write) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0307-US-0219",
+  "feature_id": "EPIC-275-FEATURE-0307",
+  "task_ids": [
+    "EPIC-275-FEATURE-0307-US-0219-T-0171",
+    "EPIC-275-FEATURE-0307-US-0219-T-0385",
+    "EPIC-275-FEATURE-0307-US-0219-T-0442",
+    "EPIC-275-FEATURE-0307-US-0219-T-0677",
+    "EPIC-275-FEATURE-0307-US-0219-T-0929"
+  ]
+}

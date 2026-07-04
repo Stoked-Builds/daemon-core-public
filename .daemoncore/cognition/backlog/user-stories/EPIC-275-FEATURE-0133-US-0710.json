@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-275-FEATURE-0133-US-0710",
+  "title": "Operator-visible experience for Command Palette / Help Overlay",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0133-US-0710",
+  "feature_id": "EPIC-275-FEATURE-0133",
+  "task_ids": [
+    "EPIC-275-FEATURE-0133-US-0710-T-0575",
+    "EPIC-275-FEATURE-0133-US-0710-T-0611",
+    "EPIC-275-FEATURE-0133-US-0710-T-0654",
+    "EPIC-275-FEATURE-0133-US-0710-T-0853",
+    "EPIC-275-FEATURE-0133-US-0710-T-0900"
+  ]
+}

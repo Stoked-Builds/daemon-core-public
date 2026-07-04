@@ -1,0 +1,14 @@
+You are Claude, writing an IP-safety and editorial guardrails checklist for DaemonCore public marketing content.
+
+TASK ID: FEATURE-205-US-01-T01
+
+Deliverable:
+- A short Markdown document containing:
+  1) Banned topics list (things we must never publish)
+  2) Allowed topics list (safe ways to talk about DaemonCore)
+  3) Review checklist to run before merging content changes
+  4) Examples of safe phrasing vs unsafe phrasing (short)
+
+Constraints:
+- Do not reference internal file names or architecture.
+- Keep it to 1–2 pages max.

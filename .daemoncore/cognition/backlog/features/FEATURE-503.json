@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-503",
+  "epic_id": "EPIC-502",
+  "title": "Value, Trust & Business Impact page (executive/investor translation)",
+  "status": "backlog",
+  "description": "Create a dedicated value page that translates DaemonCore's governance mechanisms into executive and investor outcomes (risk reduction, trust, auditability, accountability) without hype. This complements the technical Kernel/Walkthrough/FAQ pages.",
+  "priority": "P0",
+  "domain": "website",
+  "tags": [
+    "website",
+    "content",
+    "astro",
+    "ux",
+    "copy",
+    "positioning",
+    "value"
+  ],
+  "user_story_ids": [
+    "FEATURE-503-US-01"
+  ]
+}

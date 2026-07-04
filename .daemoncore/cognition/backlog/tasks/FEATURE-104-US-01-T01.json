@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-104-US-01-T01",
+  "user_story_id": "FEATURE-104-US-01",
+  "title": "Implement markdown content model",
+  "status": "completed",
+  "description": "Set up markdown-based content authoring pattern and routing.",
+  "priority": "P2",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content-model",
+  "tags": [
+    "claude",
+    "content-model"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

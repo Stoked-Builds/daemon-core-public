@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-581-FEATURE-0958",
+  "title": "Policy Visibility Pack (Advisory)",
+  "description": "Display constraints as banners/tiles; clearly advisory.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581-FEATURE-0958",
+  "epic_id": "EPIC-581",
+  "user_story_ids": [
+    "EPIC-581-FEATURE-0958-US-0301",
+    "EPIC-581-FEATURE-0958-US-0412"
+  ]
+}

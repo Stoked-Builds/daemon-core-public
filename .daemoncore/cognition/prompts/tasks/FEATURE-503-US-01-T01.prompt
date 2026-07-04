@@ -1,0 +1,30 @@
+You are acting as a senior technical copywriter and systems architect.
+
+Task:
+Define 3–5 core VALUE PILLARS for DaemonCore that translate its V1 governance guarantees into executive‑meaningful outcomes.
+
+Audience:
+- CEOs
+- CTOs
+- CISOs
+- Investors
+
+Context:
+DaemonCore is a governance kernel that sits beneath AI orchestration. It does not coordinate agents or improve reasoning quality. It enforces boundaries structurally via protocol validation, schema enforcement, scoped permissions, templates, deterministic boot, and audit logging.
+
+Instructions:
+1. Produce 3–5 value pillars (no more, no less).
+2. For each pillar include:
+   - A short title
+   - The organisational problem it addresses
+   - Why existing approaches (prompts, orchestration, policies) plateau or fail
+   - Which DaemonCore V1 mechanisms underpin this value
+3. Use executive‑readable language, not implementation detail.
+4. Do not mention future features (V1.5) as current capabilities.
+5. Avoid hype, buzzwords, or absolute safety claims.
+
+Tone:
+Calm, precise, credible to technical and non‑technical leadership.
+
+Output:
+Structured prose suitable for direct inclusion on a Value page.

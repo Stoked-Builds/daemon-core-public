@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0604-US-0593",
+  "title": "Schema & validation for Theme Pack Addin (Neon Noir + Clean Enterprise)",
+  "description": "Define a minimal v1 schema for Theme Pack Addin (Neon Noir + Clean Enterprise) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0604-US-0593",
+  "feature_id": "EPIC-887-FEATURE-0604",
+  "task_ids": [
+    "EPIC-887-FEATURE-0604-US-0593-T-0283",
+    "EPIC-887-FEATURE-0604-US-0593-T-0365",
+    "EPIC-887-FEATURE-0604-US-0593-T-0569",
+    "EPIC-887-FEATURE-0604-US-0593-T-0713",
+    "EPIC-887-FEATURE-0604-US-0593-T-0757"
+  ]
+}

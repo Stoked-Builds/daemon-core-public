@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-873-FEATURE-0279-US-0687",
+  "title": "Schema & validation for Lore Pack (Opt-in Easter Eggs)",
+  "description": "Define a minimal v1 schema for Lore Pack (Opt-in Easter Eggs) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0279-US-0687",
+  "feature_id": "EPIC-873-FEATURE-0279",
+  "task_ids": [
+    "EPIC-873-FEATURE-0279-US-0687-T-0143",
+    "EPIC-873-FEATURE-0279-US-0687-T-0174",
+    "EPIC-873-FEATURE-0279-US-0687-T-0203",
+    "EPIC-873-FEATURE-0279-US-0687-T-0449",
+    "EPIC-873-FEATURE-0279-US-0687-T-0653"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "EPIC-264",
+  "title": "Addin Registry & Trust Signals (Demo-ready)",
+  "description": "Make the registry and installed state understandable: versioning, digests, and simple trust indicators for demos.",
+  "status": "planned",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264",
+  "feature_ids": [
+    "EPIC-264-FEATURE-0340",
+    "EPIC-264-FEATURE-0677"
+  ]
+}

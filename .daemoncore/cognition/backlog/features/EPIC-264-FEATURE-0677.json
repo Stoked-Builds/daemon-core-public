@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-264-FEATURE-0677",
+  "title": "Installed Addins Page (Operator UI)",
+  "description": "Show installed add-ins, versions, digests, and enabled state in Operator UI.",
+  "status": "backlog",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0677",
+  "epic_id": "EPIC-264",
+  "user_story_ids": [
+    "EPIC-264-FEATURE-0677-US-0624",
+    "EPIC-264-FEATURE-0677-US-0984"
+  ]
+}

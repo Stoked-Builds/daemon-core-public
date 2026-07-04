@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0415-T-0220",
+  "title": "Study Speckit-Shell addin packaging and replicate structure for Speckit addin",
+  "description": "Use Addins.zip reference to mirror the existing addin folder shape (manifest, attestation, registry entry, artifact zip) for a new `speckit` addin.",
+  "status": "todo",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0415-T-0220",
+  "user_story_id": "EPIC-778-FEATURE-0131-US-0415",
+  "prompt_ref": "prompts/tasks/EPIC-778-FEATURE-0131-US-0415-T-0220.prompt"
+}

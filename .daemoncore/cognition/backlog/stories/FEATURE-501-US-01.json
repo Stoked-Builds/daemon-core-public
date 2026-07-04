@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-501-US-01",
+  "feature_id": "FEATURE-501",
+  "title": "Write IP-safe scenario comparisons (Without vs With)",
+  "story": "As a technical decision-maker, I want concrete scenarios comparing environments without and with DaemonCore so that the category difference becomes obvious without exposing internals.",
+  "description": "Create 2\u20133 concise scenarios using a strict two-column structure (Without DaemonCore / With DaemonCore) focused on outcomes and constraints, not mechanisms.",
+  "priority": "P1",
+  "acceptance_criteria": [
+    "Includes 2\u20133 scenarios (no more).",
+    "Each scenario uses a consistent two-column structure: Without / With.",
+    "No implementation detail, no internal module names, no how-it-works sequences.",
+    "Language avoids absolutes like '100% controlled' and avoids performance/timeline promises."
+  ],
+  "task_ids": [
+    "FEATURE-501-US-01-T01",
+    "FEATURE-501-US-01-T02"
+  ]
+}

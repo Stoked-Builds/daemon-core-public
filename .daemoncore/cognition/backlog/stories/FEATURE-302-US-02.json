@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-302-US-02",
+  "feature_id": "FEATURE-302",
+  "title": "Create 'Today vs With DaemonCore' comparison diagram",
+  "story": "As a reader, I want a side-by-side diagram so I understand what\u2019s missing in the current AI stack.",
+  "description": "Produce a two-column conceptual diagram: 'Today' vs 'With DaemonCore'. Highlight governance layer. No implementation hints.",
+  "priority": "P2",
+  "size": "S",
+  "impact_area": "website/diagrams",
+  "domain": "website",
+  "area": "diagrams",
+  "tags": [
+    "gemini",
+    "diagrams",
+    "ip-safe"
+  ],
+  "task_ids": [
+    "FEATURE-302-US-02-T01"
+  ]
+}

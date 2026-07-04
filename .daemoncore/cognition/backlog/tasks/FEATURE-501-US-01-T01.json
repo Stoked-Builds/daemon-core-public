@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-501-US-01-T01",
+  "user_story_id": "FEATURE-501-US-01",
+  "title": "Draft scenarios (Without vs With) in Markdown",
+  "description": "Write 2\u20133 IP-safe scenario comparisons using strict two-column formatting focused on outcomes/constraints.",
+  "priority": "P1",
+  "size": "M",
+  "tags": [
+    "claude",
+    "content",
+    "ip-safety"
+  ],
+  "acceptance_criteria": [
+    "Includes 2\u20133 scenarios (no more).",
+    "Each scenario uses a consistent two-column structure: Without / With.",
+    "No implementation detail, no internal module names, no how-it-works sequences.",
+    "Language avoids absolutes like '100% controlled' and avoids performance/timeline promises."
+  ]
+}

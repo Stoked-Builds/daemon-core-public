@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-638-FEATURE-0982-US-0552",
+  "title": "Operator-visible experience for Demo Addins Gallery",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:39Z",
+  "updated_at": "2026-01-28T21:39:40Z",
+  "promoted_from": "IDEA-EPIC-638-FEATURE-0982-US-0552",
+  "feature_id": "EPIC-638-FEATURE-0982",
+  "task_ids": [
+    "EPIC-638-FEATURE-0982-US-0552-T-0186",
+    "EPIC-638-FEATURE-0982-US-0552-T-0291",
+    "EPIC-638-FEATURE-0982-US-0552-T-0666",
+    "EPIC-638-FEATURE-0982-US-0552-T-0684",
+    "EPIC-638-FEATURE-0982-US-0552-T-0744"
+  ]
+}

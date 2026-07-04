@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-103-US-01",
+  "feature_id": "FEATURE-103",
+  "status": "completed",
+  "title": "Create global shell (layout/nav/footer)",
+  "story": "As a visitor, I want consistent navigation and page structure so that I can quickly understand what DaemonCore is and explore key pages.",
+  "description": "Implement a responsive layout, top nav, footer, and placeholder routes for core pages.",
+  "priority": "P2",
+  "size": "M",
+  "impact_area": "website/layout",
+  "domain": "website",
+  "area": "layout",
+  "tags": [
+    "claude",
+    "layout",
+    "a11y"
+  ],
+  "task_ids": [
+    "FEATURE-103-US-01-T01",
+    "FEATURE-103-US-01-T02"
+  ]
+}

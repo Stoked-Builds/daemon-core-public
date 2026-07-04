@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-503-US-01-T04",
+  "user_story_id": "FEATURE-503-US-01",
+  "title": "Position DaemonCore as infrastructure (not a tool/framework) with clear boundaries",
+  "description": "Add a short section that reinforces category boundaries: DaemonCore is not a chatbot, not an orchestrator, not a prompt pack. It is governance infrastructure that defines what counts as a valid action and enforces boundaries beneath orchestration.",
+  "priority": "P0",
+  "size": "S",
+  "tags": [
+    "claude",
+    "copy",
+    "website",
+    "positioning"
+  ],
+  "acceptance_criteria": [
+    "Category boundaries are stated plainly and consistently with existing pages.",
+    "Avoids absolutes about perfect safety.",
+    "Does not duplicate FAQ verbatim; complements it."
+  ]
+}

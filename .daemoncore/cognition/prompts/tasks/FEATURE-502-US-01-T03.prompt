@@ -1,0 +1,24 @@
+You are Claude, acting as a **front-end CSS implementer (Astro + vanilla CSS)** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-01-T03
+
+## Objective
+Add minimal CSS support for the new homepage sections (evolution strip + versioned guarantees callout + mechanism list).
+
+## Files to modify
+- website/src/styles/pages.css
+- website/src/styles/components.css (if you introduce a new component class)
+
+## Constraints
+- No new frameworks or deps.
+- Match existing site aesthetic (spacing, typography, card styles).
+- Mobile-first.
+- Do not regress existing grid layouts.
+
+## Required styling behaviours
+- Evolution strip: horizontal on desktop, stacks cleanly on mobile, looks like a progression.
+- Versioned guarantees callout: visually distinct callout box.
+- Mechanisms: clean list with short examples; avoid dense paragraphs.
+
+## Output
+Provide a git-style patch (diff) for changed files.

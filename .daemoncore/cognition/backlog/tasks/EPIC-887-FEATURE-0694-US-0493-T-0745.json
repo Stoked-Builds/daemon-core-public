@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-887-FEATURE-0694-US-0493-T-0745",
+  "title": "Add tests + demo verify doc — Language Pack (EN-GB + Pirate)",
+  "description": "Add tests for happy/invalid/missing cases and write a short verify checklist in the demo add-in README.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0694-US-0493-T-0745",
+  "user_story_id": "EPIC-887-FEATURE-0694-US-0493",
+  "prompt_ref": "prompts/tasks/EPIC-887-FEATURE-0694-US-0493-T-0745.prompt"
+}

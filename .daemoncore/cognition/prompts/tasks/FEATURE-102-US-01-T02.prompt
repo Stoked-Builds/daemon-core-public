@@ -1,0 +1,35 @@
+You are Claude, acting as the Builder for the DaemonCore public marketing website repo (`daemon-core-public`).
+
+    TASK ID: FEATURE-102-US-01-T02
+    USER STORY: FEATURE-102-US-01 — Implement GitHub Pages build & deploy workflow
+
+    Mission:
+    Implement the requested change set in the repository with commit-ready code.
+
+    Hard constraints (must follow):
+    - GitHub Pages compatible static site.
+    - Do not add any patent-sensitive or internal technical details.
+    - Do not invent architecture diagrams or describe internal mechanisms (no boot flows, no queues, no memory model, etc.).
+    - Prefer minimal, boring, deterministic implementation over fancy tooling.
+    - Keep changes tightly scoped to this task.
+    - If the repo already uses a static site framework (e.g. Astro), reuse it. Do not migrate unless required.
+
+    Expected outputs:
+    - Implement the work described below.
+    - Update or add any necessary config so `npm run build` (or equivalent) succeeds.
+    - Ensure routes render without errors.
+    - Ensure nav links match existing IA.
+
+    Work to do (exact):
+    - Configure base path for Pages (repo name path).
+- Verify all nav links and assets resolve when served from subpath.
+- Add a simple local check step if possible.
+
+
+    Verification:
+    - Run the project's build/test commands (or the closest local equivalents).
+    - Confirm GitHub Pages base path is correct for the repo (relative assets work).
+    - Confirm there are no secrets or environment-specific values committed.
+
+    Deliverable:
+    - A clean commit-ready diff only. No commentary essays.

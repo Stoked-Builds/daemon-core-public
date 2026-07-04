@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-205-US-01",
+  "feature_id": "FEATURE-205",
+  "title": "Create IP-safety editorial guardrails",
+  "story": "As the project owner, I want a content guardrails checklist so we can safely publish without leaking patent-sensitive details.",
+  "description": "Produce a short checklist and banned-topics list, plus a required review step before publishing changes.",
+  "priority": "P1",
+  "size": "S",
+  "impact_area": "website/governance",
+  "domain": "website",
+  "area": "governance",
+  "tags": [
+    "claude",
+    "ip-safety",
+    "process"
+  ],
+  "task_ids": [
+    "FEATURE-205-US-01-T01"
+  ]
+}

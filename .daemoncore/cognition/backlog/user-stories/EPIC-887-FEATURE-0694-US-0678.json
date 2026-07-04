@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0694-US-0678",
+  "title": "Schema & validation for Language Pack (EN-GB + Pirate)",
+  "description": "Define a minimal v1 schema for Language Pack (EN-GB + Pirate) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0694-US-0678",
+  "feature_id": "EPIC-887-FEATURE-0694",
+  "task_ids": [
+    "EPIC-887-FEATURE-0694-US-0678-T-0167",
+    "EPIC-887-FEATURE-0694-US-0678-T-0294",
+    "EPIC-887-FEATURE-0694-US-0678-T-0328",
+    "EPIC-887-FEATURE-0694-US-0678-T-0543",
+    "EPIC-887-FEATURE-0694-US-0678-T-0702"
+  ]
+}

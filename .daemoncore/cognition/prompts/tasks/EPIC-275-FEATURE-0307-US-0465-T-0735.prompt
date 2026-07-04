@@ -1,0 +1,21 @@
+# Implement loader + validation — Prompt Skill Pack (Triage/Review/Write)
+
+## Goal
+Implement discovery/loading of contributions from installed add-ins and validate against schema with actionable errors.
+
+## Guardrails
+- **No executable add-in runtime**: add-ins contribute only static files (JSON/MD/assets).
+- Keep changes **generic** (capability-slot based), no provider-specific kernel code.
+- Must be **reversible**: disable/uninstall removes effect and restores defaults safely.
+- Public repo friendly: no secrets, no org-specific assumptions.
+
+## Deliverables
+- Implementation (smallest viable change)
+- Schema (v1) + at least 1 example payload in a demo add-in
+- Tests covering: valid payload, invalid payload, missing payload, disabled add-in
+
+## Acceptance Criteria
+- [ ] Feature works end-to-end with a demo add-in installed
+- [ ] Invalid add-in payload fails safely with clear error reporting
+- [ ] Disable/uninstall reverses the effect (no orphan state)
+- [ ] Unit/integration tests pass

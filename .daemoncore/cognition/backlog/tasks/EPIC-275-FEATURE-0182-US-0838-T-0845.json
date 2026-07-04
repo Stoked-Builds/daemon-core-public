@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-275-FEATURE-0182-US-0838-T-0845",
+  "title": "Implement loader + validation — Agent Role Pack (SRE/Product/Security)",
+  "description": "Implement discovery/loading of contributions from installed add-ins and validate against schema with actionable errors.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0182-US-0838-T-0845",
+  "user_story_id": "EPIC-275-FEATURE-0182-US-0838",
+  "prompt_ref": "prompts/tasks/EPIC-275-FEATURE-0182-US-0838-T-0845.prompt"
+}

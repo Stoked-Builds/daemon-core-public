@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-303-US-01-T01",
+  "user_story_id": "FEATURE-303-US-01",
+  "title": "Create supporting graphics pack",
+  "description": "Create minimal icon/divider/background motif set.",
+  "priority": "P2",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "graphics",
+  "tags": [
+    "gemini",
+    "graphics"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

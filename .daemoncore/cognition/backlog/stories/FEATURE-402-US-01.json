@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-402-US-01",
+  "feature_id": "FEATURE-402",
+  "title": "Launch microcopy pack",
+  "story": "As a visitor, I want concise, confident copy in banners and CTAs so the site feels intentional and trustworthy.",
+  "description": "Write short approved phrases for CTAs, status banners, section headings, and meta descriptions. No hype, no promises.",
+  "priority": "P2",
+  "size": "S",
+  "impact_area": "website/launch",
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "microcopy"
+  ],
+  "task_ids": [
+    "FEATURE-402-US-01-T01"
+  ]
+}

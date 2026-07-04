@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-302-US-02-T01",
+  "user_story_id": "FEATURE-302-US-02",
+  "title": "Deliver 'Today vs With DaemonCore' SVG",
+  "description": "Produce side-by-side conceptual diagram.",
+  "priority": "P2",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "diagrams",
+  "tags": [
+    "gemini",
+    "diagrams"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

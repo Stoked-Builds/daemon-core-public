@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-105-US-01-T01",
+  "user_story_id": "FEATURE-105-US-01",
+  "title": "Create assets directory + conventions",
+  "status": "completed",
+  "description": "Add an assets directory and conventions for referencing diagrams/images.",
+  "priority": "P2",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "assets",
+  "tags": [
+    "claude",
+    "assets"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

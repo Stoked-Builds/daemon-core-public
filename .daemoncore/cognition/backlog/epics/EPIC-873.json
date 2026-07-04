@@ -1,0 +1,16 @@
+{
+  "id": "EPIC-873",
+  "title": "Golden Demo Addins: Narrative & Memory Pack",
+  "description": "Turn projects into living stories: storybook timelines, ADR decision ledgers, runbooks, drills, lore (opt-in).",
+  "status": "planned",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873",
+  "feature_ids": [
+    "EPIC-873-FEATURE-0149",
+    "EPIC-873-FEATURE-0279",
+    "EPIC-873-FEATURE-0732",
+    "EPIC-873-FEATURE-0769",
+    "EPIC-873-FEATURE-0939"
+  ]
+}

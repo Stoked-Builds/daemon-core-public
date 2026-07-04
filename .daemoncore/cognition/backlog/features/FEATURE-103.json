@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-103",
+  "epic_id": "EPIC-001",
+  "title": "Global layout, navigation & footer shell",
+  "status": "completed",
+  "description": "Create the global page shell (layout, navigation, footer) with accessible, responsive defaults and placeholders for content pages.",
+  "phase": 1,
+  "domain": "website",
+  "area": "layout",
+  "tags": [
+    "website",
+    "layout",
+    "navigation",
+    "footer",
+    "a11y"
+  ],
+  "user_story_ids": [
+    "FEATURE-103-US-01"
+  ]
+}

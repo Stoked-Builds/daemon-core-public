@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-581-FEATURE-0438-US-0802",
+  "title": "Operator-visible experience for Compliance Checklist Pack (Static Templates)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581-FEATURE-0438-US-0802",
+  "feature_id": "EPIC-581-FEATURE-0438",
+  "task_ids": [
+    "EPIC-581-FEATURE-0438-US-0802-T-0239",
+    "EPIC-581-FEATURE-0438-US-0802-T-0767",
+    "EPIC-581-FEATURE-0438-US-0802-T-0810",
+    "EPIC-581-FEATURE-0438-US-0802-T-0817",
+    "EPIC-581-FEATURE-0438-US-0802-T-0908"
+  ]
+}

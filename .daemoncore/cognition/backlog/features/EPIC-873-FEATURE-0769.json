@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-873-FEATURE-0769",
+  "title": "Project Storybook Pack",
+  "description": "Narrative chapters rendered safely from markdown entries.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0769",
+  "epic_id": "EPIC-873",
+  "user_story_ids": [
+    "EPIC-873-FEATURE-0769-US-0154",
+    "EPIC-873-FEATURE-0769-US-0858"
+  ]
+}

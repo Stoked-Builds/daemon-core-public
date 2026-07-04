@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-264-FEATURE-0677-US-0624-T-0981",
+  "title": "Polish docs and demo steps (IDEA-US-924)",
+  "description": "Write or refine demo verification steps and ensure they match current UI.",
+  "status": "todo",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0677-US-0624-T-0981",
+  "user_story_id": "EPIC-264-FEATURE-0677-US-0624",
+  "prompt_ref": "prompts/tasks/EPIC-264-FEATURE-0677-US-0624-T-0981.prompt"
+}

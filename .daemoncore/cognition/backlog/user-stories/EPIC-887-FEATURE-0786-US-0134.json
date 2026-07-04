@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0786-US-0134",
+  "title": "Schema & validation for Accessibility Pack (Presets + Checklist)",
+  "description": "Define a minimal v1 schema for Accessibility Pack (Presets + Checklist) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0786-US-0134",
+  "feature_id": "EPIC-887-FEATURE-0786",
+  "task_ids": [
+    "EPIC-887-FEATURE-0786-US-0134-T-0235",
+    "EPIC-887-FEATURE-0786-US-0134-T-0326",
+    "EPIC-887-FEATURE-0786-US-0134-T-0522",
+    "EPIC-887-FEATURE-0786-US-0134-T-0681",
+    "EPIC-887-FEATURE-0786-US-0134-T-0951"
+  ]
+}

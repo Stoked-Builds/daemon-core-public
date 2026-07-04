@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-104-US-01-T02",
+  "user_story_id": "FEATURE-104-US-01",
+  "title": "Add content templates and placeholders",
+  "status": "completed",
+  "description": "Create placeholder markdown files for all core pages using agreed frontmatter (if applicable).",
+  "priority": "P2",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content-model",
+  "tags": [
+    "claude",
+    "content-model"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-104",
+  "epic_id": "EPIC-001",
+  "title": "Content directory & routing model",
+  "status": "completed",
+  "description": "Define how content pages are authored and routed (e.g., docs/content conventions) to keep marketing copy editable and non-leaky.",
+  "phase": 1,
+  "domain": "website",
+  "area": "content-model",
+  "tags": [
+    "website",
+    "content",
+    "routing",
+    "information-architecture"
+  ],
+  "user_story_ids": [
+    "FEATURE-104-US-01"
+  ]
+}

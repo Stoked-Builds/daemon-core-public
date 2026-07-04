@@ -1,0 +1,13 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0716",
+  "title": "Verify backlog UI renders Speckit items correctly",
+  "description": "Confirm the operator dashboard backlog UI renders fields provided by the addin (title, status, priority/size, source). Add minimal UI tweaks only if required to support the addin-provided source.",
+  "status": "ready",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0716",
+  "feature_id": "EPIC-778-FEATURE-0131",
+  "task_ids": [
+    "EPIC-778-FEATURE-0131-US-0716-T-0356"
+  ]
+}

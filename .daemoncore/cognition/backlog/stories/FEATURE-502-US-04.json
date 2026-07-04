@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-502-US-04",
+  "feature_id": "FEATURE-502",
+  "title": "Update FAQ to answer the hard questions (prompt injection, 'isn't this just prompts?')",
+  "story": "As a cautious buyer, I want direct answers to the obvious objections (prompt injection, 'just prompts', 'providers already do this') so I trust what I'm reading.",
+  "description": "Add/adjust FAQ entries to explicitly address: 'Can prompts override constraints?', 'Is this just orchestration?', 'What is enforced in V1 vs V1.5?', 'What is Stux?'. Include crisp, non-hype answers.",
+  "priority": "P0",
+  "acceptance_criteria": [
+    "FAQ includes at least 4 new/updated questions covering the objections above.",
+    "Answers are concise, factual, and versioned (V1 vs V1.5).",
+    "No absolutes; no claims of perfect safety or immunity to injection.",
+    "UK spelling; consistent tone."
+  ],
+  "task_ids": [
+    "FEATURE-502-US-04-T01"
+  ]
+}

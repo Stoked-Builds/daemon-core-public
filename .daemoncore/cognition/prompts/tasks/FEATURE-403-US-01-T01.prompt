@@ -1,0 +1,16 @@
+You are Claude writing a lightweight public media kit for DaemonCore.
+
+TASK ID: FEATURE-403-US-01-T01
+
+Deliverable:
+- Markdown content that includes:
+  - 1-line description
+  - 3–5 bullet key points (category framing)
+  - Approved comparisons framing (no named internal projects)
+  - Approved “Do / Don’t” list for discussing DaemonCore publicly
+  - Links/placeholders for: logo, stack diagram(s)
+
+Constraints:
+- No internals, no mechanisms
+- No overpromises
+- Calm, infra-grade voice

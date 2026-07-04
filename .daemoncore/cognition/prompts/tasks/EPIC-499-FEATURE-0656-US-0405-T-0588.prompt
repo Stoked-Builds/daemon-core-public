@@ -1,0 +1,26 @@
+# Task: Replicate addin packaging for Speckit addin (daemon-core-public)
+
+## Goal
+Create a new addin package under `Addins/Speckit/` that mirrors the working shape of `Addins/Speckit-Shell/`.
+
+## Context
+We have a known-good test addin (`speckit-shell`) in `Addins.zip` and in repo. It contains:
+- `manifest.json`
+- `attestation.json`
+- `registry/index.json`
+- `artifact zip` (e.g. `speckit-shell.zip`)
+
+## Requirements
+1. Create `Addins/Speckit/manifest.json` following the same schema as Speckit-Shell.
+2. Create `Addins/Speckit/attestation.json` using the same structure as Speckit-Shell (dev attestation is fine if supported).
+3. Create `Addins/Speckit/speckit.zip` artifact (placeholder for now; will be populated in later tasks).
+4. Update `Addins/Speckit/registry/index.json` (or the shared registry index if that is the canonical location) to include the new addin entry.
+5. Compute sha256 digest of the artifact and ensure the registry entry matches.
+
+## Acceptance Criteria
+- [ ] Addins/Speckit exists with all required files
+- [ ] Registry entry points to the correct artifact + paths
+- [ ] Digest matches the artifact contents
+
+## Notes
+Do not implement backlog logic in this task; just packaging + registry correctness.

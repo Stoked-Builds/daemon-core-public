@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-401",
+  "epic_id": "EPIC-004",
+  "title": "Early access signup page",
+  "description": "Create the early access page and signup mechanics suitable for a static GitHub Pages site.",
+  "phase": 1,
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "early-access",
+    "signup",
+    "static-site"
+  ],
+  "user_story_ids": [
+    "FEATURE-401-US-01",
+    "FEATURE-401-US-02"
+  ]
+}

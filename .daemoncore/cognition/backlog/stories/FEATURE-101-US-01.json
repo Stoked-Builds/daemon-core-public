@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-101-US-01",
+  "feature_id": "FEATURE-101",
+  "title": "Choose framework and bootstrap repo structure",
+  "status": "completed",
+  "story": "As the maintainer, I want a GitHub Pages-compatible static site scaffold so that the marketing site can be built and deployed deterministically.",
+  "description": "Select the static site framework (prefer Astro if already used in repo), scaffold the project, and establish a clean directory structure for pages/content/assets.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/foundation",
+  "domain": "website",
+  "area": "foundation",
+  "tags": [
+    "claude",
+    "foundation",
+    "github-pages"
+  ],
+  "task_ids": [
+    "FEATURE-101-US-01-T01",
+    "FEATURE-101-US-01-T02"
+  ]
+}

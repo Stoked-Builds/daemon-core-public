@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-303-US-01",
+  "feature_id": "FEATURE-303",
+  "title": "Supporting graphics pack",
+  "story": "As the maintainer, I want consistent supporting graphics so the site looks cohesive and premium.",
+  "description": "Create minimal icon set / section dividers / background motifs consistent with the brand tokens. Deliver as SVG assets.",
+  "priority": "P2",
+  "size": "S",
+  "impact_area": "website/graphics",
+  "domain": "website",
+  "area": "graphics",
+  "tags": [
+    "gemini",
+    "graphics"
+  ],
+  "task_ids": [
+    "FEATURE-303-US-01-T01"
+  ]
+}

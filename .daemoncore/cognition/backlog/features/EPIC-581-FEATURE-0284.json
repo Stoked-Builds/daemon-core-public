@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-581-FEATURE-0284",
+  "title": "Audit Trail Viewer",
+  "description": "View install/enable/disable/uninstall events and export JSON.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581-FEATURE-0284",
+  "epic_id": "EPIC-581",
+  "user_story_ids": [
+    "EPIC-581-FEATURE-0284-US-0801",
+    "EPIC-581-FEATURE-0284-US-0985"
+  ]
+}

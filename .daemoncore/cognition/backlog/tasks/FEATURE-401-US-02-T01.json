@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-401-US-02-T01",
+  "user_story_id": "FEATURE-401-US-02",
+  "title": "Implement signup form + submission",
+  "description": "Add early access form and wire to existing endpoint.",
+  "priority": "P1",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "builder",
+    "launch"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

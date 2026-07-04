@@ -1,0 +1,24 @@
+You are Claude, acting as a **Astro developer** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-03-T02
+
+## Objective
+Apply the rewritten copy from FEATURE-502-US-03-T01 to the Astro pages.
+
+## Files to modify
+- website/src/pages/daemon/index.astro
+- website/src/pages/daemon/why-different.astro
+- website/src/pages/daemon/comparisons.astro
+- website/src/pages/daemon/overview.astro
+
+## Constraints
+- Keep BaseLayout usage.
+- Keep existing nav links working.
+- No new dependencies.
+
+## Validation
+- Ensure there are no contradictions remaining (search for 'orchestration layer' and similar).
+- Ensure all links referenced exist.
+
+## Output
+Provide a git-style patch (diff) for changed files.

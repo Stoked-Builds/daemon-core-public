@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-104-US-01",
+  "feature_id": "FEATURE-104",
+  "status": "completed",
+  "title": "Define content authoring & routing model",
+  "story": "As the maintainer, I want content pages editable without code changes so that copy updates are low-risk and reviewed for IP safety.",
+  "description": "Choose a content pattern (markdown pages or content collections), define conventions, and wire routes accordingly.",
+  "priority": "P2",
+  "size": "M",
+  "impact_area": "website/content-model",
+  "domain": "website",
+  "area": "content-model",
+  "tags": [
+    "claude",
+    "content-model"
+  ],
+  "task_ids": [
+    "FEATURE-104-US-01-T01",
+    "FEATURE-104-US-01-T02"
+  ]
+}

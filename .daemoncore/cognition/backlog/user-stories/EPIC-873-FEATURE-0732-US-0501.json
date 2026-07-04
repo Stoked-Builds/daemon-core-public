@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-873-FEATURE-0732-US-0501",
+  "title": "Schema & validation for Incident Drill Pack (Docs-only)",
+  "description": "Define a minimal v1 schema for Incident Drill Pack (Docs-only) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0732-US-0501",
+  "feature_id": "EPIC-873-FEATURE-0732",
+  "task_ids": [
+    "EPIC-873-FEATURE-0732-US-0501-T-0264",
+    "EPIC-873-FEATURE-0732-US-0501-T-0280",
+    "EPIC-873-FEATURE-0732-US-0501-T-0341",
+    "EPIC-873-FEATURE-0732-US-0501-T-0565",
+    "EPIC-873-FEATURE-0732-US-0501-T-0798"
+  ]
+}

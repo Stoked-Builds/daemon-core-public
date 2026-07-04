@@ -1,0 +1,3120 @@
+[
+  {
+    "id": "IDEA-EPIC-710",
+    "type": "epic",
+    "title": "Demo Addins Bank: Operator-visible packs",
+    "description": "Create a bank of low-gravity demo add-ins that prove install → visible effect → uninstall without requiring backlog/provider semantics.",
+    "rationale": "We need compelling demos for Addins while the deeper capability model matures. Focus on static contributions and safe deployment.",
+    "status": "idea",
+    "priority": "P1",
+    "tags": [
+      "addins",
+      "demo",
+      "operator"
+    ],
+    "feature_ids": [],
+    "success_criteria": [
+      "Add-in installs cleanly via registry entry",
+      "Operator UI shows installed add-in state",
+      "Uninstall/disable cleanly removes effects"
+    ],
+    "notes": "Demo-focused work items for validating the Addins framework without kernel pollution.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-EPIC-711",
+    "type": "epic",
+    "title": "Addin Installer & Deployment Hardening",
+    "description": "Harden the add-in installer to reliably deploy extracted artifacts into project roots using manifest deploy mappings.",
+    "rationale": "Addins must be deterministic, auditable, and not rely on cache paths. Deployment correctness is foundational for every add-in type.",
+    "status": "idea",
+    "priority": "P1",
+    "tags": [
+      "addins",
+      "installer",
+      "deployment"
+    ],
+    "feature_ids": [],
+    "success_criteria": [
+      "Add-in installs cleanly via registry entry",
+      "Operator UI shows installed add-in state",
+      "Uninstall/disable cleanly removes effects"
+    ],
+    "notes": "Demo-focused work items for validating the Addins framework without kernel pollution.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-EPIC-712",
+    "type": "epic",
+    "title": "Addin Registry & Trust Signals (Demo-ready)",
+    "description": "Make the registry and installed state understandable: versioning, digests, and simple trust indicators for demos.",
+    "rationale": "Demos must show provenance and lifecycle controls (install, enable, disable, uninstall) without executing add-in code.",
+    "status": "idea",
+    "priority": "P2",
+    "tags": [
+      "addins",
+      "registry",
+      "trust"
+    ],
+    "feature_ids": [],
+    "success_criteria": [
+      "Add-in installs cleanly via registry entry",
+      "Operator UI shows installed add-in state",
+      "Uninstall/disable cleanly removes effects"
+    ],
+    "notes": "Demo-focused work items for validating the Addins framework without kernel pollution.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-810",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-710",
+    "title": "Theme Pack Addin (v1)",
+    "description": "Install a theme pack add-in that changes operator console branding via static tokens/assets.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P2",
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-811",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-710",
+    "title": "Agent Role Pack Addin (v1)",
+    "description": "Install a role/profile pack add-in that adds selectable agent roles and profiles.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P1",
+    "domain": "dev-factory",
+    "area": "agents",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-812",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-710",
+    "title": "Slash Command Pack Addin (v1)",
+    "description": "Install a slash-command pack add-in that registers declarative commands routed to existing built-in actions.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P2",
+    "domain": "kernel",
+    "area": "cli",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-813",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-710",
+    "title": "Knowledge Pack Addin (v1)",
+    "description": "Install a knowledge pack add-in that publishes docs/runbooks into an indexed help area.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P3",
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-814",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-711",
+    "title": "Addin Deployment Mapping (manifest.deploy)",
+    "description": "Support manifest deploy mapping from extracted cache → project root with safe defaults.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P1",
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-815",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-711",
+    "title": "Addin Lifecycle Controls (enable/disable/uninstall)",
+    "description": "Provide lifecycle state transitions and consistent cleanup semantics.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P2",
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-816",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-712",
+    "title": "Registry Entry Validation & Digest Checks",
+    "description": "Validate registry entries (paths, digests) and display install errors clearly.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P2",
+    "domain": "web-api",
+    "area": "projects",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-FEAT-817",
+    "type": "feature",
+    "epic_id": "IDEA-EPIC-712",
+    "title": "Installed Addins Page (Operator UI)",
+    "description": "Show installed add-ins, versions, digests, and enabled state in Operator UI.",
+    "version": "0.1.0",
+    "status": "idea",
+    "priority": "P2",
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "user_story_ids": [],
+    "acceptance_criteria": [
+      "Feature is delivered entirely via add-in contributions (no provider-specific kernel code)",
+      "Feature is visible/auditable from Operator UI (installed, enabled, versioned)",
+      "Feature works offline with static add-in artifacts (no add-in runtime execution)"
+    ],
+    "prompt_path": null,
+    "notes": "Keep it boring and demonstrable. Prioritise install → visible effect → uninstall.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-910",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-810",
+    "title": "Apply theme tokens to Operator UI",
+    "story": "As an operator, I want to switch to an installed theme so that the console matches my environment/brand.",
+    "description": "Load theme token contributions from installed add-ins and apply to UI.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-911",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-810",
+    "title": "Show active theme + revert",
+    "story": "As an operator, I want to see which theme is active and revert to default so that I can recover from a bad theme.",
+    "description": "UI should show active theme and allow switching back to default.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-912",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-811",
+    "title": "List installed roles/profiles",
+    "story": "As an operator, I want to see add-in provided agent roles so that I can select one for a session.",
+    "description": "Expose roles/profiles from add-in contributions and present them in UI.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "dev-factory",
+    "area": "agents",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-913",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-811",
+    "title": "Select role/profile and persist preference",
+    "story": "As an operator, I want my chosen role/profile to persist so that my sessions start in the right mode.",
+    "description": "Persist selection in project config; fall back safely if add-in removed.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-914",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-812",
+    "title": "Register declarative slash commands",
+    "story": "As an operator, I want add-in declared slash commands so that I can trigger common actions quickly.",
+    "description": "Load command definitions from add-ins; validate schema; route to built-in handlers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "kernel",
+    "area": "cli",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-915",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-812",
+    "title": "Command help & discovery UI",
+    "story": "As an operator, I want to discover available slash commands so that I can learn what an add-in adds.",
+    "description": "Expose a help list showing commands, descriptions, and source add-in.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-916",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-813",
+    "title": "Install docs pack and index it",
+    "story": "As an operator, I want knowledge packs to appear in Help so that runbooks are easy to find.",
+    "description": "Deploy docs contributions; index and render markdown safely.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-917",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-813",
+    "title": "Search across installed knowledge packs",
+    "story": "As an operator, I want to search installed docs so that I can find procedures quickly.",
+    "description": "Add simple search over titles/headings; highlight matches.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-918",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-814",
+    "title": "Deploy extracted add-in files to project root",
+    "story": "As a platform admin, I want add-in installs to deploy files into the project so that core can consume them predictably.",
+    "description": "Implement manifest.deploy mapping; copy with safe defaults; tests.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "infra",
+    "area": "docker",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-919",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-814",
+    "title": "Dry-run and overwrite policies",
+    "story": "As a platform admin, I want predictable overwrite rules so that add-in updates don't clobber local edits.",
+    "description": "Support skip/overwrite modes; report what changed.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-920",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-815",
+    "title": "Enable/disable add-in without uninstall",
+    "story": "As an operator, I want to disable an add-in so that I can stop its effects without removing files.",
+    "description": "Track enabled state; consumers ignore disabled contributions.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-921",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-815",
+    "title": "Uninstall cleans up deployed files",
+    "story": "As a platform admin, I want uninstall to remove deployed contributions so that projects stay clean.",
+    "description": "Remove deployed targets; keep cache for audit; tests.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-922",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-816",
+    "title": "Validate registry entries before install",
+    "story": "As a platform admin, I want registry validation so that broken add-ins fail fast with clear errors.",
+    "description": "Check digest/path presence; return actionable errors.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-api",
+    "area": "projects",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-923",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-816",
+    "title": "Surface registry errors in Operator UI",
+    "story": "As an operator, I want clear error messages during install so that I can fix broken add-ins quickly.",
+    "description": "UI displays validation failures and suggested fixes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-924",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-817",
+    "title": "List installed add-ins with metadata",
+    "story": "As an operator, I want an Installed Addins view so that I can see what's running and where it came from.",
+    "description": "Add UI page/table with id, version, digest, enabled, installedAt.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-US-925",
+    "type": "story",
+    "feature_id": "IDEA-FEAT-817",
+    "title": "Audit trail for installs/uninstalls",
+    "story": "As a platform admin, I want an audit trail so that add-in lifecycle actions are traceable.",
+    "description": "Write events to logs; optionally store in project state file.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "impact_area": "operator-experience",
+    "domain": "ops",
+    "area": "runtime-analysis",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "task_ids": [],
+    "acceptance_criteria": [
+      "Operator can verify the add-in effect within 30 seconds",
+      "Behavior is reversible (disable/uninstall)",
+      "No errors in server logs during enable/disable"
+    ],
+    "implementation_hints": [
+      "Prefer declarative contributions over executable add-in code",
+      "Add schema validation for contribution payloads where applicable"
+    ],
+    "affected_files": [],
+    "notes": "Demo-first. Avoid deep platform dependencies.",
+    "phase": 1
+  },
+  {
+    "id": "IDEA-TASK-1010",
+    "type": "task",
+    "user_story_id": "IDEA-US-910",
+    "title": "Define contribution schema v1 (IDEA-US-910)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-910)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-910` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1011",
+    "type": "task",
+    "user_story_id": "IDEA-US-910",
+    "title": "Define contribution schema v1 (IDEA-US-910)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-910)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-910` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1012",
+    "type": "task",
+    "user_story_id": "IDEA-US-910",
+    "title": "Add UI plumbing for visibility (IDEA-US-910)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-910)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-910` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1013",
+    "type": "task",
+    "user_story_id": "IDEA-US-911",
+    "title": "Implement loader for contributions (IDEA-US-911)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-911)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-911` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1014",
+    "type": "task",
+    "user_story_id": "IDEA-US-911",
+    "title": "Implement loader for contributions (IDEA-US-911)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-911)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-911` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1015",
+    "type": "task",
+    "user_story_id": "IDEA-US-911",
+    "title": "Implement loader for contributions (IDEA-US-911)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-911)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-911` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1016",
+    "type": "task",
+    "user_story_id": "IDEA-US-912",
+    "title": "Define contribution schema v1 (IDEA-US-912)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "dev-factory",
+    "area": "agents",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-912)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-912` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1017",
+    "type": "task",
+    "user_story_id": "IDEA-US-912",
+    "title": "Define contribution schema v1 (IDEA-US-912)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "dev-factory",
+    "area": "agents",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-912)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-912` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1018",
+    "type": "task",
+    "user_story_id": "IDEA-US-912",
+    "title": "Add tests for contribution validation (IDEA-US-912)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "dev-factory",
+    "area": "agents",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-912)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-912` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1019",
+    "type": "task",
+    "user_story_id": "IDEA-US-913",
+    "title": "Define contribution schema v1 (IDEA-US-913)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-913)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-913` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1020",
+    "type": "task",
+    "user_story_id": "IDEA-US-913",
+    "title": "Define contribution schema v1 (IDEA-US-913)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-913)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-913` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1021",
+    "type": "task",
+    "user_story_id": "IDEA-US-913",
+    "title": "Define contribution schema v1 (IDEA-US-913)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-913)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-913` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1022",
+    "type": "task",
+    "user_story_id": "IDEA-US-914",
+    "title": "Implement loader for contributions (IDEA-US-914)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "kernel",
+    "area": "cli",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-914)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-914` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1023",
+    "type": "task",
+    "user_story_id": "IDEA-US-914",
+    "title": "Implement loader for contributions (IDEA-US-914)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "kernel",
+    "area": "cli",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-914)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-914` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1024",
+    "type": "task",
+    "user_story_id": "IDEA-US-914",
+    "title": "Define contribution schema v1 (IDEA-US-914)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "cli",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-914)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-914` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1025",
+    "type": "task",
+    "user_story_id": "IDEA-US-915",
+    "title": "Implement loader for contributions (IDEA-US-915)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-915)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-915` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1026",
+    "type": "task",
+    "user_story_id": "IDEA-US-915",
+    "title": "Add tests for contribution validation (IDEA-US-915)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-915)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-915` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1027",
+    "type": "task",
+    "user_story_id": "IDEA-US-915",
+    "title": "Implement loader for contributions (IDEA-US-915)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-915)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-915` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1028",
+    "type": "task",
+    "user_story_id": "IDEA-US-916",
+    "title": "Add tests for contribution validation (IDEA-US-916)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-916)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-916` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1029",
+    "type": "task",
+    "user_story_id": "IDEA-US-916",
+    "title": "Add UI plumbing for visibility (IDEA-US-916)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-916)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-916` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1030",
+    "type": "task",
+    "user_story_id": "IDEA-US-916",
+    "title": "Define contribution schema v1 (IDEA-US-916)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-916)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-916` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1031",
+    "type": "task",
+    "user_story_id": "IDEA-US-917",
+    "title": "Implement loader for contributions (IDEA-US-917)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-917)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-917` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1032",
+    "type": "task",
+    "user_story_id": "IDEA-US-917",
+    "title": "Add tests for contribution validation (IDEA-US-917)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-917)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-917` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1033",
+    "type": "task",
+    "user_story_id": "IDEA-US-917",
+    "title": "Add UI plumbing for visibility (IDEA-US-917)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "components",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-917)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-917` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1034",
+    "type": "task",
+    "user_story_id": "IDEA-US-918",
+    "title": "Add UI plumbing for visibility (IDEA-US-918)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "infra",
+    "area": "docker",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-918)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-918` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1035",
+    "type": "task",
+    "user_story_id": "IDEA-US-918",
+    "title": "Implement loader for contributions (IDEA-US-918)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "infra",
+    "area": "docker",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-918)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-918` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1036",
+    "type": "task",
+    "user_story_id": "IDEA-US-918",
+    "title": "Implement loader for contributions (IDEA-US-918)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "infra",
+    "area": "docker",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-918)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-918` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1037",
+    "type": "task",
+    "user_story_id": "IDEA-US-918",
+    "title": "Add UI plumbing for visibility (IDEA-US-918)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "infra",
+    "area": "docker",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-918)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-918` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1038",
+    "type": "task",
+    "user_story_id": "IDEA-US-919",
+    "title": "Define contribution schema v1 (IDEA-US-919)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-919)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-919` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1039",
+    "type": "task",
+    "user_story_id": "IDEA-US-919",
+    "title": "Define contribution schema v1 (IDEA-US-919)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-919)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-919` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1040",
+    "type": "task",
+    "user_story_id": "IDEA-US-919",
+    "title": "Add tests for contribution validation (IDEA-US-919)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-919)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-919` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1041",
+    "type": "task",
+    "user_story_id": "IDEA-US-919",
+    "title": "Define contribution schema v1 (IDEA-US-919)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "config",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-919)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-919` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1042",
+    "type": "task",
+    "user_story_id": "IDEA-US-920",
+    "title": "Add UI plumbing for visibility (IDEA-US-920)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-920)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-920` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1043",
+    "type": "task",
+    "user_story_id": "IDEA-US-920",
+    "title": "Add UI plumbing for visibility (IDEA-US-920)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-920)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-920` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1044",
+    "type": "task",
+    "user_story_id": "IDEA-US-920",
+    "title": "Add UI plumbing for visibility (IDEA-US-920)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-920)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-920` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1045",
+    "type": "task",
+    "user_story_id": "IDEA-US-920",
+    "title": "Define contribution schema v1 (IDEA-US-920)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-920)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-920` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1046",
+    "type": "task",
+    "user_story_id": "IDEA-US-921",
+    "title": "Add tests for contribution validation (IDEA-US-921)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-921)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-921` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1047",
+    "type": "task",
+    "user_story_id": "IDEA-US-921",
+    "title": "Define contribution schema v1 (IDEA-US-921)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-921)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-921` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1048",
+    "type": "task",
+    "user_story_id": "IDEA-US-921",
+    "title": "Add tests for contribution validation (IDEA-US-921)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-921)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-921` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1049",
+    "type": "task",
+    "user_story_id": "IDEA-US-921",
+    "title": "Define contribution schema v1 (IDEA-US-921)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-921)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-921` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1050",
+    "type": "task",
+    "user_story_id": "IDEA-US-922",
+    "title": "Add UI plumbing for visibility (IDEA-US-922)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-api",
+    "area": "projects",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-922)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-922` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1051",
+    "type": "task",
+    "user_story_id": "IDEA-US-922",
+    "title": "Add UI plumbing for visibility (IDEA-US-922)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-api",
+    "area": "projects",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-922)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-922` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1052",
+    "type": "task",
+    "user_story_id": "IDEA-US-922",
+    "title": "Implement loader for contributions (IDEA-US-922)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-api",
+    "area": "projects",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-922)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-922` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1053",
+    "type": "task",
+    "user_story_id": "IDEA-US-923",
+    "title": "Define contribution schema v1 (IDEA-US-923)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-923)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-923` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1054",
+    "type": "task",
+    "user_story_id": "IDEA-US-923",
+    "title": "Define contribution schema v1 (IDEA-US-923)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-923)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-923` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1055",
+    "type": "task",
+    "user_story_id": "IDEA-US-923",
+    "title": "Implement loader for contributions (IDEA-US-923)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-923)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-923` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1056",
+    "type": "task",
+    "user_story_id": "IDEA-US-924",
+    "title": "Add UI plumbing for visibility (IDEA-US-924)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-924)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-924` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1057",
+    "type": "task",
+    "user_story_id": "IDEA-US-924",
+    "title": "Define contribution schema v1 (IDEA-US-924)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-924)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-924` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1058",
+    "type": "task",
+    "user_story_id": "IDEA-US-924",
+    "title": "Implement loader for contributions (IDEA-US-924)",
+    "description": "Implement the loader that discovers deployed contributions and exposes them to consumers.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Implement loader for contributions (IDEA-US-924)\n\n## Goal\nImplement the loader that discovers deployed contributions and exposes them to consumers.\n\n## Context\nThis task is part of `IDEA-US-924` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1059",
+    "type": "task",
+    "user_story_id": "IDEA-US-925",
+    "title": "Define contribution schema v1 (IDEA-US-925)",
+    "description": "Create/validate JSON schema for the contribution payload used by this capability slot.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "M",
+    "work_type": "spike",
+    "severity": null,
+    "domain": "ops",
+    "area": "runtime-analysis",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Define contribution schema v1 (IDEA-US-925)\n\n## Goal\nCreate/validate JSON schema for the contribution payload used by this capability slot.\n\n## Context\nThis task is part of `IDEA-US-925` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1060",
+    "type": "task",
+    "user_story_id": "IDEA-US-925",
+    "title": "Add tests for contribution validation (IDEA-US-925)",
+    "description": "Add unit tests for schema validation and failure modes.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "ops",
+    "area": "runtime-analysis",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add tests for contribution validation (IDEA-US-925)\n\n## Goal\nAdd unit tests for schema validation and failure modes.\n\n## Context\nThis task is part of `IDEA-US-925` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1061",
+    "type": "task",
+    "user_story_id": "IDEA-US-925",
+    "title": "Add UI plumbing for visibility (IDEA-US-925)",
+    "description": "Add minimal UI to show the capability is installed and active.",
+    "status": "idea",
+    "priority": "P2",
+    "size": "S",
+    "work_type": "feature",
+    "severity": null,
+    "domain": "ops",
+    "area": "runtime-analysis",
+    "tags": [
+      "addins",
+      "demo"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Add UI plumbing for visibility (IDEA-US-925)\n\n## Goal\nAdd minimal UI to show the capability is installed and active.\n\n## Context\nThis task is part of `IDEA-US-925` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1062",
+    "type": "task",
+    "user_story_id": "IDEA-US-924",
+    "title": "Polish docs and demo steps (IDEA-US-924)",
+    "description": "Write or refine demo verification steps and ensure they match current UI.",
+    "status": "idea",
+    "priority": "P3",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "operator-console",
+    "tags": [
+      "addins",
+      "demo",
+      "docs"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Polish docs and demo steps (IDEA-US-924)\n\n## Goal\nWrite or refine demo verification steps and ensure they match current UI.\n\n## Context\nThis task is part of `IDEA-US-924` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1063",
+    "type": "task",
+    "user_story_id": "IDEA-US-921",
+    "title": "Polish docs and demo steps (IDEA-US-921)",
+    "description": "Write or refine demo verification steps and ensure they match current UI.",
+    "status": "idea",
+    "priority": "P3",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo",
+      "docs"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Polish docs and demo steps (IDEA-US-921)\n\n## Goal\nWrite or refine demo verification steps and ensure they match current UI.\n\n## Context\nThis task is part of `IDEA-US-921` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1064",
+    "type": "task",
+    "user_story_id": "IDEA-US-915",
+    "title": "Polish docs and demo steps (IDEA-US-915)",
+    "description": "Write or refine demo verification steps and ensure they match current UI.",
+    "status": "idea",
+    "priority": "P3",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "web-ui",
+    "area": "navigation",
+    "tags": [
+      "addins",
+      "demo",
+      "docs"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Polish docs and demo steps (IDEA-US-915)\n\n## Goal\nWrite or refine demo verification steps and ensure they match current UI.\n\n## Context\nThis task is part of `IDEA-US-915` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  },
+  {
+    "id": "IDEA-TASK-1065",
+    "type": "task",
+    "user_story_id": "IDEA-US-921",
+    "title": "Polish docs and demo steps (IDEA-US-921)",
+    "description": "Write or refine demo verification steps and ensure they match current UI.",
+    "status": "idea",
+    "priority": "P3",
+    "size": "S",
+    "work_type": "chore",
+    "severity": null,
+    "domain": "kernel",
+    "area": "execution",
+    "tags": [
+      "addins",
+      "demo",
+      "docs"
+    ],
+    "depends_on": [],
+    "links": [],
+    "detected_in_version": null,
+    "fixed_in_version": null,
+    "environment": null,
+    "source": "internal_test",
+    "target_files": [],
+    "target_directories": [],
+    "repo": null,
+    "branch": null,
+    "execution_hints": {
+      "type": "local",
+      "agent_preference": "Claude",
+      "requires_approval": false,
+      "idempotent": true
+    },
+    "acceptance_criteria": [
+      "Meets the described goal",
+      "Tests pass",
+      "No new validator errors introduced"
+    ],
+    "notes": null,
+    "phase": 1,
+    "prompt": "# Polish docs and demo steps (IDEA-US-921)\n\n## Goal\nWrite or refine demo verification steps and ensure they match current UI.\n\n## Context\nThis task is part of `IDEA-US-921` and exists to support the Demo Addins bank for operator-visible add-in installs.\n\n## Requirements\n- Implement the change described below\n- Keep changes generic (no provider-specific kernel logic)\n- Add/adjust tests where appropriate\n\n## Technical Approach\n1. Locate the relevant module(s) in the repo\n2. Implement the smallest viable change that satisfies the goal\n3. Add tests and update docs if needed\n4. Verify end-to-end with a demo add-in install/uninstall\n\n## Acceptance Criteria\n- [ ] Change implemented and reviewed\n- [ ] Unit/integration tests pass\n- [ ] No regressions in add-in install/uninstall\n"
+  }
+]

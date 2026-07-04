@@ -1,0 +1,20 @@
+{
+  "id": "EPIC-001",
+  "title": "Website foundation & delivery",
+  "status": "completed",
+  "phase": 1,
+  "tags": [
+    "website",
+    "foundation",
+    "delivery",
+    "github-pages"
+  ],
+  "description": "Establish the static site foundation, repo structure, and GitHub Pages delivery pipeline for the DaemonCore marketing site.",
+  "feature_ids": [
+    "FEATURE-101",
+    "FEATURE-102",
+    "FEATURE-103",
+    "FEATURE-104",
+    "FEATURE-105"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-264-FEATURE-0340",
+  "title": "Registry Entry Validation & Digest Checks",
+  "description": "Validate registry entries (paths, digests) and display install errors clearly.",
+  "status": "backlog",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0340",
+  "epic_id": "EPIC-264",
+  "user_story_ids": [
+    "EPIC-264-FEATURE-0340-US-0178",
+    "EPIC-264-FEATURE-0340-US-0558"
+  ]
+}

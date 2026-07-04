@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-501-US-02-T02",
+  "user_story_id": "FEATURE-501-US-02",
+  "title": "Fix 4-card sections wrapping 3+1 by enforcing deliberate grids",
+  "description": "Update layout classes so 4-card sections render as 2\u00d72 (preferred) or 4-up only at xl+ with 2-up at sm+, never 3+1.",
+  "priority": "P1",
+  "size": "S",
+  "tags": [
+    "claude",
+    "builder",
+    "ux"
+  ],
+  "acceptance_criteria": [
+    "No 4-card grid renders as 3+1 at common desktop widths.",
+    "Uses consistent grid patterns site-wide.",
+    "Does not introduce layout regressions on mobile."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "EPIC-638",
+  "title": "Golden Demo Addins: Gallery & Onboarding Experience",
+  "description": "A demo gallery that showcases what add-ins do, plus an onboarding questline that guides users through features.",
+  "status": "planned",
+  "created_at": "2026-01-28T21:39:39Z",
+  "updated_at": "2026-01-28T21:39:39Z",
+  "promoted_from": "IDEA-EPIC-638",
+  "feature_ids": [
+    "EPIC-638-FEATURE-0230",
+    "EPIC-638-FEATURE-0982"
+  ]
+}

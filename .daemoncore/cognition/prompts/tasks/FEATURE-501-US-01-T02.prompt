@@ -1,0 +1,55 @@
+You are Claude, acting as a **technical editor performing a claims-risk and clarity review**.
+
+TASK ID: FEATURE-501-US-01-T02
+
+## Input
+The Markdown scenarios produced in FEATURE-501-US-01-T01.
+
+## Objective
+Refine the scenarios so they are:
+- legally safe
+- conceptually precise
+- non-repetitive
+- aligned with DaemonCore’s positioning as a governance layer
+
+This is a tightening pass, not a rewrite.
+
+---
+
+## Editing rules
+
+You MUST:
+- Remove or soften any absolute or unverifiable claims.
+- Remove any phrasing that implies hidden internals or mechanisms.
+- Remove repeated ideas across scenarios (each scenario should add new insight).
+- Ensure the contrast remains:
+  > same models/tools, different environment
+
+You MUST NOT:
+- Add new scenarios.
+- Add new concepts.
+- Add technical explanations.
+- Change the overall structure (titles + two columns).
+
+---
+
+## Specific checks
+
+For each scenario, verify:
+- Bullets describe **outcomes**, not actions.
+- No bullet answers “how does it do this?”
+- Language would be acceptable to a cautious enterprise legal team.
+- Each scenario feels distinct, not a reworded copy of the previous one.
+
+If a bullet is even slightly questionable, rewrite it more conservatively.
+
+---
+
+## Output requirements
+
+- Output **revised Markdown only**
+- No explanations of changes
+- No commentary
+- Preserve headings and structure
+
+The final result should feel calm, confident, and inevitable — not impressive, not clever.

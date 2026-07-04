@@ -1,0 +1,26 @@
+{
+  "id": "FEATURE-201-US-02-T01",
+  "user_story_id": "FEATURE-201-US-02",
+  "title": "Wire homepage into site",
+  "description": "Implement the homepage route/template and render markdown content.",
+  "priority": "P1",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "builder",
+    "page-build"
+  ],
+  "depends_on": [
+    "FEATURE-103-US-01-T01",
+    "FEATURE-104-US-01-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

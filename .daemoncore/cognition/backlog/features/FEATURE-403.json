@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-403",
+  "epic_id": "EPIC-004",
+  "title": "Media kit (creator/investor pack)",
+  "description": "Prepare a lightweight media kit with approved phrasing, logo/diagrams, and do/don'ts for public discussion.",
+  "phase": 1,
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "media-kit",
+    "press",
+    "creator-pack",
+    "ip-safety"
+  ],
+  "user_story_ids": [
+    "FEATURE-403-US-01"
+  ]
+}

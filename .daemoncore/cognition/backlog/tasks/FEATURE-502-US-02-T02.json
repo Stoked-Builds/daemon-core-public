@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-502-US-02-T02",
+  "user_story_id": "FEATURE-502-US-02",
+  "title": "Implement walkthrough page + navigation links",
+  "description": "Create website/src/pages/daemon/walkthrough.astro and add links from homepage and /daemon/index.",
+  "priority": "P0",
+  "size": "M",
+  "tags": [
+    "claude",
+    "astro",
+    "website",
+    "implementation"
+  ],
+  "acceptance_criteria": [
+    "walkthrough.astro added and renders under BaseLayout.",
+    "Links added from /index and /daemon/index.",
+    "Navigation and footer remain consistent."
+  ]
+}

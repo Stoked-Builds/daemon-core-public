@@ -1,0 +1,22 @@
+{
+  "id": "FEATURE-302-US-01-T01",
+  "user_story_id": "FEATURE-302-US-01",
+  "title": "Design stack diagram (wireframe)",
+  "description": "Create a wireframe and labels for the stack diagram.",
+  "priority": "P1",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "diagrams",
+  "tags": [
+    "gemini",
+    "diagrams"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

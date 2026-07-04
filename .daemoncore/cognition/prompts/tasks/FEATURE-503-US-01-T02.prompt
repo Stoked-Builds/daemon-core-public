@@ -1,0 +1,27 @@
+You are acting as a systems architect translating technical guarantees into business outcomes.
+
+Task:
+Create a clear cause‑and‑effect mapping between DaemonCore V1 guarantees and organisational outcomes.
+
+Context:
+DaemonCore V1 provides:
+- Protocol‑shaped output validation
+- Message schema enforcement
+- Scope and permission boundaries
+- Template‑constrained operations
+- Deterministic boot sequences
+- Audit logging of actions and violations
+
+Instructions:
+1. For each guarantee, describe:
+   - What is technically enforced
+   - The practical organisational outcome (risk reduction, auditability, trust, speed)
+2. Frame outcomes in business terms (incident containment, accountability, compliance readiness).
+3. Do not invent metrics or claim elimination of all risk.
+4. Respect V1 reality; do not reference V1.5 features.
+
+Tone:
+Analytical, grounded, executive‑readable.
+
+Output:
+A structured mapping suitable for a Value or Executive Summary page.

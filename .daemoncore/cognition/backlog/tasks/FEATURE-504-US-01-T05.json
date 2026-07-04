@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-504-US-01-T05",
+  "title": "Website orientation + exec translation",
+  "description": "Close remaining narrative/UX gaps by improving discoverability and orientation: make Business Value page unavoidable (nav/CTAs/footer), add audience-fit framing (who it’s for / not for), strengthen a 30-second leadership mental model, and reference a canonical layer diagram — without changing V1 vs V1.5 claims.",
+  "parent": "FEATURE-504-US-01",
+  "priority": "high",
+  "status": "done",
+  "created_at": "2026-01-01T11:40:00Z",
+  "updated_at": "2026-01-01T11:40:00Z",
+  "tags": [
+    "website",
+    "content",
+    "navigation",
+    "ux",
+    "copy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "EPIC-887",
+  "title": "Golden Demo Addins: UI & Identity Flex Pack",
+  "description": "Make the Operator Console look and feel like it belongs to whoever installed it: themes, tone, language, accessibility, lenses.",
+  "status": "planned",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887",
+  "feature_ids": [
+    "EPIC-887-FEATURE-0254",
+    "EPIC-887-FEATURE-0604",
+    "EPIC-887-FEATURE-0625",
+    "EPIC-887-FEATURE-0694",
+    "EPIC-887-FEATURE-0786"
+  ]
+}

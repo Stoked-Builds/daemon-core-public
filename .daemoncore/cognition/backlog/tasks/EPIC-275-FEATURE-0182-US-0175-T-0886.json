@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-275-FEATURE-0182-US-0175-T-0886",
+  "title": "Add tests + demo verify doc — Agent Role Pack (SRE/Product/Security)",
+  "description": "Add tests for happy/invalid/missing cases and write a short verify checklist in the demo add-in README.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0182-US-0175-T-0886",
+  "user_story_id": "EPIC-275-FEATURE-0182-US-0175",
+  "prompt_ref": "prompts/tasks/EPIC-275-FEATURE-0182-US-0175-T-0886.prompt"
+}

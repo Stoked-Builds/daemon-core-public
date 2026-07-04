@@ -1,0 +1,22 @@
+You are acting as a technical strategist writing for senior leadership.
+
+Task:
+Draft an executive‑facing explanation of why governance must exist beneath orchestration in multi‑agent AI systems.
+
+Audience:
+- CEOs
+- CTOs
+- CISOs
+
+Instructions:
+1. Explain why multi‑agent AI introduces organisational risk (without fear‑mongering).
+2. Explain why orchestration frameworks cannot reliably enforce safety or accountability on their own.
+3. Explain how a lower‑layer governance substrate changes the failure mode from surprise to explicit rejection and audit.
+4. Avoid implementation detail; focus on responsibility, trust, and control.
+5. Do not criticise specific vendors.
+
+Tone:
+Clear, authoritative, calm, boardroom‑credible.
+
+Output:
+A prose section suitable for a Value page or investor deck narrative.

@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-501",
+  "epic_id": "EPIC-501",
+  "title": "Marketing site: scenario comparisons + grid discipline",
+  "description": "Add an IP-safe 'Without DaemonCore vs With DaemonCore' scenario section and remove awkward 3+1 card wrapping by enforcing deliberate grid layouts.",
+  "priority": "P1",
+  "tags": [
+    "website",
+    "content",
+    "ux",
+    "ip-safety"
+  ],
+  "user_story_ids": [
+    "FEATURE-501-US-01",
+    "FEATURE-501-US-02"
+  ]
+}

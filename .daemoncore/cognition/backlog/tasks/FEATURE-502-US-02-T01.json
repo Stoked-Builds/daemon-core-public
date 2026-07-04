@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-502-US-02-T01",
+  "user_story_id": "FEATURE-502-US-02",
+  "title": "Write walkthrough page content (IP-safe)",
+  "description": "Draft the /daemon/walkthrough page content using one scenario (code review) with labelled stages and examples.",
+  "priority": "P0",
+  "size": "M",
+  "tags": [
+    "claude",
+    "copy",
+    "website",
+    "ip-safety"
+  ],
+  "acceptance_criteria": [
+    "Walkthrough is one scenario only (code review) and fits on a single page.",
+    "Each stage is clearly labelled and uses concise, skimmable sections.",
+    "Includes one violation example and one prompt injection example with honest V1 limitations.",
+    "Does not reveal internal confidential details; uses public-safe terms already used on site (MAX bus, templates, action protocol).",
+    "Links added from homepage and /daemon index."
+  ]
+}

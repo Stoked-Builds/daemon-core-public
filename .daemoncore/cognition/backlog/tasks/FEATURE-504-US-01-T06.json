@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-504-US-01-T06",
+  "title": "Narrative tightening & value signposting across Feature-504 pages",
+  "description": "Tighten and explicitly signpost the Feature-504 narrative so different audiences (engineers, CTOs/CEOs, investors) can immediately find the right value message. Focus on clarity, continuity, and emphasis across Home, Kernel, Business Value, and Why Different — without adding new technical scope or claims.",
+  "parent": "FEATURE-504-US-01",
+  "priority": "high",
+  "status": "done",
+  "created_at": "2026-01-01T11:40:00Z",
+  "updated_at": "2026-01-01T15:31:54.846372+00:00",
+  "tags": [
+    "website",
+    "content",
+    "narrative",
+    "value",
+    "copy"
+  ]
+}

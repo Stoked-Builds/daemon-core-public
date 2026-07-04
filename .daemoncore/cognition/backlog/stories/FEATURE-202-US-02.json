@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-202-US-02",
+  "feature_id": "FEATURE-202",
+  "title": "Write 'What DaemonCore Is Not'",
+  "story": "As a reader, I want a crisp list of what DaemonCore is not so I don\u2019t misclassify it as an agent framework or workflow tool.",
+  "description": "Write the 'is not' page with respectful comparisons and crisp boundaries; no trash talk; no internals.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/content",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "copy",
+    "ip-safety"
+  ],
+  "task_ids": [
+    "FEATURE-202-US-02-T01",
+    "FEATURE-202-US-02-T02"
+  ]
+}

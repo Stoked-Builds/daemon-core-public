@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0625-US-0842",
+  "title": "Operator-visible experience for Cognitive Lenses (Agile/Ops/Research)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0625-US-0842",
+  "feature_id": "EPIC-887-FEATURE-0625",
+  "task_ids": [
+    "EPIC-887-FEATURE-0625-US-0842-T-0217",
+    "EPIC-887-FEATURE-0625-US-0842-T-0367",
+    "EPIC-887-FEATURE-0625-US-0842-T-0435",
+    "EPIC-887-FEATURE-0625-US-0842-T-0475",
+    "EPIC-887-FEATURE-0625-US-0842-T-0525"
+  ]
+}

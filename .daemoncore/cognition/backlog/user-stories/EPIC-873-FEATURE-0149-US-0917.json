@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-873-FEATURE-0149-US-0917",
+  "title": "Schema & validation for Failure Playbooks Pack",
+  "description": "Define a minimal v1 schema for Failure Playbooks Pack contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0149-US-0917",
+  "feature_id": "EPIC-873-FEATURE-0149",
+  "task_ids": [
+    "EPIC-873-FEATURE-0149-US-0917-T-0346",
+    "EPIC-873-FEATURE-0149-US-0917-T-0387",
+    "EPIC-873-FEATURE-0149-US-0917-T-0734",
+    "EPIC-873-FEATURE-0149-US-0917-T-0743",
+    "EPIC-873-FEATURE-0149-US-0917-T-0841"
+  ]
+}

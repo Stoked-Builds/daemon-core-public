@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-303",
+  "epic_id": "EPIC-003",
+  "title": "Site graphics pack",
+  "description": "Create supporting graphics: section icons, subtle backgrounds, and diagram styling guidelines consistent with the brand.",
+  "phase": 1,
+  "domain": "website",
+  "area": "graphics",
+  "tags": [
+    "graphics",
+    "assets",
+    "gemini"
+  ],
+  "user_story_ids": [
+    "FEATURE-303-US-01"
+  ]
+}

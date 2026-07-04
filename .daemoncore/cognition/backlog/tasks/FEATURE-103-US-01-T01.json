@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-103-US-01-T01",
+  "user_story_id": "FEATURE-103-US-01",
+  "title": "Implement global layout and navigation",
+  "status": "completed",
+  "description": "Create global layout with header/nav/footer, responsive and accessible.",
+  "priority": "P2",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "layout",
+  "tags": [
+    "claude",
+    "layout"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

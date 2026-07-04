@@ -1,0 +1,19 @@
+You are Claude, acting as the Builder for the DaemonCore marketing site.
+
+TASK ID: FEATURE-204-US-02-T02
+Problem: Several sections with 4 cards wrap into an ugly “3 cards on one row + 1 on the next” layout.
+
+Goal:
+- Eliminate 3+1 wrapping everywhere.
+- For any section with exactly 4 cards, enforce a deliberate layout:
+  - Preferred: 2×2 at `sm+` (grid-cols-2) and 1 column on mobile.
+  - If a 4-up layout is desired, only allow 4 columns at `xl+` and keep 2 columns at `sm+` to avoid a 3-column breakpoint.
+
+Implementation (Tailwind examples if applicable):
+- Preferred 4-card grid: `grid grid-cols-1 sm:grid-cols-2 gap-6`
+- Optional 4-up: `grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6`
+- Ensure containers use sensible max width (e.g. max-w-6xl) and cards cannot force width (use `min-w-0` if needed).
+
+Deliverable:
+- Commit-ready changes only.
+- Verify at common widths that no 4-card section renders as 3+1.

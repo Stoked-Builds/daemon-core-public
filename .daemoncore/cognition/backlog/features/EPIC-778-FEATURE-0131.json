@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-778-FEATURE-0131",
+  "title": "Speckit Addin: Backlog provider",
+  "description": "Implement a `speckit` add-in package in daemon-core-public that registers in the local addins registry and provides backlog items to the Operator Dashboard via the Addins interface in main DaemonCore.",
+  "status": "backlog",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131",
+  "epic_id": "EPIC-778",
+  "user_story_ids": [
+    "EPIC-778-FEATURE-0131-US-0415",
+    "EPIC-778-FEATURE-0131-US-0716",
+    "EPIC-778-FEATURE-0131-US-0792"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-201",
+  "epic_id": "EPIC-002",
+  "title": "Homepage copy & structure",
+  "description": "Create a homepage that lands the 'OS layer for intelligent systems' framing and produces the 'oh, fuck' realisation without leaking IP.",
+  "phase": 1,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "content",
+    "homepage",
+    "positioning",
+    "no-ip-leaks"
+  ],
+  "user_story_ids": [
+    "FEATURE-201-US-01",
+    "FEATURE-201-US-02"
+  ]
+}

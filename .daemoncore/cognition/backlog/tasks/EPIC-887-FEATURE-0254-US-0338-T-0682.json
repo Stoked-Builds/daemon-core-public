@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-887-FEATURE-0254-US-0338-T-0682",
+  "title": "Add negative-path UX — Operator Tone Pack (Calm SRE / Audit / Chaos)",
+  "description": "Improve error reporting: invalid payloads should not crash UI; show non-blocking warnings and log details.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0254-US-0338-T-0682",
+  "user_story_id": "EPIC-887-FEATURE-0254-US-0338",
+  "prompt_ref": "prompts/tasks/EPIC-887-FEATURE-0254-US-0338-T-0682.prompt"
+}

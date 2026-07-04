@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-205-US-01-T01",
+  "user_story_id": "FEATURE-205-US-01",
+  "title": "Write IP-safety guardrails checklist",
+  "description": "Write a concise checklist + banned-topics list for content reviews.",
+  "priority": "P1",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "governance",
+  "tags": [
+    "claude",
+    "process",
+    "ip-safety"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-873-FEATURE-0732-US-0501-T-0798",
+  "title": "Wire to UI with attribution — Incident Drill Pack (Docs-only)",
+  "description": "Display the contribution in UI, show source add-in, and ensure clean fallback when disabled/uninstalled.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0732-US-0501-T-0798",
+  "user_story_id": "EPIC-873-FEATURE-0732-US-0501",
+  "prompt_ref": "prompts/tasks/EPIC-873-FEATURE-0732-US-0501-T-0798.prompt"
+}

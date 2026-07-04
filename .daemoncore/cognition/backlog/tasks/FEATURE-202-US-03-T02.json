@@ -1,0 +1,25 @@
+{
+  "id": "FEATURE-202-US-03-T02",
+  "user_story_id": "FEATURE-202-US-03",
+  "title": "Review Why This Is Different for IP leakage + clarity",
+  "description": "Review and tighten markdown for Why This Is Different.",
+  "priority": "P1",
+  "size": "S",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "writer",
+    "review"
+  ],
+  "depends_on": [
+    "FEATURE-202-US-03-T01"
+  ],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

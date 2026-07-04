@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-401-US-02",
+  "feature_id": "FEATURE-401",
+  "title": "Implement early access signup mechanics",
+  "story": "As the maintainer, I want a static-site-friendly signup flow so interest can be captured without backend complexity.",
+  "description": "Implement a signup form that submits to an existing endpoint (e.g., n8n webhook) with basic validation and spam resistance.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/launch",
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "implementation",
+    "launch"
+  ],
+  "task_ids": [
+    "FEATURE-401-US-02-T01",
+    "FEATURE-401-US-02-T02"
+  ]
+}

@@ -100,3 +100,29 @@ temp/
 .daemoncore/outbox/**
 .daemoncore/code-review/**
 .daemoncore/**/.DS_Store
+
+# DaemonCore — committed (project code)
+!.daemoncore/
+!.daemoncore/agents/**
+!.daemoncore/cognition/**
+!.daemoncore/vendors/**
+!.daemoncore/implementation-notes/**
+!.daemoncore/code-review/**
+!.daemoncore/uat/**
+!.daemoncore/brand-guidelines.md
+!.daemoncore/project-AGENTS.md
+!.daemoncore/project-context.md
+!.daemoncore/project-memory.md
+!.daemoncore/README-onboarding.md
+!.daemoncore/project.personas.json
+!.daemoncore/.env.template
+!.daemoncore/HUMANS.md
+
+# DaemonCore — runtime (gitignored)
+.daemoncore/exchange/**
+.daemoncore/addins/**
+.daemoncore/code-review/**
+.daemoncore/cognition/drift/**
+.daemoncore/**/*.zip
+.daemoncore/**/.DS_Store
+logs/

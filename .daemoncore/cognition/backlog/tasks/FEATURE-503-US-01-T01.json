@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-503-US-01-T01",
+  "user_story_id": "FEATURE-503-US-01",
+  "title": "Define Value Pillars (3–5) grounded in DaemonCore V1 guarantees",
+  "description": "Define 3–5 value pillars (e.g. Trust & Predictability, Risk Containment, Auditability & Accountability, Compliance Readiness, Vendor Independence). For each: the problem it solves, why current approaches plateau, and which DaemonCore V1 mechanisms support it.",
+  "priority": "P0",
+  "size": "S",
+  "tags": [
+    "claude",
+    "copy",
+    "website",
+    "value"
+  ],
+  "acceptance_criteria": [
+    "3–5 value pillars are defined in executive-readable language.",
+    "Each pillar explicitly maps to at least one DaemonCore V1 guarantee/mechanism.",
+    "No hype, no vague promises, no V1.5-as-current claims.",
+    "UK spelling; consistent tone."
+  ]
+}

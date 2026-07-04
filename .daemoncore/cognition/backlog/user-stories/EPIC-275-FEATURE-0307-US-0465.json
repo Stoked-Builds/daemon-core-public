@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-275-FEATURE-0307-US-0465",
+  "title": "Operator-visible experience for Prompt Skill Pack (Triage/Review/Write)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:37:59Z",
+  "updated_at": "2026-01-28T21:37:59Z",
+  "promoted_from": "IDEA-EPIC-275-FEATURE-0307-US-0465",
+  "feature_id": "EPIC-275-FEATURE-0307",
+  "task_ids": [
+    "EPIC-275-FEATURE-0307-US-0465-T-0318",
+    "EPIC-275-FEATURE-0307-US-0465-T-0503",
+    "EPIC-275-FEATURE-0307-US-0465-T-0516",
+    "EPIC-275-FEATURE-0307-US-0465-T-0735",
+    "EPIC-275-FEATURE-0307-US-0465-T-0835"
+  ]
+}

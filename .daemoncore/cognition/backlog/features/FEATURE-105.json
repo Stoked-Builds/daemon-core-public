@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-105",
+  "epic_id": "EPIC-001",
+  "title": "Asset handling for images & diagrams",
+  "status": "completed",
+  "description": "Establish a predictable asset pipeline for images/diagrams (SVG/PNG), including paths and references from pages.",
+  "phase": 1,
+  "domain": "website",
+  "area": "assets",
+  "tags": [
+    "website",
+    "assets",
+    "images",
+    "diagrams",
+    "svg"
+  ],
+  "user_story_ids": [
+    "FEATURE-105-US-01"
+  ]
+}

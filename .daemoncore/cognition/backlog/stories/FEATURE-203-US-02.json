@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-203-US-02",
+  "feature_id": "FEATURE-203",
+  "title": "Implement comparisons page route + layout",
+  "story": "As the maintainer, I want the comparisons page wired up so it renders cleanly and can be iterated safely.",
+  "description": "Create the comparisons page route/template and integrate approved copy and diagrams.",
+  "priority": "P2",
+  "size": "S",
+  "impact_area": "website/content",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "page-build"
+  ],
+  "task_ids": [
+    "FEATURE-203-US-02-T01"
+  ]
+}

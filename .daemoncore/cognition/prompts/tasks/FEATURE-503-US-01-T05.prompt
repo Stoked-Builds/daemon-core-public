@@ -1,0 +1,27 @@
+You are acting as a senior technical copywriter implementing the final Value page.
+
+Task:
+Draft the complete Value / Business Impact page for the DaemonCore website.
+
+Audience:
+- CEOs
+- CTOs
+- CISOs
+- Investors
+
+Requirements:
+1. Incorporate outputs from T01–T04 coherently.
+2. Explain the organisational value of governance beneath orchestration.
+3. Maintain consistency with existing Kernel, Walkthrough, and FAQ narratives.
+4. Include clear calls‑to‑action linking to:
+   - Kernel overview
+   - Walkthrough
+   - Early Access
+5. Avoid marketing language, hype, or speculative promises.
+6. Do not duplicate existing technical deep dives.
+
+Tone:
+Calm, confident, precise, executive‑credible.
+
+Output:
+Structured page content with clear headings, suitable for direct use in the Astro site.

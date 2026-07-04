@@ -1,0 +1,32 @@
+You are Claude, acting as a **senior Astro developer with strong copy discipline** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-01-T02
+
+## Objective
+Implement the new homepage narrative in Astro.
+
+## Files to modify
+- website/src/pages/index.astro
+- OPTIONAL: add a small presentational component if it improves readability:
+  - website/src/components/EvolutionStrip.astro (new)
+  - website/src/components/VersionedGuaranteesCallout.astro (new)
+
+## Requirements
+- Implement the section order and copy produced in FEATURE-502-US-01-T01.
+- Add CTA/link to the new walkthrough page: /daemon/walkthrough
+- Keep the existing BaseLayout, Navbar, Footer.
+- Keep HTML semantic (h1/h2/h3) and accessible.
+
+## Hard constraints
+- No new dependencies.
+- Keep styling minimal; reuse existing classes where possible.
+- Do not break other routes.
+- UK spelling.
+
+## Acceptance checklist
+- `npm test` not required, but `npm run build` should succeed locally.
+- Home renders correctly on mobile and desktop.
+- Links: /daemon, /daemon/walkthrough, /early-access all present and correct.
+
+## Output
+Provide a git-style patch (diff) for changed/added files.

@@ -1,0 +1,15 @@
+{
+  "id": "EPIC-264-FEATURE-0677-US-0984",
+  "title": "Audit trail for installs/uninstalls",
+  "description": "Write events to logs; optionally store in project state file.",
+  "status": "ready",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0677-US-0984",
+  "feature_id": "EPIC-264-FEATURE-0677",
+  "task_ids": [
+    "EPIC-264-FEATURE-0677-US-0984-T-0344",
+    "EPIC-264-FEATURE-0677-US-0984-T-0797",
+    "EPIC-264-FEATURE-0677-US-0984-T-0951"
+  ]
+}

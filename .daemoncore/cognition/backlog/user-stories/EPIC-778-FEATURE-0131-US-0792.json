@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0792",
+  "title": "Implement Speckit backlog provider contract",
+  "description": "Implement whatever provider interface/slot/command the new Addins capability expects for contributing backlog items. The addin should output a stable, typed list of backlog work items with ID, title, status, priority/size if available, and source metadata.",
+  "status": "ready",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0792",
+  "feature_id": "EPIC-778-FEATURE-0131",
+  "task_ids": [
+    "EPIC-778-FEATURE-0131-US-0792-T-0221",
+    "EPIC-778-FEATURE-0131-US-0792-T-0827"
+  ]
+}

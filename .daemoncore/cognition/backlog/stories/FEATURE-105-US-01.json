@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-105-US-01",
+  "feature_id": "FEATURE-105",
+  "status": "completed",
+  "title": "Asset pipeline for images & diagrams",
+  "story": "As the maintainer, I want predictable asset paths and optimisation so that diagrams render consistently and load fast on GitHub Pages.",
+  "description": "Define assets directory, referencing conventions, basic optimisation, and include placeholder diagrams.",
+  "priority": "P2",
+  "size": "S",
+  "impact_area": "website/assets",
+  "domain": "website",
+  "area": "assets",
+  "tags": [
+    "claude",
+    "assets"
+  ],
+  "task_ids": [
+    "FEATURE-105-US-01-T01",
+    "FEATURE-105-US-01-T02"
+  ]
+}

@@ -1,0 +1,17 @@
+You are acting as a product architect defining category boundaries.
+
+Task:
+Write a short section that positions DaemonCore as governance infrastructure, not a tool, framework, or chatbot.
+
+Instructions:
+1. Clearly state what DaemonCore is NOT (chatbot, orchestrator, prompt pack).
+2. Clearly state what DaemonCore IS (governance infrastructure defining valid actions).
+3. Explain why this distinction matters for trust and adoption.
+4. Keep it concise and non‑repetitive with existing FAQ content.
+5. Avoid claims of perfect safety or total prevention.
+
+Tone:
+Precise, grounded, confident.
+
+Output:
+A concise positioning section suitable for inclusion on a Value page.

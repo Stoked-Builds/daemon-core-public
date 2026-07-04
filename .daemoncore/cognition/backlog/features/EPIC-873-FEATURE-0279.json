@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-873-FEATURE-0279",
+  "title": "Lore Pack (Opt-in Easter Eggs)",
+  "description": "Optional lore pages and tasteful easter eggs.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0279",
+  "epic_id": "EPIC-873",
+  "user_story_ids": [
+    "EPIC-873-FEATURE-0279-US-0533",
+    "EPIC-873-FEATURE-0279-US-0687"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-887-FEATURE-0625",
+  "title": "Cognitive Lenses (Agile/Ops/Research)",
+  "description": "Lens presets that reframe what you see (filters/labels/fields).",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0625",
+  "epic_id": "EPIC-887",
+  "user_story_ids": [
+    "EPIC-887-FEATURE-0625-US-0767",
+    "EPIC-887-FEATURE-0625-US-0842"
+  ]
+}

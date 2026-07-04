@@ -1,0 +1,26 @@
+{
+  "id": "EPIC-5",
+  "title": "Website clarity via scenario-based differentiation",
+  "description": "Strengthen DaemonCore’s public positioning by adding clear, IP-safe scenario comparisons that demonstrate the difference a governance layer makes, and by enforcing deliberate, intentional layout discipline across the site.",
+  "priority": "P1",
+  "phase": "public-messaging",
+  "domain": "website",
+  "tags": [
+    "website",
+    "messaging",
+    "positioning",
+    "scenarios",
+    "ux",
+    "ip-safety"
+  ],
+  "feature_ids": [
+    "FEATURE-501"
+  ],
+  "success_criteria": [
+    "Visitors can clearly articulate the difference between running agents with and without DaemonCore.",
+    "Scenario comparisons focus on outcomes and constraints, not implementation details.",
+    "No content exposes internal mechanisms or patent-sensitive information.",
+    "All multi-card sections render with intentional layouts and no accidental wrapping."
+  ],
+  "notes": "This epic is deliberately outcome-focused. It exists to make the category break obvious without explaining how DaemonCore works internally."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-202-US-03",
+  "feature_id": "FEATURE-202",
+  "title": "Write 'Why This Is Different'",
+  "story": "As a decision-maker, I want the 'governance vs orchestration' aha so I understand why existing tools can\u2019t do this.",
+  "description": "Write the 'different' page: today\u2019s stack, what breaks, why governance must be below orchestration, and what DaemonCore enables at a category level.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/content",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "copy",
+    "ip-safety"
+  ],
+  "task_ids": [
+    "FEATURE-202-US-03-T01",
+    "FEATURE-202-US-03-T02"
+  ]
+}

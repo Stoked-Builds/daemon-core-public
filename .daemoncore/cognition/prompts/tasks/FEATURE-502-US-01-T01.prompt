@@ -1,0 +1,49 @@
+You are Claude, acting as a **senior technical product marketer** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-01-T01
+
+## Objective
+Rewrite the **homepage (page 1)** narrative so it is immediately clear that:
+- Orchestration ≠ governance
+- DaemonCore sits **beneath orchestration** as a governance/legitimacy layer
+- We have concrete mechanisms (action protocol, MAX bus, templates, preflight checks)
+- We are explicit about **V1 vs V1.5** (no hype, versioned language)
+
+## Inputs (current site files)
+- website/src/pages/index.astro (current homepage)
+- website/src/pages/daemon/index.astro (Kernel landing)
+- website/src/pages/daemon/why-different.astro (context framing)
+- website/src/pages/daemon/comparisons.astro (comparisons)
+
+You do NOT need to edit code in this task. Only produce copy/structure.
+
+## Required homepage sections (strict order)
+1) Hero (headline + subhead + 1 short paragraph)
+2) Evolution strip (Raw prompts → Better prompts → Prompt engineering → Orchestration → DaemonCore)
+3) Breakpoint: where risk appears (drift, ambiguity, responsibility)
+4) The shift: from instructions to protocols (1 short paragraph)
+5) Mechanisms (3 bullets, each with a 1–2 line example):
+   - Action Protocol (only protocol-shaped outputs are eligible for action)
+   - MAX Messaging Bus (typed, schema’d message routing)
+   - Template-Driven Ops (e.g., code reviews are constrained by templates)
+6) Versioned guarantees callout (V1 vs V1.5) — concise, honest
+7) CTA block (Explore Kernel, Walkthrough, Early Access)
+
+## Hard constraints
+- UK spelling.
+- No absolutes (“impossible”, “guaranteed”, “perfect”) unless explicitly versioned and scoped.
+- Do NOT claim V1.5 behaviour exists today. Use wording like “In V1.5, we…” or “Planned for V1.5…”.
+- Avoid confidential/internal implementation details. Use public-safe terms only:
+  - action protocol
+  - MAX messaging bus
+  - templates
+  - preflight checks / classification
+- Keep the homepage scannable. No walls of text.
+
+## Output format
+Return Markdown containing:
+- A section-by-section outline with final copy for each section
+- Headlines, subheads, bullets exactly as they should appear
+- 2 alternative hero headlines (A/B test options)
+
+No commentary. No extra sections.

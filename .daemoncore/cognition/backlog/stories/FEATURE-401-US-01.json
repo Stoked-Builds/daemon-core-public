@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-401-US-01",
+  "feature_id": "FEATURE-401",
+  "title": "Write early access page content",
+  "story": "As a potential early adopter, I want a clear early access pitch so I know what\u2019s coming and how to register interest.",
+  "description": "Write IP-safe early access page copy: private development, selective access, limited licences in the new year, what to expect after signup.",
+  "priority": "P1",
+  "size": "M",
+  "impact_area": "website/launch",
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "copy",
+    "launch"
+  ],
+  "task_ids": [
+    "FEATURE-401-US-01-T01",
+    "FEATURE-401-US-01-T02"
+  ]
+}

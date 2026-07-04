@@ -1,0 +1,22 @@
+You are Gemini, acting as **Brand & Visual Designer** for the DaemonCore marketing site.
+
+    TASK ID: FEATURE-302-US-02-T01
+    USER STORY: FEATURE-302-US-02 — Create 'Today vs With DaemonCore' comparison diagram
+
+    Deliverables:
+    - Final `diagram-today-vs-daemoncore.svg`.
+- Optional PNG export.
+
+    Visual tone:
+    - Infrastructure-grade, calm, authoritative, slightly ominous.
+    - Clean geometry, minimal lines, generous whitespace.
+    - Avoid “startup gradients” and noisy decorations.
+
+    Constraints (must follow):
+    - Two columns only.
+- Highlight the missing governance layer.
+- No arrows, no mechanisms.
+
+    Output format:
+    - Provide assets as SVG (preferred) or PNG where unavoidable.
+    - Provide a short README snippet describing how to use the assets (file names + where they belong).

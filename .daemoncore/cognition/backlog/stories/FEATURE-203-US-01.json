@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-203-US-01",
+  "feature_id": "FEATURE-203",
+  "title": "Write comparisons content (Speckit, AgentOS, IDEs, big-tech internal systems)",
+  "story": "As a technical reader, I want a careful comparisons page so I can place DaemonCore correctly in the stack.",
+  "description": "Write comparisons with a fixed template: what X does well, where it stops, where DaemonCore sits. Include: Speckit, AgentOS/agent frameworks, VS Code/IDEs, Big AI internal stacks. No claims about secret projects.",
+  "priority": "P2",
+  "size": "M",
+  "impact_area": "website/content",
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "copy",
+    "risk-control"
+  ],
+  "task_ids": [
+    "FEATURE-203-US-01-T01",
+    "FEATURE-203-US-01-T02"
+  ]
+}

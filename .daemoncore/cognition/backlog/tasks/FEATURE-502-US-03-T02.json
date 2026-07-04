@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-502-US-03-T02",
+  "user_story_id": "FEATURE-502-US-03",
+  "title": "Implement page edits and remove contradictory phrasing",
+  "description": "Apply the rewritten copy to the Astro pages and ensure there are no remaining 'orchestration layer' claims or contradictory descriptions.",
+  "priority": "P0",
+  "size": "M",
+  "tags": [
+    "claude",
+    "astro",
+    "website",
+    "implementation"
+  ],
+  "acceptance_criteria": [
+    "Search for 'orchestration layer' yields no incorrect claims (except where contrasting other tools).",
+    "All pages build and routes resolve."
+  ]
+}

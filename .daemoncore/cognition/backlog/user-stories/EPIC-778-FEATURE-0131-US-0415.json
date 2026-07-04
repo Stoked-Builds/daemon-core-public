@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0415",
+  "title": "Create Speckit addin package and registry entry",
+  "description": "Add a new add-in alongside Speckit-Shell following the same packaging conventions (manifest + attestation + artifact zip) and register it in the local registry index.",
+  "status": "ready",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0415",
+  "feature_id": "EPIC-778-FEATURE-0131",
+  "task_ids": [
+    "EPIC-778-FEATURE-0131-US-0415-T-0220",
+    "EPIC-778-FEATURE-0131-US-0415-T-0364"
+  ]
+}

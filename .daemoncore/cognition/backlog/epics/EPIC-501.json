@@ -1,0 +1,20 @@
+{
+  "id": "EPIC-501",
+  "title": "Website narrative overhaul: governance beneath orchestration (V1 + V1.5 roadmap)",
+  "status": "done",
+  "phase": "public-messaging",
+  "tags": [
+    "website",
+    "messaging",
+    "positioning",
+    "ux",
+    "v1.5",
+    "governance",
+    "orchestration"
+  ],
+  "description": "Rework the public website (homepage + kernel pages) so the distinction between orchestration and governance is immediately clear on page 1, with concrete mechanism examples and explicit V1 vs V1.5 statements.",
+  "feature_ids": [
+    "FEATURE-502"
+  ],
+  "updated_at": "2026-01-01T15:32:19.849515+00:00"
+}

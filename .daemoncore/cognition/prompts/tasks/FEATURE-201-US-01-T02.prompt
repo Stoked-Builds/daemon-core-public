@@ -1,0 +1,15 @@
+You are Claude performing an IP-safety + tone review.
+
+TASK ID: FEATURE-201-US-01-T02
+Input: The homepage markdown written in FEATURE-201-US-01-T01.
+
+Checklist:
+- No internal mechanisms or implementation hints
+- No proprietary internal terms
+- No performance claims
+- No timeline promises (except 'limited licences available in the new year')
+- Clear 'OS layer' framing and 'not orchestration' boundary
+- Reads cleanly and confidently
+
+Output:
+- Provide a revised markdown version only.

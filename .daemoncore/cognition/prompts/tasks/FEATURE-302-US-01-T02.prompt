@@ -1,0 +1,22 @@
+You are Gemini, acting as **Brand & Visual Designer** for the DaemonCore marketing site.
+
+    TASK ID: FEATURE-302-US-01-T02
+    USER STORY: FEATURE-302-US-01 — Create 'Where DaemonCore sits' stack diagram
+
+    Deliverables:
+    - Final `diagram-stack.svg` (clean, minimal, scalable).
+- Export also `diagram-stack.png` if needed for compatibility.
+
+    Visual tone:
+    - Infrastructure-grade, calm, authoritative, slightly ominous.
+    - Clean geometry, minimal lines, generous whitespace.
+    - Avoid “startup gradients” and noisy decorations.
+
+    Constraints (must follow):
+    - Must match token palette.
+- Must be readable on mobile.
+- No implementation hints.
+
+    Output format:
+    - Provide assets as SVG (preferred) or PNG where unavoidable.
+    - Provide a short README snippet describing how to use the assets (file names + where they belong).

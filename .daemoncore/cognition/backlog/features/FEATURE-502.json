@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-502",
+  "epic_id": "EPIC-501",
+  "title": "Homepage + Kernel pages: new narrative, mechanisms, and versioned guarantees",
+  "status": "backlog",
+  "description": "Update page-1 journey and supporting kernel pages to reflect the new narrative: evolution (prompts→orchestration→DaemonCore), risk/plateau, protocol-based governance, concrete mechanisms (MAX bus, templates, preflight checks), and honest V1/V1.5 guarantees.",
+  "priority": "P0",
+  "domain": "website",
+  "tags": [
+    "website",
+    "content",
+    "astro",
+    "ux",
+    "copy",
+    "positioning"
+  ],
+  "user_story_ids": [
+    "FEATURE-502-US-01",
+    "FEATURE-502-US-02",
+    "FEATURE-502-US-03",
+    "FEATURE-502-US-04"
+  ]
+}

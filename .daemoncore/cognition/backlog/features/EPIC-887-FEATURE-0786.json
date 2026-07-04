@@ -1,0 +1,14 @@
+{
+  "id": "EPIC-887-FEATURE-0786",
+  "title": "Accessibility Pack (Presets + Checklist)",
+  "description": "A11y presets (font scale/contrast) and a checklist panel.",
+  "status": "backlog",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0786",
+  "epic_id": "EPIC-887",
+  "user_story_ids": [
+    "EPIC-887-FEATURE-0786-US-0134",
+    "EPIC-887-FEATURE-0786-US-0378"
+  ]
+}

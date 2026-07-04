@@ -1,0 +1,22 @@
+You are Claude, acting as a **Astro developer** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-02-T02
+
+## Objective
+Create the walkthrough page and wire navigation.
+
+## Files to add/modify
+- ADD: website/src/pages/daemon/walkthrough.astro
+- MODIFY: website/src/pages/index.astro (add link/CTA)
+- MODIFY: website/src/pages/daemon/index.astro (add link card)
+
+## Content source
+Use the Markdown content produced in FEATURE-502-US-02-T01.
+
+## Constraints
+- Use BaseLayout.
+- Keep sections skimmable (cards, callouts, code blocks).
+- No new dependencies.
+
+## Output
+Provide a git-style patch (diff) for changed/added files.

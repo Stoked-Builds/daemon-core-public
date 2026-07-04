@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-873-FEATURE-0279-US-0687-T-0449",
+  "title": "Wire to UI with attribution — Lore Pack (Opt-in Easter Eggs)",
+  "description": "Display the contribution in UI, show source add-in, and ensure clean fallback when disabled/uninstalled.",
+  "status": "todo",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0279-US-0687-T-0449",
+  "user_story_id": "EPIC-873-FEATURE-0279-US-0687",
+  "prompt_ref": "prompts/tasks/EPIC-873-FEATURE-0279-US-0687-T-0449.prompt"
+}

@@ -1,0 +1,23 @@
+# Add UI plumbing for visibility (IDEA-US-910)
+
+## Goal
+Add minimal UI to show the capability is installed and active.
+
+## Context
+This task is part of `IDEA-US-910` and exists to support the Demo Addins bank for operator-visible add-in installs.
+
+## Requirements
+- Implement the change described below
+- Keep changes generic (no provider-specific kernel logic)
+- Add/adjust tests where appropriate
+
+## Technical Approach
+1. Locate the relevant module(s) in the repo
+2. Implement the smallest viable change that satisfies the goal
+3. Add tests and update docs if needed
+4. Verify end-to-end with a demo add-in install/uninstall
+
+## Acceptance Criteria
+- [ ] Change implemented and reviewed
+- [ ] Unit/integration tests pass
+- [ ] No regressions in add-in install/uninstall

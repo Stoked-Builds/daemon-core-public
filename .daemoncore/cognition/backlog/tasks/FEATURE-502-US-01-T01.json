@@ -1,0 +1,21 @@
+{
+  "id": "FEATURE-502-US-01-T01",
+  "user_story_id": "FEATURE-502-US-01",
+  "title": "Draft homepage copy and section structure",
+  "description": "Produce final homepage copy for the new narrative (hero, evolution, breakpoint, mechanisms, V1 vs V1.5 callout, CTAs).",
+  "priority": "P0",
+  "size": "M",
+  "tags": [
+    "claude",
+    "copy",
+    "website"
+  ],
+  "acceptance_criteria": [
+    "Homepage headline/subhead clearly state: orchestration ≠ governance.",
+    "Includes an evolution strip (raw prompts → better prompts → prompt engineering → orchestration → DaemonCore).",
+    "Includes a short 'where risk appears' breakpoint section (drift, ambiguity, responsibility).",
+    "Includes 3 mechanism bullets with examples: Action protocol, MAX bus, template-driven ops (IP-safe wording).",
+    "Includes a concise V1 vs V1.5 callout using versioned language (no implying V1.5 exists today).",
+    "All copy avoids absolutes and performance promises; UK spelling."
+  ]
+}

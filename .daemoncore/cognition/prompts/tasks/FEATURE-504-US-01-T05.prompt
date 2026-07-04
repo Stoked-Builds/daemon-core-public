@@ -1,0 +1,68 @@
+# TASK: FEATURE-504-US-01-T05 — Website orientation + exec translation
+
+## Goal
+Close the remaining narrative/UX gaps on the DaemonCore public site by improving discoverability and orientation:
+- Make the **Business Value** page visible and unavoidable (nav + contextual CTAs + footer).
+- Add explicit audience-fit framing (**Who it’s for / Who it’s not for**) to reduce confusion and increase trust.
+- Strengthen the **30-second leadership mental model** without dumbing down technical pages.
+- Introduce or reference a single canonical **Layer Diagram** so the site can point to one stable visual rather than re-explaining.
+
+This is about **orientation and flow**, not rewriting the core story.
+
+## Non-negotiables
+- Do **not** introduce new product claims beyond what the site already asserts for V1 and V1.5.
+- Keep V1 vs V1.5 honesty consistent with existing FAQ language.
+- Do not reduce the technical specificity of Kernel/Walkthrough/FAQ.
+- Prefer small, surgical changes that improve navigation, linking, and clarity.
+
+## Scope
+Update the website content and navigation to:
+1) **Navigation + footer**
+   - Add a primary navigation link to Business Value.
+   - Add a footer link to Business Value (alongside existing footer items).
+
+2) **Contextual CTAs**
+   - Home: In the “Get Started” area (or hero CTAs), ensure Business Value is included as a first-class CTA.
+   - Kernel: Add a contextual link block (or card) pointing to Business Value.
+   - Walkthrough: Add a concluding CTA or link that routes to Business Value (e.g., “Why leadership cares”).
+
+3) **Who it’s for / Who it’s not for**
+   - Add either:
+     A) a new short page, or
+     B) a short section on Business Value (and optionally Kernel)
+   - Keep it blunt and honest.
+   - Suggested bullets:
+     - For: production multi-agent systems, regulated environments, long-running workflows, auditability/accountability.
+     - Not for: chatbots, single-prompt demos, hobby experiments, prompt-only governance.
+   - Link this section/page from relevant areas.
+
+4) **Executive mental model sentence**
+   - Add one prominent sentence (consistent wording across pages), e.g.:
+     “DaemonCore is the layer that makes AI behaviour enforceable instead of advisory.”
+   - Place it near the top of Home and Business Value.
+
+5) **Layer Diagram**
+   - Add a single canonical Layer Diagram asset or section and reference it from:
+     - Comparisons page (where the layer model appears)
+     - Kernel page (Orchestration vs Governance section)
+   - If an image asset is used, keep it simple and aligned with existing design.
+
+## Deliverables
+- Updated site pages with:
+  - Business Value linked in nav and footer
+  - Business Value included in Home “Get Started” area
+  - Contextual links from Kernel and Walkthrough
+  - ‘Who it’s for / not for’ section/page added and linked
+  - Executive mental model sentence added to Home + Business Value
+  - Layer Diagram referenced (and optionally embedded)
+
+## Validation checklist
+- Can a new visitor find Business Value in < 5 seconds from any page?
+- Is there a clear “is this for me?” answer without reading FAQ?
+- Are V1 vs V1.5 claims unchanged and consistent?
+- Are there no broken links and no orphan pages?
+
+## Implementation notes
+- Keep changes minimal and consistent with existing layout/components.
+- Prefer reusing existing card/CTA patterns.
+- If you add a new page, ensure it appears in the site nav and is discoverable via links.

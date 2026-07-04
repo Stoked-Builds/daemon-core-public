@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-581-FEATURE-0790-US-0444",
+  "title": "Operator-visible experience for Trust Badges (Advisory)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:38:47Z",
+  "updated_at": "2026-01-28T21:38:47Z",
+  "promoted_from": "IDEA-EPIC-581-FEATURE-0790-US-0444",
+  "feature_id": "EPIC-581-FEATURE-0790",
+  "task_ids": [
+    "EPIC-581-FEATURE-0790-US-0444-T-0392",
+    "EPIC-581-FEATURE-0790-US-0444-T-0471",
+    "EPIC-581-FEATURE-0790-US-0444-T-0526",
+    "EPIC-581-FEATURE-0790-US-0444-T-0537",
+    "EPIC-581-FEATURE-0790-US-0444-T-0925"
+  ]
+}

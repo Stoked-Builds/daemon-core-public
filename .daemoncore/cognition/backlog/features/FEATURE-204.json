@@ -1,0 +1,17 @@
+{
+  "id": "FEATURE-204",
+  "epic_id": "EPIC-002",
+  "title": "FAQ page",
+  "description": "Publish an FAQ that pre-empts misunderstandings without revealing internals or roadmap promises.",
+  "phase": 1,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "content",
+    "faq",
+    "risk-control"
+  ],
+  "user_story_ids": [
+    "FEATURE-204-US-01"
+  ]
+}

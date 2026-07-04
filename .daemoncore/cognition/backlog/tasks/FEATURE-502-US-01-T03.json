@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-502-US-01-T03",
+  "user_story_id": "FEATURE-502-US-01",
+  "title": "Add minimal styling for the new sections",
+  "description": "Update CSS to support the evolution strip, callout box, and mechanism list without breaking existing layouts.",
+  "priority": "P0",
+  "size": "S",
+  "tags": [
+    "claude",
+    "css",
+    "website"
+  ],
+  "acceptance_criteria": [
+    "Evolution strip is readable on mobile and desktop.",
+    "New callout (V1 vs V1.5) is visually distinct but consistent with existing style.",
+    "No regression in existing pages."
+  ]
+}

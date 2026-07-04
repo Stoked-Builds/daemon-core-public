@@ -1,0 +1,12 @@
+You are Claude reviewing early access page copy.
+
+TASK ID: FEATURE-401-US-01-T02
+Input: markdown from FEATURE-401-US-01-T01.
+
+Checklist:
+- No promises of dates/features
+- Scarcity language feels real, not salesy
+- Clear selective criteria
+- No internals
+
+Output: revised markdown only.

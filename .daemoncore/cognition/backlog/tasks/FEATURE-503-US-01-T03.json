@@ -1,0 +1,20 @@
+{
+  "id": "FEATURE-503-US-01-T03",
+  "user_story_id": "FEATURE-503-US-01",
+  "title": "Draft executive framing: why governance is required beneath orchestration",
+  "description": "Write the leadership-facing section explaining: (1) why multi-agent deployment creates organisational risk, (2) why orchestration alone cannot provide reliable enforcement, and (3) why a lower-layer governance substrate changes the failure mode from 'surprise' to 'explicit rejection + audit'.",
+  "priority": "P0",
+  "size": "S",
+  "tags": [
+    "claude",
+    "copy",
+    "website",
+    "value"
+  ],
+  "acceptance_criteria": [
+    "Explains the problem in executive-readable language without implementation detail.",
+    "Uses concrete organisational concerns: accountability, auditability, compliance, incident response.",
+    "Avoids competitor bashing and hype.",
+    "Consistent with site narrative (governance beneath orchestration)."
+  ]
+}

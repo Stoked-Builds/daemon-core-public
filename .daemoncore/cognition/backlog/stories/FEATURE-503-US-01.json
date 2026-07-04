@@ -1,0 +1,24 @@
+{
+  "id": "FEATURE-503-US-01",
+  "feature_id": "FEATURE-503",
+  "title": "Create a Value, Trust & Business Impact page for CEOs/CTOs/CISOs/investors",
+  "story": "As a CEO, CTO, CISO, or investor evaluating DaemonCore, I want a clear, credible explanation of the business value and trust outcomes DaemonCore provides, so that I can understand why governance beneath orchestration matters and decide whether to adopt or invest.",
+  "description": "Add a dedicated value/outcomes page (e.g. `/value` or `/why-it-matters`) that translates DaemonCore's technical guarantees into business outcomes (risk reduction, containment, accountability, auditability, compliance readiness, and vendor independence). Keep it executive-readable and technically honest. Link to Kernel/Walkthrough for proof and to Early Access for CTA.",
+  "priority": "P0",
+  "acceptance_criteria": [
+    "A new Value/Outcomes page exists and is linked from the homepage and FAQ.",
+    "The page is written for CEOs/CTOs/CISOs/investors (executive-readable, calm, precise).",
+    "It defines 3–5 value pillars and maps each to concrete DaemonCore V1 guarantees (no speculative claims).",
+    "It explicitly explains why orchestration alone is insufficient for trust and accountability.",
+    "It avoids marketing fluff/hype and does not duplicate Kernel/Walkthrough/FAQ content.",
+    "Claims are versioned where relevant (V1 vs V1.5) and do not imply V1.5 is already shipped.",
+    "UK spelling and consistent tone with the rest of the site."
+  ],
+  "task_ids": [
+    "FEATURE-503-US-01-T01",
+    "FEATURE-503-US-01-T02",
+    "FEATURE-503-US-01-T03",
+    "FEATURE-503-US-01-T04",
+    "FEATURE-503-US-01-T05"
+  ]
+}

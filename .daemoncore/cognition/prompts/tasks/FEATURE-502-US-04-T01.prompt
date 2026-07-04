@@ -1,0 +1,25 @@
+You are Claude, acting as a **senior technical writer** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-502-US-04-T01
+
+## Objective
+Update the FAQ to answer the hard objections directly and honestly.
+
+## File to modify
+- website/src/pages/daemon/faq.astro
+
+## Required questions (add or rewrite)
+1) “Isn’t this just prompts?”
+2) “Can prompt injection override DaemonCore?”
+3) “Don’t orchestration tools already do this?”
+4) “What is Stux, and how does it relate to DaemonCore?”
+5) “What’s enforced in V1 vs V1.5?”
+
+## Constraints
+- UK spelling.
+- No hype.
+- Versioned language: clearly mark what is true in V1 vs planned for V1.5.
+- Avoid absolutes; describe detection/visibility in V1 and stronger enforcement goals in V1.5.
+
+## Output
+Provide a git-style patch (diff) for the modified FAQ page.

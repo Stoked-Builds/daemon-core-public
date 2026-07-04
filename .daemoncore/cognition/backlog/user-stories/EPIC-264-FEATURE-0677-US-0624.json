@@ -1,0 +1,16 @@
+{
+  "id": "EPIC-264-FEATURE-0677-US-0624",
+  "title": "List installed add-ins with metadata",
+  "description": "Add UI page/table with id, version, digest, enabled, installedAt.",
+  "status": "ready",
+  "created_at": "2026-01-28T19:24:38Z",
+  "updated_at": "2026-01-28T19:24:38Z",
+  "promoted_from": "IDEA-EPIC-264-FEATURE-0677-US-0624",
+  "feature_id": "EPIC-264-FEATURE-0677",
+  "task_ids": [
+    "EPIC-264-FEATURE-0677-US-0624-T-0406",
+    "EPIC-264-FEATURE-0677-US-0624-T-0745",
+    "EPIC-264-FEATURE-0677-US-0624-T-0911",
+    "EPIC-264-FEATURE-0677-US-0624-T-0981"
+  ]
+}

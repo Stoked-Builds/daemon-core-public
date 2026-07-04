@@ -1,0 +1,86 @@
+# FEATURE-504-US-01-T06 — Narrative tightening & value signposting across Feature-504 pages
+
+## Objective
+Tighten and explicitly signpost the Feature-504 narrative so different audiences (engineers, CTOs/CEOs, investors) can immediately find the right value message — without adding new technical scope.
+
+This task is about clarity, continuity, and emphasis across:
+- Home
+- Kernel
+- Business Value
+- Why Different
+
+## Non-Negotiable Constraints (Hard Rules)
+- Do NOT add new features, new sections of technical capability, or new roadmap claims.
+- Do NOT introduce new security guarantees beyond what is already stated on the site.
+- Do NOT “marketing-fluff” the copy. Keep it structural, precise, and credible.
+- This is narrative glue + navigation + signposting only.
+
+## What “Good” Looks Like
+By the end, a reader should understand in <30 seconds:
+- who each page is for
+- what risk DaemonCore reduces
+- what outcome it enables
+- where to go next (especially: how to find Business Value quickly)
+
+## Required Changes
+
+### 1) Add obvious access to Business Value from primary entry points
+Implement at least ONE of the following (prefer both if it’s clean):
+- Add “Business Value” to the primary navigation
+- Add/ensure “Business Value” appears as a “Get Started” card on Home
+- Add a short CTA link/button near the top of Kernel that points to Business Value
+
+The goal: leadership/investor readers should never have to hunt for it.
+
+### 2) Add short “audience signposts” near the top of key pages
+Add a compact cue (1 line) near the top of each page that answers “who this is for” without sounding like marketing.
+
+Guidance:
+- Home: broad, high-level cue (engineers + leadership)
+- Kernel: explicitly technical cue
+- Business Value: explicitly leadership/investor cue
+- Why Different: technical/strategy bridge cue (CTO/architect)
+
+Examples of tone (do not copy verbatim; write appropriately for the site):
+- “For engineers building agent systems: how governance is enforced.”
+- “For leadership: what governance buys you (risk, trust, accountability).”
+
+### 3) Strengthen cross-page continuity (narrative glue)
+Ensure the pages read as a coherent sequence:
+
+Home promise:
+- “Governance beneath orchestration” / “Protocols, not prompts”
+
+Kernel mechanics:
+- Action protocol, schema enforcement, templates, boundaries, deterministic boot, audit logging
+
+Business outcomes:
+- bounded risk, attributable actions, consistent behaviour, portable governance, auditability
+
+Why Different:
+- the missing layer and why orchestration alone can’t guarantee enforcement
+
+Add short transitional sentences where needed (1–2 lines max) so readers don’t feel they’re switching “modes” between pages.
+
+### 4) No new claims — tighten what’s already there
+Where text implies stronger guarantees than V1 provides, refine wording to match existing V1/V1.5 positioning:
+- V1: structural enforcement through validation/rejection, scope boundaries, templates, audit logging
+- V1.5: cryptographic signing, attestation, etc (planned)
+
+Keep the honest posture: defence in depth; constraints enforced; model reasoning not “fixed”.
+
+## Acceptance Criteria (Must Pass)
+- Each Feature-504 page states who it is for (engineers vs leadership) with a short, non-marketing cue.
+- Copy strengthens cross-page continuity (homepage promise → kernel mechanisms → business outcomes → comparison framing).
+- No new technical claims are introduced beyond what is already present in Feature-504.
+- Language remains structural and precise; avoids hype and avoids diluting technical credibility.
+- Navigation includes an obvious path to the Business Value page from primary entry points (Home + Kernel).
+
+## Output Requirements
+When you finish:
+1) List every file changed.
+2) For each page, provide a short “before → after” summary (2–5 bullets).
+3) Call out exactly where Business Value is now linked from (Home/Kernal/nav/etc).
+
+## Notes
+This task is intentionally small and high-impact: it’s about making the site legible to the right audience at the right moment — without changing the product surface area.

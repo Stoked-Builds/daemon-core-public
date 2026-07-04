@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-887-FEATURE-0604-US-0111",
+  "title": "Operator-visible experience for Theme Pack Addin (Neon Noir + Clean Enterprise)",
+  "description": "Wire validated contributions into the operator console with attribution and reversible behavior.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:55Z",
+  "updated_at": "2026-01-28T21:39:55Z",
+  "promoted_from": "IDEA-EPIC-887-FEATURE-0604-US-0111",
+  "feature_id": "EPIC-887-FEATURE-0604",
+  "task_ids": [
+    "EPIC-887-FEATURE-0604-US-0111-T-0244",
+    "EPIC-887-FEATURE-0604-US-0111-T-0348",
+    "EPIC-887-FEATURE-0604-US-0111-T-0522",
+    "EPIC-887-FEATURE-0604-US-0111-T-0556",
+    "EPIC-887-FEATURE-0604-US-0111-T-0934"
+  ]
+}

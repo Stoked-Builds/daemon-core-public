@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-873-FEATURE-0939-US-0255",
+  "title": "Schema & validation for Decision Ledger Pack (ADR-lite)",
+  "description": "Define a minimal v1 schema for Decision Ledger Pack (ADR-lite) contributions and implement validation with actionable errors.",
+  "status": "ready",
+  "created_at": "2026-01-28T21:39:48Z",
+  "updated_at": "2026-01-28T21:39:48Z",
+  "promoted_from": "IDEA-EPIC-873-FEATURE-0939-US-0255",
+  "feature_id": "EPIC-873-FEATURE-0939",
+  "task_ids": [
+    "EPIC-873-FEATURE-0939-US-0255-T-0151",
+    "EPIC-873-FEATURE-0939-US-0255-T-0210",
+    "EPIC-873-FEATURE-0939-US-0255-T-0356",
+    "EPIC-873-FEATURE-0939-US-0255-T-0702",
+    "EPIC-873-FEATURE-0939-US-0255-T-0706"
+  ]
+}

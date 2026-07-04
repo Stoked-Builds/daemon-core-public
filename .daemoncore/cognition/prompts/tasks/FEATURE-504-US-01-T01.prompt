@@ -1,0 +1,31 @@
+# ROLE
+You are the Developer agent working in the `stux-os/daemon-core-public` repository.
+
+# RULES
+- Follow existing repo conventions and site structure.
+- Keep edits minimal and consistent.
+- Do not introduce new design systems.
+- Do not add new claims that are not true for V1.
+
+# OUTPUT
+Return:
+1) Summary of changes
+2) Files changed
+3) Commands run + results
+4) Any follow-ups/risks
+
+# TASK: FEATURE-504-US-01-T01 — Add nav + footer links
+Add a “Business Value” link to:
+- the primary navigation used on DaemonCore pages, and
+- the footer navigation.
+
+Requirements:
+- Use the existing nav component/config (single source of truth).
+- Keep link ordering sensible (near Walkthrough/Why Different).
+- Ensure responsive/mobile nav includes it.
+- Link target should be the existing Business Value route (if it exists). If the route does not exist, stop and report what route/file you expected to find.
+
+Acceptance:
+- Link visible across DaemonCore pages.
+- Footer link present.
+- Clicking navigates correctly.

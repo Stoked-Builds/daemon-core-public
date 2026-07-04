@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-401-US-01-T01",
+  "user_story_id": "FEATURE-401-US-01",
+  "title": "Write early access page copy (draft v1)",
+  "description": "Write markdown for early access page.",
+  "priority": "P1",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "launch",
+  "tags": [
+    "claude",
+    "writer",
+    "launch"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

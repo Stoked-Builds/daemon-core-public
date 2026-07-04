@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0792-T-0827",
+  "title": "Implement Speckit addin artifact to output backlog items in the required contract shape",
+  "description": "Populate Addins/Speckit/speckit.zip with the actual implementation that produces Speckit backlog items using the contract discovered in TASK-126.",
+  "status": "todo",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0792-T-0827",
+  "user_story_id": "EPIC-778-FEATURE-0131-US-0792",
+  "prompt_ref": "prompts/tasks/EPIC-778-FEATURE-0131-US-0792-T-0827.prompt"
+}

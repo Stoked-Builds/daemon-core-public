@@ -1,0 +1,19 @@
+{
+  "id": "FEATURE-502-US-04-T01",
+  "user_story_id": "FEATURE-502-US-04",
+  "title": "Update FAQ with hard objections (prompt injection, just prompts, providers)",
+  "description": "Edit /daemon/faq.astro to include direct, versioned answers to the key objections.",
+  "priority": "P0",
+  "size": "S",
+  "tags": [
+    "claude",
+    "copy",
+    "website"
+  ],
+  "acceptance_criteria": [
+    "FAQ includes at least 4 new/updated questions covering the objections above.",
+    "Answers are concise, factual, and versioned (V1 vs V1.5).",
+    "No absolutes; no claims of perfect safety or immunity to injection.",
+    "UK spelling; consistent tone."
+  ]
+}

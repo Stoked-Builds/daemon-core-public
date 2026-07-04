@@ -1,0 +1,18 @@
+{
+  "id": "FEATURE-501-US-02",
+  "feature_id": "FEATURE-501",
+  "title": "Implement scenario section + enforce deliberate card grids",
+  "story": "As a visitor, I want the scenario section and feature cards to display cleanly at common widths so the site feels intentional and premium.",
+  "description": "Add the scenario section to the most appropriate page (prefer Why This Is Different). Fix any 4-card sections that currently wrap 3+1 by using deliberate 2\u00d72 or breakpoint-safe 4-up grids.",
+  "priority": "P1",
+  "acceptance_criteria": [
+    "Scenario section appears on the chosen page and matches site tone.",
+    "No 4-card section renders as 3+1 at common desktop widths.",
+    "For 4-card sections: either 2\u00d72 at sm+ or 4-up only at xl+ (with 2-up at sm+).",
+    "No new routes/pages are added."
+  ],
+  "task_ids": [
+    "FEATURE-501-US-02-T01",
+    "FEATURE-501-US-02-T02"
+  ]
+}

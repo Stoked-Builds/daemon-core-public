@@ -1,0 +1,17 @@
+{
+  "id": "EPIC-003",
+  "title": "Visual identity & diagrams",
+  "phase": 1,
+  "tags": [
+    "branding",
+    "visuals",
+    "diagrams",
+    "identity"
+  ],
+  "description": "Define the DaemonCore visual language and produce conceptual diagrams that communicate system layering without revealing implementation details.",
+  "feature_ids": [
+    "FEATURE-301",
+    "FEATURE-302",
+    "FEATURE-303"
+  ]
+}

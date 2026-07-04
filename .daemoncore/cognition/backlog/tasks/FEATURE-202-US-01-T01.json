@@ -1,0 +1,23 @@
+{
+  "id": "FEATURE-202-US-01-T01",
+  "user_story_id": "FEATURE-202-US-01",
+  "title": "Write What DaemonCore Is copy (draft v1)",
+  "description": "Write markdown for What DaemonCore Is.",
+  "priority": "P1",
+  "size": "M",
+  "work_type": "feature",
+  "severity": null,
+  "domain": "website",
+  "area": "content",
+  "tags": [
+    "claude",
+    "writer",
+    "copy"
+  ],
+  "depends_on": [],
+  "target_files": [],
+  "target_directories": [],
+  "acceptance_criteria": [],
+  "execution_hints": null,
+  "notes": ""
+}

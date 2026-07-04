@@ -1,0 +1,11 @@
+{
+  "id": "EPIC-778-FEATURE-0131-US-0415-T-0364",
+  "title": "Update Speckit addin registry digest after implementing artifact",
+  "description": "After speckit.zip is populated, recompute sha256 digest and update registry entry so installs are consistent.",
+  "status": "todo",
+  "created_at": "2026-01-28T14:22:46Z",
+  "updated_at": "2026-01-28T14:22:46Z",
+  "promoted_from": "IDEA-EPIC-778-FEATURE-0131-US-0415-T-0364",
+  "user_story_id": "EPIC-778-FEATURE-0131-US-0415",
+  "prompt_ref": "prompts/tasks/EPIC-778-FEATURE-0131-US-0415-T-0364.prompt"
+}

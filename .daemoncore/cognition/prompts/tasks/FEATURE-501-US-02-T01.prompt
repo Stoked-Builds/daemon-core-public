@@ -1,0 +1,73 @@
+You are Claude, acting as the **Builder** for the DaemonCore public marketing website.
+
+TASK ID: FEATURE-501-US-02-T01
+
+## Objective
+Integrate the **approved scenario comparison section** into the existing website in a way that feels intentional, coherent, and consistent with the current information architecture.
+
+This task is about **placement and integration**, not content creation.
+
+---
+
+## Hard constraints (non-negotiable)
+
+You MUST:
+- Use the final, approved Markdown output from FEATURE-501-US-01-T02 verbatim.
+- Do NOT add new routes, pages, or navigation items.
+- Do NOT invent new copy, headings, or explanatory text.
+- Do NOT rephrase, summarise, or “improve” the scenario wording.
+- Use the site’s existing content model (Markdown/content files vs components).
+- Match the site’s existing design language and spacing conventions.
+
+You MUST NOT:
+- Hardcode scenario text inside components if the site uses Markdown-driven content.
+- Introduce new layout patterns or visual components.
+- Add diagrams, icons, or callouts.
+- Add implementation or technical explanations.
+
+---
+
+## Placement guidance
+
+Preferred placement:
+- The **“Why This Is Different”** page.
+
+If that page does not exist or is named differently:
+- Choose the page whose purpose is to explain *conceptual differentiation*, not architecture or features.
+
+The scenario section should:
+- Appear **after** the core conceptual explanation, not before it.
+- Read as *evidence* that reinforces what the reader has just learned.
+
+---
+
+## Layout requirements
+
+- Use a clear, readable two-column layout for each scenario:
+  - “Without DaemonCore”
+  - “With DaemonCore”
+- Ensure the layout collapses cleanly to a single column on mobile.
+- Ensure spacing and typography match adjacent sections.
+
+Do not allow:
+- Visual clutter
+- Overly tight columns
+- Decorative styling that draws attention away from the content
+
+---
+
+## Verification checklist
+
+Before finalising, verify:
+- The page renders cleanly on mobile and desktop.
+- The scenario section does not visually dominate the page.
+- There are no broken links or missing assets.
+- The site still reads as calm, confident, and infrastructure-grade.
+
+---
+
+## Output requirements
+
+- Commit-ready changes only.
+- No explanations, no commentary, no TODOs.
+- If placement feels ambiguous, choose the most conservative option.
