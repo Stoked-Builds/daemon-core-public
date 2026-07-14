@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!--
+    DaemonCore Architecture Overview
+    IP-Safe: Conceptual view only, no internal mechanisms
+  -->
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0D0E14"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="300">DaemonCore Architecture</text>
+
+  <!-- Governance Layer Container -->
+  <g transform="translate(50, 55)">
+    <rect x="0" y="0" width="700" height="120" fill="rgba(247, 184, 1, 0.05)" stroke="#F7B801" stroke-width="2"/>
+    <text x="350" y="25" text-anchor="middle" fill="#F7B801" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400">Governance Layer</text>
+
+    <!-- Three pillars -->
+    <g transform="translate(30, 40)">
+      <rect x="0" y="0" width="190" height="65" fill="none" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="95" y="25" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400">Safety Boundaries</text>
+      <text x="95" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">What agents cannot do</text>
+    </g>
+
+    <g transform="translate(255, 40)">
+      <rect x="0" y="0" width="190" height="65" fill="none" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="95" y="25" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400">Capability Envelopes</text>
+      <text x="95" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">What agents are allowed to do</text>
+    </g>
+
+    <g transform="translate(480, 40)">
+      <rect x="0" y="0" width="190" height="65" fill="none" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="95" y="25" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400">Vendor Isolation</text>
+      <text x="95" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Multiple providers, unified rules</text>
+    </g>
+  </g>
+
+  <!-- Agents Section -->
+  <g transform="translate(50, 195)">
+    <text x="0" y="15" fill="#6C5B7B" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">GOVERNED AGENTS</text>
+
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="160" height="90" fill="#161720" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="80" y="25" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="12">Agent A</text>
+      <text x="80" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Provider: Claude</text>
+      <text x="80" y="60" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Role: Developer</text>
+      <circle cx="80" cy="78" r="4" fill="#33FF00"/>
+    </g>
+
+    <g transform="translate(180, 30)">
+      <rect x="0" y="0" width="160" height="90" fill="#161720" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="80" y="25" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="12">Agent B</text>
+      <text x="80" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Provider: GPT</text>
+      <text x="80" y="60" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Role: Reviewer</text>
+      <circle cx="80" cy="78" r="4" fill="#33FF00"/>
+    </g>
+
+    <g transform="translate(360, 30)">
+      <rect x="0" y="0" width="160" height="90" fill="#161720" stroke="#6C5B7B" stroke-width="1"/>
+      <text x="80" y="25" text-anchor="middle" fill="#92A8D1" font-family="Inter, system-ui, sans-serif" font-size="12">Agent C</text>
+      <text x="80" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Provider: Gemini</text>
+      <text x="80" y="60" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Role: Analyst</text>
+      <circle cx="80" cy="78" r="4" fill="#F7B801"/>
+    </g>
+
+    <g transform="translate(540, 30)">
+      <rect x="0" y="0" width="160" height="90" fill="#12131A" stroke="#6C5B7B" stroke-width="1" stroke-dasharray="4,2"/>
+      <text x="80" y="25" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="12">Agent D</text>
+      <text x="80" y="45" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Provider: Local</text>
+      <text x="80" y="60" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="10">Role: Assistant</text>
+      <circle cx="80" cy="78" r="4" fill="#4A4A5A"/>
+    </g>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="400" y="365" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="11">Multiple AI providers operate under unified governance</text>
+  <text x="400" y="385" text-anchor="middle" fill="#4A4D5E" font-family="Inter, system-ui, sans-serif" font-size="11">Boundaries are architectural, not advisory</text>
+</svg>

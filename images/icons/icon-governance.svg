@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6C5B7B" stroke-width="1.5">
+  <!-- Governance: Shield/boundary concept -->
+  <path d="M12 2L4 6v6c0 5.25 3.4 10.05 8 12 4.6-1.95 8-6.75 8-12V6l-8-4z"/>
+  <path d="M12 8v4M12 16h.01" stroke="#F7B801"/>
+</svg>
