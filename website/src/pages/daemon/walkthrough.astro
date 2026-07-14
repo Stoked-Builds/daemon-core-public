@@ -10,7 +10,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <section class="wt-section">
       <h2>What This Walkthrough Shows</h2>
       <p class="lead">
-        A single scenario—code review—traced from user intent through governed outcome.
+        A single scenario-code review-traced from user intent through governed outcome.
         You'll see how DaemonCore validates, routes, and constrains agent actions at each step.
       </p>
     </section>
@@ -28,7 +28,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <li>Results vary between runs, models, and prompt variations</li>
         </ul>
         <p class="wt-baseline-note">
-          The agent might do a thorough review, a superficial glance, or wander into unrelated refactoring—
+          The agent might do a thorough review, a superficial glance, or wander into unrelated refactoring-
           depending on how it interprets "review."
         </p>
       </div>
@@ -50,7 +50,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <code>"Review the authentication module for security issues and code quality."</code>
           </div>
           <p>
-            This is natural language—ambiguous by nature. DaemonCore doesn't try to make the
+            This is natural language-ambiguous by nature. DaemonCore doesn't try to make the
             agent "understand better." Instead, it requires the agent to produce a structured
             response that can be validated.
           </p>
@@ -99,7 +99,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </div>
         <div class="wt-step-content">
           <p>
-            The agent produces a protocol-shaped proposal—not free-form text, but a structured
+            The agent produces a protocol-shaped proposal-not free-form text, but a structured
             object that can be validated:
           </p>
           <pre class="wt-code"><code set:html={`{
@@ -114,7 +114,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }`} /></pre>
           <p>
             This proposal is validated against the action protocol schema. Malformed proposals
-            are rejected. The agent cannot "decide" to expand scope or skip checks—the structure
+            are rejected. The agent cannot "decide" to expand scope or skip checks-the structure
             enforces the boundaries.
           </p>
         </div>
@@ -140,7 +140,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 }`} /></pre>
           <p>
             <strong>Schema validation:</strong> Messages that don't match the expected schema
-            are rejected at the bus level. An agent cannot send a malformed message—it simply
+            are rejected at the bus level. An agent cannot send a malformed message-it simply
             won't route.
           </p>
           <p>
@@ -249,7 +249,7 @@ Reason: File outside permitted review scope
 Agent: claude-developer
 Timestamp: 2025-01-01T12:01:23Z</code></pre>
         <p>
-          The access is blocked at the governance layer—not by asking the agent nicely,
+          The access is blocked at the governance layer-not by asking the agent nicely,
           but by preventing the operation. The violation is logged with full context for audit.
         </p>
       </div>

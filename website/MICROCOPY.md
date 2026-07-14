@@ -110,10 +110,10 @@ All copy follows editorial guardrails: no hype, no promises, factual positioning
 
 ## Tone Guidelines
 
-- **Calm, not excited** — No exclamation marks, no hype words
-- **Factual, not promotional** — State what it is, not how great it is
-- **Precise, not vague** — Specific positioning over generic claims
-- **Confident, not boastful** — Let the work speak for itself
+- **Calm, not excited** - No exclamation marks, no hype words
+- **Factual, not promotional** - State what it is, not how great it is
+- **Precise, not vague** - Specific positioning over generic claims
+- **Confident, not boastful** - Let the work speak for itself
 
 ---
 

@@ -8,13 +8,13 @@ calm, precise, trustworthy.
 
 ## Design Philosophy
 
-DaemonCore is a governance layer — foundational infrastructure that operates
+DaemonCore is a governance layer - foundational infrastructure that operates
 beneath the surface. The visual language reflects this:
 
-- **Calm, not flashy** — No gradients, no glow effects, no visual noise
-- **Precise, not playful** — Sharp corners, consistent spacing, clear hierarchy
-- **Dark, not dramatic** — Obsidian backgrounds suggest depth without theatrics
-- **Mineral, not neon** — Colors reference geological stability, not tech hype
+- **Calm, not flashy** - No gradients, no glow effects, no visual noise
+- **Precise, not playful** - Sharp corners, consistent spacing, clear hierarchy
+- **Dark, not dramatic** - Obsidian backgrounds suggest depth without theatrics
+- **Mineral, not neon** - Colors reference geological stability, not tech hype
 
 ---
 
@@ -67,8 +67,8 @@ beneath the surface. The visual language reflects this:
 
 ### Guidelines
 
-- **No italics** — Use `--color-quartz` for emphasis instead
-- **No bold headings** — Weight 300 conveys precision
+- **No italics** - Use `--color-quartz` for emphasis instead
+- **No bold headings** - Weight 300 conveys precision
 - **Tight line-height** for headings (1.2), relaxed for body (1.6)
 
 ---
@@ -90,11 +90,11 @@ All spacing uses an 8px quantum system:
 
 ## Borders & Corners
 
-- **No border-radius** — Sharp corners throughout (0px)
+- **No border-radius** - Sharp corners throughout (0px)
 - **Border color**: `--color-amethyst` for standard borders
 - **Border width**: 1px standard, 2px for emphasis
 
-This sharp aesthetic reinforces the infrastructure positioning —
+This sharp aesthetic reinforces the infrastructure positioning -
 precision over friendliness.
 
 ---
@@ -109,7 +109,7 @@ Transitions are functional, not decorative:
 | `--duration-normal` | 250ms | State changes |
 | `--duration-slow` | 400ms | Page transitions |
 
-Easing: `cubic-bezier(0.4, 0.0, 0.2, 1)` — smooth deceleration
+Easing: `cubic-bezier(0.4, 0.0, 0.2, 1)` - smooth deceleration
 
 ---
 
