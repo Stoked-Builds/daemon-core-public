@@ -2,6 +2,7 @@
 prompts/
 private/
 code-export/
+/tmp/
 
 # DaemonCore
 .daemoncore/
