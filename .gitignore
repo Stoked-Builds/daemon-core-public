@@ -3,6 +3,7 @@ prompts/
 private/
 code-export/
 /tmp/
+.env
 
 # DaemonCore
 .daemoncore/
